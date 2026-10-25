@@ -1,0 +1,107 @@
+{
+  "format": "ff-companion-manifest",
+  "schemaVersion": 1,
+  "project": "Final Fantasy 100% Companion",
+  "games": [
+    {
+      "id": "ff1-pr",
+      "title": "Final Fantasy I",
+      "edition": "Pixel Remaster",
+      "chapterFiles": [
+        "data/ff1/chapter-01.json"
+      ],
+      "status": "demo"
+    },
+    {
+      "id": "ff2-pr",
+      "title": "Final Fantasy II",
+      "edition": "Pixel Remaster",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff3-pr",
+      "title": "Final Fantasy III",
+      "edition": "Pixel Remaster",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff4-pr",
+      "title": "Final Fantasy IV",
+      "edition": "Pixel Remaster",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff5-pr",
+      "title": "Final Fantasy V",
+      "edition": "Pixel Remaster",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff6-pr",
+      "title": "Final Fantasy VI",
+      "edition": "Pixel Remaster",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff7",
+      "title": "Final Fantasy VII",
+      "edition": "Original / spätere Version auswählen",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff8",
+      "title": "Final Fantasy VIII",
+      "edition": "Remaster / Edition später wählen",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff9",
+      "title": "Final Fantasy IX",
+      "edition": "Original / spätere Version auswählen",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff10",
+      "title": "Final Fantasy X",
+      "edition": "Remaster / Edition später wählen",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff12",
+      "title": "Final Fantasy XII",
+      "edition": "Remaster / Edition später wählen",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff13",
+      "title": "Final Fantasy XIII",
+      "edition": "Original / spätere Version auswählen",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff15",
+      "title": "Final Fantasy XV",
+      "edition": "Original / spätere Version auswählen",
+      "chapterFiles": [],
+      "status": "planned"
+    },
+    {
+      "id": "ff16",
+      "title": "Final Fantasy XVI",
+      "edition": "Original / spätere Version auswählen",
+      "chapterFiles": [],
+      "status": "planned"
+    }
+  ]
+}
