@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101a2a">
+  <meta name="description" content="Inoffizieller Final-Fantasy-100%-Companion mit Kapiteln, Checklisten, lokalen Spielständen und JSON-Import.">
+  <title>Final Fantasy · 100% Companion</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Startseite">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span><strong>FINAL FANTASY</strong><small>100% Companion · Fan-Projekt</small></span>
+    </a>
+    <div class="top-actions">
+      <span id="storage-label" class="data-badge">Lokal gespeichert</span>
+      <button type="button" class="btn btn-quiet" data-action="backup" title="Fortschritt und importierte Kapitel als Datei sichern">↓ Sicherung</button>
+      <label class="btn btn-primary" for="import-input">＋ JSON importieren</label>
+      <input id="import-input" type="file" accept=".json,application/json" multiple hidden aria-label="JSON-Dateien importieren">
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Spiel- und Kapitelnavigation">
+      <div class="sidebar-top"><span class="eyebrow">BIBLIOTHEK</span><h2>Deine Spiele</h2><p>Eine Oberfläche für die Hauptteile – ohne XI und XIV.</p></div>
+      <div id="game-list" class="game-list"></div>
+      <div class="nav-divider"></div>
+      <div class="nav-title"><span class="eyebrow">KAPITEL</span><span id="chapter-count">0 Kapitel</span></div>
+      <nav id="chapter-list" class="chapter-list" aria-label="Kapitel auswählen"></nav>
+      <div class="sidebar-footer"><span>✦</span> Unabhängiger Fan-Guide. Keine Verbindung zu Square Enix.</div>
+    </aside>
+    <main id="main" class="main" tabindex="-1">
+      <div class="intro-skeleton">Lade Companion …</div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer class="footer">Persönliche Häkchen und Spielstände werden <strong>nur auf diesem Gerät und in diesem Browser</strong> gespeichert. · <a href="README.md" target="_blank" rel="noopener">Projektinfos</a></footer>
+<script defer src="assets/offline-seed.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>
