@@ -65,6 +65,24 @@
     const chapters=getChapters(state.selectedGame);
     if (chapters.length && !chapters.some(o=>o.document.chapter.id===state.selectedChapter))state.selectedChapter=chapters[0].document.chapter.id;
   };
+  const setMobileMenu = open => {
+    const inner=byId('sidebar-inner'),button=byId('mobile-menu-toggle');
+    if(!inner||!button)return;
+    inner.classList.toggle('open',open);
+    button.setAttribute('aria-expanded',String(open));
+    const icon=byId('mobile-menu-icon');if(icon)icon.textContent=open?'▲':'▼';
+  };
+  const renderMobileProgress = () => {
+    const bar=byId('mobile-progress');if(!bar)return;
+    const selected=getCurrent();
+    if(!selected){bar.hidden=true;return;}
+    const st=getStats(selected.document);
+    bar.hidden=false;
+    byId('mobile-progress-pct').textContent=st.percent+'%';
+    byId('mobile-progress-summary').textContent=st.done+' von '+st.total+' erledigt';
+    byId('mobile-progress-fill').style.width=st.percent+'%';
+    byId('mobile-progress').querySelector('[role="progressbar"]').setAttribute('aria-valuenow',String(st.percent));
+  };
   const renderSidebar = () => {
     byId('game-list').innerHTML=manifest.games.map(g => {
       const count=getChapters(g.id).length;
@@ -96,6 +114,7 @@
     return `<details class="chapter-section" data-section="${esc(s.id)}" ${openSections.has(s.id)?'open':''}><summary><span class="section-index">${String(i+1).padStart(2,'0')}</span><span class="section-title"><strong>${esc(s.title)}</strong><small>⌖ ${esc(s.location||'Spielgebiet')}</small></span><span class="section-count">${st.done} / ${st.total}</span><span class="chev">⌄</span></summary><div class="section-body"><p class="lead">${esc(s.intro||'')}</p><ol class="step-list">${steps}</ol>${tips}${later}<div class="checks-head">CHECKLISTE · ${st.total} AUFGABEN</div><div class="check-grid">${renderChecks(p,s)||'<p class="lead">Keine Aufgaben im gewählten Filter.</p>'}</div></div></details>`;
   };
   const renderMain = (restoreOpened) => {
+    renderMobileProgress();
     const current=getCurrent(); const game=findGame(state.selectedGame);
     if(!current){byId('main').innerHTML=`<div class="breadcrumbs">BIBLIOTHEK / ${esc(game?.title||'')}</div><div class="empty"><span class="eyebrow">IN VORBEREITUNG</span><h2>${esc(game?.title||'Spiel')}</h2><p>Das standardisierte Gerüst steht. Für diesen Teil ist noch kein Kapitel veröffentlicht. Importiere später passende JSON-Dateien – das Layout bleibt gleich.</p><label class="btn btn-primary" for="import-input">Kapiteldatei importieren</label></div>`;return;}
     const p=current.document,ch=p.chapter,st=getStats(p),totalGame=gameStats(p.gameId);
@@ -125,7 +144,7 @@
   const backup = () => download('ff-companion-sicherung-'+new Date().toISOString().slice(0,10)+'.json',
     {format:'ff-companion-backup',schemaVersion:VERSION,exportedAt:new Date().toISOString(),state});
   const selectGame = id => {if(!findGame(id))return;state.selectedGame=id;state.selectedChapter=getChapters(id)[0]?.document.chapter.id||'';search='';filter='all';persist();render();};
-  const selectChapter = id => {if(!getChapters(state.selectedGame).some(o=>o.document.chapter.id===id))return;state.selectedChapter=id;search='';filter='all';persist();render();byId('main').scrollIntoView({behavior:'smooth',block:'start'});};
+  const selectChapter = id => {if(!getChapters(state.selectedGame).some(o=>o.document.chapter.id===id))return;state.selectedChapter=id;search='';filter='all';persist();render();setMobileMenu(false);byId('main').scrollIntoView({behavior:'smooth',block:'start'});};
   const nextOpen = () => {
     const p=getCurrent()?.document;if(!p)return;
     const unfinished=getTasks(p).find(k=>state.progress[k]!==true);
@@ -204,6 +223,7 @@
   document.addEventListener('click',event=>{
     const btn=event.target.closest('[data-action]');if(!btn)return;
     switch(btn.dataset.action){
+      case 'mobile-menu':setMobileMenu(!byId('sidebar-inner').classList.contains('open'));break;
       case 'game':selectGame(btn.dataset.id);break;
       case 'chapter':selectChapter(btn.dataset.id);break;
       case 'backup':backup();break;
