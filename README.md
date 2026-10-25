@@ -4,6 +4,17 @@ Ein **inoffizieller, deutschsprachiger Fan-Guide** für die Einzelspieler-Hauptt
 
 > **Projektstatus:** Technisch nutzbare Version 0.1.0. Nur **FF I Pixel Remaster, Kapitel 1** ist mit tatsächlichem Guide-Inhalt befüllt. Die anderen Spiele sind als leere Platzhalter vorbereitet. Keine Behauptung, dass ein vollständiger 100%-Walkthrough bereits vorliegt.
 
+## Verbindliche Kapitelregel
+
+**Ein Kapitel = eine eigene JSON-Datei im Repository.** Es wird niemals ein vollständiges HTML-Dokument pro Kapitel angelegt. HTML (`index.html`), Design (`assets/styles.css`) und Logik (`assets/app.js`) werden von allen Kapiteln gemeinsam genutzt.
+
+- Beispiel: `data/ff1/chapter-01.json`, `data/ff1/chapter-02.json`, `data/ff5/chapter-01.json`.
+- Neue Kapitel einzeln hinzufügen und in `data/manifest.json` beim passenden Spiel unter `chapterFiles` registrieren.
+- Große Dungeons können in mehrere eigenständige, chronologisch nummerierte Teilkapitel mit jeweils **eigener JSON-Datei** aufgeteilt werden.
+- IDs bereits veröffentlichter Kapitel, Abschnitte und Aufgaben bleiben bei Überarbeitungen stabil, damit Häkchen erhalten bleiben.
+- Nur Guide-Daten sind öffentlich. Spielstände und Checkbox-Fortschritt bleiben lokal im Browser und gehören nicht in GitHub.
+- JSON-Import zum Testen möglich; **für die öffentliche Version wird eine Datei im Repository veröffentlicht**, damit alle Besucher sie automatisch bekommen.
+
 ## Funktionen
 
 - Einheitliches Layout für alle 14 geplanten Hauptteile
