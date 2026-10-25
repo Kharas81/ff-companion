@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#101a2a">
   <meta name="description" content="Inoffizieller Final-Fantasy-100%-Companion mit Kapiteln, Checklisten, lokalen Spielständen und JSON-Import.">
   <title>Final Fantasy · 100% Companion</title>
@@ -24,16 +24,26 @@
   </header>
   <div class="layout">
     <aside class="sidebar" aria-label="Spiel- und Kapitelnavigation">
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" data-action="mobile-menu" aria-controls="sidebar-inner" aria-expanded="false"><span>📑 Spiele &amp; Kapitel</span><span id="mobile-menu-icon" aria-hidden="true">▼</span></button>
+      <div class="sidebar-inner" id="sidebar-inner">
       <div class="sidebar-top"><span class="eyebrow">BIBLIOTHEK</span><h2>Deine Spiele</h2><p>Eine Oberfläche für die Hauptteile – ohne XI und XIV.</p></div>
       <div id="game-list" class="game-list"></div>
       <div class="nav-divider"></div>
       <div class="nav-title"><span class="eyebrow">KAPITEL</span><span id="chapter-count">0 Kapitel</span></div>
       <nav id="chapter-list" class="chapter-list" aria-label="Kapitel auswählen"></nav>
       <div class="sidebar-footer"><span>✦</span> Unabhängiger Fan-Guide. Keine Verbindung zu Square Enix.</div>
+      </div>
     </aside>
     <main id="main" class="main" tabindex="-1">
       <div class="intro-skeleton">Lade Companion …</div>
     </main>
+  </div>
+  <div class="mobile-bottombar" id="mobile-progress" hidden aria-label="Kapitel-Fortschritt und Weiterspielen">
+    <div class="mobile-progress-info" role="progressbar" aria-label="Kapitel-Fortschritt" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="mobile-progress-label"><strong id="mobile-progress-pct">0%</strong><span id="mobile-progress-summary">0 von 0 Aufgaben</span></div>
+      <div class="mobile-progress-track"><span id="mobile-progress-fill"></span></div>
+    </div>
+    <button type="button" class="btn btn-primary mobile-next" data-action="next-open">📍 Weiter</button>
   </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <footer class="footer">Persönliche Häkchen und Spielstände werden <strong>nur auf diesem Gerät und in diesem Browser</strong> gespeichert. · <a href="README.md" target="_blank" rel="noopener">Projektinfos</a></footer>
