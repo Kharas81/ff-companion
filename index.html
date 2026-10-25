@@ -17,6 +17,11 @@
     </a>
     <div class="top-actions">
       <span id="storage-label" class="data-badge">Lokal gespeichert</span>
+      <div class="font-controls" role="group" aria-label="Schriftgröße ändern">
+        <button type="button" class="font-button" data-action="text-smaller" aria-label="Schrift verkleinern" title="Schrift verkleinern">A−</button>
+        <span class="font-indicator" id="font-indicator" aria-live="polite">100%</span>
+        <button type="button" class="font-button" data-action="text-larger" aria-label="Schrift vergrößern" title="Schrift vergrößern">A+</button>
+      </div>
       <button type="button" class="btn btn-quiet" data-action="backup" title="Fortschritt und importierte Kapitel als Datei sichern">↓ Sicherung</button>
       <label class="btn btn-primary" for="import-input">＋ JSON importieren</label>
       <input id="import-input" type="file" accept=".json,application/json" multiple hidden aria-label="JSON-Dateien importieren">
