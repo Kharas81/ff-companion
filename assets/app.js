@@ -247,9 +247,9 @@
     if(next){selectChapter(next.chapter.id);notify('✅ Kapitel abgeschlossen – weiter mit Kapitel '+next.chapter.number+'.');}
     else{render();notify('✅ Kapitel vollständig abgeschlossen. Das nächste Kapitel ist noch nicht veröffentlicht.');}
   };
-  const backup = () => download('ff-companion-sicherung-'+new Date().toISOString().slice(0,10)+'.json',
-    {format:'ff-companion-backup',schemaVersion:VERSION,exportedAt:new Date().toISOString(),state});
-  const selectGame = id => {if(!findGame(id))return;saveActiveSlot();state.selectedGame=id;state.selectedChapter=getChapters(id)[0]?.document.chapter.id||'';search='';filter='all';state.view='guide';persist();render();setMobileMenu(false);};
+  const backup = () => {saveActiveSlot();download('ff-companion-sicherung-'+new Date().toISOString().slice(0,10)+'.json',
+    {format:'ff-companion-backup',schemaVersion:VERSION,exportedAt:new Date().toISOString(),state});};
+  const selectGame = id => {if(!findGame(id))return;saveActiveSlot();state.selectedGame=id;hydrateSlot(id,activeSlot(id));state.selectedChapter=getChapters(id)[0]?.document.chapter.id||'';search='';filter='all';state.view='guide';persist();render();setMobileMenu(false);};
   const selectChapter = id => {if(!getChapters(state.selectedGame).some(o=>o.document.chapter.id===id))return;state.selectedChapter=id;search='';filter='all';state.view='guide';persist();render();setMobileMenu(false);byId('main').scrollIntoView({behavior:'smooth',block:'start'});};
   const nextOpen = () => {
     const p=getCurrent()?.document;if(!p)return;
