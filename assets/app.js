@@ -3,6 +3,27 @@
   'use strict';
   const VERSION = 1;
   const KEY = 'ff-companion-v1';
+  const FONT_KEY = 'ff-companion-reading-size-v1';
+  const FONT_STEPS = [1,1.12,1.25,1.4];
+  let fontStep = 0;
+  try {
+    const savedFont = Number(localStorage.getItem(FONT_KEY));
+    if (Number.isInteger(savedFont) && savedFont >= 0 && savedFont < FONT_STEPS.length) fontStep = savedFont;
+  } catch (err) { /* Schriftgröße funktioniert auch ohne lokalen Speicher. */ }
+  const applyFontSize = () => {
+    document.documentElement.style.setProperty('--read-scale', String(FONT_STEPS[fontStep]));
+    const indicator = document.getElementById('font-indicator');
+    if (indicator) indicator.textContent = Math.round(FONT_STEPS[fontStep] * 100) + '%';
+    const decrease = document.querySelector('[data-action="text-smaller"]');
+    const increase = document.querySelector('[data-action="text-larger"]');
+    if (decrease) decrease.disabled = fontStep === 0;
+    if (increase) increase.disabled = fontStep === FONT_STEPS.length - 1;
+  };
+  const changeFontSize = direction => {
+    fontStep = Math.max(0,Math.min(FONT_STEPS.length-1,fontStep+direction));
+    try { localStorage.setItem(FONT_KEY,String(fontStep)); } catch(err) { /* Kein Speicherdienst verfügbar. */ }
+    applyFontSize();
+  };
   const SEED = window.FF_COMPANION_SEED;
   const byId = id => document.getElementById(id);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -129,7 +150,7 @@
       <article class="hero"><div class="hero-content"><span class="eyebrow">${esc(game.edition)} · KAPITEL ${String(ch.number).padStart(2,'0')}</span><h1>${esc(ch.title)}</h1><div class="hero-sub">${esc(ch.subtitle||'')}</div><p class="hero-description">${esc(ch.summary||'')}</p><div class="pill-row"><span class="pill gold">✦ 100%-Checkliste</span><span class="pill">${esc(ch.difficulty||'Guide')}</span><span class="pill">${ch.sections.length} Teilabschnitte</span><span class="pill">${totalGame.done}/${totalGame.total} Spiel-Aufgaben</span></div>
       <div class="progress-card"><div class="progress-head"><div><span>Kapitel-Fortschritt</span><br><strong>${st.percent}%</strong></div><span>${st.done} von ${st.total} Aufgaben erledigt</span></div><div class="progress-track" role="progressbar" aria-label="Kapitel-Fortschritt" aria-valuenow="${st.percent}" aria-valuemin="0" aria-valuemax="100"><span style="width:${st.percent}%"></span></div><div class="progress-foot"><span>Dein Fortschritt bleibt im Browser</span><span>${st.percent===100?'✓ Kapitel vollständig':'Noch '+(st.total-st.done)+' offen'}</span></div></div>
       <div class="action-row"><button type="button" class="btn btn-primary" data-action="next-open">➜ Nächste offene Aufgabe</button><button type="button" class="btn btn-quiet" data-action="backup">↓ Fortschritt sichern</button><button type="button" class="btn btn-quiet" data-action="reset">↺ Kapitel zurücksetzen</button></div></div></article>
-      <div class="section-toolbar"><div><h2>Dein Weg durchs Kapitel</h2><p>Aufgaben abhaken, Abschnitt öffnen und direkt weiterspielen.</p></div><div class="filters"><input class="search-input" id="guide-search" type="search" placeholder="Im Kapitel suchen …" value="${esc(search)}" aria-label="Im Kapitel suchen"><select class="filter-select" id="guide-filter" aria-label="Aufgaben filtern"><option value="all" ${filter==='all'?'selected':''}>Alle Aufgaben</option><option value="open" ${filter==='open'?'selected':''}>Nur offene</option>${Object.entries(CATEGORY).map(([id,name])=>`<option value="${esc(id)}" ${filter===id?'selected':''}>${esc(name)}</option>`).join('')}</select></div></div>
+      <div class="section-toolbar"><div><h2>Dein Weg durchs Kapitel</h2><p>Aufgaben abhaken, Abschnitt öffnen und direkt weiterspielen.</p></div><div class="filters"><button type="button" class="btn btn-quiet section-toggle" data-action="expand-all">Alle öffnen</button><button type="button" class="btn btn-quiet section-toggle" data-action="collapse-all">Alle schließen</button><input class="search-input" id="guide-search" type="search" placeholder="Im Kapitel suchen …" value="${esc(search)}" aria-label="Im Kapitel suchen"><select class="filter-select" id="guide-filter" aria-label="Aufgaben filtern"><option value="all" ${filter==='all'?'selected':''}>Alle Aufgaben</option><option value="open" ${filter==='open'?'selected':''}>Nur offene</option>${Object.entries(CATEGORY).map(([id,name])=>`<option value="${esc(id)}" ${filter===id?'selected':''}>${esc(name)}</option>`).join('')}</select></div></div>
       <div id="section-list">${matchSections.map(({s,i})=>renderSection(s,i,p,opened)).join('')||'<div class="empty"><p>Keine passenden Abschnitte gefunden. Suchbegriff oder Filter zurücksetzen.</p></div>'}</div>
       <div class="checkpoint"><h3>✓ Checkpoint: Kapitel ${esc(ch.number)}</h3><p>${esc(ch.checkpoint||'Abschnitt abgeschlossen.')}</p><div class="action-row">${next?`<button type="button" class="btn btn-primary" data-action="chapter" data-id="${esc(next.id)}">Weiter zu Kapitel ${esc(next.number)} →</button>`:'<span class="pill">Nächstes Kapitel folgt als JSON-Update</span>'}</div></div>
       ${sources?`<details class="sources"><summary>Quellen & Abgleich für dieses Kapitel</summary>${sources}</details>`:''}`;
@@ -143,7 +164,7 @@
   };
   const backup = () => download('ff-companion-sicherung-'+new Date().toISOString().slice(0,10)+'.json',
     {format:'ff-companion-backup',schemaVersion:VERSION,exportedAt:new Date().toISOString(),state});
-  const selectGame = id => {if(!findGame(id))return;state.selectedGame=id;state.selectedChapter=getChapters(id)[0]?.document.chapter.id||'';search='';filter='all';persist();render();};
+  const selectGame = id => {if(!findGame(id))return;state.selectedGame=id;state.selectedChapter=getChapters(id)[0]?.document.chapter.id||'';search='';filter='all';persist();render();setMobileMenu(false);};
   const selectChapter = id => {if(!getChapters(state.selectedGame).some(o=>o.document.chapter.id===id))return;state.selectedChapter=id;search='';filter='all';persist();render();setMobileMenu(false);byId('main').scrollIntoView({behavior:'smooth',block:'start'});};
   const nextOpen = () => {
     const p=getCurrent()?.document;if(!p)return;
@@ -223,6 +244,10 @@
   document.addEventListener('click',event=>{
     const btn=event.target.closest('[data-action]');if(!btn)return;
     switch(btn.dataset.action){
+      case 'text-smaller':changeFontSize(-1);break;
+      case 'text-larger':changeFontSize(1);break;
+      case 'expand-all':document.querySelectorAll('.chapter-section').forEach(d=>d.open=true);break;
+      case 'collapse-all':document.querySelectorAll('.chapter-section').forEach(d=>d.open=false);break;
       case 'mobile-menu':setMobileMenu(!byId('sidebar-inner').classList.contains('open'));break;
       case 'game':selectGame(btn.dataset.id);break;
       case 'chapter':selectChapter(btn.dataset.id);break;
@@ -260,5 +285,6 @@
     const input=byId('guide-search');input.focus();input.setSelectionRange(pos,pos);
   });
   try{for(const p of SEED.chapters)register(p,'seed');for(const p of state.imports)register(p,'import');}catch(e){console.error('Startdaten:',e);state.imports=[];}
+  applyFontSize();
   render();loadPublished();
 })();
