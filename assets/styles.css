@@ -115,3 +115,40 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 }
 @media(min-width:751px){.font-controls{margin-right:4px}}
 @media print{.font-controls,.section-toggle{display:none!important}}
+
+
+/* Spieleverwaltung · Standortmarker · Verpassbares · Bestiarium (2026-10) */
+.bestiary-nav{width:calc(100% - 10px);margin:12px 5px;text-align:left;justify-content:flex-start;font-size:calc(15px * var(--read-scale,1))}
+.bestiary-nav.active{color:var(--gold);border-color:var(--gold);background:#e9d09615}
+.save-title{margin-top:15px;padding-bottom:5px}
+.save-controls{display:grid;gap:8px;padding:10px 12px}
+.save-label{font-size:calc(13px * var(--read-scale,1));color:var(--muted)}
+#save-selector{width:100%;min-height:48px;padding:8px 12px;background:#17263d;color:var(--text);border:1px solid #526682;border-radius:10px;font-size:calc(15px * var(--read-scale,1))}
+.save-hint{padding:0 13px!important;color:var(--muted);line-height:1.55;font-size:calc(13px * var(--read-scale,1))!important}
+.position-note{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:9px;padding:12px 14px;margin-top:14px;background:#1b3b45;border:1px solid #6ec7bc77;border-radius:11px;color:#d2f5ef;font-size:calc(15px * var(--read-scale,1))}
+.position-note strong{color:#b9ffdd}
+.bookmark-row{display:flex;justify-content:flex-end;padding:4px 0 16px}
+.btn-bookmark{white-space:normal;text-align:center}
+.btn-bookmark.current{border-color:#75d6b2;background:#183f3d;color:#b9ffdd}
+.callout.missable{background:#502d36;border:2px solid #f6a6a9;color:#ffe2e4;font-weight:600}
+.callout.missable strong{color:#ffb0b5;font-size:calc(13px * var(--read-scale,1))}
+.category.missable{border-color:#e8a1a1;color:#ffd1d1;background:#672b3460;margin-right:4px}
+.finish-chapter{background:#74dbb0!important;border-color:#74dbb0!important;color:#0a3026!important}
+.finish-chapter:hover{background:#a3f2cd!important}
+.bestiary-list{display:grid;gap:12px;margin:16px 0 26px}
+.bestiary-card{padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.bestiary-card .task{margin-bottom:8px}
+.bestiary-meta{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}
+.bestiary-source{background:none;border:0;padding:8px 0;color:var(--blue);font-size:calc(14px * var(--read-scale,1));text-align:left;text-decoration:underline}
+.bestiary-summary{font-size:calc(16px * var(--read-scale,1));color:var(--muted);line-height:1.65}
+.bestiary-filters{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.bestiary-filters .search-input,.bestiary-filters .filter-select{max-width:none;flex:1 1 180px}
+@media(max-width:750px){
+ .save-controls{padding:12px}
+ .save-hint{padding:3px 13px!important}
+ .bestiary-nav{margin:10px 5px;min-height:50px}
+ .position-note{font-size:calc(16px * var(--read-scale,1))}
+ .finish-chapter{width:100%;min-height:54px;font-size:calc(16px * var(--read-scale,1))}
+ .bestiary-card{padding:15px}
+}
+@media print{.bookmark-row,.position-note .btn,.save-controls,.bestiary-nav{display:none!important}}
