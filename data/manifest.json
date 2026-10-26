@@ -14,7 +14,13 @@
         "data/ff1/chapter-04.json",
         "data/ff1/chapter-05.json"
       ],
-      "status": "in-progress"
+      "status": "in-progress",
+      "mechanics": {
+        "supportsSteal": false,
+        "hasMissables": false,
+        "hasBestiary": true,
+        "hasChests": true
+      }
     },
     {
       "id": "ff2-pr",
