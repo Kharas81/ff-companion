@@ -1,0 +1,372 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-05",
+    "number": 5,
+    "title": "Die Mystischen Schatzkammern & der Zwergenberg",
+    "subtitle": "Alle früheren Schlösser nachholen · Nitropulver · Kanal nach Melmond",
+    "difficulty": "Mittel",
+    "summary": "Nutze den Mystischen Schlüssel für die gesperrten Truhen in fünf frühen Gebieten. Sichere das Nitropulver, plündere die zehn Truhen von Mount Duergar und lass Nerrick den Kanal sprengen. Reise anschließend bis Melmond.",
+    "checkpoint": "Fünf frühere Schatzorte mit dem Schlüssel erledigt, Nitropulver abgegeben, 10 Truhen auf Mount Duergar geöffnet, Kanal freigesprengt und Melmond erreicht.",
+    "sections": [
+      {
+        "id": "cornelia",
+        "title": "1 · Schloss Cornelia: sechs verschlossene Truhen",
+        "location": "Schloss Cornelia · Schatzräume im Erdgeschoss",
+        "intro": "Im Schloss liegen sechs Truhen hinter zwei bislang gesperrten Türen. Das Nitropulver ist für die nächste Etappe zwingend notwendig.",
+        "steps": [
+          "Kehre per Schiff und Landweg nach Cornelia zurück. Betritt das Schloss und gehe zu den beiden verschlossenen Schatzräumen im Norden.",
+          "Öffne beide Türen mit dem Mystischen Schlüssel. Räume alle sechs Truhen aus.",
+          "Kontrolliere besonders die Truhe mit Nitropulver (Nitro Powder). Ohne diesen Gegenstand kann Nerrick später den Kanal nicht sprengen."
+        ],
+        "checks": [
+          {
+            "id": "cor-01",
+            "category": "chest",
+            "title": "Schlosstruhe 1/6 – Eisrüstung / Eisenrüstung (Iron Armor)",
+            "detail": "Beide Räume im Schloss-Erdgeschoss; Gegenstandsname in deutscher Version prüfen."
+          },
+          {
+            "id": "cor-02",
+            "category": "chest",
+            "title": "Schlosstruhe 2/6 – Zelt",
+            "detail": "Eine der sechs verschlossenen Truhen."
+          },
+          {
+            "id": "cor-03",
+            "category": "chest",
+            "title": "Schlosstruhe 3/6 – Nitropulver",
+            "detail": "Pflichtgegenstand für Nerrick."
+          },
+          {
+            "id": "cor-04",
+            "category": "chest",
+            "title": "Schlosstruhe 4/6 – Hütte",
+            "detail": "Eine der sechs verschlossenen Truhen."
+          },
+          {
+            "id": "cor-05",
+            "category": "chest",
+            "title": "Schlosstruhe 5/6 – Säbel",
+            "detail": "Eine der sechs verschlossenen Truhen."
+          },
+          {
+            "id": "cor-06",
+            "category": "chest",
+            "title": "Schlosstruhe 6/6 – Mithrildolch",
+            "detail": "Eine der sechs verschlossenen Truhen."
+          },
+          {
+            "id": "nitro",
+            "category": "key-item",
+            "title": "Nitropulver im Inventar überprüft",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Die genaue Bezeichnung einiger Rüstungen hängt von der Sprache ab; orientiere dich an der Anzahl von sechs Truhen und dem Nitropulver."
+        ],
+        "later": []
+      },
+      {
+        "id": "chaos-return",
+        "title": "2 · Chaos-Schrein: östliche Schatzkammern",
+        "location": "Chaos-Schrein · Nordost und Südost",
+        "intro": "Die drei beim Garland-Besuch verschlossenen Truhen sind jetzt erreichbar.",
+        "steps": [
+          "Reise nördlich von Cornelia zum Chaos-Schrein zurück. Mit dem Mystischen Schlüssel kannst du jetzt die beiden östlichen Türen öffnen.",
+          "Räume die beiden Räume aus; die drei Truhen enthalten eine Waffe gegen Werwölfe, eine Goldnadel und eine Runenklinge.",
+          "Einige Kämpfe in den versiegelten Räumen sind stärker als die frühen Zufallsgegner. Bei Bedarf vorher heilen."
+        ],
+        "checks": [
+          {
+            "id": "chaos-01",
+            "category": "chest",
+            "title": "Chaos-Schrein-Truhe 4/6 – Werwolfkiller (Werebuster)",
+            "detail": "Mystische Schlüsseltür."
+          },
+          {
+            "id": "chaos-02",
+            "category": "chest",
+            "title": "Chaos-Schrein-Truhe 5/6 – Goldnadel",
+            "detail": "Mystische Schlüsseltür."
+          },
+          {
+            "id": "chaos-03",
+            "category": "chest",
+            "title": "Chaos-Schrein-Truhe 6/6 – Runenklinge",
+            "detail": "Mystische Schlüsseltür."
+          }
+        ],
+        "tips": [
+          "Dies sind bewusst nur die drei nachträglichen Truhen. Die drei westlichen wurden in Kapitel 1 gezählt."
+        ],
+        "later": []
+      },
+      {
+        "id": "elfcastle",
+        "title": "3 · Elfenschloss: vier Truhen",
+        "location": "Elfenschloss · verschlossener Schatzraum",
+        "intro": "Der Elfenprinz ist wieder wach und seine vier Schatztruhen sind jetzt zugänglich.",
+        "steps": [
+          "Fahre zurück nach Elfheim und betrete das Elfenschloss.",
+          "Suche die verschlossene Schatzkammer; je nach Weg ist sie entlang des äußeren Schlossrands erreichbar.",
+          "Öffne alle vier Truhen. Der Raum enthält unter anderem Mithrilhammer, Bronzehandschuhe und Gil."
+        ],
+        "checks": [
+          {
+            "id": "elf-01",
+            "category": "chest",
+            "title": "Elfenschloss-Truhe 1/4 – Mithrilhammer",
+            "detail": "Verschlossene Schatzkammer."
+          },
+          {
+            "id": "elf-02",
+            "category": "chest",
+            "title": "Elfenschloss-Truhe 2/4 – Bronzehandschuhe",
+            "detail": "Verschlossene Schatzkammer."
+          },
+          {
+            "id": "elf-03",
+            "category": "chest",
+            "title": "Elfenschloss-Truhe 3/4 – 730 Gil",
+            "detail": "Verschlossene Schatzkammer."
+          },
+          {
+            "id": "elf-04",
+            "category": "chest",
+            "title": "Elfenschloss-Truhe 4/4 – vierte Schatztruhe geöffnet",
+            "detail": "Gegenstand vor Ort mit der Spielanzeige abgleichen."
+          }
+        ],
+        "tips": [
+          "Zähle vor Ort genau vier Truhen. Ältere Versions-Guides nennen teils abweichende Gegenstandslisten."
+        ],
+        "later": []
+      },
+      {
+        "id": "western-return",
+        "title": "4 · Westliche Festung: drei Schatzwachen",
+        "location": "Westliche Festung · verschlossener Raum",
+        "intro": "Hier liegen drei Truhen, vor denen schwere Kämpfe möglich sind.",
+        "steps": [
+          "Kehre zur Westlichen Festung zurück. Öffne die verschlossene Tür auf der Schatzseite.",
+          "Öffne die drei Truhen – Falchion, Kraftstab (Power Staff) und Stahlhandschuhe.",
+          "Heile nach jedem Kampf. Es können zusätzliche Gegner auftauchen, obwohl Astos bereits besiegt ist."
+        ],
+        "checks": [
+          {
+            "id": "western-01",
+            "category": "chest",
+            "title": "Westliche-Festung-Truhe 1/3 – Falchion",
+            "detail": ""
+          },
+          {
+            "id": "western-02",
+            "category": "chest",
+            "title": "Westliche-Festung-Truhe 2/3 – Kraftstab (Power Staff)",
+            "detail": ""
+          },
+          {
+            "id": "western-03",
+            "category": "chest",
+            "title": "Westliche-Festung-Truhe 3/3 – Stahlhandschuhe",
+            "detail": ""
+          },
+          {
+            "id": "western-guard",
+            "category": "preparation",
+            "title": "Schatzwachen besiegt und Gruppe wieder geheilt",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Die Schatzwachen sind keine erneute Astos-Begegnung."
+        ],
+        "later": []
+      },
+      {
+        "id": "marsh-return",
+        "title": "5 · Sumpfhöhle: letzte drei Truhen",
+        "location": "Sumpfhöhle B3 · bisher verschlossene unterste Raumreihe",
+        "intro": "Im vierten Raumkorridor von B3 lagen drei bislang unerreichbare Truhen.",
+        "steps": [
+          "Bereite dich in Elfheim auf einen weiteren langen Dungeon-Besuch vor. Nimm Heiltränke, Gegengifte und Phönixfedern mit.",
+          "Gehe zurück in die Sumpfhöhle, über B1 und B2 Süd auf B3.",
+          "Öffne die drei bisher gesperrten Truhen hinter den Mystischen Türen: Mithrildolch, 1.020 Gil und Silberarmreif.",
+          "Bewachte Truhen können erneut Piscodemon-Gruppen auslösen; unterschätze sie nicht.",
+          "Nach dem Ausräumen kannst du die Sumpfhöhle endgültig als truhenvollständig abhaken."
+        ],
+        "checks": [
+          {
+            "id": "marsh-key-01",
+            "category": "chest",
+            "title": "Sumpfhöhle-Truhe 16/18 – Mithrildolch",
+            "detail": "B3, verschlossener Raum."
+          },
+          {
+            "id": "marsh-key-02",
+            "category": "chest",
+            "title": "Sumpfhöhle-Truhe 17/18 – 1.020 Gil",
+            "detail": "B3, verschlossener Raum."
+          },
+          {
+            "id": "marsh-key-03",
+            "category": "chest",
+            "title": "Sumpfhöhle-Truhe 18/18 – Silberarmreif",
+            "detail": "B3, verschlossener Raum."
+          },
+          {
+            "id": "marsh-all",
+            "category": "story",
+            "title": "Sumpfhöhle vollständig ausgeräumt (18/18 Truhen)",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Tipp: Nach Kapitel 5 sollten frühere Schatzkammern vollständig sein."
+        ],
+        "later": []
+      },
+      {
+        "id": "duergar",
+        "title": "6 · Mount Duergar: alle zehn Truhen",
+        "location": "Zwergenberg Mount Duergar · Haupthöhle",
+        "intro": "Die Zwerge leben westlich von Cornelia. Nerrick kann mit dem Nitropulver den Kanal öffnen.",
+        "steps": [
+          "Segle nordwestlich zum passenden Hafen und gehe zu Fuß südwestlich in die Berghöhle Mount Duergar.",
+          "Gehe im Eingangsbereich in den nördlichen Raum: zwei Truhen mit 450 und 575 Gil.",
+          "Gehe anschließend zum großen Schatzraum im Südwesten. Dort stehen acht weitere Truhen mit Zelt, Großhelm, Wyrmkiller, Äther, Trank, Mithrilpanzer, 575 Gil und Hütte.",
+          "Suche nach Nerrick, dem Zwerg mit dem grünen Hut. Überreiche ihm das Nitropulver.",
+          "Nerrick sprengt einen Durchgang zwischen Binnenmeer und äußerem Ozean. Kehre anschließend zum Schiff zurück."
+        ],
+        "checks": [
+          {
+            "id": "duergar-01",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 1/10 – 450 Gil",
+            "detail": ""
+          },
+          {
+            "id": "duergar-02",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 2/10 – 575 Gil",
+            "detail": ""
+          },
+          {
+            "id": "duergar-03",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 3/10 – Zelt",
+            "detail": ""
+          },
+          {
+            "id": "duergar-04",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 4/10 – Großhelm",
+            "detail": ""
+          },
+          {
+            "id": "duergar-05",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 5/10 – Wyrmkiller",
+            "detail": ""
+          },
+          {
+            "id": "duergar-06",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 6/10 – Äther",
+            "detail": ""
+          },
+          {
+            "id": "duergar-07",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 7/10 – Trank",
+            "detail": ""
+          },
+          {
+            "id": "duergar-08",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 8/10 – Mithrilpanzer",
+            "detail": ""
+          },
+          {
+            "id": "duergar-09",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 9/10 – 575 Gil",
+            "detail": ""
+          },
+          {
+            "id": "duergar-10",
+            "category": "chest",
+            "title": "Zwergenberg-Truhe 10/10 – Hütte",
+            "detail": ""
+          },
+          {
+            "id": "nerick",
+            "category": "story",
+            "title": "Nitropulver bei Nerrick abgegeben",
+            "detail": ""
+          },
+          {
+            "id": "canal",
+            "category": "story",
+            "title": "Kanal freigesprengt und Schiffsdurchfahrt geöffnet",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Wyrmkiller kann je nach Gegner eine deutliche Verbesserung gegenüber älteren Waffen sein."
+        ],
+        "later": []
+      },
+      {
+        "id": "melmond",
+        "title": "7 · Fahrt nach Melmond",
+        "location": "Kanal → äußeres Meer → Melmond",
+        "intro": "Mit dem offenen Kanal erreichst du die westlichen Seewege und die schwerer werdenden Gebiete rund um Melmond.",
+        "steps": [
+          "Steige wieder ins Schiff, fahre durch den frisch geöffneten Kanal und folge der Küste in Richtung Melmond.",
+          "Lege an, gehe in die Stadt und sprich mit Bewohnern über das verfallende Land und die Höhle der Erde.",
+          "Besorge Goldnadeln gegen Versteinerung, Heilmittel und nach Möglichkeit neue Waffen und Zauber.",
+          "Die Höhle der Erde und ihre Bosse werden im nächsten ausführlichen Kapitel behandelt; wir betreten sie hier noch nicht."
+        ],
+        "checks": [
+          {
+            "id": "melmond-arrive",
+            "category": "story",
+            "title": "Melmond erreicht",
+            "detail": ""
+          },
+          {
+            "id": "melmond-talk",
+            "category": "story",
+            "title": "Bewohner nach Erdkristall und Verfall befragt",
+            "detail": ""
+          },
+          {
+            "id": "melmond-prep",
+            "category": "preparation",
+            "title": "Vorräte für spätere Erdhöhle geprüft",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Melmond besitzt kein normales Gasthaus in einigen Versionen. Plane die Heilung daher umsichtig; nutze verfügbare Heilzauber und Gegenstände."
+        ],
+        "later": []
+      }
+    ],
+    "sources": [
+      {
+        "label": "Walkthrough: Elfheim, Astos und Schlüssel",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/elfheim-and-marsh-cave"
+      },
+      {
+        "label": "Truhenliste FF1 Pixel Remaster",
+        "url": "https://ff1pixelwalkthrough.com/chests/"
+      }
+    ]
+  }
+}
