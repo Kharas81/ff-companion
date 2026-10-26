@@ -210,7 +210,7 @@
           {
             "id": "mob006",
             "category": "bestiary",
-            "title": "#006 Black Widow",
+            "title": "#006 Schwarze Witwe",
             "detail": "Chaos-Schrein.",
             "priority": "normal",
             "available": "now",
@@ -220,7 +220,7 @@
           {
             "id": "mob007",
             "category": "bestiary",
-            "title": "#007 Gigas Worm",
+            "title": "#007 Gigas-Wurm",
             "detail": "Chaos-Schrein.",
             "priority": "normal",
             "available": "now",
@@ -362,7 +362,7 @@
         "location": "Cornelia",
         "mustBuy": [
           {
-            "item": "Heilzauber Vita (Cure)",
+            "item": "Vita (50 Gil)",
             "when": "wenn Weißmagier in der Gruppe",
             "reason": "Erleichtert die ersten Dungeons deutlich",
             "classes": [
@@ -373,7 +373,7 @@
         ],
         "optional": [
           {
-            "item": "Feuer (Fire)",
+            "item": "Feuer (50 Gil)",
             "when": "wenn Schwarzmagier in der Gruppe",
             "reason": "Solider früher Angriffszauber",
             "classes": [
@@ -396,6 +396,185 @@
           }
         ]
       }
-    ]
+    ],
+    "shopCatalog": {
+      "source": "Vom Spieler direkt aus FF I Pixel Remaster (deutsche Spielversion) am 26.10.2026 abgelesen",
+      "currency": "Gil",
+      "weapons": [
+        {
+          "id": "nunchaku",
+          "name": "Nunchaku",
+          "price": 8,
+          "attack": 12
+        },
+        {
+          "id": "knife",
+          "name": "Messer",
+          "price": 4,
+          "attack": 5,
+          "accuracy": 10
+        },
+        {
+          "id": "staff",
+          "name": "Stab",
+          "price": 4,
+          "attack": 6
+        },
+        {
+          "id": "rapier",
+          "name": "Rapier",
+          "price": 8,
+          "attack": 9,
+          "accuracy": 5
+        },
+        {
+          "id": "hammer",
+          "name": "Hammer",
+          "price": 8,
+          "attack": 9
+        }
+      ],
+      "armor": [
+        {
+          "id": "clothes",
+          "name": "Reisekluft",
+          "price": 8,
+          "defense": 1,
+          "weight": 2
+        },
+        {
+          "id": "leather-armor",
+          "name": "Lederharnisch",
+          "price": 40,
+          "defense": 4,
+          "weight": 8
+        },
+        {
+          "id": "chain-mail",
+          "name": "Kettenhemd",
+          "price": 65,
+          "defense": 15,
+          "weight": 15
+        }
+      ],
+      "magic": [
+        {
+          "id": "cure",
+          "name": "Vita",
+          "school": "white",
+          "level": 1,
+          "price": 50,
+          "effect": "Heilt die LP eines Gefährten geringfügig."
+        },
+        {
+          "id": "dia",
+          "name": "Dialux",
+          "school": "white",
+          "level": 1,
+          "price": 50,
+          "effect": "Führt einen Flächenangriff gegen Untote aus."
+        },
+        {
+          "id": "protect",
+          "name": "Protes",
+          "school": "white",
+          "level": 1,
+          "price": 50,
+          "effect": "Steigert die Abwehr eines Gefährten."
+        },
+        {
+          "id": "blink",
+          "name": "Blink",
+          "school": "white",
+          "level": 1,
+          "price": 50,
+          "effect": "Steigert die eigene Ausweichfähigkeit."
+        },
+        {
+          "id": "fire",
+          "name": "Feuer",
+          "school": "black",
+          "level": 1,
+          "price": 50,
+          "effect": "Erteilt einem Gegner Feuerschaden."
+        },
+        {
+          "id": "sleep",
+          "name": "Schlaf",
+          "school": "black",
+          "level": 1,
+          "price": 50,
+          "effect": "Schickt alle Gegner in den Schlaf."
+        },
+        {
+          "id": "focus",
+          "name": "Fokus",
+          "school": "black",
+          "level": 1,
+          "price": 50,
+          "effect": "Senkt die Ausweichfähigkeit eines Gegners."
+        },
+        {
+          "id": "thunder",
+          "name": "Blitz",
+          "school": "black",
+          "level": 1,
+          "price": 50,
+          "effect": null,
+          "effectStatus": "unconfirmed"
+        }
+      ]
+    },
+    "localizedEnemyNames": {
+      "source": "Vom Spieler direkt in der deutschen Pixel-Remaster-Version beobachtet; noch nicht alle Einträge eindeutig einer Bestiarium-Nummer zugeordnet",
+      "confirmedLabels": [
+        "Goblin",
+        "Schwarze Witwe",
+        "Gigas-Wurm",
+        "Zombie",
+        "Isegrim",
+        "Wolf",
+        "Skeleton",
+        "Garland"
+      ],
+      "mappings": [
+        {
+          "id": "mob001",
+          "name": "Goblin"
+        },
+        {
+          "id": "mob003",
+          "name": "Wolf"
+        },
+        {
+          "id": "mob005",
+          "name": "Skeleton"
+        },
+        {
+          "id": "mob006",
+          "name": "Schwarze Witwe"
+        },
+        {
+          "id": "mob007",
+          "name": "Gigas-Wurm"
+        },
+        {
+          "id": "mob010",
+          "name": "Zombie"
+        },
+        {
+          "id": "mob012",
+          "name": "Garland"
+        }
+      ],
+      "pending": [
+        {
+          "name": "Isegrim",
+          "englishName": null,
+          "bestiaryNumber": null,
+          "evidence": "Vom Spieler bereitgestelltes Bild eines violetten wolfartigen Monsters"
+        }
+      ]
+    }
   }
 }
