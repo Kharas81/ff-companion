@@ -1,0 +1,233 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-02",
+    "number": 2,
+    "title": "Matoya, Pravoka & das Piratenschiff",
+    "subtitle": "Von Cornelia nach Pravoka · Das erste Schiff",
+    "difficulty": "Einsteiger bis Mittel",
+    "summary": "Überquere die neue Brücke, räume Matoyas Höhle aus, befreie Pravoka von Bikkes Piraten und segle Richtung Elfheim. Drei neue Truhen und sieben neue Bestiarium-Einträge.",
+    "checkpoint": "Matoya gesprochen, alle 3 Höhlentruhen geöffnet, Piraten besiegt, Schiff erhalten und südwestlichen Hafen vor Elfheim erreicht.",
+    "sections": [
+      {
+        "id": "bridge",
+        "title": "1 · Nordbrücke & erste Reise",
+        "location": "Cornelia → Nordbrücke → nordwestliche Landzunge",
+        "intro": "Nach Sarahs Rettung hat der König die Brücke reparieren lassen. Auf der anderen Seite öffnet sich die nächste Region.",
+        "steps": [
+          "Verlasse Cornelia und überquere die neue Brücke im Norden. Prüfe, ob deine Gruppe geheilt ist und ausreichend Tränke besitzt.",
+          "Folge der Landmasse zunächst nordwestwärts; Matoyas Höhle ist ein lohnenswerter Abstecher vor Pravoka.",
+          "Beachte: #013 bis #015 (Cobra, Ogre und Ogre Chief) können schon auf den Wegen auftauchen. Wir haken sie übersichtlich im nächsten Kapitel bei Elfheim ab."
+        ],
+        "checks": [
+          {
+            "id": "bridge-cross",
+            "category": "story",
+            "title": "Nordbrücke überquert",
+            "detail": ""
+          },
+          {
+            "id": "supplies",
+            "category": "preparation",
+            "title": "Heiltränke und Ausrüstung für die Reise geprüft",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Du musst nicht jede seltene Begegnung sofort erzwingen. Die Monsterlisten haben feste Nummern, der Reiseweg bleibt flexibel."
+        ],
+        "later": []
+      },
+      {
+        "id": "matoya",
+        "title": "2 · Matoyas Höhle: alle Schätze",
+        "location": "Matoyas Höhle nordwestlich von Cornelia",
+        "intro": "Die Hexe Matoya hat ihr Kristallauge verloren. Die Höhle besitzt drei sofort erreichbare Schatztruhen.",
+        "steps": [
+          "Folge nördlich der Brücke dem Weg um die Gewässer bis zum Höhleneingang bei den Bergen.",
+          "Sprich mit Matoya. Sie erklärt, dass ihr das Kristallauge (Crystal Eye) fehlt; du findest es erst nach einem späteren Bosskampf.",
+          "Gehe zu den drei Truhen auf der linken Seite des Höhlenraums: von oben nach unten Trank, Trank und Gegengift.",
+          "Verlasse die Höhle anschließend; die Geschichte mit Matoya führen wir in Kapitel 4 fort."
+        ],
+        "checks": [
+          {
+            "id": "matoya-talk",
+            "category": "story",
+            "title": "Mit Matoya über das verlorene Kristallauge gesprochen",
+            "detail": ""
+          },
+          {
+            "id": "matoya-chest-01",
+            "category": "chest",
+            "title": "Truhe 1/3 – Trank",
+            "detail": "Matoyas Höhle, linker Raum, oben."
+          },
+          {
+            "id": "matoya-chest-02",
+            "category": "chest",
+            "title": "Truhe 2/3 – Trank",
+            "detail": "Matoyas Höhle, links, mittlere Truhe."
+          },
+          {
+            "id": "matoya-chest-03",
+            "category": "chest",
+            "title": "Truhe 3/3 – Gegengift (Antidote)",
+            "detail": "Matoyas Höhle, links, untere Truhe."
+          }
+        ],
+        "tips": [
+          "Matoyas drei Truhen sind nicht verschlossen. Öffne sie schon beim ersten Besuch."
+        ],
+        "later": [
+          "Kristallauge für Matoya nach dem Sieg über Astos in Kapitel 4 zurückbringen."
+        ]
+      },
+      {
+        "id": "road",
+        "title": "3 · Der Weg nach Pravoka",
+        "location": "Weltkarte, östlicher Küstenweg",
+        "intro": "Auf dem langen Marsch zur Hafenstadt triffst du auf zähere Monster.",
+        "steps": [
+          "Gehe zurück in Richtung der südlichen Bergkette und folge dem langen Landweg nach Osten bis Pravoka.",
+          "Sammle bei Bedarf Erfahrung. Nutze Feuer- und Eiszauber situationsabhängig; Heilung ist wichtiger als ein perfektes Level.",
+          "Besiege nach Möglichkeit eine Echse (Lizard) für Bestiarium #016; sie erscheint auf dem Weg nach Pravoka.",
+          "Spätestens vor dem Piratenkampf in Pravoka im Gasthaus ausruhen."
+        ],
+        "checks": [
+          {
+            "id": "pravoka-arrived",
+            "category": "story",
+            "title": "Pravoka erreicht",
+            "detail": ""
+          },
+          {
+            "id": "monster016",
+            "category": "bestiary",
+            "title": "#016 Lizard (Echse)",
+            "detail": "Weltkarte rund um Pravoka."
+          }
+        ],
+        "tips": [
+          "Mit einigen Ersatztränken und mindestens einem Heilspruch kämpfst du deutlich entspannter."
+        ],
+        "later": []
+      },
+      {
+        "id": "pravoka",
+        "title": "4 · Pravoka: Läden und Piraten",
+        "location": "Pravoka · Gasthaus, Geschäfte und Nordwest-Ecke",
+        "intro": "Die Einwohner werden von einer Piratenbande terrorisiert. Das sind neun normale Gegner in einem Pflichtkampf.",
+        "steps": [
+          "Besuche Gasthaus und Geschäfte. Für einen Krieger können Streitaxt oder Breitschwert nützlich sein; prüfe Werte vor dem Kauf.",
+          "Mit einem Schwarzmagier sind Eis (Blizzard) und Stärkung/Temper sinnvolle Zauber; bei Weißmagiern je nach Gruppenzusammenstellung Heilmöglichkeiten ergänzen.",
+          "Suche Kapitän Bikke im Nordwesten der Stadt. Beim Gespräch startet ein Kampf mit neun Piraten.",
+          "Piraten besitzen je 24 HP; konzentriere Angriffe auf einzelne Ziele. Es ist kein schwerer Boss mit vielen Zaubern, aber die Gegnerzahl kann Schaden aufsummieren.",
+          "Nach dem Sieg übergibt Bikke das Schiff. Ruhe dich vor der ersten Seefahrt nochmals aus."
+        ],
+        "checks": [
+          {
+            "id": "pravoka-gear",
+            "category": "preparation",
+            "title": "Ausrüstung, Zauber und Vorräte in Pravoka überprüft",
+            "detail": ""
+          },
+          {
+            "id": "pirates",
+            "category": "boss",
+            "title": "Bikkes neun Piraten besiegt",
+            "detail": "Je 24 HP, hauptsächlich physische Angriffe."
+          },
+          {
+            "id": "monster017",
+            "category": "bestiary",
+            "title": "#017 Pirate",
+            "detail": "Pflichtkampf mit neun Piraten bei Bikke in Pravoka."
+          },
+          {
+            "id": "ship",
+            "category": "key-item",
+            "title": "Schiff erhalten",
+            "detail": "Sprich Bikke nach dem Kampf an bzw. bestätige die Übergabe."
+          }
+        ],
+        "tips": [
+          "Geldspar-Tipp: bessere Rüstung und verlässliche Heilung sind wichtiger als sämtliche Shopangebote auf einmal."
+        ],
+        "later": []
+      },
+      {
+        "id": "sailing",
+        "title": "5 · Seefahrt und erster Ankerplatz",
+        "location": "Meer zwischen Pravoka und Elfheim",
+        "intro": "Mit dem Schiff erreichst du neue Küsten, aber auf See erscheinen zusätzliche Bestiarium-Gegner.",
+        "steps": [
+          "Verlasse Pravoka, betrete das Schiff am Hafen und segle südwestwärts.",
+          "Kämpfe unterwegs gegen die fünf Meerestypen: Sahagin, Sahagin Chief, Buccaneer, Shark und Bigeyes.",
+          "Blitzmagie ist bei zahlreichen Seegegnern wirksam. Halte Heiltränke bereit und kehre bei erschöpften Ressourcen in einen Hafen zurück.",
+          "Optional: Auf dem Schiff gibt es das versteckte 15-Puzzle-Minispiel. Die genaue Tastenkombination hängt von deiner Version und Steuerung ab; auf Switch ist es keine Trophäenpflicht.",
+          "Suche südwestlich den Hafen nahe Elfheim, lege an und gehe an Land. Wir erkunden die Stadt im nächsten Kapitel."
+        ],
+        "checks": [
+          {
+            "id": "monster018",
+            "category": "bestiary",
+            "title": "#018 Sahagin",
+            "detail": "Zufallskämpfe auf See."
+          },
+          {
+            "id": "monster019",
+            "category": "bestiary",
+            "title": "#019 Sahagin Chief",
+            "detail": "Zufallskämpfe auf See."
+          },
+          {
+            "id": "monster020",
+            "category": "bestiary",
+            "title": "#020 Buccaneer",
+            "detail": "Zufallskämpfe auf See."
+          },
+          {
+            "id": "monster021",
+            "category": "bestiary",
+            "title": "#021 Shark",
+            "detail": "Zufallskämpfe auf See."
+          },
+          {
+            "id": "monster022",
+            "category": "bestiary",
+            "title": "#022 Bigeyes",
+            "detail": "Zufallskämpfe auf See."
+          },
+          {
+            "id": "sail-puzzle",
+            "category": "misc",
+            "title": "Optionales 15-Puzzle auf dem Schiff ausprobiert",
+            "detail": "Reines Bonusziel; nur anhaken, wenn du das Minispiel gespielt hast."
+          },
+          {
+            "id": "elfheim-port",
+            "category": "story",
+            "title": "Hafen vor Elfheim gefunden und angelegt",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Der 15-Puzzle-Eintrag ist optional und keine Voraussetzung für die Geschichte. Bei Bedarf kannst du ihn später erledigen."
+        ],
+        "later": []
+      }
+    ],
+    "sources": [
+      {
+        "label": "FF I Pixel Remaster – Matoya und Pravoka (Vorxu)",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/pravoka-and-matoyas-cave"
+      },
+      {
+        "label": "Bestiarium & Fundorte (Pro Game Guides)",
+        "url": "https://progameguides.com/final-fantasy/final-fantasy-1-pixel-remaster-bestiary-locations/"
+      }
+    ]
+  }
+}
