@@ -19,26 +19,68 @@
         "steps": [
           "Verlasse Cornelia und überquere die neue Brücke im Norden. Prüfe, ob deine Gruppe geheilt ist und ausreichend Tränke besitzt.",
           "Folge der Landmasse zunächst nordwestwärts; Matoyas Höhle ist ein lohnenswerter Abstecher vor Pravoka.",
-          "Beachte: #013 bis #015 (Cobra, Ogre und Ogre Chief) können schon auf den Wegen auftauchen. Wir haken sie übersichtlich im nächsten Kapitel bei Elfheim ab."
+          "Auf dem Weg nach Pravoka sind auch Cobra (#013), Ogre (#014) und Ogre Chief (#015) anzutreffen. Sie erscheinen schon hier in der Checkliste, werden aber nur einmal im gemeinsamen Bestiarium gezählt."
         ],
         "checks": [
           {
             "id": "bridge-cross",
             "category": "story",
             "title": "Nordbrücke überquert",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "supplies",
             "category": "preparation",
             "title": "Heiltränke und Ausrüstung für die Reise geprüft",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "early-cobra",
+            "category": "bestiary",
+            "title": "#013 Cobra",
+            "detail": "Bereits auf der Weltkarte zwischen Brücke und Elfheim/Pravoka möglich; zählt über die gemeinsame Bestiarium-ID aus Kapitel 3.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-03/elfcastle/monster013"
+          },
+          {
+            "id": "early-ogre",
+            "category": "bestiary",
+            "title": "#014 Ogre",
+            "detail": "Schon auf dem Weg nach Pravoka anzutreffen; synchron mit Kapitel 3.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-03/elfcastle/monster014"
+          },
+          {
+            "id": "early-ogre-chief",
+            "category": "bestiary",
+            "title": "#015 Ogre Chief",
+            "detail": "Auf der frühen Weltkarte möglich, nicht überall häufig; synchron mit Kapitel 3.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-03/elfcastle/monster015"
           }
         ],
         "tips": [
           "Du musst nicht jede seltene Begegnung sofort erzwingen. Die Monsterlisten haben feste Nummern, der Reiseweg bleibt flexibel."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": true
       },
       {
         "id": "matoya",
@@ -56,25 +98,41 @@
             "id": "matoya-talk",
             "category": "story",
             "title": "Mit Matoya über das verlorene Kristallauge gesprochen",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "matoya-chest-01",
             "category": "chest",
             "title": "Truhe 1/3 – Trank",
-            "detail": "Matoyas Höhle, linker Raum, oben."
+            "detail": "Matoyas Höhle, linker Raum, oben.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "matoya-chest-02",
             "category": "chest",
             "title": "Truhe 2/3 – Trank",
-            "detail": "Matoyas Höhle, links, mittlere Truhe."
+            "detail": "Matoyas Höhle, links, mittlere Truhe.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "matoya-chest-03",
             "category": "chest",
             "title": "Truhe 3/3 – Gegengift (Antidote)",
-            "detail": "Matoyas Höhle, links, untere Truhe."
+            "detail": "Matoyas Höhle, links, untere Truhe.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
@@ -82,7 +140,8 @@
         ],
         "later": [
           "Kristallauge für Matoya nach dem Sieg über Astos in Kapitel 4 zurückbringen."
-        ]
+        ],
+        "defaultOpen": false
       },
       {
         "id": "road",
@@ -100,19 +159,28 @@
             "id": "pravoka-arrived",
             "category": "story",
             "title": "Pravoka erreicht",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "monster016",
             "category": "bestiary",
             "title": "#016 Lizard (Echse)",
-            "detail": "Weltkarte rund um Pravoka."
+            "detail": "Weltkarte rund um Pravoka.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Mit einigen Ersatztränken und mindestens einem Heilspruch kämpfst du deutlich entspannter."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "pravoka",
@@ -123,7 +191,7 @@
           "Besuche Gasthaus und Geschäfte. Für einen Krieger können Streitaxt oder Breitschwert nützlich sein; prüfe Werte vor dem Kauf.",
           "Mit einem Schwarzmagier sind Eis (Blizzard) und Stärkung/Temper sinnvolle Zauber; bei Weißmagiern je nach Gruppenzusammenstellung Heilmöglichkeiten ergänzen.",
           "Suche Kapitän Bikke im Nordwesten der Stadt. Beim Gespräch startet ein Kampf mit neun Piraten.",
-          "Piraten besitzen je 24 HP; konzentriere Angriffe auf einzelne Ziele. Es ist kein schwerer Boss mit vielen Zaubern, aber die Gegnerzahl kann Schaden aufsummieren.",
+          "Neun Piraten mit je 24 HP: Wenn der passende Schlafzauber verfügbar ist, kannst du die ganze Gruppe einschläfern. Andernfalls einen Piraten nach dem anderen ausschalten und angeschlagene Figuren heilen.",
           "Nach dem Sieg übergibt Bikke das Schiff. Ruhe dich vor der ersten Seefahrt nochmals aus."
         ],
         "checks": [
@@ -131,31 +199,48 @@
             "id": "pravoka-gear",
             "category": "preparation",
             "title": "Ausrüstung, Zauber und Vorräte in Pravoka überprüft",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "pirates",
             "category": "boss",
             "title": "Bikkes neun Piraten besiegt",
-            "detail": "Je 24 HP, hauptsächlich physische Angriffe."
+            "detail": "9 × 24 HP im Pixel Remaster; Schlaf kann die Gruppe kontrollieren. Anschließend Gegner einzeln besiegen.",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "monster017",
             "category": "bestiary",
             "title": "#017 Pirate",
-            "detail": "Pflichtkampf mit neun Piraten bei Bikke in Pravoka."
+            "detail": "Pflichtkampf mit neun Piraten bei Bikke in Pravoka.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "ship",
             "category": "key-item",
             "title": "Schiff erhalten",
-            "detail": "Sprich Bikke nach dem Kampf an bzw. bestätige die Übergabe."
+            "detail": "Sprich Bikke nach dem Kampf an bzw. bestätige die Übergabe.",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Geldspar-Tipp: bessere Rüstung und verlässliche Heilung sind wichtiger als sämtliche Shopangebote auf einmal."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "sailing",
@@ -174,49 +259,79 @@
             "id": "monster018",
             "category": "bestiary",
             "title": "#018 Sahagin",
-            "detail": "Zufallskämpfe auf See."
+            "detail": "Zufallskämpfe auf See.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "monster019",
             "category": "bestiary",
             "title": "#019 Sahagin Chief",
-            "detail": "Zufallskämpfe auf See."
+            "detail": "Zufallskämpfe auf See.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "monster020",
             "category": "bestiary",
             "title": "#020 Buccaneer",
-            "detail": "Zufallskämpfe auf See."
+            "detail": "Zufallskämpfe auf See.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "monster021",
             "category": "bestiary",
             "title": "#021 Shark",
-            "detail": "Zufallskämpfe auf See."
+            "detail": "Zufallskämpfe auf See.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "monster022",
             "category": "bestiary",
             "title": "#022 Bigeyes",
-            "detail": "Zufallskämpfe auf See."
+            "detail": "Zufallskämpfe auf See.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "sail-puzzle",
             "category": "misc",
             "title": "Optionales 15-Puzzle auf dem Schiff ausprobiert",
-            "detail": "Reines Bonusziel; nur anhaken, wenn du das Minispiel gespielt hast."
+            "detail": "Reines Bonusziel; nur anhaken, wenn du das Minispiel gespielt hast.",
+            "priority": "optional",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": false,
+            "optional": true
           },
           {
             "id": "elfheim-port",
             "category": "story",
             "title": "Hafen vor Elfheim gefunden und angelegt",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Der 15-Puzzle-Eintrag ist optional und keine Voraussetzung für die Geschichte. Bei Bedarf kannst du ihn später erledigen."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       }
     ],
     "sources": [
@@ -227,6 +342,37 @@
       {
         "label": "Bestiarium & Fundorte (Pro Game Guides)",
         "url": "https://progameguides.com/final-fantasy/final-fantasy-1-pixel-remaster-bestiary-locations/"
+      }
+    ],
+    "dashboard": {
+      "recommendedLevel": "3–6",
+      "chests": {
+        "accessible": 3
+      }
+    },
+    "contentStatus": "needs-review",
+    "shops": [
+      {
+        "location": "Pravoka",
+        "mustBuy": [],
+        "optional": [
+          {
+            "item": "Bessere Waffe/Rüstung",
+            "when": "falls deine Nahkämpfer schwach ausgerüstet sind",
+            "reason": "Piraten sind zahlreich, aber relativ fragil."
+          },
+          {
+            "item": "Eis/Blitz und Heilmagie",
+            "when": "abhängig von deiner Gruppe",
+            "reason": "Nützlich auf See und für das Umland."
+          }
+        ],
+        "skip": [
+          {
+            "item": "Alle Waffen und Zauber kaufen",
+            "reason": "Gil lieber für benötigte Rollen, Heilung und spätere Städte sparen."
+          }
+        ]
       }
     ]
   }
