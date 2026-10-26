@@ -67,3 +67,30 @@ Die Datei dient als gemeinsame Roadmap für unser öffentliches Repository.
 - [Square Enix: Einsteigertipps für Pixel Remaster](https://www.square-enix-games.com/de_DE/news/final-fantasy-pixel-remaster-starter-tips)
 
 **Wichtig:** Eine Markierung in dieser Roadmap ist keine Behauptung, dass die jeweilige Funktion bereits programmiert oder getestet ist.
+
+
+## Implementierung am 26. Oktober 2026
+
+Folgende Änderungen sind **im Repository programmiert**; einzelne Prüfungen auf realen Geräten und die redaktionelle Verifikation aller 100%-Details stehen weiter aus.
+
+- [x] Mobiles `<dialog>`-Optionsmenü für Import, Backup und Schriftgröße; Desktop-Aktionen beibehalten.
+- [x] Dateiimport ohne `hidden`-Attribut, über `.sr-only` visuell verborgen; tastaturfähiger Auslöser im Dialog.
+- [x] Sicherheitsabstand und Touch-Kacheln im mobilen CSS nachjustiert.
+- [x] PWA-Dateien, Manifest, SVG-Icon, Service Worker und Offline-Vorabcache aller im Manifest gelisteten Kapitel eingebaut. **Installation, iOS-Icon und Offline-Updates praktisch prüfen.**
+- [x] Status-/Verpassbarkeitsattribute, Pflicht/optional und nachholbare Aufgaben als optionale Schemafelder.
+- [x] Dashboard-Metadaten / empfohlene Level, dynamischer Fortschritt aus Pflicht-Häkchen.
+- [x] Erste strukturierte Shopempfehlungen für Cornelia und Pravoka; weitere FF-I-Shops folgen nach Quellenprüfung.
+- [x] `defaultOpen` für Abschnitte, vorhandene Akkordeons bleiben erhalten.
+- [x] Cobra/Ogre/Ogre Chief in Kapitel 2 spiegelbar; kanonische Aufgaben-IDs zeigen denselben Haken auch in Kapitel 3. Spielweite Pflichtzählung dedupliziert.
+- [x] Garland und Piraten-Taktik in Kapitel 1 und 2 ergänzt; `supportsSteal:false` in FF-I-Spielprofil.
+- [x] Zweiter Kapitelabschluss `Story fertig & weiter`, ohne andere Pflichthäkchen anzutasten; `Alle Pflichtaufgaben abhaken & weiter` bleibt mit Bestätigung bestehen.
+- [x] Bestiarium #033 Astos nachgetragen. #024 Ghast für späteres Gebiet vorgemerkt.
+
+**Offene Qualitätsaufgaben:**
+- [ ] Fachlicher Abgleich sämtlicher Bosswerte, Truhenpositionen, Shopangebote und Bestiarium-IDs gegen aktuelle Pixel-Remaster-Quellen.
+- [ ] Kapitel 1–5 komplett im Browser und auf Handy testen (insbesondere Import, Fokussteuerung, Offline-Neustart, drei Speicherplätze).
+- [ ] iOS-/Android-PWA-Installation, Fallback und Updateverhalten testen; wenn erforderlich PNG-Icons ergänzen.
+- [ ] Automatische Daten-/UI-Tests per GitHub Actions ergänzen und inkonsistente Inhalte beheben.
+- [ ] Globale 100%-Gesamtübersicht, Schritt-für-Schritt-Modus und Wiedereinstiegsdialog aus voriger Roadmap umsetzen.
+
+---
