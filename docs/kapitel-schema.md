@@ -25,3 +25,22 @@ Einzelne Kapiteldateien lassen sich im Guide über „JSON importieren“ auswä
 Neue Kapitel als `data/<spiel>/chapter-XX.json` ablegen und im jeweiligen `chapterFiles`-Array in `data/manifest.json` referenzieren. Für vorhandene Aufgaben nie IDs ändern, sonst gehen ihre gespeicherten Häkchen verloren.
 
 Persönliche Backups gehören nicht ins öffentliche GitHub-Repository.
+
+## Erweiterungen ab Version 1.1 (optional, rückwärtskompatibel)
+
+Für jedes `chapter.sections[].checks[]` können ergänzende Eigenschaften verwendet werden:
+
+- `priority`: `normal`, `recommended`, `urgent`, `key` oder `optional`. Die Oberfläche zeigt einen ausgeschriebenen Status, nicht nur eine Farbe.
+- `missable`: boolescher Wert. Nur `true`, wenn ein Inhalt wirklich dauerhaft verpassbar ist.
+- `available`: `now` oder `later` – nachholbare Inhalte werden nicht irreführend als verpasst markiert.
+- `requiredFor100`: boolescher Wert. `false` für Bonusaufgaben, die den Pflichtfortschritt nicht blockieren.
+- `referenceTo`: vollständiger stabiler Aufgaben-Schlüssel (Format `spiel/kapitel/abschnitt/aufgabe`), wenn eine Checkliste denselben Gegner in einem anderen Kapitel spiegelt. Diese Quelle ist kanonisch; beide Häkchen synchronisieren sich.
+- `sections[].defaultOpen`: anfänglicher Offen-Zustand, sofern kein eigenes Lesezeichen Vorrang hat.
+- `chapter.contentStatus`: `needs-review` oder nach nachgewiesenem fachlichem Abgleich `verified`.
+- `chapter.dashboard.recommendedLevel`: unverbindlicher Levelbereich und `chapter.dashboard.chests`: redaktionelle Mengenangaben für jetzt zugängliche Truhen. **`progressPct` niemals statisch speichern.**
+- `chapter.shops[]`: Geschäfte mit optionalen `mustBuy`, `optional`, `skip` Arrays. Jede Empfehlung kann `item`, `when`, `reason` enthalten.
+- `manifest.games[].mechanics.supportsSteal`: `false` für FF I (kein Diebstahl-System).
+
+Fortschrittswerte werden aus den eindeutigen, verpflichtenden Aufgaben-IDs des aktiven Spielstands berechnet. **Story-Abschluss** markiert allein die Reiseetappe; `Alle Pflichtaufgaben abhaken` verändert nur als Pflicht gewertete Aufgaben. Optionale Bonusaufgaben bleiben separat. Bereits verwendete IDs nicht umbenennen.
+
+Das Bestiarium von FF I darf einen Gegner (gleiche Nummer, gleiches Spiel) nur **einmal** als kanonischen Eintrag zählen, auch wenn dessen Häkchen bereits in einem früheren Kapitel sichtbar ist.
