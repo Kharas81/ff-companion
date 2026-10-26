@@ -126,3 +126,19 @@ Folgende Änderungen sind **im Repository programmiert**; einzelne Prüfungen au
 - [ ] **Guide vollständigkeitsabhängig markieren**: `contentStatus` erst nach fachlichem Audit auf `verified` stellen.
 
 **GitHub-Änderungen dieser Runde:** neue Validierungsdatei, GitHub-Actions-Workflow und Korrektur des optionalen Aufgaben-Häkchens. Andere als „offen“ benannte Aufgaben wurden ausdrücklich nicht als erledigt markiert.
+
+
+## 26.10.2026 – Deutsche Spieldaten aus Cornelia
+
+- [x] Von der deutschen Pixel-Remaster-Spielversion gemeldete **fünf Waffen** inkl. Gilpreis, Angriff und sofern angegeben Präzision erfasst.
+- [x] **Drei Rüstungen** inkl. Preis, Abwehr und Gewicht erfasst.
+- [x] **Acht Stufe-1-Zauber** inkl. deutscher Namen und jeweils 50 Gil erfasst.
+- [x] Diese Daten als `chapter.shopCatalog` in `data/ff1/chapter-01.json` gespeichert und als aufklappbaren Katalog in der Webseite sichtbar gemacht.
+- [x] Deutsche Namen Goblin, Wolf, Skeleton, Schwarze Witwe, Gigas-Wurm, Zombie und Garland mit bestehenden Bestiarium-Einträgen verknüpft; stabile Check-IDs unverändert.
+- [ ] **Isegrim:** Name und Sprite bestätigt, aber englischen Gegner und genaue Bestiarium-Nummer anhand Bestiarium-Screenshot überprüfen; noch kein Mapping erfinden.
+- [ ] **Blitz:** deutscher Name und Preis bestätigt; genaue Wirkung und Beschreibung noch vom Spiel überprüfen.
+- [ ] **Waffen-/Rüstungs-Klassenzuordnung:** prüfen, wer was tragen kann; erst danach gezielte kaufbare Gegenstände je Vierergruppe empfehlen.
+- [ ] **Übrige deutsche Gegnernamen** von Kapitel 1 und späteren Gebieten ergänzen.
+- [ ] **Kaufkosten-Rechner** aus konkreter Vierergruppe und benötigten Zaubern erstellen; Budget und doppelte Käufe beachten.
+
+**Vermerk:** Spielerbestätigte Daten sind direkte Ingame-Beobachtungen, aber ersetzen keine vollständige Truhen-/Bestiarium-Abnahme. `contentStatus` bleibt `needs-review`.
