@@ -223,3 +223,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
  .guide-tools{padding:8px 4px}
 }
 @media print{.step-controls,.party-panel,.guide-tools{display:none!important}}
+
+/* Deutsche Shoppreisliste */
+.catalog-list{display:grid;gap:8px;margin:10px 0 20px}.catalog-item{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border:1px solid #354b67;border-radius:9px;padding:11px 13px;background:#172940;font-size:calc(15px * var(--read-scale,1))}.catalog-item strong{color:var(--gold)}.catalog-item span{color:var(--text);line-height:1.6}@media(max-width:750px){.catalog-item{display:grid;gap:3px}}
