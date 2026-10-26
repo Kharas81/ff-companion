@@ -25,18 +25,27 @@
             "id": "formed",
             "category": "story",
             "title": "Vierköpfige Gruppe erstellt",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "cornelia-enter",
             "category": "story",
             "title": "Stadt Cornelia betreten",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Die Klassenauswahl ist eine Empfehlung und keine Pflicht. Der universelle Guide soll verschiedene Gruppen ermöglichen."
-        ]
+        ],
+        "defaultOpen": true
       },
       {
         "id": "cornelia",
@@ -54,13 +63,21 @@
             "id": "equipped",
             "category": "preparation",
             "title": "Ausrüstung und Heilmittel geprüft",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "king",
             "category": "story",
             "title": "Auftrag des Königs erhalten",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
@@ -68,7 +85,8 @@
         ],
         "later": [
           "Schloss Cornelia: verschlossene Schatzräume erst nach Erhalt des Mystischen Schlüssels nachholen."
-        ]
+        ],
+        "defaultOpen": false
       },
       {
         "id": "outside",
@@ -85,36 +103,57 @@
             "id": "mob001",
             "category": "bestiary",
             "title": "#001 Goblin",
-            "detail": "Bei Cornelia und im Chaos-Schrein."
+            "detail": "Bei Cornelia und im Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob002",
             "category": "bestiary",
             "title": "#002 Goblin Guard",
-            "detail": "Bei Cornelia und im Chaos-Schrein."
+            "detail": "Bei Cornelia und im Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob003",
             "category": "bestiary",
             "title": "#003 Wolf",
-            "detail": "Weltkarte und Chaos-Schrein."
+            "detail": "Weltkarte und Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob004",
             "category": "bestiary",
             "title": "#004 Crazy Horse",
-            "detail": "Auf der Weltkarte in dieser Anfangsregion."
+            "detail": "Auf der Weltkarte in dieser Anfangsregion.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "rested",
             "category": "preparation",
             "title": "Vor dem Schrein geheilt und vorbereitet",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Sammel-Checklisten sind keine Sperre: Du kannst Garland besiegen und fehlende Monster später suchen."
-        ]
+        ],
+        "defaultOpen": false
       },
       {
         "id": "shrine",
@@ -132,61 +171,101 @@
             "id": "chest-leather",
             "category": "chest",
             "title": "Truhe 1/3 · Lederkappe",
-            "detail": "Südwestlicher Raum."
+            "detail": "Südwestlicher Raum.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "chest-potion",
             "category": "chest",
             "title": "Truhe 2/3 · Trank",
-            "detail": "Nordwestlicher Raum."
+            "detail": "Nordwestlicher Raum.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "chest-tent",
             "category": "chest",
             "title": "Truhe 3/3 · Zelt",
-            "detail": "Nordwestlicher Raum."
+            "detail": "Nordwestlicher Raum.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob005",
             "category": "bestiary",
             "title": "#005 Skeleton",
-            "detail": "Chaos-Schrein."
+            "detail": "Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob006",
             "category": "bestiary",
             "title": "#006 Black Widow",
-            "detail": "Chaos-Schrein."
+            "detail": "Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob007",
             "category": "bestiary",
             "title": "#007 Gigas Worm",
-            "detail": "Chaos-Schrein."
+            "detail": "Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob008",
             "category": "bestiary",
             "title": "#008 Warg Wolf",
-            "detail": "Chaos-Schrein."
+            "detail": "Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob009",
             "category": "bestiary",
             "title": "#009 Werewolf",
-            "detail": "Chaos-Schrein."
+            "detail": "Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob010",
             "category": "bestiary",
             "title": "#010 Zombie",
-            "detail": "Chaos-Schrein."
+            "detail": "Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob011",
             "category": "bestiary",
             "title": "#011 Ghoul",
-            "detail": "Chaos-Schrein."
+            "detail": "Chaos-Schrein.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
@@ -194,7 +273,8 @@
         ],
         "later": [
           "Chaos-Schrein: drei weitere, verschlossene Truhen später mit dem Mystischen Schlüssel öffnen."
-        ]
+        ],
+        "defaultOpen": false
       },
       {
         "id": "garland",
@@ -203,7 +283,7 @@
         "intro": "Das erste Bossziel ist Garland. Anschließend erhältst du einen wichtigen Gegenstand für das Spielende.",
         "steps": [
           "Gehe in den zentralen Saal und sprich Garland an. Der Kampf startet.",
-          "Garland besitzt 212 HP. Kämpfer greifen an, der Schwarzmagier nutzt Angriffszauber; heile angeschlagene Figuren rechtzeitig.",
+          "Garland besitzt 212 HP und keine besondere Elementarschwäche. Greife physisch an oder wirke Feuer/Blitz; schwache Verbündete frühzeitig heilen.",
           "Nach dem Sieg wird Prinzessin Sarah befreit. Sprich im Schloss mit ihr und nimm die Laute entgegen.",
           "Der König lässt die Brücke wiederherstellen. Überquere sie erst, wenn du bereit für das nächste Kapitel bist."
         ],
@@ -212,30 +292,47 @@
             "id": "garland",
             "category": "boss",
             "title": "Boss · Garland besiegt",
-            "detail": "212 HP; überwiegend physische Angriffe."
+            "detail": "212 HP; ausschließlich physischer Angriff, keine besondere Elementarschwäche. Schaden mit normalen Waffen oder Feuer/Blitz; bei Bedarf heilen.",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob012",
             "category": "bestiary",
             "title": "#012 Garland",
-            "detail": "Bestiarium-Eintrag nach dem Bosskampf."
+            "detail": "Bestiarium-Eintrag nach dem Bosskampf.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "lute",
             "category": "key-item",
             "title": "Schlüsselgegenstand · Laute erhalten",
-            "detail": ""
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "bridge",
             "category": "story",
             "title": "Brücke nach Norden geöffnet",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Kapitelende: Genau drei der sechs Chaos-Schrein-Truhen lassen sich jetzt öffnen. Keine unzugänglichen Truhen in den Fortschritt von Kapitel 1 rechnen."
-        ]
+        ],
+        "defaultOpen": false
       }
     ],
     "sources": [
@@ -250,6 +347,43 @@
       {
         "label": "Cornelia / Chaos Shrine Walkthrough",
         "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/cornelia-and-chaos-shrine"
+      }
+    ],
+    "dashboard": {
+      "recommendedLevel": "2–4",
+      "chests": {
+        "accessible": 3,
+        "totalLocal": 6
+      }
+    },
+    "contentStatus": "needs-review",
+    "shops": [
+      {
+        "location": "Cornelia",
+        "mustBuy": [
+          {
+            "item": "Heilzauber Vita (Cure)",
+            "when": "wenn Weißmagier in der Gruppe",
+            "reason": "Erleichtert die ersten Dungeons deutlich"
+          }
+        ],
+        "optional": [
+          {
+            "item": "Feuer (Fire)",
+            "when": "wenn Schwarzmagier in der Gruppe",
+            "reason": "Solider früher Angriffszauber"
+          },
+          {
+            "item": "Basiswaffen oder Rüstung",
+            "reason": "Je nach gewählten Klassen und Startbudget"
+          }
+        ],
+        "skip": [
+          {
+            "item": "Teure Waffe für den Mönch",
+            "reason": "Unbewaffneter Mönch kann ab höheren Stufen stärker sein; Werte vergleichen"
+          }
+        ]
       }
     ]
   }
