@@ -364,14 +364,22 @@
           {
             "item": "Heilzauber Vita (Cure)",
             "when": "wenn Weißmagier in der Gruppe",
-            "reason": "Erleichtert die ersten Dungeons deutlich"
+            "reason": "Erleichtert die ersten Dungeons deutlich",
+            "classes": [
+              "white-mage",
+              "red-mage"
+            ]
           }
         ],
         "optional": [
           {
             "item": "Feuer (Fire)",
             "when": "wenn Schwarzmagier in der Gruppe",
-            "reason": "Solider früher Angriffszauber"
+            "reason": "Solider früher Angriffszauber",
+            "classes": [
+              "black-mage",
+              "red-mage"
+            ]
           },
           {
             "item": "Basiswaffen oder Rüstung",
@@ -381,7 +389,10 @@
         "skip": [
           {
             "item": "Teure Waffe für den Mönch",
-            "reason": "Unbewaffneter Mönch kann ab höheren Stufen stärker sein; Werte vergleichen"
+            "reason": "Unbewaffneter Mönch kann ab höheren Stufen stärker sein; Werte vergleichen",
+            "classes": [
+              "monk"
+            ]
           }
         ]
       }
