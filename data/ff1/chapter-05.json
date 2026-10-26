@@ -26,49 +26,78 @@
             "id": "cor-01",
             "category": "chest",
             "title": "Schlosstruhe 1/6 – Eisenrüstung (Iron Armor)",
-            "detail": "Verschlossener Raum im Schloss-Erdgeschoss."
+            "detail": "Verschlossener Raum im Schloss-Erdgeschoss.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "cor-02",
             "category": "chest",
             "title": "Schlosstruhe 2/6 – Zelt",
-            "detail": "Eine der sechs verschlossenen Truhen."
+            "detail": "Eine der sechs verschlossenen Truhen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "cor-03",
             "category": "chest",
             "title": "Schlosstruhe 3/6 – Nitropulver",
-            "detail": "Pflichtgegenstand für Nerrick."
+            "detail": "Pflichtgegenstand für Nerrick.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "cor-04",
             "category": "chest",
             "title": "Schlosstruhe 4/6 – Hütte",
-            "detail": "Eine der sechs verschlossenen Truhen."
+            "detail": "Eine der sechs verschlossenen Truhen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "cor-05",
             "category": "chest",
             "title": "Schlosstruhe 5/6 – Säbel",
-            "detail": "Eine der sechs verschlossenen Truhen."
+            "detail": "Eine der sechs verschlossenen Truhen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "cor-06",
             "category": "chest",
             "title": "Schlosstruhe 6/6 – Mithrildolch",
-            "detail": "Eine der sechs verschlossenen Truhen."
+            "detail": "Eine der sechs verschlossenen Truhen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "nitro",
             "category": "key-item",
             "title": "Nitropulver im Inventar überprüft",
-            "detail": ""
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Die genaue Bezeichnung einiger Rüstungen hängt von der Sprache ab; orientiere dich an der Anzahl von sechs Truhen und dem Nitropulver."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": true
       },
       {
         "id": "chaos-return",
@@ -85,25 +114,38 @@
             "id": "chaos-01",
             "category": "chest",
             "title": "Chaos-Schrein-Truhe 4/6 – Werwolfkiller (Werebuster)",
-            "detail": "Mystische Schlüsseltür."
+            "detail": "Mystische Schlüsseltür.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "chaos-02",
             "category": "chest",
             "title": "Chaos-Schrein-Truhe 5/6 – Goldnadel",
-            "detail": "Mystische Schlüsseltür."
+            "detail": "Mystische Schlüsseltür.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "chaos-03",
             "category": "chest",
             "title": "Chaos-Schrein-Truhe 6/6 – Runenklinge",
-            "detail": "Mystische Schlüsseltür."
+            "detail": "Mystische Schlüsseltür.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Dies sind bewusst nur die drei nachträglichen Truhen. Die drei westlichen wurden in Kapitel 1 gezählt."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "elfcastle",
@@ -120,31 +162,48 @@
             "id": "elf-01",
             "category": "chest",
             "title": "Elfenschloss-Truhe 1/4 – Mithrilhammer",
-            "detail": "Verschlossene Schatzkammer."
+            "detail": "Verschlossene Schatzkammer.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "elf-02",
             "category": "chest",
             "title": "Elfenschloss-Truhe 2/4 – 800 Gil",
-            "detail": "Verschlossene Schatzkammer."
+            "detail": "Verschlossene Schatzkammer.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "elf-03",
             "category": "chest",
             "title": "Elfenschloss-Truhe 3/4 – 700 Gil",
-            "detail": "Verschlossene Schatzkammer."
+            "detail": "Verschlossene Schatzkammer.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "elf-04",
             "category": "chest",
             "title": "Elfenschloss-Truhe 4/4 – Bronzehandschuhe",
-            "detail": "Gegenstand vor Ort mit der Spielanzeige abgleichen."
+            "detail": "Gegenstand vor Ort mit der Spielanzeige abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Vier Truhen: Mithrilhammer, 800 Gil, 700 Gil und Bronzehandschuhe; alle hinter dem Mystischen Schlüssel."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "western-return",
@@ -161,43 +220,68 @@
             "id": "western-01",
             "category": "chest",
             "title": "Westliche-Festung-Truhe 1/3 – Falchion",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "western-02",
             "category": "chest",
             "title": "Westliche-Festung-Truhe 2/3 – Kraftstab (Power Staff)",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "western-03",
             "category": "chest",
             "title": "Westliche-Festung-Truhe 3/3 – Stahlhandschuhe",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "western-guard",
             "category": "preparation",
             "title": "Schatzwachen besiegt und Gruppe wieder geheilt",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob034",
             "category": "bestiary",
             "title": "#034 Mummy",
-            "detail": "Schatzwache an der Westlichen Festung."
+            "detail": "Schatzwache an der Westlichen Festung.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob035",
             "category": "bestiary",
             "title": "#035 Wraith",
-            "detail": "Schatzwache an der Westlichen Festung."
+            "detail": "Schatzwache an der Westlichen Festung.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Die Schatzwachen sind keine erneute Astos-Begegnung."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "marsh-return",
@@ -216,37 +300,58 @@
             "id": "marsh-key-01",
             "category": "chest",
             "title": "Sumpfhöhle-Truhe 16/18 – Silberarmreif",
-            "detail": "B3, verschlossener Raum."
+            "detail": "B3, verschlossener Raum.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "marsh-key-02",
             "category": "chest",
             "title": "Sumpfhöhle-Truhe 17/18 – Gegengift",
-            "detail": "B3, verschlossener Raum."
+            "detail": "B3, verschlossener Raum.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "marsh-key-03",
             "category": "chest",
             "title": "Sumpfhöhle-Truhe 18/18 – 1.020 Gil",
-            "detail": "B3, verschlossener Raum."
+            "detail": "B3, verschlossener Raum.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "marsh-all",
             "category": "story",
             "title": "Sumpfhöhle vollständig ausgeräumt (18/18 Truhen)",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mob036",
             "category": "bestiary",
             "title": "#036 Anaconda",
-            "detail": "Mystischer Raum B3 der Sumpfhöhle."
+            "detail": "Mystischer Raum B3 der Sumpfhöhle.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Tipp: Nach Kapitel 5 sollten frühere Schatzkammern vollständig sein."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "duergar",
@@ -265,79 +370,128 @@
             "id": "duergar-01",
             "category": "chest",
             "title": "Zwergenberg-Truhe 1/10 – 450 Gil",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-02",
             "category": "chest",
             "title": "Zwergenberg-Truhe 2/10 – 575 Gil",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-03",
             "category": "chest",
             "title": "Zwergenberg-Truhe 3/10 – Zelt",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-04",
             "category": "chest",
             "title": "Zwergenberg-Truhe 4/10 – Großhelm",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-05",
             "category": "chest",
             "title": "Zwergenberg-Truhe 5/10 – Wyrmkiller",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-06",
             "category": "chest",
             "title": "Zwergenberg-Truhe 6/10 – Äther",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-07",
             "category": "chest",
             "title": "Zwergenberg-Truhe 7/10 – Trank",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-08",
             "category": "chest",
             "title": "Zwergenberg-Truhe 8/10 – Mithrilpanzer",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-09",
             "category": "chest",
             "title": "Zwergenberg-Truhe 9/10 – 575 Gil",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "duergar-10",
             "category": "chest",
             "title": "Zwergenberg-Truhe 10/10 – Hütte",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "nerick",
             "category": "story",
             "title": "Nitropulver bei Nerrick abgegeben",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "canal",
             "category": "story",
             "title": "Kanal freigesprengt und Schiffsdurchfahrt geöffnet",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Wyrmkiller kann je nach Gegner eine deutliche Verbesserung gegenüber älteren Waffen sein."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "melmond",
@@ -355,25 +509,40 @@
             "id": "melmond-arrive",
             "category": "story",
             "title": "Melmond erreicht",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "melmond-talk",
             "category": "story",
             "title": "Bewohner nach Erdkristall und Verfall befragt",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "melmond-prep",
             "category": "preparation",
             "title": "Vorräte für spätere Erdhöhle geprüft",
-            "detail": ""
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Melmond besitzt kein normales Gasthaus in einigen Versionen. Plane die Heilung daher umsichtig; nutze verfügbare Heilzauber und Gegenstände."
         ],
-        "later": []
+        "later": [
+          "Bestiarium #024 Ghast wird gezielt in Kapitel 6 rund um Melmond/Erdhöhle nachgeholt. Nicht als verpasst markieren."
+        ],
+        "defaultOpen": false
       }
     ],
     "sources": [
@@ -389,6 +558,13 @@
         "label": "Mystic Key Chests (Solo Play Guide)",
         "url": "https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/guide/06-mystic-key-chests"
       }
-    ]
+    ],
+    "dashboard": {
+      "recommendedLevel": "10–14",
+      "chests": {
+        "accessible": 29
+      }
+    },
+    "contentStatus": "needs-review"
   }
 }
