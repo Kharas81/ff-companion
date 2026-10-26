@@ -43,7 +43,12 @@
       <div class="nav-title"><span class="eyebrow">KAPITEL</span><span id="chapter-count">0 Kapitel</span></div>
       <nav id="chapter-list" class="chapter-list" aria-label="Kapitel auswählen"></nav>
       <div class="nav-divider"></div>
-      <button type="button" class="bestiary-nav btn btn-quiet" id="bestiary-link" data-action="bestiary">🐉 Bestiarium anzeigen</button>
+      <div class="guide-tools" aria-label="Begleiter-Funktionen">
+        <button type="button" class="btn btn-quiet tool-link" id="dashboard-link" data-action="dashboard">📊 100-%-Übersicht</button>
+        <button type="button" class="btn btn-quiet tool-link" id="step-link" data-action="step-mode">🎯 Schritt für Schritt</button>
+        <button type="button" class="btn btn-quiet tool-link" id="collections-link" data-action="collections">🧙 Sammlungen</button>
+        <button type="button" class="bestiary-nav btn btn-quiet tool-link" id="bestiary-link" data-action="bestiary">🐉 Bestiarium anzeigen</button>
+      </div>
       <div class="nav-title save-title"><span class="eyebrow">SPIELSTÄNDE</span><span>pro FF-Teil</span></div>
       <div class="save-controls">
         <label for="save-selector" class="save-label">Aktiver Spielstand</label>
@@ -63,7 +68,7 @@
       <div class="mobile-progress-label"><strong id="mobile-progress-pct">0%</strong><span id="mobile-progress-summary">0 von 0 Aufgaben</span></div>
       <div class="mobile-progress-track"><span id="mobile-progress-fill"></span></div>
     </div>
-    <button type="button" class="btn btn-primary mobile-next" data-action="next-open">📍 Weiter</button>
+    <button type="button" class="btn btn-primary mobile-next" data-action="resume">📍 Fortsetzen</button>
   </div>
   <dialog id="settings-dialog" class="settings-sheet" aria-labelledby="settings-title">
     <div class="sheet-head"><h2 id="settings-title">⚙️ Optionen</h2><button type="button" class="btn" data-action="close-settings" aria-label="Einstellungen schließen">✕ Schließen</button></div>
