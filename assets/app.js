@@ -202,6 +202,28 @@
     const slot=slotData();slot.party ||= ['warrior','monk','white-mage','black-mage'];
     return '<section class="party-panel"><h3>🛒 Deine Gruppe für Kaufempfehlungen</h3><p>Die vier Klassen bestimmen, welche Shopangebote angezeigt werden. Nur eine Empfehlung, kein Pflichtkauf.</p><div class="party-slots">'+slot.party.map((value,i)=>'<label class="party-slot">Figur '+(i+1)+'<select data-party-slot="'+i+'">'+CLASS_OPTIONS.map(([key,name])=>'<option value="'+key+'" '+(key===value?'selected':'')+'>'+name+'</option>').join('')+'</select></label>').join('')+'</div></section>';
   };
+  const renderPurchasePlanner = catalog => {
+    if(!catalog)return '';
+    const slot=slotData();slot.purchasePlan ||= {};
+    const party=slot.party||['warrior','monk','white-mage','black-mage'];
+    const labelOf=(kind,x)=>x.name+' · '+x.price+' Gil';
+    let sum=0;
+    const rows=party.map((classId,i)=>{
+      let picks=slot.purchasePlan[i]||{};
+      const possible=(items)=>items.filter(x=>Array.isArray(x.classes)&&x.classes.includes(classId));
+      const menu=(kind,items)=>{
+        const options=possible(items),chosen=options.find(x=>x.id===picks[kind]);if(chosen)sum+=chosen.price;
+        return '<label class="purchase-field">'+(kind==='weapon'?'Waffe':'Rüstung')+'<select data-purchase-char="'+i+'" data-purchase-kind="'+kind+'"><option value="">Keine kaufen · 0 Gil</option>'+options.map(x=>'<option value="'+esc(x.id)+'" '+(chosen?.id===x.id?'selected':'')+'>'+esc(labelOf(kind,x))+'</option>').join('')+'</select></label>';
+      };
+      const spells=possible(catalog.magic||[]).map(x=>{
+        const checked=Array.isArray(picks.magic)&&picks.magic.includes(x.id);
+        if(checked)sum+=x.price;
+        return '<label class="purchase-spell"><input type="checkbox" data-purchase-char="'+i+'" data-purchase-kind="magic" value="'+esc(x.id)+'" '+(checked?'checked':'')+'><span>'+esc(x.name)+' · '+x.price+' Gil</span></label>';
+      }).join('');
+      return '<section class="purchase-character"><strong>Figur '+(i+1)+' · '+esc(CLASS_OPTIONS.find(x=>x[0]===classId)?.[1]||classId)+'</strong><div class="purchase-fields">'+menu('weapon',catalog.weapons||[])+menu('armor',catalog.armor||[])+'</div>'+(spells?'<div class="purchase-spells">'+spells+'</div>':'')+'</section>';
+    }).join('');
+    return '<section class="party-panel" aria-label="Einkaufsrechner"><h3>💰 Cornelia-Einkaufsrechner</h3><p>Wähle nur die Sachen, die du kaufen möchtest. Ausrüstung wird nach Klasse gefiltert. Zauber werden pro Figur berechnet; bereits vorhandene Gegenstände bitte nicht auswählen.</p>'+rows+'<div class="purchase-total"><span>Geplante Gesamtkosten</span><strong id="purchase-total">'+sum+' Gil</strong></div><button type="button" class="btn btn-quiet" data-action="clear-purchase">Auswahl zurücksetzen</button><p class="collection-note">Planung, kein Kauf im Spiel. Vorhandenes Gil und Zauberplätze werden nicht automatisch ermittelt.</p></section>';
+  };
   const renderSidebar = () => {
     ensureSlots();
     const selector=byId('save-selector');
@@ -285,6 +307,7 @@
       <div class="section-toolbar"><div><h2>Dein Weg durchs Kapitel</h2><p>Aufgaben abhaken, Abschnitt öffnen und direkt weiterspielen.</p></div><div class="filters"><button type="button" class="btn btn-quiet section-toggle" data-action="expand-all">Alle öffnen</button><button type="button" class="btn btn-quiet section-toggle" data-action="collapse-all">Alle schließen</button><input class="search-input" id="guide-search" type="search" placeholder="Im Kapitel suchen …" value="${esc(search)}" aria-label="Im Kapitel suchen"><select class="filter-select" id="guide-filter" aria-label="Aufgaben filtern"><option value="all" ${filter==='all'?'selected':''}>Alle Aufgaben</option><option value="open" ${filter==='open'?'selected':''}>Nur offene</option>${Object.entries(CATEGORY).map(([id,name])=>`<option value="${esc(id)}" ${filter===id?'selected':''}>${esc(name)}</option>`).join('')}</select></div></div>
       <div id="section-list">${matchSections.map(({s,i})=>renderSection(s,i,p,opened)).join('')||'<div class="empty"><p>Keine passenden Abschnitte gefunden. Suchbegriff oder Filter zurücksetzen.</p></div>'}</div>
       ${renderParty()}
+      ${renderPurchasePlanner(catalog)}
       ${shopHtml}
       ${catalogHtml}
       <div class="checkpoint"><h3>✓ Checkpoint: Kapitel ${esc(ch.number)}</h3><p>${esc(ch.checkpoint||'Abschnitt abgeschlossen.')}</p><div class="action-row">${next?`<button type="button" class="btn btn-primary" data-action="chapter" data-id="${esc(next.id)}">Weiter zu Kapitel ${esc(next.number)} →</button>`:'<span class="pill">Nächstes Kapitel folgt als JSON-Update</span>'}</div></div>
@@ -433,6 +456,7 @@
       case 'step-later':{
         const slot=slotData(),key=btn.dataset.key;slot.deferred||=[];if(!slot.deferred.includes(key))slot.deferred.push(key);persist();renderStepMode();break;
       }
+      case 'clear-purchase':slotData().purchasePlan={};persist();renderMain();break;
       case 'open-settings':byId('settings-dialog')?.showModal();break;
       case 'close-settings':byId('settings-dialog')?.close();break;
       case 'text-smaller':changeFontSize(-1);break;
@@ -481,9 +505,28 @@
       const expanded=new Set([...document.querySelectorAll('.chapter-section[open]')].map(x=>x.dataset.section));
       renderSidebar();renderMain(expanded);
     }
+    if(event.target.matches('[data-purchase-char]')){
+      const i=Number(event.target.dataset.purchaseChar),kind=event.target.dataset.purchaseKind;
+      if(!Number.isInteger(i)||i<0||i>3)return;
+      const current= getCurrent()?.document?.chapter?.shopCatalog;
+      if(!current)return;
+      const slot=slotData();slot.purchasePlan||={};slot.purchasePlan[i]||={};
+      const pool=kind==='weapon'?current.weapons:kind==='armor'?current.armor:current.magic;
+      const allowed=(pool||[]).filter(x=>x.classes?.includes(slot.party[i]));
+      if(kind==='magic'){
+        const selections=new Set(slot.purchasePlan[i].magic||[]);
+        if(!allowed.some(x=>x.id===event.target.value))return;
+        event.target.checked?selections.add(event.target.value):selections.delete(event.target.value);
+        slot.purchasePlan[i].magic=[...selections];
+      }else if(kind==='weapon'||kind==='armor'){
+        if(event.target.value&&!allowed.some(x=>x.id===event.target.value))return;
+        slot.purchasePlan[i][kind]=event.target.value;
+      }
+      persist();const expanded=new Set([...document.querySelectorAll('.chapter-section[open]')].map(e=>e.dataset.section));renderMain(expanded);return;
+    }
     if(event.target.matches('[data-party-slot]')){
       const slot=slotData(),i=Number(event.target.dataset.partySlot);
-      if(i>=0&&i<4&&CLASS_OPTIONS.some(x=>x[0]===event.target.value)){slot.party[i]=event.target.value;persist();const opened=new Set([...document.querySelectorAll('.chapter-section[open]')].map(e=>e.dataset.section));renderMain(opened);}
+      if(i>=0&&i<4&&CLASS_OPTIONS.some(x=>x[0]===event.target.value)){slot.party[i]=event.target.value;slot.purchasePlan||={};delete slot.purchasePlan[i];persist();const opened=new Set([...document.querySelectorAll('.chapter-section[open]')].map(e=>e.dataset.section));renderMain(opened);}
       return;
     }
     if(event.target.id==='save-selector'){switchSlot(event.target.value);return;}
