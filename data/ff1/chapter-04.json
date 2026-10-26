@@ -26,19 +26,28 @@
             "id": "prepared",
             "category": "preparation",
             "title": "Für Astos vorbereitet",
-            "detail": "Heilmittel, Wiederbelebung und MP geprüft."
+            "detail": "Heilmittel, Wiederbelebung und MP geprüft.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "crown-delivered",
             "category": "story",
             "title": "Mit der Krone den falschen König konfrontiert",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Die Schatzkammer in der Westlichen Festung bleibt noch verschlossen. Mit dem Schlüssel kannst du sie in Kapitel 5 nachholen."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": true
       },
       {
         "id": "astos",
@@ -56,25 +65,38 @@
             "id": "astos-boss",
             "category": "boss",
             "title": "Astos besiegt",
-            "detail": "420 HP; Todeszauber kann Figuren sofort besiegen."
+            "detail": "420 HP; Todeszauber kann Figuren sofort besiegen.",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "astos-bestiary",
             "category": "bestiary",
-            "title": "Astos im Bestiarium registriert",
-            "detail": "Bossgegner der Westlichen Festung; Nummer im Spiel überprüfen."
+            "title": "#033 Astos",
+            "detail": "Pflichtboss im Thronsaal der Westlichen Festung; Bestiarium #033.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "crystal-eye",
             "category": "key-item",
             "title": "Kristallauge erhalten",
-            "detail": "Belohnung für den Bosskampf."
+            "detail": "Belohnung für den Bosskampf.",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Astos ist ein Pflichtboss. Der Kampf im Thronsaal ist nicht mit den Kämpfen vor Schatztruhen zu verwechseln."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "matoya-return",
@@ -92,19 +114,28 @@
             "id": "matoya-eye",
             "category": "story",
             "title": "Kristallauge bei Matoya abgegeben",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "jolt-tonic",
             "category": "key-item",
             "title": "Wachtrank (Jolt Tonic) erhalten",
-            "detail": ""
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
           "Falls du Matoyas drei Truhen noch nicht geöffnet hattest, kannst du das jetzt problemlos nachholen."
         ],
-        "later": []
+        "later": [],
+        "defaultOpen": false
       },
       {
         "id": "prince",
@@ -122,19 +153,31 @@
             "id": "prince-awake",
             "category": "story",
             "title": "Elfenprinz mit Wachtrank erweckt",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "mystic-key",
             "category": "key-item",
             "title": "Mystischen Schlüssel erhalten",
-            "detail": "Öffnet versiegelte Türen und Schatzkammern der frühen Gebiete."
+            "detail": "Öffnet versiegelte Türen und Schatzkammern der frühen Gebiete.",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           },
           {
             "id": "key-ready",
             "category": "story",
             "title": "Schatzrunde für Kapitel 5 vorbereitet",
-            "detail": ""
+            "detail": "",
+            "priority": "recommended",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
           }
         ],
         "tips": [
@@ -142,7 +185,8 @@
         ],
         "later": [
           "Schloss Cornelia, Chaos-Schrein, Elfenschloss, Westliche Festung und Sumpfhöhle: alle zuvor gesperrten Truhen erst im nächsten Kapitel abhaken."
-        ]
+        ],
+        "defaultOpen": false
       }
     ],
     "sources": [
@@ -154,6 +198,13 @@
         "label": "Truhenliste FF1 Pixel Remaster",
         "url": "https://ff1pixelwalkthrough.com/chests/"
       }
-    ]
+    ],
+    "dashboard": {
+      "recommendedLevel": "10–12",
+      "chests": {
+        "accessible": 0
+      }
+    },
+    "contentStatus": "needs-review"
   }
 }
