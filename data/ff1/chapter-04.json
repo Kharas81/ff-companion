@@ -1,0 +1,159 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-04",
+    "number": 4,
+    "title": "Astos & der Mystische Schlüssel",
+    "subtitle": "Krone → Kristallauge → Wachtrank → Mystischer Schlüssel",
+    "difficulty": "Mittel",
+    "summary": "Entlarve den falschen König in der Westlichen Festung, besiege Astos und löse die Questkette um Matoya und den schlafenden Elfenprinzen. Die mystisch verschlossenen Schatzräume hebst du im nächsten Kapitel aus.",
+    "checkpoint": "Astos besiegt, Kristallauge bei Matoya abgegeben, Wachtrank dem Elfenprinzen verabreicht und Mystischen Schlüssel erhalten.",
+    "sections": [
+      {
+        "id": "western",
+        "title": "1 · Westliche Festung: Astos entlarven",
+        "location": "Westliche Festung nordwestlich von Elfheim",
+        "intro": "Der scheinbare Herrscher verlangt die Krone. Er ist in Wahrheit Astos, ein dunkler Elf.",
+        "steps": [
+          "Verlasse die Sumpfhöhle mit der Krone. Gehe zurück zur Westlichen Festung nordwestlich von Elfheim; rüste dich im Zweifel vorher im Gasthaus aus.",
+          "Stelle einen Magier auf Heilung und halte mindestens zwei Phönixfedern bereit. Astos kann den Todeszauber einsetzen.",
+          "Rede mit dem vermeintlichen König im Thronsaal. Er enthüllt sich als Astos, sobald die Krone gebracht wurde."
+        ],
+        "checks": [
+          {
+            "id": "prepared",
+            "category": "preparation",
+            "title": "Für Astos vorbereitet",
+            "detail": "Heilmittel, Wiederbelebung und MP geprüft."
+          },
+          {
+            "id": "crown-delivered",
+            "category": "story",
+            "title": "Mit der Krone den falschen König konfrontiert",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Die Schatzkammer in der Westlichen Festung bleibt noch verschlossen. Mit dem Schlüssel kannst du sie in Kapitel 5 nachholen."
+        ],
+        "later": []
+      },
+      {
+        "id": "astos",
+        "title": "2 · Boss: Astos",
+        "location": "Westliche Festung, Thronsaal",
+        "intro": "Astos hat 420 HP, ist magisch widerstandsfähig und kann mit Tod eine Figur sofort ausschalten.",
+        "steps": [
+          "Lass physische Kämpfer angreifen; verstärke sie mit Hast/Tempo und gegebenenfalls Stärke/Temper.",
+          "Halte Heilmagie und Phönixfedern bereit. Astos' Zauberauswahl umfasst unter anderem Tod, Schlaf, Verlangsamung sowie Feuer- und Blitzmagie.",
+          "Greife mit den stärksten verlässlichen physischen Attacken an. Ein gewirkter Todeszauber bedeutet nicht automatisch eine Niederlage, solange du wiederbeleben kannst.",
+          "Nach dem Sieg erhältst du das Kristallauge. Prüfe, dass es im Inventar ist."
+        ],
+        "checks": [
+          {
+            "id": "astos-boss",
+            "category": "boss",
+            "title": "Astos besiegt",
+            "detail": "420 HP; Todeszauber kann Figuren sofort besiegen."
+          },
+          {
+            "id": "astos-bestiary",
+            "category": "bestiary",
+            "title": "Astos im Bestiarium registriert",
+            "detail": "Bossgegner der Westlichen Festung; Nummer im Spiel überprüfen."
+          },
+          {
+            "id": "crystal-eye",
+            "category": "key-item",
+            "title": "Kristallauge erhalten",
+            "detail": "Belohnung für den Bosskampf."
+          }
+        ],
+        "tips": [
+          "Astos ist ein Pflichtboss. Der Kampf im Thronsaal ist nicht mit den Kämpfen vor Schatztruhen zu verwechseln."
+        ],
+        "later": []
+      },
+      {
+        "id": "matoya-return",
+        "title": "3 · Matoya wiedersehen",
+        "location": "Matoyas Höhle, nördlich von Cornelia",
+        "intro": "Matoya tauscht ihr zurückgebrachtes Kristallauge gegen einen speziellen Trank.",
+        "steps": [
+          "Verlasse die Westliche Festung und gehe zum Schiff zurück. Segele zum nördlichen Küstenbereich bei Cornelia.",
+          "Reise wieder zur Höhle von Matoya, die du bereits in Kapitel 2 besucht hast.",
+          "Sprich Matoya mit dem Kristallauge an. Sie übergibt dir den Wachtrank (Jolt Tonic).",
+          "Das Kristallauge ist damit ausgegeben; das ist die vorgesehene Questabfolge."
+        ],
+        "checks": [
+          {
+            "id": "matoya-eye",
+            "category": "story",
+            "title": "Kristallauge bei Matoya abgegeben",
+            "detail": ""
+          },
+          {
+            "id": "jolt-tonic",
+            "category": "key-item",
+            "title": "Wachtrank (Jolt Tonic) erhalten",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Falls du Matoyas drei Truhen noch nicht geöffnet hattest, kannst du das jetzt problemlos nachholen."
+        ],
+        "later": []
+      },
+      {
+        "id": "prince",
+        "title": "4 · Der Elfenprinz erwacht",
+        "location": "Elfenschloss bei Elfheim",
+        "intro": "Der Wachtrank hebt den Schlafzauber des Elfenprinzen auf; anschließend erhältst du den entscheidenden Schlüssel.",
+        "steps": [
+          "Fahre mit dem Schiff zurück nach Elfheim und besuche erneut das Elfenschloss.",
+          "Gehe zum schlafenden Prinzen. Sprich mit seinem Betreuer, der den Wachtrank einsetzt.",
+          "Nach dem Erwachen gibt dir der Prinz den Mystischen Schlüssel (Mystic Key).",
+          "Jetzt sind die zuvor verschlossenen Türen in mehreren alten Gebieten zugänglich. Die vollständige Schatzrunde erfolgt im nächsten Kapitel."
+        ],
+        "checks": [
+          {
+            "id": "prince-awake",
+            "category": "story",
+            "title": "Elfenprinz mit Wachtrank erweckt",
+            "detail": ""
+          },
+          {
+            "id": "mystic-key",
+            "category": "key-item",
+            "title": "Mystischen Schlüssel erhalten",
+            "detail": "Öffnet versiegelte Türen und Schatzkammern der frühen Gebiete."
+          },
+          {
+            "id": "key-ready",
+            "category": "story",
+            "title": "Schatzrunde für Kapitel 5 vorbereitet",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Der Mystische Schlüssel bleibt dauerhaft in deinem Besitz. Es gibt keine Einmalnutzung."
+        ],
+        "later": [
+          "Schloss Cornelia, Chaos-Schrein, Elfenschloss, Westliche Festung und Sumpfhöhle: alle zuvor gesperrten Truhen erst im nächsten Kapitel abhaken."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Walkthrough: Elfheim, Astos und Schlüssel",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/elfheim-and-marsh-cave"
+      },
+      {
+        "label": "Truhenliste FF1 Pixel Remaster",
+        "url": "https://ff1pixelwalkthrough.com/chests/"
+      }
+    ]
+  }
+}
