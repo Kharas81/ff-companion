@@ -468,7 +468,7 @@
     if(event.target.matches('[data-task]')){
       const key=event.target.dataset.task;
       const p=getCurrent()?.document;
-      if(!p||!getTasks(p).includes(key))return;
+      if(!p||!p.chapter.sections.some(section=>section.checks.some(check=>getTaskKey(p,section,check)===key)))return;
       state.progress[key]=event.target.checked;
       persist();
       const expanded=new Set([...document.querySelectorAll('.chapter-section[open]')].map(x=>x.dataset.section));
