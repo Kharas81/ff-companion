@@ -1,0 +1,349 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-03",
+    "number": 3,
+    "title": "Elfheim & die Sumpfhöhle",
+    "subtitle": "Der schlafende Prinz · Krone aus der Tiefe",
+    "difficulty": "Einsteiger bis Mittel",
+    "summary": "Erkunde Elfheim, bereite dich auf den ersten großen Dungeon vor und sichere die 15 ohne Schlüssel erreichbaren Truhen der Sumpfhöhle samt Krone. Bossgruppe: Piscodemons.",
+    "checkpoint": "Krone aus der Sumpfhöhle erhalten, sämtliche 15 jetzt zugänglichen Schatztruhen geprüft und zum Ausgang zurückgekehrt.",
+    "sections": [
+      {
+        "id": "elfcastle",
+        "title": "1 · Elfenschloss & Elfheim",
+        "location": "Elfenschloss nördlich von Elfheim → Elfheim",
+        "intro": "Der Elfenprinz liegt in tiefem Schlaf. Die vier verschlossenen Schatztruhen im Schloss erfordern den Mystischen Schlüssel – später.",
+        "steps": [
+          "Gehe vom südwestlichen Anlegeplatz zum Elfenschloss nördlich der Stadt. Sprich mit dem Diener beim schlafenden Prinzen.",
+          "Besuche Elfheim: nutze das Gasthaus, statte deine Gruppe neu aus und fülle Tränke, Gegengifte sowie Phönixfedern auf.",
+          "Magier: Zauber der Stufen 3 und 4 sind erhältlich. Priorisiere je nach Gruppe Cura/Heilung, Fira, Thundara und später Haste.",
+          "Für die Sumpfhöhle darfst du nicht nur einen leeren Geldbeutel, sondern vor allem eine gute Versorgung mitnehmen."
+        ],
+        "checks": [
+          {
+            "id": "prince-sleeping",
+            "category": "story",
+            "title": "Schlafenden Elfenprinzen und seinen Diener aufgesucht",
+            "detail": ""
+          },
+          {
+            "id": "elfheim-enter",
+            "category": "story",
+            "title": "Elfheim besucht und Versorgung erneuert",
+            "detail": ""
+          },
+          {
+            "id": "monster013",
+            "category": "bestiary",
+            "title": "#013 Cobra",
+            "detail": "Weltkarte rund um Elfheim."
+          },
+          {
+            "id": "monster014",
+            "category": "bestiary",
+            "title": "#014 Ogre",
+            "detail": "Weltkarte auf dem Weg zwischen Pravoka, Elfheim und den Wäldern."
+          },
+          {
+            "id": "monster015",
+            "category": "bestiary",
+            "title": "#015 Ogre Chief",
+            "detail": "Weltkarte bei Elfheim, teils seltener als Ogre."
+          }
+        ],
+        "tips": [
+          "Gruppenzauber wie Thundara sind gegen Gegnergruppen besonders hilfreich.",
+          "Die Gegner #013–015 lassen sich auch auf späteren Wegen fangen, falls du sie jetzt nicht triffst."
+        ],
+        "later": [
+          "Die vier Schatztruhen im Elfenschloss folgen in Kapitel 5 nach Erhalt des Mystischen Schlüssels."
+        ]
+      },
+      {
+        "id": "western",
+        "title": "2 · Westliche Festung: Auftrag der Krone",
+        "location": "Western Keep nordwestlich von Elfheim",
+        "intro": "Im halb verfallenen Schloss sitzt ein vermeintlicher Herrscher, der seine verlorene Krone zurückfordert.",
+        "steps": [
+          "Wandere von Elfheim aus nordwestwärts durch die Wälder und zwischen die Bergzüge zur Westlichen Festung.",
+          "Sprich im Thronsaal mit dem Herrscher. Er behauptet, die Krone sei in der Sumpfhöhle versteckt.",
+          "Merke dir die verschlossene Kammer der Festung. Betritt sie später mit dem Mystischen Schlüssel, nicht jetzt.",
+          "Verlasse die Festung und gehe südlich zur Sumpfhöhle, erkennbar am Sumpfgelände mit Höhleneingang."
+        ],
+        "checks": [
+          {
+            "id": "western-quest",
+            "category": "story",
+            "title": "Auftrag zur Beschaffung der Krone angenommen",
+            "detail": ""
+          },
+          {
+            "id": "marsh-enter",
+            "category": "story",
+            "title": "Sumpfhöhle erreicht und betreten",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "Vor dem Dungeon heilen und optional draußen speichern. Der Fußweg zurück kann lang werden."
+        ],
+        "later": [
+          "Verschlossener Schatzraum der Westlichen Festung in Kapitel 5."
+        ]
+      },
+      {
+        "id": "marsh-b2north",
+        "title": "3 · Sumpfhöhle B1 und nördliches B2",
+        "location": "Sumpfhöhle B1 → B2 (Nordteil)",
+        "intro": "Die Sumpfhöhle hat mehrere Abzweigungen. Räume erst den nördlichen Bereich mit vier Truhen aus.",
+        "steps": [
+          "Auf B1 zunächst nach Norden zu den Treppen in den nördlichen B2-Bereich gehen.",
+          "Öffne hier die vier Truhen in den Nebenräumen: Dolch, 1.180 Gil, Trank und 1.120 Gil.",
+          "Starker Giftschaden ist möglich. Wenn nötig Gegengifte oder den entsprechenden Heilzauber verwenden.",
+          "Kehre die Treppen nach B1 zurück, bevor du den südlichen Teil erkundest."
+        ],
+        "checks": [
+          {
+            "id": "marsh-n-01",
+            "category": "chest",
+            "title": "Truhe 1/15 – Dolch (Dagger)",
+            "detail": "B2, nördlicher Zweig."
+          },
+          {
+            "id": "marsh-n-02",
+            "category": "chest",
+            "title": "Truhe 2/15 – 1.180 Gil",
+            "detail": "B2, nördlicher Zweig."
+          },
+          {
+            "id": "marsh-n-03",
+            "category": "chest",
+            "title": "Truhe 3/15 – Trank",
+            "detail": "B2, nördlicher Zweig."
+          },
+          {
+            "id": "marsh-n-04",
+            "category": "chest",
+            "title": "Truhe 4/15 – 1.120 Gil",
+            "detail": "B2, nördlicher Zweig."
+          },
+          {
+            "id": "monster023",
+            "category": "bestiary",
+            "title": "#023 Tarantula",
+            "detail": "Sumpfhöhle B1–B3, auch vor Elfheim möglich."
+          },
+          {
+            "id": "monster026",
+            "category": "bestiary",
+            "title": "#026 Shadow",
+            "detail": "Sumpfhöhle, insbesondere B1."
+          },
+          {
+            "id": "monster027",
+            "category": "bestiary",
+            "title": "#027 Green Slime",
+            "detail": "Sumpfhöhle B1–B3."
+          },
+          {
+            "id": "monster028",
+            "category": "bestiary",
+            "title": "#028 Crawler",
+            "detail": "Sumpfhöhle B1–B3."
+          }
+        ],
+        "tips": [
+          "Grüne Schleime reagieren je nach Resistenz anders auf physische Angriffe; probiere einen wirksamen Elementzauber."
+        ],
+        "later": []
+      },
+      {
+        "id": "marsh-b2south",
+        "title": "4 · Sumpfhöhle: südliches B2",
+        "location": "Sumpfhöhle B1 → B2 (Südteil)",
+        "intro": "Vom Einstieg auf B1 führen die südlichen Treppen in einen getrennten B2-Abschnitt.",
+        "steps": [
+          "Steige von B1 über die südliche Treppe nach B2 hinab.",
+          "Untersuche die Kammern und öffne drei Truhen: Trank, Breitschwert und nochmals Trank.",
+          "Halte Ausschau nach Scorpion, Gray Ooze, Gargoyle und Bloodbones; sie tauchen hier oder auf B3 auf.",
+          "Im Südosten dieses Abschnitts liegt die Treppe zum B3-Labyrinth."
+        ],
+        "checks": [
+          {
+            "id": "marsh-s-01",
+            "category": "chest",
+            "title": "Truhe 5/15 – Trank",
+            "detail": "B2, südlicher Zweig."
+          },
+          {
+            "id": "marsh-s-02",
+            "category": "chest",
+            "title": "Truhe 6/15 – Breitschwert (Broadsword)",
+            "detail": "B2, südlicher Zweig."
+          },
+          {
+            "id": "marsh-s-03",
+            "category": "chest",
+            "title": "Truhe 7/15 – Trank",
+            "detail": "B2, südlicher Zweig."
+          },
+          {
+            "id": "monster025",
+            "category": "bestiary",
+            "title": "#025 Scorpion",
+            "detail": "Sumpfhöhle B2–B3."
+          },
+          {
+            "id": "monster029",
+            "category": "bestiary",
+            "title": "#029 Gray Ooze",
+            "detail": "Sumpfhöhle, mehrere Ebenen."
+          },
+          {
+            "id": "monster030",
+            "category": "bestiary",
+            "title": "#030 Gargoyle",
+            "detail": "Sumpfhöhle B2–B3."
+          },
+          {
+            "id": "monster031",
+            "category": "bestiary",
+            "title": "#031 Bloodbones",
+            "detail": "Sumpfhöhle B2–B3."
+          }
+        ],
+        "tips": [
+          "Bloodbones gehört zu den Untoten. Heilmagie gegen Untote und Feuer können nützlich sein."
+        ],
+        "later": []
+      },
+      {
+        "id": "marsh-b3",
+        "title": "5 · B3: 4×4-Raumlabyrinth",
+        "location": "Sumpfhöhle B3 · Raumreihen 1–3",
+        "intro": "Die unterste Etage besteht aus 16 Kammern in vier Reihen mit je vier Räumen. Die gesamte vierte Reihe bleibt zunächst verschlossen.",
+        "steps": [
+          "Stelle dich beim Labyrinth auf die Reihen von oben nach unten und die Spalten von links nach rechts ein.",
+          "Reihe 1: Kammer 1 enthält eine Phönixfeder; Kammern 2 und 3 sind leer; Kammer 4 enthält 1.045 Gil.",
+          "Reihe 2: Kammer 1 enthält einen Kupferarmreif; Kammer 2 zwei Truhen (Hütte und Trank); Kammern 3 und 4 sind leer.",
+          "Reihe 3: Kammer 1 ist leer; Kammer 3 hat 1.135 Gil, Kammer 4 einen Trank. Öffne diese beiden zuerst.",
+          "Reihe 3, Kammer 2: Die Truhe mit der Krone ist von Felsen umgeben und wird von vier Piscodemons bewacht. Gehe erst nach gründlicher Vorbereitung dorthin.",
+          "Reihe 4: Alle vier Kammern bleiben zunächst mit dem Mystischen Schlüssel verschlossen. Später findest du hier drei weitere Truhen."
+        ],
+        "checks": [
+          {
+            "id": "marsh-b3-01",
+            "category": "chest",
+            "title": "Truhe 8/15 – Phönixfeder",
+            "detail": "B3, Reihe 1 / Spalte 1."
+          },
+          {
+            "id": "marsh-b3-02",
+            "category": "chest",
+            "title": "Truhe 9/15 – 1.045 Gil",
+            "detail": "B3, Reihe 1 / Spalte 4."
+          },
+          {
+            "id": "marsh-b3-03",
+            "category": "chest",
+            "title": "Truhe 10/15 – Kupferarmreif",
+            "detail": "B3, Reihe 2 / Spalte 1."
+          },
+          {
+            "id": "marsh-b3-04",
+            "category": "chest",
+            "title": "Truhe 11/15 – Hütte (Cottage)",
+            "detail": "B3, Reihe 2 / Spalte 2, erste Truhe."
+          },
+          {
+            "id": "marsh-b3-05",
+            "category": "chest",
+            "title": "Truhe 12/15 – Trank",
+            "detail": "B3, Reihe 2 / Spalte 2, zweite Truhe."
+          },
+          {
+            "id": "marsh-b3-06",
+            "category": "chest",
+            "title": "Truhe 13/15 – 1.135 Gil",
+            "detail": "B3, Reihe 3 / Spalte 3."
+          },
+          {
+            "id": "marsh-b3-07",
+            "category": "chest",
+            "title": "Truhe 14/15 – Trank",
+            "detail": "B3, Reihe 3 / Spalte 4."
+          }
+        ],
+        "tips": [
+          "Wichtig: Die Krone liegt im selben Labyrinth wie die normalen Truhen. Sie ist ein Schlüsselgegenstand und wird als eigene letzte Truhe geführt."
+        ],
+        "later": [
+          "Die verschlossene vierte Reihe von B3 enthält drei zusätzliche Truhen, die wir erst in Kapitel 5 zählen."
+        ]
+      },
+      {
+        "id": "piscodemon",
+        "title": "6 · Bossgruppe: Piscodemons und Krone",
+        "location": "Sumpfhöhle B3 · Reihe 3, Kammer 2",
+        "intro": "Vier Piscodemons schützen die Krone. Es ist ein gefährlicher Kampf für schlecht vorbereitete Gruppen.",
+        "steps": [
+          "Heile alle Figuren und stelle Zauber sowie Wiederbelebungsmittel vor dem Betreten des Bossraums bereit.",
+          "Beim Öffnen der Krone-Truhe attackieren vier Piscodemons. Jeder besitzt ungefähr 84 HP und kann mehrfach zuschlagen.",
+          "Konzentriere physische Angriffe auf je einen Gegner. Gruppen-Blitzzauber können hilfreich sein, Statusmagie ist wenig zuverlässig.",
+          "Halte die Gruppe am Leben, besiege die Piscodemons und nimm die Krone aus der Truhe.",
+          "Verlasse die Höhle in umgekehrter Richtung: B3 → B2 Süd → B1 → Weltkarte. Lege anschließend eine Rast ein."
+        ],
+        "checks": [
+          {
+            "id": "marsh-b3-08",
+            "category": "chest",
+            "title": "Truhe 15/15 – Krone",
+            "detail": "B3, Reihe 3 / Spalte 2; nach dem Piscodemon-Kampf."
+          },
+          {
+            "id": "piscodemons",
+            "category": "boss",
+            "title": "Vier Piscodemons besiegt",
+            "detail": "Je 84 HP; starke physische Gegner."
+          },
+          {
+            "id": "monster032",
+            "category": "bestiary",
+            "title": "#032 Piscodemon",
+            "detail": "Pflichtkampf bei der Krone, später auch andere Schatzwachen."
+          },
+          {
+            "id": "crown",
+            "category": "key-item",
+            "title": "Schlüsselgegenstand · Krone erhalten",
+            "detail": ""
+          },
+          {
+            "id": "marsh-out",
+            "category": "story",
+            "title": "Sumpfhöhle verlassen und Gruppe geheilt",
+            "detail": ""
+          }
+        ],
+        "tips": [
+          "#024 Ghast ist in dieser Gegend möglich, wird aber im späteren Melmond-/Erdhöhlenabschnitt besser gezielt geprüft.",
+          "Halte die Krone bereit: In Kapitel 4 kehrst du damit zur Westlichen Festung zurück."
+        ],
+        "later": []
+      }
+    ],
+    "sources": [
+      {
+        "label": "FF I Pixel Remaster – Elfheim, Sumpfhöhle, Astos (Vorxu)",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/elfheim-and-marsh-cave"
+      },
+      {
+        "label": "Bestiarium & Fundorte (Pro Game Guides)",
+        "url": "https://progameguides.com/final-fantasy/final-fantasy-1-pixel-remaster-bestiary-locations/"
+      }
+    ]
+  }
+}
