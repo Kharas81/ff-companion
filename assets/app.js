@@ -32,7 +32,7 @@
   const byId = id => document.getElementById(id);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const safeUrl = raw => { try { const u = new URL(raw); return u.protocol === 'https:' || u.protocol === 'http:' ? u.href : ''; } catch { return ''; } };
-  const CATEGORY = {'story':'Story','preparation':'Vorbereitung','chest':'Truhe','bestiary':'Bestiarium','boss':'Boss','key-item':'Schlüsselitem','misc':'Sonstiges'};
+  const CATEGORY = {'story':'Story','preparation':'Vorbereitung','chest':'Truhe','bestiary':'Bestiarium','boss':'Boss','key-item':'Schlüsselitem','misc':'Sonstiges','jobs':'Jobs','blue-magic':'Blaumagie','summons':'Beschwörungen','minigames':'Minispiele'};
   const isRequired = c => c.requiredFor100 !== false && c.optional !== true;
   const canonicalKey = (p,s,c) => c.referenceTo || [p.gameId,p.chapter.id,s.id,c.id].join('/');
   const textPriority = c => c.missable?'⚠️ Verpassbar':c.priority==='key'?'⭐ Wichtig':c.priority==='urgent'?'🔴 Jetzt erledigen':c.priority==='recommended'?'🟡 Empfohlen':c.priority==='optional'?'◯ Optional':'🟢 Nachholbar';
@@ -256,6 +256,7 @@
     if(!current){byId('main').innerHTML=`<div class="breadcrumbs">BIBLIOTHEK / ${esc(game?.title||'')}</div><div class="empty"><span class="eyebrow">IN VORBEREITUNG</span><h2>${esc(game?.title||'Spiel')}</h2><p>Das standardisierte Gerüst steht. Für diesen Teil ist noch kein Kapitel veröffentlicht. Importiere später passende JSON-Dateien – das Layout bleibt gleich.</p><label class="btn btn-primary" for="import-input">Kapiteldatei importieren</label></div>`;return;}
     const p=current.document,ch=p.chapter,st=getStats(p),totalGame=gameStats(p.gameId);
     const where=currentPosition();
+    const resumeHtml=where&&getChapters(state.selectedGame).some(x=>x.document.chapter.id===where.chapterId)?'<div class="resume-cta"><span>📍 Zuletzt gemerkt: '+esc(getChapters(state.selectedGame).find(x=>x.document.chapter.id===where.chapterId)?.document.chapter.title||'Kapitel')+'</span><button class="btn btn-primary" type="button" data-action="resume">Dort fortsetzen</button></div>':'';
     const opened = restoreOpened || new Set([where?.chapterId===ch.id?where.sectionId:(ch.sections.find(x=>x.defaultOpen===true)||ch.sections[0])?.id]);
     const matchSections=ch.sections.map((s,i)=>({s,i})).filter(({s})=>filterSection(s,p));
     const last = getChapters(p.gameId);
@@ -270,6 +271,7 @@
     const sources=(ch.sources||[]).filter(s=>safeUrl(s.url)).map(s=>`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>`).join('');
     byId('main').innerHTML=`
       <div class="breadcrumbs">BIBLIOTHEK / ${esc(game.title)} / <b>Kapitel ${esc(ch.number)}</b></div>
+      ${resumeHtml}
       <article class="hero"><div class="hero-content"><span class="eyebrow">${esc(game.edition)} · KAPITEL ${String(ch.number).padStart(2,'0')}</span><h1>${esc(ch.title)}</h1><div class="hero-sub">${esc(ch.subtitle||'')}</div><p class="hero-description">${esc(ch.summary||'')}</p><div class="pill-row"><span class="pill gold">✦ 100%-Checkliste</span><span class="pill">${esc(ch.difficulty||'Guide')}</span><span class="pill">${ch.sections.length} Teilabschnitte</span>${dash.recommendedLevel?'<span class="pill">Level-Empfehlung: '+esc(dash.recommendedLevel)+'</span>':''}<span class="pill">${totalGame.done}/${totalGame.total} Spiel-Aufgaben</span></div>
       <div class="progress-card"><div class="progress-head"><div><span>Kapitel-Fortschritt</span><br><strong>${st.percent}%</strong></div><span>${st.done} von ${st.total} Aufgaben erledigt</span></div><div class="progress-track" role="progressbar" aria-label="Kapitel-Fortschritt" aria-valuenow="${st.percent}" aria-valuemin="0" aria-valuemax="100"><span style="width:${st.percent}%"></span></div><div class="progress-foot"><span>Dein Fortschritt bleibt im Browser</span><span>${st.percent===100?'✓ Kapitel vollständig':'Noch '+(st.total-st.done)+' offen'}</span></div></div>
       ${where?.chapterId===ch.id?'<div class="position-note"><span>📍 Gemerkt: '+esc(ch.sections.find(s=>s.id===where.sectionId)?.title||'Abschnitt')+'</span><button class="btn btn-quiet" type="button" data-action="jump-position">Zur Stelle springen</button></div>':''}
