@@ -268,6 +268,12 @@
       const columns=[['mustBuy','✅ Nützlich / Voraussetzung'],['optional','🟡 Optional'],['skip','⏭️ Meist überspringen']];
       return '<details class="chapter-section"><summary><span class="section-title"><strong>🛒 Shop: '+esc(shop.location)+'</strong></span></summary><div class="section-body">'+columns.map(([k,label])=>!shop[k]?.length?'':'<h3>'+label+'</h3>'+shop[k].filter(x=>!Array.isArray(x.classes)||x.classes.some(c=>selectedClasses.includes(c))).map(x=>'<p class="lead"><strong>'+esc(x.item)+'</strong> '+esc(x.when||'')+' – '+esc(x.reason||'')+'</p>').join('')).join('')+'</div></details>';
     }).join('');
+    const catalog=ch.shopCatalog;
+    const catalogHtml=catalog?'<details class="chapter-section shop-catalog"><summary><span class="section-title"><strong>🛍️ Cornelia – deutsche Preise & Werte</strong></span></summary><div class="section-body"><p class="lead">Direkt aus der deutschen Spielversion abgelesen. Preise in '+esc(catalog.currency||'Gil')+'.</p>'+
+    '<h3>Waffen</h3><div class="catalog-list">'+(catalog.weapons||[]).map(x=>'<div class="catalog-item"><strong>'+esc(x.name)+'</strong><span>'+esc(x.price)+' Gil · Angriff +'+esc(x.attack)+(x.accuracy===undefined?'':' · Präzision +'+esc(x.accuracy))+'</span></div>').join('')+'</div>'+
+    '<h3>Rüstung</h3><div class="catalog-list">'+(catalog.armor||[]).map(x=>'<div class="catalog-item"><strong>'+esc(x.name)+'</strong><span>'+esc(x.price)+' Gil · Abwehr +'+esc(x.defense)+' · Gewicht +'+esc(x.weight)+'</span></div>').join('')+'</div>'+
+    '<h3>Weißmagie · Stufe 1</h3><div class="catalog-list">'+(catalog.magic||[]).filter(x=>x.school==='white').map(x=>'<div class="catalog-item"><strong>'+esc(x.name)+'</strong><span>'+esc(x.price)+' Gil · '+esc(x.effect||'Wirkung noch offen')+'</span></div>').join('')+'</div>'+
+    '<h3>Schwarzmagie · Stufe 1</h3><div class="catalog-list">'+(catalog.magic||[]).filter(x=>x.school==='black').map(x=>'<div class="catalog-item"><strong>'+esc(x.name)+'</strong><span>'+esc(x.price)+' Gil · '+esc(x.effect||'⚠️ Wirkung noch nicht bestätigt')+'</span></div>').join('')+'</div></div></details>':'';
     const sources=(ch.sources||[]).filter(s=>safeUrl(s.url)).map(s=>`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>`).join('');
     byId('main').innerHTML=`
       <div class="breadcrumbs">BIBLIOTHEK / ${esc(game.title)} / <b>Kapitel ${esc(ch.number)}</b></div>
@@ -280,6 +286,7 @@
       <div id="section-list">${matchSections.map(({s,i})=>renderSection(s,i,p,opened)).join('')||'<div class="empty"><p>Keine passenden Abschnitte gefunden. Suchbegriff oder Filter zurücksetzen.</p></div>'}</div>
       ${renderParty()}
       ${shopHtml}
+      ${catalogHtml}
       <div class="checkpoint"><h3>✓ Checkpoint: Kapitel ${esc(ch.number)}</h3><p>${esc(ch.checkpoint||'Abschnitt abgeschlossen.')}</p><div class="action-row">${next?`<button type="button" class="btn btn-primary" data-action="chapter" data-id="${esc(next.id)}">Weiter zu Kapitel ${esc(next.number)} →</button>`:'<span class="pill">Nächstes Kapitel folgt als JSON-Update</span>'}</div></div>
       ${sources?`<details class="sources"><summary>Quellen & Abgleich für dieses Kapitel</summary>${sources}</details>`:''}`;
   };
