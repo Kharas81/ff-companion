@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#101a2a">
   <meta name="description" content="Inoffizieller Final-Fantasy-100%-Companion mit Kapiteln, Checklisten, lokalen Spielständen und JSON-Import.">
   <title>Final Fantasy · 100% Companion</title>
+  <link rel="manifest" href="app.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="FF Companion">
+  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -17,6 +22,7 @@
     </a>
     <div class="top-actions">
       <span id="storage-label" class="data-badge">Lokal gespeichert</span>
+      <button type="button" class="btn btn-primary mobile-settings-trigger" data-action="open-settings" aria-haspopup="dialog" aria-controls="settings-dialog">⚙️ Optionen</button>
       <div class="font-controls" role="group" aria-label="Schriftgröße ändern">
         <button type="button" class="font-button" data-action="text-smaller" aria-label="Schrift verkleinern" title="Schrift verkleinern">A−</button>
         <span class="font-indicator" id="font-indicator" aria-live="polite">100%</span>
@@ -24,7 +30,7 @@
       </div>
       <button type="button" class="btn btn-quiet" data-action="backup" title="Fortschritt und importierte Kapitel als Datei sichern">↓ Sicherung</button>
       <label class="btn btn-primary" for="import-input">＋ JSON importieren</label>
-      <input id="import-input" type="file" accept=".json,application/json" multiple hidden aria-label="JSON-Dateien importieren">
+      <input id="import-input" class="sr-only" type="file" accept=".json,application/json" multiple aria-label="JSON-Dateien importieren">
     </div>
   </header>
   <div class="layout">
@@ -59,6 +65,19 @@
     </div>
     <button type="button" class="btn btn-primary mobile-next" data-action="next-open">📍 Weiter</button>
   </div>
+  <dialog id="settings-dialog" class="settings-sheet" aria-labelledby="settings-title">
+    <div class="sheet-head"><h2 id="settings-title">⚙️ Optionen</h2><button type="button" class="btn" data-action="close-settings" aria-label="Einstellungen schließen">✕ Schließen</button></div>
+    <p>Schriftgröße, Sicherung und Kapitelimport</p>
+    <div class="sheet-buttons">
+      <div class="font-controls" role="group" aria-label="Schriftgröße im Menü">
+        <button type="button" class="font-button" data-action="text-smaller" aria-label="Schrift verkleinern">A−</button>
+        <span class="font-indicator" id="sheet-font-indicator">100%</span>
+        <button type="button" class="font-button" data-action="text-larger" aria-label="Schrift vergrößern">A+</button>
+      </div>
+      <button type="button" class="btn" data-action="backup">⬇ Sicherung erstellen</button>
+      <label class="btn btn-primary" for="import-input" tabindex="0" role="button" id="sheet-import-label">＋ JSON importieren</label>
+    </div>
+  </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <footer class="footer">Persönliche Häkchen und Spielstände werden <strong>nur auf diesem Gerät und in diesem Browser</strong> gespeichert. · <a href="README.md" target="_blank" rel="noopener">Projektinfos</a></footer>
 <script defer src="assets/offline-seed.js"></script>
