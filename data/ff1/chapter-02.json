@@ -364,7 +364,12 @@
           {
             "item": "Eis/Blitz und Heilmagie",
             "when": "abhängig von deiner Gruppe",
-            "reason": "Nützlich auf See und für das Umland."
+            "reason": "Nützlich auf See und für das Umland.",
+            "classes": [
+              "black-mage",
+              "red-mage",
+              "white-mage"
+            ]
           }
         ],
         "skip": [
