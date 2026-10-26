@@ -8,9 +8,13 @@
       "title": "Final Fantasy I",
       "edition": "Pixel Remaster",
       "chapterFiles": [
-        "data/ff1/chapter-01.json"
+        "data/ff1/chapter-01.json",
+        "data/ff1/chapter-02.json",
+        "data/ff1/chapter-03.json",
+        "data/ff1/chapter-04.json",
+        "data/ff1/chapter-05.json"
       ],
-      "status": "demo"
+      "status": "in-progress"
     },
     {
       "id": "ff2-pr",
