@@ -29,6 +29,9 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const safeUrl = raw => { try { const u = new URL(raw); return u.protocol === 'https:' || u.protocol === 'http:' ? u.href : ''; } catch { return ''; } };
   const CATEGORY = {'story':'Story','preparation':'Vorbereitung','chest':'Truhe','bestiary':'Bestiarium','boss':'Boss','key-item':'Schlüsselitem','misc':'Sonstiges'};
+  const isRequired = c => c.requiredFor100 !== false && c.optional !== true;
+  const canonicalKey = (p,s,c) => c.referenceTo || [p.gameId,p.chapter.id,s.id,c.id].join('/');
+  const textPriority = c => c.missable?'⚠️ Verpassbar':c.priority==='key'?'⭐ Wichtig':c.priority==='urgent'?'🔴 Jetzt erledigen':c.priority==='recommended'?'🟡 Empfohlen':c.priority==='optional'?'◯ Optional':'🟢 Nachholbar';
   const defaultState = () => ({schemaVersion:VERSION,selectedGame:'ff1-pr',selectedChapter:'ff1-01',progress:{},imports:[],activeSlots:{},slots:{},positions:{},view:'guide'});
   const slotId = (game,slot) => game+':'+slot;
   const activeSlot = game => state.activeSlots?.[game] || 1;
@@ -107,11 +110,11 @@
   const getChapters = gameId => [...allChapters.values()].filter(v=>v.document.gameId===gameId)
     .sort((a,b)=>a.document.chapter.number-b.document.chapter.number||a.document.chapter.id.localeCompare(b.document.chapter.id));
   const getCurrent = () => getChapters(state.selectedGame).find(p=>p.document.chapter.id===state.selectedChapter) || getChapters(state.selectedGame)[0] || null;
-  const getTaskKey = (p,s,c) => [p.gameId,p.chapter.id,s.id,c.id].join('/');
-  const getTasks = p => p.chapter.sections.flatMap(s=>s.checks.map(c=>getTaskKey(p,s,c)));
+  const getTaskKey = (p,s,c) => canonicalKey(p,s,c);
+  const getTasks = p => [...new Set(p.chapter.sections.flatMap(s=>s.checks.filter(isRequired).map(c=>getTaskKey(p,s,c))))];
   const stats = keys => {const done=keys.reduce((n,k)=>n+(state.progress[k]===true?1:0),0);return {done,total:keys.length,percent:keys.length?Math.round(done/keys.length*100):0};};
   const getStats = p => stats(getTasks(p));
-  const gameStats = gameId => stats(getChapters(gameId).flatMap(o=>getTasks(o.document)));
+  const gameStats = gameId => stats([...new Set(getChapters(gameId).flatMap(o=>getTasks(o.document)))]);
   const findGame = gameId => manifest.games.find(g=>g.id===gameId);
   const firstChapterSelection = () => {
     if (!manifest.games.some(g=>g.id===state.selectedGame))state.selectedGame=manifest.games[0]?.id||'ff1-pr';
@@ -172,10 +175,10 @@
   };
   const renderChecks = (p,s) => s.checks.map(c => ({...c,key:getTaskKey(p,s,c)})).filter(c => filter==='all'||(filter==='open'?!state.progress[c.key]:c.category===filter)).map(c => {
     const done=state.progress[c.key]===true;
-    return `<label class="task ${done?'checked':''}" data-task-key="${esc(c.key)}"><input type="checkbox" data-task="${esc(c.key)}" ${done?'checked':''}><span class="task-text"><strong><span class="category ${esc(c.category||'misc')}">${esc(CATEGORY[c.category]||CATEGORY.misc)}</span>${esc(c.title)}</strong>${c.detail?`<small>${esc(c.detail)}</small>`:''}</span></label>`;
+    return `<label class="task ${done?'checked':''}" data-task-key="${esc(c.key)}"><input type="checkbox" data-task="${esc(c.key)}" ${done?'checked':''}><span class="task-text"><strong><span class="category ${esc(c.category||'misc')}">${esc(CATEGORY[c.category]||CATEGORY.misc)}</span>${esc(c.title)}</strong><small>${esc(textPriority(c))}${c.requiredFor100===false?' · nicht für Kapitelpflichten':''}</small>${c.detail?`<small>${esc(c.detail)}</small>`:''}</span></label>`;
   }).join('');
   const renderSection = (s,i,p,openSections) => {
-    const st=stats(s.checks.map(c=>getTaskKey(p,s,c)));
+    const st=stats(s.checks.filter(isRequired).map(c=>getTaskKey(p,s,c)));
     const tips=(s.tips||[]).map(t=>`<div class="callout"><strong>💡 TIPP</strong>${esc(t)}</div>`).join('');
     const later=(s.later||[]).map(t=>`<div class="callout later"><strong>↺ SPÄTER WIEDERKOMMEN</strong>${esc(t)}</div>`).join('');
     const steps=(s.steps||[]).map(step=>`<li>${esc(step)}</li>`).join('');
@@ -193,20 +196,26 @@
     if(!current){byId('main').innerHTML=`<div class="breadcrumbs">BIBLIOTHEK / ${esc(game?.title||'')}</div><div class="empty"><span class="eyebrow">IN VORBEREITUNG</span><h2>${esc(game?.title||'Spiel')}</h2><p>Das standardisierte Gerüst steht. Für diesen Teil ist noch kein Kapitel veröffentlicht. Importiere später passende JSON-Dateien – das Layout bleibt gleich.</p><label class="btn btn-primary" for="import-input">Kapiteldatei importieren</label></div>`;return;}
     const p=current.document,ch=p.chapter,st=getStats(p),totalGame=gameStats(p.gameId);
     const where=currentPosition();
-    const opened = restoreOpened || new Set([where?.chapterId===ch.id?where.sectionId:ch.sections[0]?.id]);
+    const opened = restoreOpened || new Set([where?.chapterId===ch.id?where.sectionId:(ch.sections.find(x=>x.defaultOpen===true)||ch.sections[0])?.id]);
     const matchSections=ch.sections.map((s,i)=>({s,i})).filter(({s})=>filterSection(s,p));
     const last = getChapters(p.gameId);
     const index=last.findIndex(o=>o.document.chapter.id===ch.id);
     const next=last[index+1]?.document;
+    const dash=ch.dashboard||{};
+    const shopHtml=(ch.shops||[]).map(shop=>{
+      const columns=[['mustBuy','✅ Nützlich / Voraussetzung'],['optional','🟡 Optional'],['skip','⏭️ Meist überspringen']];
+      return '<details class="chapter-section"><summary><span class="section-title"><strong>🛒 Shop: '+esc(shop.location)+'</strong></span></summary><div class="section-body">'+columns.map(([k,label])=>!shop[k]?.length?'':'<h3>'+label+'</h3>'+shop[k].map(x=>'<p class="lead"><strong>'+esc(x.item)+'</strong> '+esc(x.when||'')+' – '+esc(x.reason||'')+'</p>').join('')).join('')+'</div></details>';
+    }).join('');
     const sources=(ch.sources||[]).filter(s=>safeUrl(s.url)).map(s=>`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>`).join('');
     byId('main').innerHTML=`
       <div class="breadcrumbs">BIBLIOTHEK / ${esc(game.title)} / <b>Kapitel ${esc(ch.number)}</b></div>
-      <article class="hero"><div class="hero-content"><span class="eyebrow">${esc(game.edition)} · KAPITEL ${String(ch.number).padStart(2,'0')}</span><h1>${esc(ch.title)}</h1><div class="hero-sub">${esc(ch.subtitle||'')}</div><p class="hero-description">${esc(ch.summary||'')}</p><div class="pill-row"><span class="pill gold">✦ 100%-Checkliste</span><span class="pill">${esc(ch.difficulty||'Guide')}</span><span class="pill">${ch.sections.length} Teilabschnitte</span><span class="pill">${totalGame.done}/${totalGame.total} Spiel-Aufgaben</span></div>
+      <article class="hero"><div class="hero-content"><span class="eyebrow">${esc(game.edition)} · KAPITEL ${String(ch.number).padStart(2,'0')}</span><h1>${esc(ch.title)}</h1><div class="hero-sub">${esc(ch.subtitle||'')}</div><p class="hero-description">${esc(ch.summary||'')}</p><div class="pill-row"><span class="pill gold">✦ 100%-Checkliste</span><span class="pill">${esc(ch.difficulty||'Guide')}</span><span class="pill">${ch.sections.length} Teilabschnitte</span>${dash.recommendedLevel?'<span class="pill">Level-Empfehlung: '+esc(dash.recommendedLevel)+'</span>':''}<span class="pill">${totalGame.done}/${totalGame.total} Spiel-Aufgaben</span></div>
       <div class="progress-card"><div class="progress-head"><div><span>Kapitel-Fortschritt</span><br><strong>${st.percent}%</strong></div><span>${st.done} von ${st.total} Aufgaben erledigt</span></div><div class="progress-track" role="progressbar" aria-label="Kapitel-Fortschritt" aria-valuenow="${st.percent}" aria-valuemin="0" aria-valuemax="100"><span style="width:${st.percent}%"></span></div><div class="progress-foot"><span>Dein Fortschritt bleibt im Browser</span><span>${st.percent===100?'✓ Kapitel vollständig':'Noch '+(st.total-st.done)+' offen'}</span></div></div>
       ${where?.chapterId===ch.id?'<div class="position-note"><span>📍 Gemerkt: '+esc(ch.sections.find(s=>s.id===where.sectionId)?.title||'Abschnitt')+'</span><button class="btn btn-quiet" type="button" data-action="jump-position">Zur Stelle springen</button></div>':''}
-      <div class="action-row"><button type="button" class="btn btn-primary" data-action="next-open">➜ Nächste offene Aufgabe</button><button type="button" class="btn btn-quiet" data-action="backup">↓ Fortschritt sichern</button><button type="button" class="btn btn-quiet" data-action="reset">↺ Kapitel zurücksetzen</button><button type="button" class="btn finish-chapter" data-action="complete-chapter">✅ Kapitel komplett abhaken &amp; weiter</button></div></div></article>
+      <div class="action-row"><button type="button" class="btn btn-primary" data-action="next-open">➜ Nächste offene Aufgabe</button><button type="button" class="btn btn-quiet" data-action="backup">↓ Fortschritt sichern</button><button type="button" class="btn btn-quiet" data-action="reset">↺ Kapitel zurücksetzen</button><button type="button" class="btn btn-quiet" data-action="story-finish">📖 Story fertig &amp; weiter</button><button type="button" class="btn finish-chapter" data-action="complete-chapter">✅ Alle Pflichtaufgaben abhaken &amp; weiter</button></div></div></article>
       <div class="section-toolbar"><div><h2>Dein Weg durchs Kapitel</h2><p>Aufgaben abhaken, Abschnitt öffnen und direkt weiterspielen.</p></div><div class="filters"><button type="button" class="btn btn-quiet section-toggle" data-action="expand-all">Alle öffnen</button><button type="button" class="btn btn-quiet section-toggle" data-action="collapse-all">Alle schließen</button><input class="search-input" id="guide-search" type="search" placeholder="Im Kapitel suchen …" value="${esc(search)}" aria-label="Im Kapitel suchen"><select class="filter-select" id="guide-filter" aria-label="Aufgaben filtern"><option value="all" ${filter==='all'?'selected':''}>Alle Aufgaben</option><option value="open" ${filter==='open'?'selected':''}>Nur offene</option>${Object.entries(CATEGORY).map(([id,name])=>`<option value="${esc(id)}" ${filter===id?'selected':''}>${esc(name)}</option>`).join('')}</select></div></div>
       <div id="section-list">${matchSections.map(({s,i})=>renderSection(s,i,p,opened)).join('')||'<div class="empty"><p>Keine passenden Abschnitte gefunden. Suchbegriff oder Filter zurücksetzen.</p></div>'}</div>
+      ${shopHtml}
       <div class="checkpoint"><h3>✓ Checkpoint: Kapitel ${esc(ch.number)}</h3><p>${esc(ch.checkpoint||'Abschnitt abgeschlossen.')}</p><div class="action-row">${next?`<button type="button" class="btn btn-primary" data-action="chapter" data-id="${esc(next.id)}">Weiter zu Kapitel ${esc(next.number)} →</button>`:'<span class="pill">Nächstes Kapitel folgt als JSON-Update</span>'}</div></div>
       ${sources?`<details class="sources"><summary>Quellen & Abgleich für dieses Kapitel</summary>${sources}</details>`:''}`;
   };
@@ -226,9 +235,10 @@
     renderMobileProgress();
     const game=findGame(state.selectedGame);
     const entries=getChapters(state.selectedGame).flatMap(o=>o.document.chapter.sections.flatMap(section=>section.checks.filter(c=>c.category==='bestiary').map(c=>({p:o.document,section,c,key:getTaskKey(o.document,section,c)}))));
-    const done=entries.filter(x=>state.progress[x.key]).length;
-    byId('main').innerHTML='<div class="breadcrumbs">BIBLIOTHEK / '+esc(game?.title||'')+' / BESTIARIUM</div><div class="hero"><div class="hero-content"><span class="eyebrow">🐉 GEGNERKATALOG</span><h1>Bestiarium</h1><p class="bestiary-summary">Alle bisher veröffentlichten Gegner dieses Spiels · '+done+' von '+entries.length+' gefunden. Häkchen gelten nur für deinen aktiven Spielstand.</p><div class="action-row"><button class="btn btn-primary" data-action="guide">← Zurück zum Guide</button></div></div></div><div class="bestiary-filters"><input id="bestiary-search" class="search-input" type="search" placeholder="Gegner suchen …" aria-label="Gegner suchen"><select id="bestiary-filter" class="filter-select"><option value="all">Alle Gegner</option><option value="missing">Nur fehlende</option></select></div><div class="bestiary-list" id="bestiary-list"></div>';
-    renderBestiaryEntries(entries);
+    const unique=[...new Map(entries.map(x=>[x.key,x])).values()];
+    const done=unique.filter(x=>state.progress[x.key]).length;
+    byId('main').innerHTML='<div class="breadcrumbs">BIBLIOTHEK / '+esc(game?.title||'')+' / BESTIARIUM</div><div class="hero"><div class="hero-content"><span class="eyebrow">🐉 GEGNERKATALOG</span><h1>Bestiarium</h1><p class="bestiary-summary">Alle bisher veröffentlichten Gegner dieses Spiels · '+done+' von '+unique.length+' gefunden. Häkchen gelten nur für deinen aktiven Spielstand.</p><div class="action-row"><button class="btn btn-primary" data-action="guide">← Zurück zum Guide</button></div></div></div><div class="bestiary-filters"><input id="bestiary-search" class="search-input" type="search" placeholder="Gegner suchen …" aria-label="Gegner suchen"><select id="bestiary-filter" class="filter-select"><option value="all">Alle Gegner</option><option value="missing">Nur fehlende</option></select></div><div class="bestiary-list" id="bestiary-list"></div>';
+    renderBestiaryEntries(unique);
   };
   const renderBestiaryEntries = entries => {
     const host=byId('bestiary-list');if(!host)return;
@@ -236,6 +246,16 @@
     const missing=byId('bestiary-filter')?.value==='missing';
     const subset=entries.filter(x=>(!missing||!state.progress[x.key])&&[x.c.title,x.c.detail,x.p.chapter.title].join(' ').toLocaleLowerCase('de').includes(q));
     host.innerHTML=subset.map(x=>'<article class="bestiary-card"><label class="task '+(state.progress[x.key]?'checked':'')+'"><input type="checkbox" data-bestiary-task="'+esc(x.key)+'" '+(state.progress[x.key]?'checked':'')+'><span class="task-text"><strong>🐉 '+esc(x.c.title)+'</strong>'+ (x.c.detail?'<small>'+esc(x.c.detail)+'</small>':'')+'</span></label><div class="bestiary-meta"><span class="pill">Kapitel '+esc(x.p.chapter.number)+': '+esc(x.p.chapter.title)+'</span><button type="button" class="bestiary-source" data-action="bestiary-location" data-chapter="'+esc(x.p.chapter.id)+'" data-section="'+esc(x.section.id)+'">Fundort anzeigen</button></div></article>').join('')||'<div class="empty"><p>Keine passenden Gegner gefunden.</p></div>';
+  };
+  const storyFinish = () => {
+    const current=getCurrent()?.document;if(!current)return;
+    const chapters=getChapters(state.selectedGame),idx=chapters.findIndex(x=>x.document.chapter.id===current.chapter.id),next=chapters[idx+1]?.document;
+    if(!confirm('Story in diesem Kapitel als beendet markieren? Alle offenen Truhen und Bestiarium-Einträge bleiben unverändert.'))return;
+    state.storyCompleted ||= {};
+    state.storyCompleted[slotId(state.selectedGame,activeSlot(state.selectedGame))+'/'+current.chapter.id]=true;
+    persist();
+    if(next)selectChapter(next.chapter.id);else render();
+    notify('📖 Story abgeschlossen. Sammelaufgaben bleiben unverändert.');
   };
   const completeChapter = () => {
     const current=getCurrent()?.document;if(!current)return;
@@ -334,6 +354,7 @@
       case 'expand-all':document.querySelectorAll('.chapter-section').forEach(d=>d.open=true);break;
       case 'collapse-all':document.querySelectorAll('.chapter-section').forEach(d=>d.open=false);break;
       case 'complete-chapter':completeChapter();break;
+      case 'story-finish':storyFinish();break;
       case 'bookmark':setPosition(btn.dataset.id);break;
       case 'jump-position':{
         const where=currentPosition();if(!where)return;
