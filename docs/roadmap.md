@@ -106,3 +106,23 @@ Folgende Änderungen sind **im Repository programmiert**; einzelne Prüfungen au
 
 **Tests vor produktiver Freigabe:** JavaScript-Syntax, GitHub-Dateizugriff und JSON-Parsing geprüft. Noch offen: Vollständiger Browser-/Mobiltest von Schrittmodus, Slotwechsel, Shop-Klassenauswahl, Offline-PWA und Import/Export. Kein Anspruch, dass alle Spielinhalte bereits 100 % vollständig redaktionell geprüft sind.
 
+
+
+## Arbeitsstand 26.10.2026 – QA-Runde vor Kapitel 6
+
+### Erledigt und technisch kontrolliert
+- [x] GitHub Actions Workflow `.github/workflows/validate.yml` und eigenständiger Python-Prüfer `scripts/validate_guide.py` hinzugefügt. Prüft JSON-Formate, Kapitelreferenzen, eindeutige Aufgaben-IDs, zulässige Kategorien, Verweise und Kapitel-1–5-Truhenverteilung.
+- [x] Gegenprüfung der bereits vorhandenen Kapitel 1–5 im Repository: 5 registrierte Dateien, 129 eindeutige Aufgaben-IDs, keine doppelten IDs, 3 kanonische Querverweise alle gültig, JS-Syntax gültig.
+- [x] Fehler behoben: optionale Checklisten-Aufgaben (z. B. Schiffs-Puzzle) lassen sich wieder abhaken, ohne zum Pflichtfortschritt zu zählen.
+- [x] Dokumentierter Nummernstand: Astos #033, Garland #012. Fehlender #024 Ghast bleibt *geplant*; nicht als bereits eingesammelt oder geprüft behaupten.
+
+### Ausdrücklich weiterhin OFFEN
+- [ ] **Redaktionelles Truhen-Audit**: Jede der 50 bisher erfassten Truhen mit exakter Pixel-Remaster-Referenz (Stockwerk, Richtung, Raum, Inhalt, Wächter) vergleichen. Die bisherige Verteilung [3,3,15,0,29] ist ein interner Konsistenz-Check, keine unabhängige Bestätigung jedes Schatzinhalts.
+- [ ] **Redaktionelles Bestiarium-/Kampfaudit**: Reihenfolge, #024 Ghast, Monsterorte, Boss-Angriffe und Magieeffekte für Kapitel 1–5 vollständig belegen.
+- [ ] **Shop-/Level- und Nebeninhalte-Audit**: verifizierte Shoppreise/Zauberstufen je Version, Levelspannen, Schiffs-Puzzle-Erfolg, Smyth-/Adamantit-Rückkehrmarker.
+- [ ] **Automatische CI-Ausführung prüfen**: Workflow wurde angelegt; ein erfolgreicher GitHub-Actions-Lauf wurde hier noch nicht nachgewiesen.
+- [ ] **End-to-end-Tests**: Browser, Handy, PWA/offline, drei Spielstände, Spielstandsicherung/-wiederherstellung, Schrittmodus, Klassenwahl und beide Kapitelabschlüsse.
+- [ ] **Migrationstests**: Fortschritt und Häkchen aus älteren JSON-/App-Versionen darf nicht verloren gehen.
+- [ ] **Guide vollständigkeitsabhängig markieren**: `contentStatus` erst nach fachlichem Audit auf `verified` stellen.
+
+**GitHub-Änderungen dieser Runde:** neue Validierungsdatei, GitHub-Actions-Workflow und Korrektur des optionalen Aufgaben-Häkchens. Andere als „offen“ benannte Aufgaben wurden ausdrücklich nicht als erledigt markiert.
