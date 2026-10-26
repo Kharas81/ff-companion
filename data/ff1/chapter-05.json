@@ -25,8 +25,8 @@
           {
             "id": "cor-01",
             "category": "chest",
-            "title": "Schlosstruhe 1/6 – Eisrüstung / Eisenrüstung (Iron Armor)",
-            "detail": "Beide Räume im Schloss-Erdgeschoss; Gegenstandsname in deutscher Version prüfen."
+            "title": "Schlosstruhe 1/6 – Eisenrüstung (Iron Armor)",
+            "detail": "Verschlossener Raum im Schloss-Erdgeschoss."
           },
           {
             "id": "cor-02",
@@ -113,7 +113,7 @@
         "steps": [
           "Fahre zurück nach Elfheim und betrete das Elfenschloss.",
           "Suche die verschlossene Schatzkammer; je nach Weg ist sie entlang des äußeren Schlossrands erreichbar.",
-          "Öffne alle vier Truhen. Der Raum enthält unter anderem Mithrilhammer, Bronzehandschuhe und Gil."
+          "Öffne alle vier Truhen: Mithrilhammer, 800 Gil, 700 Gil und Bronzehandschuhe."
         ],
         "checks": [
           {
@@ -125,24 +125,24 @@
           {
             "id": "elf-02",
             "category": "chest",
-            "title": "Elfenschloss-Truhe 2/4 – Bronzehandschuhe",
+            "title": "Elfenschloss-Truhe 2/4 – 800 Gil",
             "detail": "Verschlossene Schatzkammer."
           },
           {
             "id": "elf-03",
             "category": "chest",
-            "title": "Elfenschloss-Truhe 3/4 – 730 Gil",
+            "title": "Elfenschloss-Truhe 3/4 – 700 Gil",
             "detail": "Verschlossene Schatzkammer."
           },
           {
             "id": "elf-04",
             "category": "chest",
-            "title": "Elfenschloss-Truhe 4/4 – vierte Schatztruhe geöffnet",
+            "title": "Elfenschloss-Truhe 4/4 – Bronzehandschuhe",
             "detail": "Gegenstand vor Ort mit der Spielanzeige abgleichen."
           }
         ],
         "tips": [
-          "Zähle vor Ort genau vier Truhen. Ältere Versions-Guides nennen teils abweichende Gegenstandslisten."
+          "Vier Truhen: Mithrilhammer, 800 Gil, 700 Gil und Bronzehandschuhe; alle hinter dem Mystischen Schlüssel."
         ],
         "later": []
       },
@@ -180,6 +180,18 @@
             "category": "preparation",
             "title": "Schatzwachen besiegt und Gruppe wieder geheilt",
             "detail": ""
+          },
+          {
+            "id": "mob034",
+            "category": "bestiary",
+            "title": "#034 Mummy",
+            "detail": "Schatzwache an der Westlichen Festung."
+          },
+          {
+            "id": "mob035",
+            "category": "bestiary",
+            "title": "#035 Wraith",
+            "detail": "Schatzwache an der Westlichen Festung."
           }
         ],
         "tips": [
@@ -195,7 +207,7 @@
         "steps": [
           "Bereite dich in Elfheim auf einen weiteren langen Dungeon-Besuch vor. Nimm Heiltränke, Gegengifte und Phönixfedern mit.",
           "Gehe zurück in die Sumpfhöhle, über B1 und B2 Süd auf B3.",
-          "Öffne die drei bisher gesperrten Truhen hinter den Mystischen Türen: Mithrildolch, 1.020 Gil und Silberarmreif.",
+          "Öffne die drei bisher gesperrten Truhen hinter den Mystischen Türen: Silberarmreif, Gegengift und 1.020 Gil. Die dritte Kammer von links ist leer.",
           "Bewachte Truhen können erneut Piscodemon-Gruppen auslösen; unterschätze sie nicht.",
           "Nach dem Ausräumen kannst du die Sumpfhöhle endgültig als truhenvollständig abhaken."
         ],
@@ -203,19 +215,19 @@
           {
             "id": "marsh-key-01",
             "category": "chest",
-            "title": "Sumpfhöhle-Truhe 16/18 – Mithrildolch",
+            "title": "Sumpfhöhle-Truhe 16/18 – Silberarmreif",
             "detail": "B3, verschlossener Raum."
           },
           {
             "id": "marsh-key-02",
             "category": "chest",
-            "title": "Sumpfhöhle-Truhe 17/18 – 1.020 Gil",
+            "title": "Sumpfhöhle-Truhe 17/18 – Gegengift",
             "detail": "B3, verschlossener Raum."
           },
           {
             "id": "marsh-key-03",
             "category": "chest",
-            "title": "Sumpfhöhle-Truhe 18/18 – Silberarmreif",
+            "title": "Sumpfhöhle-Truhe 18/18 – 1.020 Gil",
             "detail": "B3, verschlossener Raum."
           },
           {
@@ -223,6 +235,12 @@
             "category": "story",
             "title": "Sumpfhöhle vollständig ausgeräumt (18/18 Truhen)",
             "detail": ""
+          },
+          {
+            "id": "mob036",
+            "category": "bestiary",
+            "title": "#036 Anaconda",
+            "detail": "Mystischer Raum B3 der Sumpfhöhle."
           }
         ],
         "tips": [
@@ -366,6 +384,10 @@
       {
         "label": "Truhenliste FF1 Pixel Remaster",
         "url": "https://ff1pixelwalkthrough.com/chests/"
+      },
+      {
+        "label": "Mystic Key Chests (Solo Play Guide)",
+        "url": "https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/guide/06-mystic-key-chests"
       }
     ]
   }
