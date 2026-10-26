@@ -142,3 +142,18 @@ Folgende Änderungen sind **im Repository programmiert**; einzelne Prüfungen au
 - [ ] **Kaufkosten-Rechner** aus konkreter Vierergruppe und benötigten Zaubern erstellen; Budget und doppelte Käufe beachten.
 
 **Vermerk:** Spielerbestätigte Daten sind direkte Ingame-Beobachtungen, aber ersetzen keine vollständige Truhen-/Bestiarium-Abnahme. `contentStatus` bleibt `needs-review`.
+
+
+## 26.10.2026 – Cornelia-Einkaufsrechner
+
+- [x] Acht Ausrüstungsgegenstände in `data/ff1/chapter-01.json` anhand der ermittelten Trageklassen mit `classes[]` ausgestattet (fünf Waffen, drei Rüstungen).
+- [x] Acht Zauber der weißen/schwarzen Magiestufe 1 mit zulässigen Grundklassen annotiert.
+- [x] **Kaufkosten-Rechner** für die vier ausgewählten FF-I-Figuren eingebaut: jeweils eine Waffe, eine Rüstung und auswählbare Zauber. Gesamtsumme berechnet sich aus den im Cornelia-Katalog hinterlegten Gilpreisen.
+- [x] Auswahl getrennt pro Spielstand gespeichert; Klassenwechsel leert die betroffene Figurenauswahl, damit keine unpassende Ausrüstung erhalten bleibt.
+- [x] Auswahl zurücksetzen und Mobil-Layout ergänzt; kein Kauf wird automatisch als im Spiel erfolgt betrachtet.
+- [ ] Trageklassen und Magie-Zulassung einzelner Gegenstände zusätzlich im deutschen Pixel Remaster verifizieren und eventuelle Korrekturen vornehmen.
+- [ ] Startausrüstung, schon erlernte Zauber, maximal drei Zauber je Stufe und verfügbares Gil als weitere Option einbauen; bisher ist der Betrag ein **Kaufplan**, keine automatische Geldbörsenrechnung.
+- [ ] Browser-/Mobiltest des Rechners mit mehreren Gruppen und drei Spielständen durchführen.
+- [ ] Isegrim-Zuordnung sowie noch unbekannte Beschreibung von Blitz ergänzen.
+
+Hinweis: Originale Aufgaben-IDs/Spielstände bleiben unverändert; Kapitel 1 behält den Status `needs-review`.
