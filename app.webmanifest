@@ -1,0 +1,19 @@
+{
+  "name": "Final Fantasy 100% Companion",
+  "short_name": "FF Companion",
+  "description": "Deutschsprachiger offlinefähiger Final Fantasy Pixel Remaster Begleiter",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1320",
+  "theme_color": "#101a2a",
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
