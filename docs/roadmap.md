@@ -94,3 +94,15 @@ Folgende Änderungen sind **im Repository programmiert**; einzelne Prüfungen au
 - [ ] Globale 100%-Gesamtübersicht, Schritt-für-Schritt-Modus und Wiedereinstiegsdialog aus voriger Roadmap umsetzen.
 
 ---
+
+
+## Ausbau vom 26. Oktober 2026: fünf Komfortfunktionen
+
+- [x] 📊 **Globale 100-%-Übersicht** je ausgewähltem Spiel/Spielstand: veröffentlichte Pflichtaufgaben nach Truhen, Gegnern, Bossen, Schlüsselitems, Story und Sonstigem gegliedert, mit fehlenden Einträgen und Sprung zum Fundort. Gespiegelte Gegner werden anhand der kanonischen Aufgaben-ID dedupliziert.
+- [x] 🎯 **Schritt-für-Schritt-Modus**: eine offene Pflichtaufgabe anzeigen und mit `Erledigt`, `Später` oder `Zum Abschnitt` bearbeiten. Aufgeschobene Aufgaben bleiben offen und sind spielstandbezogen gespeichert.
+- [x] 📍 **Fortsetzen**: aus der mobilen Daumenleiste oder dem Hinweis im Kapitel zur zuletzt gesetzten Position springen; Speicherort ist spielstandbezogen.
+- [x] 🛒 **Gruppenspezifische Shopempfehlungen**: vier editierbare Klassen je Spielstand für FF I; die in Kapitel 1 und 2 vorhandenen `shops[]`-Empfehlungen werden mit `classes[]` gefiltert. Weitere Kapitel und Spiele benötigen ergänzende Shop-Daten.
+- [x] 🧙 **Erweiterbare Sammlungsansicht**: Bestiarium, Schatztruhen, Schlüsselgegenstände, Bosse sowie vorbereitete Kategorien für Jobs, Blaumagie, Beschwörungen und Minispiele. Leere Kategorien werden ausdrücklich als noch nicht veröffentlicht ausgewiesen.
+
+**Tests vor produktiver Freigabe:** JavaScript-Syntax, GitHub-Dateizugriff und JSON-Parsing geprüft. Noch offen: Vollständiger Browser-/Mobiltest von Schrittmodus, Slotwechsel, Shop-Klassenauswahl, Offline-PWA und Import/Export. Kein Anspruch, dass alle Spielinhalte bereits 100 % vollständig redaktionell geprüft sind.
+
