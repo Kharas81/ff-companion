@@ -150,6 +150,58 @@
     state.slots[slotId(state.selectedGame,activeSlot(state.selectedGame))].position={chapterId:current.chapter.id,sectionId};
     persist();render();notify('📍 Deine Position wurde gespeichert.');
   };
+  const slotData = () => {ensureSlots();return state.slots[slotId(state.selectedGame,activeSlot(state.selectedGame))];};
+  const deferredKeys = () => {const slot=slotData();slot.deferred ||= [];return slot.deferred;};
+  const viewEntries = () => getChapters(state.selectedGame).flatMap(({document:p})=>p.chapter.sections.flatMap(section=>section.checks.map(c=>({p,section,c,key:getTaskKey(p,section,c)}))));
+  const dedupEntries = entries => [...new Map(entries.map(e=>[e.key,e])).values()];
+  const setView = view => {state.view=view;persist();render();setMobileMenu(false);byId('main').scrollIntoView({behavior:'smooth',block:'start'});};
+  const goToEntry = e => {
+    state.selectedChapter=e.p.chapter.id;state.view='guide';search='';filter='all';persist();renderSidebar();renderMain(new Set([e.section.id]));
+    const target=[...document.querySelectorAll('[data-task-key]')].find(x=>x.dataset.taskKey===e.key);
+    (target||[...document.querySelectorAll('.chapter-section')].find(x=>x.dataset.section===e.section.id))?.scrollIntoView({behavior:'smooth',block:'center'});
+  };
+  const resume = () => {
+    const where=currentPosition();
+    if(where && getChapters(state.selectedGame).some(x=>x.document.chapter.id===where.chapterId)){
+      state.selectedChapter=where.chapterId;state.view='guide';persist();renderSidebar();renderMain(new Set([where.sectionId]));
+      const section=[...document.querySelectorAll('.chapter-section')].find(x=>x.dataset.section===where.sectionId);
+      section?.scrollIntoView({behavior:'smooth',block:'start'});
+      return;
+    }
+    state.view='guide';render();nextOpen();
+  };
+  const renderDashboard = () => {
+    const game=findGame(state.selectedGame),all=dedupEntries(viewEntries()),required=all.filter(e=>isRequired(e.c));
+    const categories=[['chest','📦 Truhen'],['bestiary','🐉 Bestiarium'],['boss','👑 Bosse'],['key-item','⭐ Schlüsselgegenstände'],['story','📖 Story'],['other','📋 Sonstige']];
+    const grouped=categories.map(([id,label])=>{
+      const relevant=required.filter(e=>id==='other'?!['chest','bestiary','boss','key-item','story'].includes(e.c.category):e.c.category===id);
+      const done=relevant.filter(e=>state.progress[e.key]===true).length;
+      return {id,label,relevant,done};
+    });
+    const finished=required.filter(e=>state.progress[e.key]===true).length;
+    byId('main').innerHTML='<div class="breadcrumbs">'+esc(game?.title||'')+' / SAMMLUNG</div><div class="hero"><div class="hero-content"><span class="eyebrow">GESAMTÜBERSICHT</span><h1>Dein 100-%-Überblick</h1><p class="hero-description">Fortschritt der bisher veröffentlichten Kapitel – keine Aussage über 100 % des gesamten Spiels.</p><div class="action-row"><button class="btn btn-primary" data-action="guide">← Zum Guide</button></div></div></div><div class="dashboard-stats"><div class="overview-stat"><strong>'+finished+'/'+required.length+'</strong><span>Pflichtaufgaben</span></div><div class="overview-stat"><strong>'+grouped.find(x=>x.id==='chest').done+'/'+grouped.find(x=>x.id==='chest').relevant.length+'</strong><span>Truhen</span></div><div class="overview-stat"><strong>'+grouped.find(x=>x.id==='bestiary').done+'/'+grouped.find(x=>x.id==='bestiary').relevant.length+'</strong><span>Gegner</span></div></div>'+grouped.map(group=>'<section class="overview-group"><h2>'+group.label+' · '+group.done+'/'+group.relevant.length+'</h2>'+(group.relevant.filter(e=>state.progress[e.key]!==true).map(e=>'<div class="overview-task"><span>'+esc(e.c.title)+'<small>Kapitel '+e.p.chapter.number+' · '+esc(e.section.location||e.section.title)+'</small></span><button class="btn btn-quiet" data-action="goto-entry" data-key="'+esc(e.key)+'">Fundort</button></div>').join('')||'<p class="step-done">✓ In den veröffentlichten Kapiteln alles erledigt</p>')+'</section>').join('');
+  };
+  const renderStepMode = () => {
+    const entries=dedupEntries(viewEntries()).filter(e=>isRequired(e.c));
+    const defer=new Set(deferredKeys());
+    const next=entries.find(e=>state.progress[e.key]!==true&&!defer.has(e.key))||entries.find(e=>state.progress[e.key]!==true);
+    const game=findGame(state.selectedGame);
+    if(!next){byId('main').innerHTML='<section class="step-panel"><h2>🎉 Alle bisher veröffentlichten Pflichtaufgaben erledigt</h2><button class="btn btn-primary" data-action="dashboard">Zur Gesamtübersicht</button></section>';return;}
+    const num=entries.findIndex(e=>e.key===next.key)+1;
+    byId('main').innerHTML='<div class="breadcrumbs">'+esc(game?.title||'')+' / SPIELMODUS</div><section class="step-panel"><div class="step-counter">🎯 Aufgabe '+num+' von '+entries.length+' · Kapitel '+next.p.chapter.number+'</div><h2>'+esc(next.c.title)+'</h2><p>'+esc(next.c.detail||next.section.intro||'')+'</p><p>📍 '+esc(next.section.location||next.section.title)+'</p><div class="callout">'+esc(next.section.steps?.[0]||'')+'</div><div class="step-controls"><button class="btn btn-primary" data-action="step-done" data-key="'+esc(next.key)+'">✓ Erledigt</button><button class="btn" data-action="step-later" data-key="'+esc(next.key)+'">⏳ Später</button><button class="btn" data-action="goto-entry" data-key="'+esc(next.key)+'">📖 Zum Abschnitt</button></div><p class="collection-note">„Später“ verschiebt die Aufgabe nur. Sie bleibt für 100 % offen.</p><button class="btn btn-quiet" data-action="dashboard">Alle Aufgaben anzeigen</button></section>';
+  };
+  const renderCollections = () => {
+    const game=findGame(state.selectedGame),all=dedupEntries(viewEntries());
+    const kinds=[['bestiary','🐉 Bestiarium'],['chest','📦 Schatztruhen'],['key-item','⭐ Schlüsselgegenstände'],['boss','👑 Bosse'],['jobs','🧙 Jobs'],['blue-magic','🔷 Blaumagie'],['summons','✨ Beschwörungen'],['minigames','🎲 Minispiele']];
+    const special=(game?.collections||[]);
+    for(const item of special)if(!kinds.some(x=>x[0]===item.id))kinds.push([item.id,item.title||item.id]);
+    byId('main').innerHTML='<div class="hero"><div class="hero-content"><span class="eyebrow">SPIELABHÄNGIGE SAMMLUNGEN</span><h1>Sammlungen</h1><p class="hero-description">Nur vorhandene Daten werden gezählt. Jobs, Blaumagie und Beschwörungen erscheinen automatisch, sobald ihre Kapitel diese Kategorien enthalten.</p><button class="btn btn-primary" data-action="guide">← Zum Guide</button></div></div>'+kinds.map(([id,label])=>{const entries=all.filter(e=>e.c.category===id);const found=entries.filter(e=>state.progress[e.key]===true).length;return '<section class="overview-group"><h2>'+label+' · '+found+'/'+entries.length+'</h2>'+(entries.length?entries.filter(e=>!state.progress[e.key]).map(e=>'<div class="overview-task"><span>'+esc(e.c.title)+'</span><button class="btn" data-action="goto-entry" data-key="'+esc(e.key)+'">Ansehen</button></div>').join('')||'<p class="step-done">✓ Alle Einträge erledigt</p>':'<p class="collection-note">Für diesen FF-Teil noch keine Einträge veröffentlicht.</p>')+'</section>'}).join('');
+  };
+  const CLASS_OPTIONS=[['warrior','Krieger'],['thief','Dieb'],['monk','Mönch'],['red-mage','Rotmagier'],['white-mage','Weißmagier'],['black-mage','Schwarzmagier']];
+  const renderParty = () => {
+    const slot=slotData();slot.party ||= ['warrior','monk','white-mage','black-mage'];
+    return '<section class="party-panel"><h3>🛒 Deine Gruppe für Kaufempfehlungen</h3><p>Die vier Klassen bestimmen, welche Shopangebote angezeigt werden. Nur eine Empfehlung, kein Pflichtkauf.</p><div class="party-slots">'+slot.party.map((value,i)=>'<label class="party-slot">Figur '+(i+1)+'<select data-party-slot="'+i+'">'+CLASS_OPTIONS.map(([key,name])=>'<option value="'+key+'" '+(key===value?'selected':'')+'>'+name+'</option>').join('')+'</select></label>').join('')+'</div></section>';
+  };
   const renderSidebar = () => {
     ensureSlots();
     const selector=byId('save-selector');
@@ -157,6 +209,7 @@
       selector.innerHTML=[1,2,3].map(n=>'<option value="'+n+'">'+esc(state.slots[slotId(state.selectedGame,n)].name)+'</option>').join('');
       selector.value=String(activeSlot(state.selectedGame));
     }
+    for(const [id,view] of [['dashboard-link','dashboard'],['step-link','steps'],['collections-link','collections']])byId(id)?.classList.toggle('active',state.view===view);
     const bestiaryLink=byId('bestiary-link');
     if(bestiaryLink)bestiaryLink.classList.toggle('active',state.view==='bestiary');
     byId('game-list').innerHTML=manifest.games.map(g => {
@@ -197,6 +250,9 @@
     renderMobileProgress();
     const current=getCurrent(); const game=findGame(state.selectedGame);
     if(state.view==='bestiary'){renderBestiary();return;}
+    if(state.view==='dashboard'){renderMobileProgress();renderDashboard();return;}
+    if(state.view==='steps'){renderMobileProgress();renderStepMode();return;}
+    if(state.view==='collections'){renderMobileProgress();renderCollections();return;}
     if(!current){byId('main').innerHTML=`<div class="breadcrumbs">BIBLIOTHEK / ${esc(game?.title||'')}</div><div class="empty"><span class="eyebrow">IN VORBEREITUNG</span><h2>${esc(game?.title||'Spiel')}</h2><p>Das standardisierte Gerüst steht. Für diesen Teil ist noch kein Kapitel veröffentlicht. Importiere später passende JSON-Dateien – das Layout bleibt gleich.</p><label class="btn btn-primary" for="import-input">Kapiteldatei importieren</label></div>`;return;}
     const p=current.document,ch=p.chapter,st=getStats(p),totalGame=gameStats(p.gameId);
     const where=currentPosition();
@@ -206,9 +262,10 @@
     const index=last.findIndex(o=>o.document.chapter.id===ch.id);
     const next=last[index+1]?.document;
     const dash=ch.dashboard||{};
+    const selectedClasses=slotData().party||['warrior','monk','white-mage','black-mage'];
     const shopHtml=(ch.shops||[]).map(shop=>{
       const columns=[['mustBuy','✅ Nützlich / Voraussetzung'],['optional','🟡 Optional'],['skip','⏭️ Meist überspringen']];
-      return '<details class="chapter-section"><summary><span class="section-title"><strong>🛒 Shop: '+esc(shop.location)+'</strong></span></summary><div class="section-body">'+columns.map(([k,label])=>!shop[k]?.length?'':'<h3>'+label+'</h3>'+shop[k].map(x=>'<p class="lead"><strong>'+esc(x.item)+'</strong> '+esc(x.when||'')+' – '+esc(x.reason||'')+'</p>').join('')).join('')+'</div></details>';
+      return '<details class="chapter-section"><summary><span class="section-title"><strong>🛒 Shop: '+esc(shop.location)+'</strong></span></summary><div class="section-body">'+columns.map(([k,label])=>!shop[k]?.length?'':'<h3>'+label+'</h3>'+shop[k].filter(x=>!Array.isArray(x.classes)||x.classes.some(c=>selectedClasses.includes(c))).map(x=>'<p class="lead"><strong>'+esc(x.item)+'</strong> '+esc(x.when||'')+' – '+esc(x.reason||'')+'</p>').join('')).join('')+'</div></details>';
     }).join('');
     const sources=(ch.sources||[]).filter(s=>safeUrl(s.url)).map(s=>`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>`).join('');
     byId('main').innerHTML=`
@@ -219,6 +276,7 @@
       <div class="action-row"><button type="button" class="btn btn-primary" data-action="next-open">➜ Nächste offene Aufgabe</button><button type="button" class="btn btn-quiet" data-action="backup">↓ Fortschritt sichern</button><button type="button" class="btn btn-quiet" data-action="reset">↺ Kapitel zurücksetzen</button><button type="button" class="btn btn-quiet" data-action="story-finish">📖 Story fertig &amp; weiter</button><button type="button" class="btn finish-chapter" data-action="complete-chapter">✅ Alle Pflichtaufgaben abhaken &amp; weiter</button></div></div></article>
       <div class="section-toolbar"><div><h2>Dein Weg durchs Kapitel</h2><p>Aufgaben abhaken, Abschnitt öffnen und direkt weiterspielen.</p></div><div class="filters"><button type="button" class="btn btn-quiet section-toggle" data-action="expand-all">Alle öffnen</button><button type="button" class="btn btn-quiet section-toggle" data-action="collapse-all">Alle schließen</button><input class="search-input" id="guide-search" type="search" placeholder="Im Kapitel suchen …" value="${esc(search)}" aria-label="Im Kapitel suchen"><select class="filter-select" id="guide-filter" aria-label="Aufgaben filtern"><option value="all" ${filter==='all'?'selected':''}>Alle Aufgaben</option><option value="open" ${filter==='open'?'selected':''}>Nur offene</option>${Object.entries(CATEGORY).map(([id,name])=>`<option value="${esc(id)}" ${filter===id?'selected':''}>${esc(name)}</option>`).join('')}</select></div></div>
       <div id="section-list">${matchSections.map(({s,i})=>renderSection(s,i,p,opened)).join('')||'<div class="empty"><p>Keine passenden Abschnitte gefunden. Suchbegriff oder Filter zurücksetzen.</p></div>'}</div>
+      ${renderParty()}
       ${shopHtml}
       <div class="checkpoint"><h3>✓ Checkpoint: Kapitel ${esc(ch.number)}</h3><p>${esc(ch.checkpoint||'Abschnitt abgeschlossen.')}</p><div class="action-row">${next?`<button type="button" class="btn btn-primary" data-action="chapter" data-id="${esc(next.id)}">Weiter zu Kapitel ${esc(next.number)} →</button>`:'<span class="pill">Nächstes Kapitel folgt als JSON-Update</span>'}</div></div>
       ${sources?`<details class="sources"><summary>Quellen & Abgleich für dieses Kapitel</summary>${sources}</details>`:''}`;
@@ -353,6 +411,19 @@
   document.addEventListener('click',event=>{
     const btn=event.target.closest('[data-action]');if(!btn)return;
     switch(btn.dataset.action){
+      case 'dashboard':setView('dashboard');break;
+      case 'collections':setView('collections');break;
+      case 'step-mode':setView('steps');break;
+      case 'resume':resume();break;
+      case 'goto-entry':{const entry=dedupEntries(viewEntries()).find(x=>x.key===btn.dataset.key);if(entry)goToEntry(entry);break;}
+      case 'step-done':{
+        const entry=dedupEntries(viewEntries()).find(x=>x.key===btn.dataset.key);
+        if(entry){state.progress[entry.key]=true;const slot=slotData();slot.position={chapterId:entry.p.chapter.id,sectionId:entry.section.id};slot.deferred=(slot.deferred||[]).filter(x=>x!==entry.key);persist();renderStepMode();}
+        break;
+      }
+      case 'step-later':{
+        const slot=slotData(),key=btn.dataset.key;slot.deferred||=[];if(!slot.deferred.includes(key))slot.deferred.push(key);persist();renderStepMode();break;
+      }
       case 'open-settings':byId('settings-dialog')?.showModal();break;
       case 'close-settings':byId('settings-dialog')?.close();break;
       case 'text-smaller':changeFontSize(-1);break;
@@ -400,6 +471,11 @@
       persist();
       const expanded=new Set([...document.querySelectorAll('.chapter-section[open]')].map(x=>x.dataset.section));
       renderSidebar();renderMain(expanded);
+    }
+    if(event.target.matches('[data-party-slot]')){
+      const slot=slotData(),i=Number(event.target.dataset.partySlot);
+      if(i>=0&&i<4&&CLASS_OPTIONS.some(x=>x[0]===event.target.value)){slot.party[i]=event.target.value;persist();const opened=new Set([...document.querySelectorAll('.chapter-section[open]')].map(e=>e.dataset.section));renderMain(opened);}
+      return;
     }
     if(event.target.id==='save-selector'){switchSlot(event.target.value);return;}
     if(event.target.matches('[data-bestiary-task]')){
