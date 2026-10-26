@@ -405,33 +405,58 @@
           "id": "nunchaku",
           "name": "Nunchaku",
           "price": 8,
-          "attack": 12
+          "attack": 12,
+          "classes": [
+            "monk"
+          ]
         },
         {
           "id": "knife",
           "name": "Messer",
           "price": 4,
           "attack": 5,
-          "accuracy": 10
+          "accuracy": 10,
+          "classes": [
+            "warrior",
+            "thief",
+            "red-mage",
+            "black-mage"
+          ]
         },
         {
           "id": "staff",
           "name": "Stab",
           "price": 4,
-          "attack": 6
+          "attack": 6,
+          "classes": [
+            "warrior",
+            "monk",
+            "red-mage",
+            "white-mage",
+            "black-mage"
+          ]
         },
         {
           "id": "rapier",
           "name": "Rapier",
           "price": 8,
           "attack": 9,
-          "accuracy": 5
+          "accuracy": 5,
+          "classes": [
+            "warrior",
+            "thief",
+            "red-mage"
+          ]
         },
         {
           "id": "hammer",
           "name": "Hammer",
           "price": 8,
-          "attack": 9
+          "attack": 9,
+          "classes": [
+            "warrior",
+            "white-mage"
+          ]
         }
       ],
       "armor": [
@@ -440,21 +465,39 @@
           "name": "Reisekluft",
           "price": 8,
           "defense": 1,
-          "weight": 2
+          "weight": 2,
+          "classes": [
+            "warrior",
+            "thief",
+            "monk",
+            "red-mage",
+            "white-mage",
+            "black-mage"
+          ]
         },
         {
           "id": "leather-armor",
           "name": "Lederharnisch",
           "price": 40,
           "defense": 4,
-          "weight": 8
+          "weight": 8,
+          "classes": [
+            "warrior",
+            "thief",
+            "monk",
+            "red-mage"
+          ]
         },
         {
           "id": "chain-mail",
           "name": "Kettenhemd",
           "price": 65,
           "defense": 15,
-          "weight": 15
+          "weight": 15,
+          "classes": [
+            "warrior",
+            "red-mage"
+          ]
         }
       ],
       "magic": [
@@ -464,7 +507,11 @@
           "school": "white",
           "level": 1,
           "price": 50,
-          "effect": "Heilt die LP eines Gefährten geringfügig."
+          "effect": "Heilt die LP eines Gefährten geringfügig.",
+          "classes": [
+            "white-mage",
+            "red-mage"
+          ]
         },
         {
           "id": "dia",
@@ -472,7 +519,11 @@
           "school": "white",
           "level": 1,
           "price": 50,
-          "effect": "Führt einen Flächenangriff gegen Untote aus."
+          "effect": "Führt einen Flächenangriff gegen Untote aus.",
+          "classes": [
+            "white-mage",
+            "red-mage"
+          ]
         },
         {
           "id": "protect",
@@ -480,7 +531,11 @@
           "school": "white",
           "level": 1,
           "price": 50,
-          "effect": "Steigert die Abwehr eines Gefährten."
+          "effect": "Steigert die Abwehr eines Gefährten.",
+          "classes": [
+            "white-mage",
+            "red-mage"
+          ]
         },
         {
           "id": "blink",
@@ -488,7 +543,11 @@
           "school": "white",
           "level": 1,
           "price": 50,
-          "effect": "Steigert die eigene Ausweichfähigkeit."
+          "effect": "Steigert die eigene Ausweichfähigkeit.",
+          "classes": [
+            "white-mage",
+            "red-mage"
+          ]
         },
         {
           "id": "fire",
@@ -496,7 +555,11 @@
           "school": "black",
           "level": 1,
           "price": 50,
-          "effect": "Erteilt einem Gegner Feuerschaden."
+          "effect": "Erteilt einem Gegner Feuerschaden.",
+          "classes": [
+            "black-mage",
+            "red-mage"
+          ]
         },
         {
           "id": "sleep",
@@ -504,7 +567,11 @@
           "school": "black",
           "level": 1,
           "price": 50,
-          "effect": "Schickt alle Gegner in den Schlaf."
+          "effect": "Schickt alle Gegner in den Schlaf.",
+          "classes": [
+            "black-mage",
+            "red-mage"
+          ]
         },
         {
           "id": "focus",
@@ -512,7 +579,11 @@
           "school": "black",
           "level": 1,
           "price": 50,
-          "effect": "Senkt die Ausweichfähigkeit eines Gegners."
+          "effect": "Senkt die Ausweichfähigkeit eines Gegners.",
+          "classes": [
+            "black-mage",
+            "red-mage"
+          ]
         },
         {
           "id": "thunder",
@@ -521,9 +592,14 @@
           "level": 1,
           "price": 50,
           "effect": null,
-          "effectStatus": "unconfirmed"
+          "effectStatus": "unconfirmed",
+          "classes": [
+            "black-mage",
+            "red-mage"
+          ]
         }
-      ]
+      ],
+      "compatibilityStatus": "Based on FF I class equipment compatibility; further in-game confirmation welcome"
     },
     "localizedEnemyNames": {
       "source": "Vom Spieler direkt in der deutschen Pixel-Remaster-Version beobachtet; noch nicht alle Einträge eindeutig einer Bestiarium-Nummer zugeordnet",
