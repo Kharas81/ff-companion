@@ -14,10 +14,14 @@
     document.documentElement.style.setProperty('--read-scale', String(FONT_STEPS[fontStep]));
     const indicator = document.getElementById('font-indicator');
     if (indicator) indicator.textContent = Math.round(FONT_STEPS[fontStep] * 100) + '%';
+    const sheetIndicator=document.getElementById('sheet-font-indicator');
+    if(sheetIndicator)sheetIndicator.textContent=Math.round(FONT_STEPS[fontStep]*100)+'%';
     const decrease = document.querySelector('[data-action="text-smaller"]');
     const increase = document.querySelector('[data-action="text-larger"]');
     if (decrease) decrease.disabled = fontStep === 0;
     if (increase) increase.disabled = fontStep === FONT_STEPS.length - 1;
+    document.querySelectorAll('[data-action="text-smaller"]').forEach(b=>b.disabled=fontStep===0);
+    document.querySelectorAll('[data-action="text-larger"]').forEach(b=>b.disabled=fontStep===FONT_STEPS.length-1);
   };
   const changeFontSize = direction => {
     fontStep = Math.max(0,Math.min(FONT_STEPS.length-1,fontStep+direction));
@@ -349,6 +353,8 @@
   document.addEventListener('click',event=>{
     const btn=event.target.closest('[data-action]');if(!btn)return;
     switch(btn.dataset.action){
+      case 'open-settings':byId('settings-dialog')?.showModal();break;
+      case 'close-settings':byId('settings-dialog')?.close();break;
       case 'text-smaller':changeFontSize(-1);break;
       case 'text-larger':changeFontSize(1);break;
       case 'expand-all':document.querySelectorAll('.chapter-section').forEach(d=>d.open=true);break;
@@ -427,6 +433,13 @@
     const input=byId('guide-search');input.focus();input.setSelectionRange(pos,pos);
   });
   try{for(const p of SEED.chapters)register(p,'seed');for(const p of state.imports)register(p,'import');}catch(e){console.error('Startdaten:',e);state.imports=[];}
+  const sheetLabel=byId('sheet-import-label');
+  if(sheetLabel)sheetLabel.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();byId('import-input')?.click();}
+  });
+  const chooser=byId('import-input');
+  if(chooser)chooser.addEventListener('change',()=>{if(byId('settings-dialog')?.open)byId('settings-dialog').close();});
+  if('serviceWorker' in navigator && location.protocol==='https:')navigator.serviceWorker.register('./service-worker.js').catch(e=>console.warn('Offline nicht aktiv:',e));
   applyFontSize();
   render();loadPublished();
 })();
