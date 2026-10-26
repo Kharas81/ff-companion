@@ -226,3 +226,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 
 /* Deutsche Shoppreisliste */
 .catalog-list{display:grid;gap:8px;margin:10px 0 20px}.catalog-item{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border:1px solid #354b67;border-radius:9px;padding:11px 13px;background:#172940;font-size:calc(15px * var(--read-scale,1))}.catalog-item strong{color:var(--gold)}.catalog-item span{color:var(--text);line-height:1.6}@media(max-width:750px){.catalog-item{display:grid;gap:3px}}
+
+/* Vierergruppen-Einkaufsplan Cornelia */
+.purchase-character{background:#122339;border:1px solid #405570;border-radius:12px;padding:14px;margin:13px 0}
+.purchase-character>strong{font-size:calc(16px * var(--read-scale,1));color:var(--gold)}
+.purchase-fields{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:12px 0}
+.purchase-field{display:grid;gap:6px;font-size:calc(13px * var(--read-scale,1))}
+.purchase-field select{background:#0e2135;color:var(--text);min-height:48px;border:1px solid #61718a;border-radius:9px;padding:9px;width:100%;font-size:calc(14px * var(--read-scale,1))}
+.purchase-spells{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.purchase-spell{display:flex;align-items:center;gap:9px;padding:10px;background:#1e344e;border-radius:9px;min-height:46px;font-size:calc(14px * var(--read-scale,1))}
+.purchase-spell input{width:20px;height:20px;accent-color:#76d7ac;flex:none}
+.purchase-total{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#213e48;border:1px solid #68b49d;border-radius:11px;padding:15px;margin:17px 0;font-size:calc(16px * var(--read-scale,1))}
+.purchase-total strong{font-size:calc(23px * var(--read-scale,1));color:#a5edc8}
+@media(max-width:750px){.purchase-fields,.purchase-spells{grid-template-columns:1fr}.purchase-total{flex-wrap:wrap}}
