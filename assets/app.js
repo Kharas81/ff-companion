@@ -90,6 +90,7 @@
     try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}
   }
   const allChapters = new Map();
+  let equipmentCatalog=null;
   let magicCatalog=null;
   let magicSchoolFilter='all';
   let magicLevelFilter='all';
@@ -312,12 +313,20 @@
       magicCatalog.spells.forEach(x=>items.push({title:x.nameDe||x.englishName,desc:'Stufe '+x.level+' · '+(x.school==='white'?'Weißmagie':'Schwarzmagie')+' · '+x.priceGil.toLocaleString('de-DE')+' Gil · '+x.locations.join(', ')+' · '+x.effectDe,classes:x.classes.filter(id=>CLASS_OPTIONS.some(c=>c[0]===id)),school:x.school,level:x.level,unverified:x.nameStatus!=='player-confirmed',english:x.englishName}));
     }
     const magicFilters=kind==='magic'&&magicCatalog?.spells?.length===64?'<div class="reference-filter"><label>Magieart <select id="magic-school-filter"><option value="all">Alle</option><option value="white" '+(magicSchoolFilter==='white'?'selected':'')+'>Weißmagie</option><option value="black" '+(magicSchoolFilter==='black'?'selected':'')+'>Schwarzmagie</option></select></label><label>Stufe <select id="magic-level-filter"><option value="all">Alle Stufen</option>'+Array.from({length:8},(_,i)=>'<option value="'+(i+1)+'" '+(magicLevelFilter===String(i+1)?'selected':'')+'>'+(i+1)+'</option>').join('')+'</select></label></div>':'';
+    if((kind==='weapons'||kind==='armor')&&state.selectedGame==='ff1-pr'&&equipmentCatalog?.items?.length){
+      const byName=new Set(items.map(x=>x.title.toLowerCase()));
+      const reportedToClass={'Krieger':'warrior','Dieb':'thief','Mönch':'monk','Rotmagier':'red-mage','Weißmagier':'white-mage','Schwarzmagier':'black-mage'};
+      for(const x of equipmentCatalog.items.filter(x=>x.kind===(kind==='weapons'?'weapon':'armor'))){
+        if(byName.has(x.nameDe.toLowerCase()))continue;
+        items.push({title:x.nameDe,desc:x.englishName+' · '+x.descriptionDe+' · Forschungsstand: nicht abschließend geprüft',classes:x.classesReported.includes('Alle')?CLASS_OPTIONS.map(y=>y[0]):x.classesReported.map(c=>reportedToClass[c]).filter(Boolean),unverified:true,equipmentDraft:true});
+      }
+    }
     const filterable=['weapons','armor','magic'].includes(kind);
     const selectedFilter=state.referenceClassFilter||'all';
     const visibleItems=items.filter(x=>(!filterable||selectedFilter==='all'||(x.classes||[]).includes(selectedFilter))&&(kind!=='magic'||(magicSchoolFilter==='all'||x.school===magicSchoolFilter)&&(magicLevelFilter==='all'||String(x.level)===magicLevelFilter)));
     const filterHtml=filterable?'<label class="reference-filter">Nur für Klasse: <select id="reference-class-filter" aria-label="Ausrüstung nach Klasse filtern"><option value="all">Alle Klassen</option>'+CLASS_OPTIONS.map(([id,name])=>'<option value="'+esc(id)+'" '+(selectedFilter===id?'selected':'')+'>'+esc(name)+'</option>').join('')+'</select></label>':'';
     const className=id=>CLASS_OPTIONS.find(x=>x[0]===id)?.[1]||id;
-    byId('main').innerHTML='<div class="breadcrumbs">NACHSCHLAGEWERK / '+esc(titles[kind])+'</div><div class="hero"><div class="hero-content"><span class="eyebrow">📚 REFERENZ</span><h1>'+esc(titles[kind])+'</h1><p>Veröffentlichte Daten des ausgewählten Spiels. Fehlende Einträge werden später ergänzt.</p><button type="button" class="btn btn-quiet" data-action="guide">← Zum Walkthrough</button></div></div><div class="reference-grid">'+(items.length?items.map(x=>'<article class="reference-card"><h3>'+esc(x.title)+'</h3>'+(x.unverified?'<small>Englischer Originalname · deutsche Bezeichnung noch ungeprüft</small>':'')+'<p>'+esc(x.desc)+'</p>'+(x.classes?.length?'<small>Klassen: '+esc(x.classes.map(className).join(', '))+'</small>':'')+(x.chapterId?'<button type="button" class="btn btn-quiet" data-action="chapter" data-id="'+esc(x.chapterId)+'">Kapitel öffnen</button>':'')+'</article>').join(''):'<p>Für diese Kategorie sind noch keine geprüften Einträge veröffentlicht.</p>')+'</div>';
+    byId('main').innerHTML='<div class="breadcrumbs">NACHSCHLAGEWERK / '+esc(titles[kind])+'</div><div class="hero"><div class="hero-content"><span class="eyebrow">📚 REFERENZ</span><h1>'+esc(titles[kind])+'</h1><p>Veröffentlichte Daten des ausgewählten Spiels. Fehlende Einträge werden später ergänzt.</p><button type="button" class="btn btn-quiet" data-action="guide">← Zum Walkthrough</button></div></div><div class="reference-grid">'+(items.length?items.map(x=>'<article class="reference-card"><h3>'+esc(x.title)+'</h3>'+(x.unverified?'<small>'+(x.equipmentDraft?'Ausrüstungsdaten noch ungeprüft':'Deutsche Bezeichnung noch ungeprüft')+'</small>':'')+'<p>'+esc(x.desc)+'</p>'+(x.classes?.length?'<small>Klassen: '+esc(x.classes.map(className).join(', '))+'</small>':'')+(x.chapterId?'<button type="button" class="btn btn-quiet" data-action="chapter" data-id="'+esc(x.chapterId)+'">Kapitel öffnen</button>':'')+'</article>').join(''):'<p>Für diese Kategorie sind noch keine geprüften Einträge veröffentlicht.</p>')+'</div>';
   };
   const renderMain = (restoreOpened) => {
     renderMobileProgress();
@@ -636,6 +645,7 @@
   if('serviceWorker' in navigator && location.protocol==='https:')navigator.serviceWorker.register('./service-worker.js').catch(e=>console.warn('Offline nicht aktiv:',e));
   document.addEventListener('change',event=>{if(event.target.matches('#view-mode,#sheet-view-mode'))setLayoutMode(event.target.value);});
   const loadMagic=async()=>{try{const res=await fetch('data/ff1/magic.json',{cache:'no-cache'});if(!res.ok)throw Error('HTTP '+res.status);const data=await res.json();if(data.format==='ff-companion-magic'&&data.spells?.length===64){magicCatalog=data;if(state.view==='reference'&&state.referenceType==='magic')renderReference();}}catch(e){console.warn('Magiedaten nicht ladbar:',e);}};
+  const loadEquipment=async()=>{try{const res=await fetch('data/ff1/equipment.json',{cache:'no-cache'});if(!res.ok)throw Error('HTTP '+res.status);const data=await res.json();if(data.format==='ff-companion-equipment'&&Array.isArray(data.items)){equipmentCatalog=data;if(state.view==='reference'&&['weapons','armor'].includes(state.referenceType))renderReference();}}catch(e){console.warn('Ausrüstungsdaten nicht ladbar:',e);}};
   applyFontSize();applyLayoutMode();
-  render();loadPublished();if(location.protocol!=='file:')loadMagic();
+  render();loadPublished();if(location.protocol!=='file:'){loadMagic();loadEquipment();}
 })();
