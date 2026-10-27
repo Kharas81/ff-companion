@@ -264,3 +264,17 @@ html[data-layout-mode="couch"] .mobile-bottombar:not([hidden]){display:flex}
 html[data-layout-mode="couch"] .chapter-section,.reference-card{font-size:calc(17px * var(--read-scale,1))}
 html[data-layout-mode="couch"] .chapter-section button,html[data-layout-mode="couch"] .btn{min-height:46px}
 @media(max-width:760px){.view-mode-control{display:none}html[data-layout-mode="desktop"] .layout{display:grid;grid-template-columns:minmax(185px,38%) minmax(0,1fr)}html[data-layout-mode="desktop"] .sidebar-inner{display:block!important}html[data-layout-mode="desktop"] .mobile-menu-toggle{display:none!important}html[data-layout-mode="desktop"] .main{min-width:0}.reference-grid{grid-template-columns:1fr}}
+
+
+/* Navigation ohne endloses Scrollen */
+.quick-nav{position:sticky;top:0;z-index:45;display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:9px 15px;background:#101e32f5;border-bottom:1px solid var(--line);box-shadow:0 3px 16px #0005}
+.quick-nav label{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.quick-nav select{max-width:210px;min-width:100px;min-height:40px;background:#1c304b;border:1px solid #52657e;color:var(--text);padding:7px;border-radius:9px;font-size:14px}
+.quick-nav button{background:#1c304b;border:1px solid #405a78;color:var(--text);min-height:40px;border-radius:9px;padding:8px 13px;font-size:14px}
+.quick-nav button:focus-visible,.quick-nav select:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.nav-disclosure{margin-bottom:10px}
+.nav-disclosure>summary{cursor:pointer;list-style:none;border-radius:10px;padding:13px 10px;background:var(--panel2);font-weight:700}
+.nav-disclosure>summary::after{content:' ▾';float:right}
+.nav-disclosure[open]>summary::after{content:' ▴'}
+.nav-disclosure>summary::-webkit-details-marker{display:none}
+@media(max-width:760px){.quick-nav{position:sticky;top:0;padding:8px;gap:5px}.quick-nav label{flex:1 1 44%;min-width:0;display:grid;gap:2px}.quick-nav select{width:100%;max-width:none;min-width:0;font-size:13px}.quick-nav button{flex:1 1 21%;min-width:0;padding:8px 3px;font-size:12px}.quick-nav button:last-child{flex-basis:21%}}
