@@ -220,3 +220,17 @@ Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine se
 - [ ] **P1** Bei Bedarf eine kompaktere oder einblendbare Schnellnavigation für schmale Handys nach echten Tests gestalten.
 
 **Stand:** Änderungen programmiert, kein echter Mobil- oder Browser-End-to-End-Test durchgeführt.
+
+
+## 27.10.2026 – Klassenfilter in den Nachschlagewerken (ohne Handytest)
+
+- [x] Waffen, Rüstungen und Magie im Nachschlagewerk nach sechs FF-I-Startklassen filterbar gemacht.
+- [x] Cornelia-Ausrüstung mit Standort und Quellenverweisen im Kapitel-JSON hinterlegt.
+- [x] Hammer-Trageklassen als **noch strittig** markiert, da PR-spezifische Internetquellen voneinander abweichen; keine endgültige Prüfung behaupten.
+- [x] Klassenprofile weiterhin auf bestehende JSON-Einträge gestützt, keine Spielstände/Check-IDs geändert.
+- [ ] Alle sechs Startklassen sowie Klassenbeförderungen anhand tatsächlich eindeutiger PR-Ausrüstungslisten verifizieren; widersprüchliche Quellen dokumentieren.
+- [ ] Vollständige Waffen-/Rüstungskataloge (weitere Städte, Dungeons, Fundorte, Klassen, Preise) nach und nach füllen.
+- [ ] Zauberkatalog und Klassenmagie detailliert mit deutschen Beschreibungen prüfen.
+- [ ] In der Praxis Browser- und Handy-UI, Filterwechsel und Shop-Einkaufsplan testen (vom Nutzer aktuell verschoben).
+
+**Wichtig:** Der Filter arbeitet auf bereits veröffentlichten Daten. Er behauptet keine vollständige FF-I-Datenbank.
