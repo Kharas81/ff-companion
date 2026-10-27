@@ -28,6 +28,18 @@
     try { localStorage.setItem(FONT_KEY,String(fontStep)); } catch(err) { /* Kein Speicherdienst verfügbar. */ }
     applyFontSize();
   };
+  const MODE_KEY='ff-companion-layout-v1';
+  let layoutMode='auto';
+  try { const saved=localStorage.getItem(MODE_KEY);if(['auto','desktop','couch'].includes(saved))layoutMode=saved; }catch(e){}
+  const applyLayoutMode=()=>{
+    document.documentElement.dataset.layoutMode=layoutMode;
+    document.querySelectorAll('#view-mode,#sheet-view-mode').forEach(el=>el.value=layoutMode);
+  };
+  const setLayoutMode=mode=>{
+    if(!['auto','desktop','couch'].includes(mode))return;
+    layoutMode=mode;try{localStorage.setItem(MODE_KEY,mode)}catch(e){}
+    applyLayoutMode();
+  };
   const SEED = window.FF_COMPANION_SEED;
   const byId = id => document.getElementById(id);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -268,9 +280,29 @@
     const bookmark='<div class="bookmark-row"><button type="button" class="btn btn-quiet btn-bookmark '+(isHere?'current':'')+'" data-action="bookmark" data-id="'+esc(s.id)+'">'+(isHere?'📍 Du bist hier':'📍 Hier bin ich')+'</button></div>';
     return `<details class="chapter-section" data-section="${esc(s.id)}" ${openSections.has(s.id)?'open':''}><summary><span class="section-index">${String(i+1).padStart(2,'0')}</span><span class="section-title"><strong>${esc(s.title)}</strong><small>⌖ ${esc(s.location||'Spielgebiet')}</small></span><span class="section-count">${st.done} / ${st.total}</span><span class="chev">⌄</span></summary><div class="section-body">${bookmark}<p class="lead">${esc(s.intro||'')}</p><ol class="step-list">${steps}</ol>${warning}${tips}${later}<div class="checks-head">CHECKLISTE · ${st.total} AUFGABEN</div><div class="check-grid">${renderChecks(p,s)||'<p class="lead">Keine Aufgaben im gewählten Filter.</p>'}</div></div></details>`;
   };
+  const renderReference = () => {
+    renderMobileProgress();
+    const kind=state.referenceType||'classes';
+    const titles={classes:'Klassen',weapons:'Waffen',armor:'Rüstungen',magic:'Magie','key-item':'Schlüsselgegenstände',shops:'Shops'};
+    const chapters=getChapters(state.selectedGame).map(x=>x.document);
+    const items=chapters.flatMap(p=>{
+      const cat=p.chapter.shopCatalog;
+      if(!cat)return [];
+      if(kind==='weapons')return (cat.weapons||[]).map(x=>({title:x.name,desc:'Angriff +'+x.attack+(x.accuracy===undefined?'':' · Präzision +'+x.accuracy)+' · '+x.price+' Gil',classes:x.classes}));
+      if(kind==='armor')return (cat.armor||[]).map(x=>({title:x.name,desc:'Abwehr +'+x.defense+' · Gewicht +'+x.weight+' · '+x.price+' Gil',classes:x.classes}));
+      if(kind==='magic')return (cat.magic||[]).map(x=>({title:x.name,desc:x.price+' Gil · '+(x.effect||'Wirkung noch nicht bestätigt'),classes:x.classes}));
+      return [];
+    });
+    if(kind==='key-item')chapters.forEach(p=>p.chapter.sections.forEach(sec=>sec.checks.filter(c=>c.category==='key-item').forEach(c=>items.push({title:c.title,desc:p.chapter.title}))));
+    if(kind==='shops')chapters.forEach(p=>(p.chapter.shops||[]).forEach(shop=>items.push({title:shop.location,desc:p.chapter.title,chapterId:p.chapter.id})));
+    if(kind==='classes')items.push(...CLASS_OPTIONS.map(([id,name])=>({title:name,desc:'FF I · Startklasse',id})));
+    const className=id=>CLASS_OPTIONS.find(x=>x[0]===id)?.[1]||id;
+    byId('main').innerHTML='<div class="breadcrumbs">NACHSCHLAGEWERK / '+esc(titles[kind])+'</div><div class="hero"><div class="hero-content"><span class="eyebrow">📚 REFERENZ</span><h1>'+esc(titles[kind])+'</h1><p>Veröffentlichte Daten des ausgewählten Spiels. Fehlende Einträge werden später ergänzt.</p><button type="button" class="btn btn-quiet" data-action="guide">← Zum Walkthrough</button></div></div><div class="reference-grid">'+(items.length?items.map(x=>'<article class="reference-card"><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p>'+(x.classes?.length?'<small>Klassen: '+esc(x.classes.map(className).join(', '))+'</small>':'')+(x.chapterId?'<button type="button" class="btn btn-quiet" data-action="chapter" data-id="'+esc(x.chapterId)+'">Kapitel öffnen</button>':'')+'</article>').join(''):'<p>Für diese Kategorie sind noch keine geprüften Einträge veröffentlicht.</p>')+'</div>';
+  };
   const renderMain = (restoreOpened) => {
     renderMobileProgress();
     const current=getCurrent(); const game=findGame(state.selectedGame);
+    if(state.view==='reference'){renderReference();return;}
     if(state.view==='bestiary'){renderBestiary();return;}
     if(state.view==='dashboard'){renderMobileProgress();renderDashboard();return;}
     if(state.view==='steps'){renderMobileProgress();renderStepMode();return;}
@@ -443,6 +475,7 @@
   document.addEventListener('click',event=>{
     const btn=event.target.closest('[data-action]');if(!btn)return;
     switch(btn.dataset.action){
+      case 'reference':state.referenceType=btn.dataset.refType||'classes';state.view='reference';persist();renderMain();setMobileMenu(false);break;
       case 'dashboard':setView('dashboard');break;
       case 'collections':setView('collections');break;
       case 'step-mode':setView('steps');break;
@@ -568,6 +601,7 @@
   const chooser=byId('import-input');
   if(chooser)chooser.addEventListener('change',()=>{if(byId('settings-dialog')?.open)byId('settings-dialog').close();});
   if('serviceWorker' in navigator && location.protocol==='https:')navigator.serviceWorker.register('./service-worker.js').catch(e=>console.warn('Offline nicht aktiv:',e));
-  applyFontSize();
+  document.addEventListener('change',event=>{if(event.target.matches('#view-mode,#sheet-view-mode'))setLayoutMode(event.target.value);});
+  applyFontSize();applyLayoutMode();
   render();loadPublished();
 })();
