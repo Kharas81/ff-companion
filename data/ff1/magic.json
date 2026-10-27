@@ -1,0 +1,1298 @@
+{
+  "format": "ff-companion-magic",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "description": "64 Zauber FF I Pixel Remaster. Deutsche Namen nur bei Spielerbestätigung; übrige englische Originalnamen sichtbar.",
+  "localizationPolicy": "nameDe=null bedeutet deutsche Bezeichnung nicht überprüft, niemals als offizielle Übersetzung darstellen.",
+  "spellsPerLevelLimit": 3,
+  "spells": [
+    {
+      "id": "white-cure",
+      "englishName": "Cure",
+      "nameDe": "Vita",
+      "nameStatus": "player-confirmed",
+      "school": "white",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Heilt einen Verbündeten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-dia",
+      "englishName": "Dia",
+      "nameDe": "Dialux",
+      "nameStatus": "player-confirmed",
+      "school": "white",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Schädigt alle Untoten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-protect",
+      "englishName": "Protect",
+      "nameDe": "Protes",
+      "nameStatus": "player-confirmed",
+      "school": "white",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Erhöht die Abwehr eines Verbündeten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-blink",
+      "englishName": "Blink",
+      "nameDe": "Blink",
+      "nameStatus": "player-confirmed",
+      "school": "white",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Erhöht eigene Ausweichrate",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-invis",
+      "englishName": "Invis",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Erhöht Ausweichrate eines Verbündeten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-silence",
+      "englishName": "Silence",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Verstummt alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-blindna",
+      "englishName": "Blindna",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Heilt Blindheit",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-nulshock",
+      "englishName": "NulShock",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Verringert Blitzschaden für die Gruppe",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-cura",
+      "englishName": "Cura",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Heilt einen Verbündeten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-nulblaze",
+      "englishName": "NulBlaze",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Verringert Feuerschaden für die Gruppe",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-diara",
+      "englishName": "Diara",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Schädigt alle Untoten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-heal",
+      "englishName": "Heal",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Heilt die Gruppe leicht",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "knight",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-poisona",
+      "englishName": "Poisona",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Heilt Vergiftung",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-nulfrost",
+      "englishName": "NulFrost",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Verringert Eisschaden für die Gruppe",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-fear",
+      "englishName": "Fear",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Verscheucht Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-vox",
+      "englishName": "Vox",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Heilt Stille",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-curaga",
+      "englishName": "Curaga",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Heilt einen Verbündeten stark",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-diaga",
+      "englishName": "Diaga",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Schädigt alle Untoten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-life",
+      "englishName": "Life",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Belebt einen Verbündeten wieder",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-healara",
+      "englishName": "Healara",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Heilt die Gruppe",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-stona",
+      "englishName": "Stona",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Heilt Versteinerung",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-protera",
+      "englishName": "Protera",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Erhöht die Gruppenabwehr",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-exit",
+      "englishName": "Exit",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Verlässt ein Dungeon",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-invisira",
+      "englishName": "Invisira",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Erhöht Ausweichrate der Gruppe",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-curaja",
+      "englishName": "Curaja",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Heilt einen Verbündeten vollständig und einige Zustände",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-nuldeath",
+      "englishName": "NulDeath",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Schützt die Gruppe vor gefährlichen Effekten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-diaja",
+      "englishName": "Diaja",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Schädigt alle Untoten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-healaga",
+      "englishName": "Healaga",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Heilt die Gruppe stark",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-mage",
+        "red-wizard",
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-full-life",
+      "englishName": "Full-Life",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Belebt vollständig wieder",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-nulall",
+      "englishName": "NulAll",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Schützt vor Elementen und Status",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-holy",
+      "englishName": "Holy",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Heiliger Schaden gegen alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "white-dispel",
+      "englishName": "Dispel",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "white",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Entfernt magische Schutzwirkungen",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "white-wizard"
+      ]
+    },
+    {
+      "id": "black-fire",
+      "englishName": "Fire",
+      "nameDe": "Feuer",
+      "nameStatus": "player-confirmed",
+      "school": "black",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Feuerschaden auf einen Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-focus",
+      "englishName": "Focus",
+      "nameDe": "Fokus",
+      "nameStatus": "player-confirmed",
+      "school": "black",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Senkt die Ausweichrate eines Gegners",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-sleep",
+      "englishName": "Sleep",
+      "nameDe": "Schlaf",
+      "nameStatus": "player-confirmed",
+      "school": "black",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Schläfert Gegner ein",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-thunder",
+      "englishName": "Thunder",
+      "nameDe": "Blitz",
+      "nameStatus": "player-confirmed",
+      "school": "black",
+      "level": 1,
+      "priceGil": 50,
+      "locations": [
+        "Cornelia"
+      ],
+      "effectDe": "Blitzschaden auf einen Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-blizzard",
+      "englishName": "Blizzard",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Eisschaden auf einen Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-temper",
+      "englishName": "Temper",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Erhöht Angriff eines Verbündeten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-dark",
+      "englishName": "Dark",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Blendet alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-slow",
+      "englishName": "Slow",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 2,
+      "priceGil": 250,
+      "locations": [
+        "Pravoka"
+      ],
+      "effectDe": "Verlangsamt gegnerische Angriffe",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-fira",
+      "englishName": "Fira",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Feuerschaden auf alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-thundara",
+      "englishName": "Thundara",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Blitzschaden auf alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-hold",
+      "englishName": "Hold",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Lähmt einen Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-focara",
+      "englishName": "Focara",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 3,
+      "priceGil": 1000,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Senkt gegnerische Ausweichrate",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-sleepra",
+      "englishName": "Sleepra",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Schläfert einen Gegner ein",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-confuse",
+      "englishName": "Confuse",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Verwirrt Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-haste",
+      "englishName": "Haste",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Erhöht die Angriffszahl eines Verbündeten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-blizzara",
+      "englishName": "Blizzara",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 4,
+      "priceGil": 2500,
+      "locations": [
+        "Elfheim"
+      ],
+      "effectDe": "Eisschaden auf alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "ninja",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-firaga",
+      "englishName": "Firaga",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Feuerschaden auf alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-teleport",
+      "englishName": "Teleport",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Versetzt die Gruppe eine Etage zurück",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-scourge",
+      "englishName": "Scourge",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Versucht alle Gegner sofort auszuschalten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-slowra",
+      "englishName": "Slowra",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 5,
+      "priceGil": 4000,
+      "locations": [
+        "Melmond"
+      ],
+      "effectDe": "Verringert Angriffe eines Gegners",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-thundaga",
+      "englishName": "Thundaga",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Blitzschaden auf alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-quake",
+      "englishName": "Quake",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Versucht Gegner durch Erdbeben zu beseitigen",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-death",
+      "englishName": "Death",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Versucht einen Gegner sofort auszuschalten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-stun",
+      "englishName": "Stun",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 6,
+      "priceGil": 13000,
+      "locations": [
+        "Crescent Lake"
+      ],
+      "effectDe": "Lähmt einen Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-blizzaga",
+      "englishName": "Blizzaga",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Eisschaden auf alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-saber",
+      "englishName": "Saber",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Erhöht eigenen Angriff und Trefferchance",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-break",
+      "englishName": "Break",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Versteinert einen Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-blind",
+      "englishName": "Blind",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 7,
+      "priceGil": 30000,
+      "locations": [
+        "Onrac",
+        "Gaia"
+      ],
+      "effectDe": "Blendet einen Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-mage",
+        "red-wizard",
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-flare",
+      "englishName": "Flare",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Starker Angriff gegen alle Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-warp",
+      "englishName": "Warp",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Verbannt Gegner",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-stop",
+      "englishName": "Stop",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Stoppt Gegner zeitweise",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-wizard"
+      ]
+    },
+    {
+      "id": "black-kill",
+      "englishName": "Kill",
+      "nameDe": null,
+      "nameStatus": "translation-pending",
+      "school": "black",
+      "level": 8,
+      "priceGil": 40000,
+      "locations": [
+        "Gaia",
+        "Lufenia"
+      ],
+      "effectDe": "Versucht einen Gegner sofort auszuschalten",
+      "effectStatus": "source-paraphrase",
+      "classes": [
+        "black-wizard"
+      ]
+    }
+  ],
+  "referenceUrls": [
+    "https://vorxu.com/final-fantasy-1-pixel-remaster/magic",
+    "https://vorxu.com/final-fantasy-1-pixel-remaster/shops"
+  ]
+}
