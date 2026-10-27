@@ -251,3 +251,19 @@ Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine se
 - [ ] Praktische Tests am Handy, im Browser und beim Offline-Neustart weiterhin verschoben.
 
 **Abnahme:** Zählung 64 (32/32, Stufen 1–8) und JavaScript-Syntax technisch kontrolliert. Inhaltliche Vollprüfung aller Einträge und Live-Browser-Nutzung stehen noch aus.
+
+
+## 27.10.2026 – Neue Nutzerrecherche: Waffen, Rüstungen und deutsche Magie
+
+- [x] 64 deutsche Zaubernamens-Kandidaten in `data/ff1/magic.json` aufgenommen, die acht bisherigen Spielernamen als selbst bestätigt markiert; alle weiteren mit Status **Videohinweis/Quellenangabe noch nicht selbst geprüft**.
+- [x] `data/ff1/equipment.json` mit 25 Waffen und 7 Rüstungen aus übermittelter Tabelle als **Rechercheentwurf** erstellt, keine vorgebliche Ingame-Bestätigung.
+- [x] Referenzseiten für Waffen und Rüstungen um diese Einträge ergänzt, inklusive Vorsichtskennzeichnung und ohne Änderung bestehender Kapitel-Check-IDs.
+- [x] Referenzfilter-Anzeige wieder angebunden und PWA-Cache für Magie/Ausrüstung aktualisiert.
+- [ ] **P0:** Original-Screenshots und Video-Zeitmarken tatsächlich gegenlesen. Die im Chat eingefügten `[span_...]`-Marker sind keine Bildbelege.
+- [ ] **P0:** Gemeldete Waffenklassenzuordnungen prüfen; `Mondschwert = Falchion (Truhe)` versus `Falchion (Shop)` ist besonders zweifelhaft. Keine ungesicherten Waffenklassenzuordnungen für automatische Kaufempfehlungen verwenden.
+- [ ] **P0:** Magieziele und -effekte (u.a. NulAll, Dispel, Blind, Kill) sowie versteckte Gaia-Läden/Kauforte unabhängig prüfen.
+- [ ] **P1:** Nach geprüften Pixel-Remaster-Daten fehlende Werte, Fundorte, Klassenfreigaben und Preise ergänzen und Doppelungen mit Cornelia-Kapitel bereinigen.
+- [ ] **P1:** Zaubergrenze (drei Zauber je Stufe/Figur) und Zauberbesitz in Einkaufsplanung integrieren.
+- [ ] **P2:** Praktische Browser-/Handytests weiterhin verschoben.
+
+**Abnahme:** JSON erfolgreich angelegt und JavaScript-Syntax statisch geprüft; kein browserbasierter Funktionstest oder vollständige inhaltliche Verifikation.
