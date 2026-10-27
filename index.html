@@ -33,12 +33,12 @@
       <input id="import-input" class="sr-only" type="file" accept=".json,application/json" multiple aria-label="JSON-Dateien importieren">
     </div>
   </header>
+  <nav class="quick-nav" aria-label="Schnellnavigation"><label>Spiel<select id="quick-game" aria-label="Spiel direkt auswählen"></select></label><label>Kapitel<select id="quick-chapter" aria-label="Kapitel direkt auswählen"></select></label><button type="button" data-action="guide">📖 Guide</button><button type="button" data-action="step-mode">🎯 Schritte</button><button type="button" data-action="bestiary">🐉 Gegner</button><button type="button" data-action="reference" data-ref-type="classes">📚 Wissen</button></nav>
   <div class="layout">
     <aside class="sidebar" aria-label="Spiel- und Kapitelnavigation">
       <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" data-action="mobile-menu" aria-controls="sidebar-inner" aria-expanded="false"><span>📑 Spiele &amp; Kapitel</span><span id="mobile-menu-icon" aria-hidden="true">▼</span></button>
       <div class="sidebar-inner" id="sidebar-inner">
-      <div class="sidebar-top"><span class="eyebrow">BIBLIOTHEK</span><h2>Deine Spiele</h2><p>Eine Oberfläche für die Hauptteile – ohne XI und XIV.</p></div>
-      <div id="game-list" class="game-list"></div>
+      <details class="nav-disclosure"><summary>🎮 Alle Spiele auswählen</summary><div class="sidebar-top"><p>Einzelspieler-Hauptteile ohne XI und XIV.</p></div><div id="game-list" class="game-list"></div></details>
       <div class="nav-divider"></div>
       <div class="nav-title"><span class="eyebrow">KAPITEL</span><span id="chapter-count">0 Kapitel</span></div>
       <nav id="chapter-list" class="chapter-list" aria-label="Kapitel auswählen"></nav>
