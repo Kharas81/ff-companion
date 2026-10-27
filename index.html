@@ -21,7 +21,7 @@
       <span><strong>FINAL FANTASY</strong><small>100% Companion · Fan-Projekt</small></span>
     </a>
     <div class="top-actions">
-      <span id="storage-label" class="data-badge">Lokal gespeichert</span>
+      <span id="storage-label" class="data-badge">Lokal gespeichert</span><label class="view-mode-control" for="view-mode"><span>Ansicht</span><select id="view-mode" aria-label="Bevorzugte Ansicht"><option value="auto">Automatisch</option><option value="desktop">Desktop</option><option value="couch">Couch-Modus</option></select></label>
       <button type="button" class="btn btn-primary mobile-settings-trigger" data-action="open-settings" aria-haspopup="dialog" aria-controls="settings-dialog">⚙️ Optionen</button>
       <div class="font-controls" role="group" aria-label="Schriftgröße ändern">
         <button type="button" class="font-button" data-action="text-smaller" aria-label="Schrift verkleinern" title="Schrift verkleinern">A−</button>
@@ -72,7 +72,7 @@
   </div>
   <dialog id="settings-dialog" class="settings-sheet" aria-labelledby="settings-title">
     <div class="sheet-head"><h2 id="settings-title">⚙️ Optionen</h2><button type="button" class="btn" data-action="close-settings" aria-label="Einstellungen schließen">✕ Schließen</button></div>
-    <p>Schriftgröße, Sicherung und Kapitelimport</p>
+    <p>Ansicht, Schriftgröße, Sicherung und Kapitelimport</p><label class="sheet-view-mode" for="sheet-view-mode">Bevorzugte Ansicht<select id="sheet-view-mode"><option value="auto">Automatisch</option><option value="desktop">Desktop</option><option value="couch">Couch-Modus</option></select></label>
     <div class="sheet-buttons">
       <div class="font-controls" role="group" aria-label="Schriftgröße im Menü">
         <button type="button" class="font-button" data-action="text-smaller" aria-label="Schrift verkleinern">A−</button>
