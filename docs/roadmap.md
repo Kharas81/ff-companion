@@ -157,3 +157,20 @@ Folgende Änderungen sind **im Repository programmiert**; einzelne Prüfungen au
 - [ ] Isegrim-Zuordnung sowie noch unbekannte Beschreibung von Blitz ergänzen.
 
 Hinweis: Originale Aufgaben-IDs/Spielstände bleiben unverändert; Kapitel 1 behält den Status `needs-review`.
+
+
+## 27.10.2026 – Desktop-/Couch-Modus und Nachschlagewerk
+
+- [x] **Ansichtsauswahl** Automatisch / Desktop / Couch-Modus in Desktop-Kopfzeile und mobilen Optionen eingebaut.
+- [x] Auswahl wird unabhängig von Spielfortschritt im Browser gespeichert (`ff-companion-layout-v1`).
+- [x] Desktop-Modus mit dauerhaft sichtbarer Seitenleiste sowie Couch-Modus mit einklappbarem Menü und größeren Bedienelementen gestaltet.
+- [x] Menübereich **Nachschlagewerk** für Klassen, Waffen, Rüstungen, Magie, Schlüsselgegenstände und Shops ergänzt.
+- [x] Sechs funktionsfähige Referenzansichten aus derzeit veröffentlichten JSON-Kapiteldaten erstellt. Waffen/Rüstungen/Zauber enthalten deutsche Cornelia-Daten; übrige Inhalte wachsen kapitelweise.
+- [x] Bestehende Speicher- und Checklisten-IDs nicht verändert.
+- [ ] Bedienung und responsive Darstellung beider erzwungener Ansichten am Desktop und auf tatsächlichem Smartphone testen.
+- [ ] Navigations- und Shopreferenzen später um Suchfilter, Sortierung, Fundorte sowie klassenabhängige Vergleichsansichten erweitern.
+- [ ] Die Klassenansicht um geprüfte Klassenfähigkeiten, Beförderungen und Ausrüstungsregeln erweitern; derzeit nur Grundklassenübersicht.
+- [ ] Die Referenzsammlung für weitere Städte und FF-Teile mit verifizierten JSON-Daten füllen.
+- [ ] PWA-Cache-Versionierung/Updates und Offline-Bedienung nach CSS-/JavaScript-Änderungen testen.
+
+Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine separate zweite Website. Funktionell implementiert, vollständige End-to-End-Abnahme ausstehend.
