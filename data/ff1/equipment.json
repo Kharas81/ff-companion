@@ -1,0 +1,481 @@
+{
+  "format": "ff-companion-equipment",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "status": "research-draft",
+  "notes": [
+    "Alle Namen/Werte/Klassen aus Nutzertabellen als Recherchekandidaten, Videobilder nicht direkt geprüft",
+    "Screenshot-Marker sind keine tatsächlichen Screenshots",
+    "Mondschwert/Falchion möglicherweise vermischte Gegenstände",
+    "Bei widersprüchlichen Werten gehen überprüfte Pixel-Remaster-Daten vor"
+  ],
+  "items": [
+    {
+      "id": "weapon-sun-blade",
+      "kind": "weapon",
+      "nameDe": "Lichtklinge",
+      "englishName": "Sun Blade",
+      "descriptionDe": "32 ATK; 30 Präzision; gegen Untote",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-ice-brand",
+      "kind": "weapon",
+      "nameDe": "Frostschwert",
+      "englishName": "Ice Brand",
+      "descriptionDe": "29 ATK; 25 Präzision; Eiselement",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-defender",
+      "kind": "weapon",
+      "nameDe": "Defendor",
+      "englishName": "Defender",
+      "descriptionDe": "Kampfgegenstand: Blink",
+      "classesReported": [
+        "Krieger",
+        "Ritter",
+        "Rotmagus",
+        "Ninja"
+      ],
+      "citationHint": "Video #07 00:06:36",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-masamune",
+      "kind": "weapon",
+      "nameDe": "Masamune",
+      "englishName": "Masamune",
+      "descriptionDe": "56 ATK; 50 Präzision",
+      "classesReported": [
+        "Alle"
+      ],
+      "citationHint": "Video #09 00:11:23",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-excalibur",
+      "kind": "weapon",
+      "nameDe": "Excalibur",
+      "englishName": "Excalibur",
+      "descriptionDe": "45 ATK; 35 Präzision; stark gegen viele Gegnertypen",
+      "classesReported": [
+        "Ritter"
+      ],
+      "citationHint": "Video #08 00:24:21",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-cat-claws",
+      "kind": "weapon",
+      "nameDe": "Katzenkralle",
+      "englishName": "Cat Claws",
+      "descriptionDe": "22 ATK; 35 Präzision",
+      "classesReported": [
+        "Ninja",
+        "Schwarzgurt",
+        "Schwarzmagus"
+      ],
+      "citationHint": "Video #07 00:09:48",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-thor-s-hammer",
+      "kind": "weapon",
+      "nameDe": "Thors Hammer",
+      "englishName": "Thor's Hammer",
+      "descriptionDe": "18 ATK; 15 Präzision; Kampfgegenstand: Blitzra",
+      "classesReported": [
+        "Krieger",
+        "Ritter",
+        "Weißmagus"
+      ],
+      "citationHint": "Video #08 00:09:06",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-mage-s-staff",
+      "kind": "weapon",
+      "nameDe": "Magierstab",
+      "englishName": "Mage's Staff",
+      "descriptionDe": "12 ATK; 10 Präzision; Kampfgegenstand: Feura",
+      "classesReported": [
+        "Schwarzmagier",
+        "Schwarzmagus",
+        "Ninja"
+      ],
+      "citationHint": "Video #07 00:15:01",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-healing-staff",
+      "kind": "weapon",
+      "nameDe": "Heilerstab",
+      "englishName": "Healing Staff",
+      "descriptionDe": "6 ATK; Kampfgegenstand: Heila",
+      "classesReported": [
+        "Weißmagier",
+        "Weißmagus",
+        "Ninja"
+      ],
+      "citationHint": "Video #08 00:22:41",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-flame-sword",
+      "kind": "weapon",
+      "nameDe": "Flammenschwert",
+      "englishName": "Flame Sword",
+      "descriptionDe": "Feuerelement",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-falchion-truhe",
+      "kind": "weapon",
+      "nameDe": "Mondschwert",
+      "englishName": "Falchion (Truhe)",
+      "descriptionDe": "mittleres Schwert; englische Zuordnung strittig",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-giant-s-sword",
+      "kind": "weapon",
+      "nameDe": "Riesenschwert",
+      "englishName": "Giant's Sword",
+      "descriptionDe": "gegen Riesen",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Video #05 00:08:33",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-dragon-buster",
+      "kind": "weapon",
+      "nameDe": "Drachentöter",
+      "englishName": "Dragon Buster",
+      "descriptionDe": "gegen Drachen",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Video #04 00:10:00",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-werebane",
+      "kind": "weapon",
+      "nameDe": "Wolftöter",
+      "englishName": "Werebane",
+      "descriptionDe": "gegen Werwölfe",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-coral-sword",
+      "kind": "weapon",
+      "nameDe": "Korallenschwert",
+      "englishName": "Coral Sword",
+      "descriptionDe": "gegen Wassergegner",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-rune-blade",
+      "kind": "weapon",
+      "nameDe": "Runenschwert",
+      "englishName": "Rune Blade",
+      "descriptionDe": "gegen magische Gegner",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-venom-blade",
+      "kind": "weapon",
+      "nameDe": "Giftklinge",
+      "englishName": "Venom Blade",
+      "descriptionDe": "Gift-Eigenschaft",
+      "classesReported": [
+        "Dieb",
+        "Ninja"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-broadsword",
+      "kind": "weapon",
+      "nameDe": "Breitschwert",
+      "englishName": "Broadsword",
+      "descriptionDe": "frühes Breitschwert",
+      "classesReported": [
+        "Krieger",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Video #02 00:03:01",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-rapier",
+      "kind": "weapon",
+      "nameDe": "Rapier",
+      "englishName": "Rapier",
+      "descriptionDe": "frühe Waffe",
+      "classesReported": [
+        "Krieger",
+        "Dieb",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Video #01 00:07:36",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-saber",
+      "kind": "weapon",
+      "nameDe": "Säbel",
+      "englishName": "Saber",
+      "descriptionDe": "frühes Schwert",
+      "classesReported": [
+        "Krieger",
+        "Dieb",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-scimitar",
+      "kind": "weapon",
+      "nameDe": "Krummsäbel",
+      "englishName": "Scimitar",
+      "descriptionDe": "frühes Schwert",
+      "classesReported": [
+        "Krieger",
+        "Dieb",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-falchion-shop",
+      "kind": "weapon",
+      "nameDe": "Falchion",
+      "englishName": "Falchion (Shop)",
+      "descriptionDe": "Schwert; Zuordnung zu Mondschwert prüfen",
+      "classesReported": [
+        "Krieger",
+        "Dieb",
+        "Rotmagier",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-mythril-knife",
+      "kind": "weapon",
+      "nameDe": "Mithril-Messer",
+      "englishName": "Mythril Knife",
+      "descriptionDe": "Dolch",
+      "classesReported": [
+        "Krieger",
+        "Dieb",
+        "Rotmagier",
+        "Schwarzmagier"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-dagger",
+      "kind": "weapon",
+      "nameDe": "Dolch",
+      "englishName": "Dagger",
+      "descriptionDe": "Dolch",
+      "classesReported": [
+        "Krieger",
+        "Dieb",
+        "Rotmagier",
+        "Schwarzmagier"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "weapon-knife",
+      "kind": "weapon",
+      "nameDe": "Messer",
+      "englishName": "Knife",
+      "descriptionDe": "einfache Klinge",
+      "classesReported": [
+        "Fast alle"
+      ],
+      "citationHint": "Screenshot-Referenz ohne Originalbild",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "armor-ribbon",
+      "kind": "armor",
+      "nameDe": "Schleife",
+      "englishName": "Ribbon",
+      "descriptionDe": "Schutz gegen Elemente und Status",
+      "classesReported": [
+        "Alle"
+      ],
+      "citationHint": "Video #07 00:07:03",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "armor-protect-ring",
+      "kind": "armor",
+      "nameDe": "Protect-Ring",
+      "englishName": "Protect Ring",
+      "descriptionDe": "8 Abwehr; Schutz vor Soforttod",
+      "classesReported": [
+        "Alle"
+      ],
+      "citationHint": "Video #07 00:09:09",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "armor-dragon-mail",
+      "kind": "armor",
+      "nameDe": "Drachenpanzer",
+      "englishName": "Dragon Mail",
+      "descriptionDe": "Schutz Feuer/Eis/Blitz",
+      "classesReported": [
+        "Ritter"
+      ],
+      "citationHint": "Video #08 00:09:54",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "armor-heal-helm",
+      "kind": "armor",
+      "nameDe": "Heilerhelm",
+      "englishName": "Heal Helm",
+      "descriptionDe": "Kampfgegenstand: Heila",
+      "classesReported": [
+        "Krieger",
+        "Ritter",
+        "Ninja"
+      ],
+      "citationHint": "Video #08 00:06:16",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "armor-giant-s-gloves",
+      "kind": "armor",
+      "nameDe": "Riesen-Handschuhe",
+      "englishName": "Giant's Gloves",
+      "descriptionDe": "Kampfgegenstand: Klinge",
+      "classesReported": [
+        "Krieger",
+        "Ritter",
+        "Ninja",
+        "Rotmagus"
+      ],
+      "citationHint": "Video #07 00:22:01",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "armor-white-robe",
+      "kind": "armor",
+      "nameDe": "Weiße Robe",
+      "englishName": "White Robe",
+      "descriptionDe": "Kampfgegenstand: Invisra",
+      "classesReported": [
+        "Weißmagus"
+      ],
+      "citationHint": "Video #08 00:15:09",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    },
+    {
+      "id": "armor-black-robe",
+      "kind": "armor",
+      "nameDe": "Schwarze Robe",
+      "englishName": "Black Robe",
+      "descriptionDe": "Kampfgegenstand: Eisra",
+      "classesReported": [
+        "Schwarzmagus"
+      ],
+      "citationHint": "Video #08 00:15:09",
+      "verificationStatus": "user-provided-reference-not-independently-verified"
+    }
+  ]
+}
