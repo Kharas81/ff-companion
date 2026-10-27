@@ -90,6 +90,9 @@
     try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}
   }
   const allChapters = new Map();
+  let magicCatalog=null;
+  let magicSchoolFilter='all';
+  let magicLevelFilter='all';
   let search = '';
   let filter = 'all';
   let toastHandle = null;
@@ -304,12 +307,17 @@
     if(kind==='key-item')chapters.forEach(p=>p.chapter.sections.forEach(sec=>sec.checks.filter(c=>c.category==='key-item').forEach(c=>items.push({title:c.title,desc:p.chapter.title}))));
     if(kind==='shops')chapters.forEach(p=>(p.chapter.shops||[]).forEach(shop=>items.push({title:shop.location,desc:p.chapter.title,chapterId:p.chapter.id})));
     if(kind==='classes')chapters.forEach(p=>(p.chapter.classReference||[]).forEach(x=>{if(!items.some(a=>a.id===x.id))items.push({title:x.name+' → '+x.promoted,desc:x.role+' Magie: '+x.magic,id:x.id,classes:[]});}));
+    if(kind==='magic'&&state.selectedGame==='ff1-pr'&&magicCatalog?.spells?.length===64){
+      items.length=0;
+      magicCatalog.spells.forEach(x=>items.push({title:x.nameDe||x.englishName,desc:'Stufe '+x.level+' · '+(x.school==='white'?'Weißmagie':'Schwarzmagie')+' · '+x.priceGil.toLocaleString('de-DE')+' Gil · '+x.locations.join(', ')+' · '+x.effectDe,classes:x.classes.filter(id=>CLASS_OPTIONS.some(c=>c[0]===id)),school:x.school,level:x.level,unverified:x.nameStatus!=='player-confirmed',english:x.englishName}));
+    }
+    const magicFilters=kind==='magic'&&magicCatalog?.spells?.length===64?'<div class="reference-filter"><label>Magieart <select id="magic-school-filter"><option value="all">Alle</option><option value="white" '+(magicSchoolFilter==='white'?'selected':'')+'>Weißmagie</option><option value="black" '+(magicSchoolFilter==='black'?'selected':'')+'>Schwarzmagie</option></select></label><label>Stufe <select id="magic-level-filter"><option value="all">Alle Stufen</option>'+Array.from({length:8},(_,i)=>'<option value="'+(i+1)+'" '+(magicLevelFilter===String(i+1)?'selected':'')+'>'+(i+1)+'</option>').join('')+'</select></label></div>':'';
     const filterable=['weapons','armor','magic'].includes(kind);
     const selectedFilter=state.referenceClassFilter||'all';
-    const visibleItems=filterable&&selectedFilter!=='all'?items.filter(x=>(x.classes||[]).includes(selectedFilter)):items;
+    const visibleItems=items.filter(x=>(!filterable||selectedFilter==='all'||(x.classes||[]).includes(selectedFilter))&&(kind!=='magic'||(magicSchoolFilter==='all'||x.school===magicSchoolFilter)&&(magicLevelFilter==='all'||String(x.level)===magicLevelFilter)));
     const filterHtml=filterable?'<label class="reference-filter">Nur für Klasse: <select id="reference-class-filter" aria-label="Ausrüstung nach Klasse filtern"><option value="all">Alle Klassen</option>'+CLASS_OPTIONS.map(([id,name])=>'<option value="'+esc(id)+'" '+(selectedFilter===id?'selected':'')+'>'+esc(name)+'</option>').join('')+'</select></label>':'';
     const className=id=>CLASS_OPTIONS.find(x=>x[0]===id)?.[1]||id;
-    byId('main').innerHTML='<div class="breadcrumbs">NACHSCHLAGEWERK / '+esc(titles[kind])+'</div><div class="hero"><div class="hero-content"><span class="eyebrow">📚 REFERENZ</span><h1>'+esc(titles[kind])+'</h1><p>Veröffentlichte Daten des ausgewählten Spiels. Fehlende Einträge werden später ergänzt.</p><button type="button" class="btn btn-quiet" data-action="guide">← Zum Walkthrough</button></div></div><div class="reference-grid">'+(items.length?items.map(x=>'<article class="reference-card"><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p>'+(x.classes?.length?'<small>Klassen: '+esc(x.classes.map(className).join(', '))+'</small>':'')+(x.chapterId?'<button type="button" class="btn btn-quiet" data-action="chapter" data-id="'+esc(x.chapterId)+'">Kapitel öffnen</button>':'')+'</article>').join(''):'<p>Für diese Kategorie sind noch keine geprüften Einträge veröffentlicht.</p>')+'</div>';
+    byId('main').innerHTML='<div class="breadcrumbs">NACHSCHLAGEWERK / '+esc(titles[kind])+'</div><div class="hero"><div class="hero-content"><span class="eyebrow">📚 REFERENZ</span><h1>'+esc(titles[kind])+'</h1><p>Veröffentlichte Daten des ausgewählten Spiels. Fehlende Einträge werden später ergänzt.</p><button type="button" class="btn btn-quiet" data-action="guide">← Zum Walkthrough</button></div></div><div class="reference-grid">'+(items.length?items.map(x=>'<article class="reference-card"><h3>'+esc(x.title)+'</h3>'+(x.unverified?'<small>Englischer Originalname · deutsche Bezeichnung noch ungeprüft</small>':'')+'<p>'+esc(x.desc)+'</p>'+(x.classes?.length?'<small>Klassen: '+esc(x.classes.map(className).join(', '))+'</small>':'')+(x.chapterId?'<button type="button" class="btn btn-quiet" data-action="chapter" data-id="'+esc(x.chapterId)+'">Kapitel öffnen</button>':'')+'</article>').join(''):'<p>Für diese Kategorie sind noch keine geprüften Einträge veröffentlicht.</p>')+'</div>';
   };
   const renderMain = (restoreOpened) => {
     renderMobileProgress();
@@ -582,6 +590,8 @@
       if(i>=0&&i<4&&CLASS_OPTIONS.some(x=>x[0]===event.target.value)){slot.party[i]=event.target.value;slot.purchasePlan||={};delete slot.purchasePlan[i];persist();const opened=new Set([...document.querySelectorAll('.chapter-section[open]')].map(e=>e.dataset.section));renderMain(opened);}
       return;
     }
+    if(event.target.id==='magic-school-filter'){magicSchoolFilter=event.target.value;renderReference();return;}
+    if(event.target.id==='magic-level-filter'){magicLevelFilter=event.target.value;renderReference();return;}
     if(event.target.id==='reference-class-filter'){state.referenceClassFilter=event.target.value;renderReference();return;}
     if(event.target.id==='quick-game'){selectGame(event.target.value);return;}
     if(event.target.id==='quick-chapter'){selectChapter(event.target.value);return;}
@@ -625,6 +635,7 @@
   if(chooser)chooser.addEventListener('change',()=>{if(byId('settings-dialog')?.open)byId('settings-dialog').close();});
   if('serviceWorker' in navigator && location.protocol==='https:')navigator.serviceWorker.register('./service-worker.js').catch(e=>console.warn('Offline nicht aktiv:',e));
   document.addEventListener('change',event=>{if(event.target.matches('#view-mode,#sheet-view-mode'))setLayoutMode(event.target.value);});
+  const loadMagic=async()=>{try{const res=await fetch('data/ff1/magic.json',{cache:'no-cache'});if(!res.ok)throw Error('HTTP '+res.status);const data=await res.json();if(data.format==='ff-companion-magic'&&data.spells?.length===64){magicCatalog=data;if(state.view==='reference'&&state.referenceType==='magic')renderReference();}}catch(e){console.warn('Magiedaten nicht ladbar:',e);}};
   applyFontSize();applyLayoutMode();
-  render();loadPublished();
+  render();loadPublished();if(location.protocol!=='file:')loadMagic();
 })();
