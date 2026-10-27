@@ -304,6 +304,10 @@
     if(kind==='key-item')chapters.forEach(p=>p.chapter.sections.forEach(sec=>sec.checks.filter(c=>c.category==='key-item').forEach(c=>items.push({title:c.title,desc:p.chapter.title}))));
     if(kind==='shops')chapters.forEach(p=>(p.chapter.shops||[]).forEach(shop=>items.push({title:shop.location,desc:p.chapter.title,chapterId:p.chapter.id})));
     if(kind==='classes')chapters.forEach(p=>(p.chapter.classReference||[]).forEach(x=>{if(!items.some(a=>a.id===x.id))items.push({title:x.name+' → '+x.promoted,desc:x.role+' Magie: '+x.magic,id:x.id,classes:[]});}));
+    const filterable=['weapons','armor','magic'].includes(kind);
+    const selectedFilter=state.referenceClassFilter||'all';
+    const visibleItems=filterable&&selectedFilter!=='all'?items.filter(x=>(x.classes||[]).includes(selectedFilter)):items;
+    const filterHtml=filterable?'<label class="reference-filter">Nur für Klasse: <select id="reference-class-filter" aria-label="Ausrüstung nach Klasse filtern"><option value="all">Alle Klassen</option>'+CLASS_OPTIONS.map(([id,name])=>'<option value="'+esc(id)+'" '+(selectedFilter===id?'selected':'')+'>'+esc(name)+'</option>').join('')+'</select></label>':'';
     const className=id=>CLASS_OPTIONS.find(x=>x[0]===id)?.[1]||id;
     byId('main').innerHTML='<div class="breadcrumbs">NACHSCHLAGEWERK / '+esc(titles[kind])+'</div><div class="hero"><div class="hero-content"><span class="eyebrow">📚 REFERENZ</span><h1>'+esc(titles[kind])+'</h1><p>Veröffentlichte Daten des ausgewählten Spiels. Fehlende Einträge werden später ergänzt.</p><button type="button" class="btn btn-quiet" data-action="guide">← Zum Walkthrough</button></div></div><div class="reference-grid">'+(items.length?items.map(x=>'<article class="reference-card"><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p>'+(x.classes?.length?'<small>Klassen: '+esc(x.classes.map(className).join(', '))+'</small>':'')+(x.chapterId?'<button type="button" class="btn btn-quiet" data-action="chapter" data-id="'+esc(x.chapterId)+'">Kapitel öffnen</button>':'')+'</article>').join(''):'<p>Für diese Kategorie sind noch keine geprüften Einträge veröffentlicht.</p>')+'</div>';
   };
@@ -578,6 +582,7 @@
       if(i>=0&&i<4&&CLASS_OPTIONS.some(x=>x[0]===event.target.value)){slot.party[i]=event.target.value;slot.purchasePlan||={};delete slot.purchasePlan[i];persist();const opened=new Set([...document.querySelectorAll('.chapter-section[open]')].map(e=>e.dataset.section));renderMain(opened);}
       return;
     }
+    if(event.target.id==='reference-class-filter'){state.referenceClassFilter=event.target.value;renderReference();return;}
     if(event.target.id==='quick-game'){selectGame(event.target.value);return;}
     if(event.target.id==='quick-chapter'){selectChapter(event.target.value);return;}
     if(event.target.id==='save-selector'){switchSlot(event.target.value);return;}
