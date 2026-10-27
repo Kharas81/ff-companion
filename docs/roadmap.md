@@ -234,3 +234,20 @@ Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine se
 - [ ] In der Praxis Browser- und Handy-UI, Filterwechsel und Shop-Einkaufsplan testen (vom Nutzer aktuell verschoben).
 
 **Wichtig:** Der Filter arbeitet auf bereits veröffentlichten Daten. Er behauptet keine vollständige FF-I-Datenbank.
+
+
+## 27.10.2026 – Zentrale FF-I-Magiedatenbank
+
+- [x] `data/ff1/magic.json` erstellt: 64 Zauber, 32 weiße + 32 schwarze, Stufen 1–8; maschinenlesbare Kennungen.
+- [x] Ursprünglich vom Spieler bestätigte deutsche Namen (Cornelia) hervorgehoben; für übrige Zauber englische Originalnamen sichtbar und Übersetzungsstatus ausdrücklich offen.
+- [x] Magie-Nachschlagewerk auf die zentrale JSON-Datei umgestellt; Filter nach Weiß-/Schwarzmagie, Stufe 1–8 und Startklasse.
+- [x] Gilpreise, Ortsangaben und kurze deutsche Wirkungsbeschreibungen als Arbeitsdaten erfasst.
+- [x] `service-worker.js` auf neue Cacheversion gesetzt, zentrale Magiedatei in Offline-Vorabcache aufgenommen.
+- [ ] **P0: Fachliches Magieaudit** für alle 64 Zauber: Namen, exakt verfügbare Klassen (insbesondere Beförderungen), Verkaufspreise und Bezugsorte mit spezifischen PR-Quellen **einzeln** kontrollieren; aktuelle Felder oberhalb der acht bestätigten Spielnamen sind vorläufige Arbeitsdaten, keine endgültige 100%-Freigabe.
+- [ ] **P0: Zaubergrenze** maximal 3 Sprüche je Stufe pro Figur im Einkaufsrechner berücksichtigen; schon bekannte Sprüche und verfügbares Gil ergänzen.
+- [ ] **P1: Einzige Datenquelle** für den Kapitel-1-Shop und den Magiekatalog herstellen; bisher ist Cornelias Shop in Kapitel 1 separat geführt.
+- [ ] **P1: Deutsche Originalnamen** der Stufen 2–8 mithilfe deutscher Ingame-Bilder oder verlässlicher deutscher Versionslisten vervollständigen.
+- [ ] **P1: Links** vom Walkthrough/Shop direkt auf konkrete Magiedetails ermöglichen.
+- [ ] Praktische Tests am Handy, im Browser und beim Offline-Neustart weiterhin verschoben.
+
+**Abnahme:** Zählung 64 (32/32, Stufen 1–8) und JavaScript-Syntax technisch kontrolliert. Inhaltliche Vollprüfung aller Einträge und Live-Browser-Nutzung stehen noch aus.
