@@ -246,6 +246,9 @@
     for(const [id,view] of [['dashboard-link','dashboard'],['step-link','steps'],['collections-link','collections']])byId(id)?.classList.toggle('active',state.view===view);
     const bestiaryLink=byId('bestiary-link');
     if(bestiaryLink)bestiaryLink.classList.toggle('active',state.view==='bestiary');
+    const quickGame=byId('quick-game'),quickChapter=byId('quick-chapter');
+    if(quickGame){quickGame.innerHTML=manifest.games.map(g=>'<option value="'+esc(g.id)+'">'+esc(g.title)+'</option>').join('');quickGame.value=state.selectedGame;}
+    if(quickChapter){const all=getChapters(state.selectedGame);quickChapter.innerHTML=all.length?all.map(x=>'<option value="'+esc(x.document.chapter.id)+'">'+esc(x.document.chapter.title)+'</option>').join(''):'<option value="">Noch keine Kapitel</option>';quickChapter.value=state.selectedChapter;quickChapter.disabled=!all.length;}
     byId('game-list').innerHTML=manifest.games.map(g => {
       const count=getChapters(g.id).length;
       const abbr=g.title.replace('Final Fantasy ','');
@@ -562,6 +565,8 @@
       if(i>=0&&i<4&&CLASS_OPTIONS.some(x=>x[0]===event.target.value)){slot.party[i]=event.target.value;slot.purchasePlan||={};delete slot.purchasePlan[i];persist();const opened=new Set([...document.querySelectorAll('.chapter-section[open]')].map(e=>e.dataset.section));renderMain(opened);}
       return;
     }
+    if(event.target.id==='quick-game'){selectGame(event.target.value);return;}
+    if(event.target.id==='quick-chapter'){selectChapter(event.target.value);return;}
     if(event.target.id==='save-selector'){switchSlot(event.target.value);return;}
     if(event.target.matches('[data-bestiary-task]')){
       state.progress[event.target.dataset.bestiaryTask]=event.target.checked;
