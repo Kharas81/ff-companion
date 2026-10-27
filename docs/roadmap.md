@@ -174,3 +174,19 @@ Hinweis: Originale Aufgaben-IDs/Spielstände bleiben unverändert; Kapitel 1 beh
 - [ ] PWA-Cache-Versionierung/Updates und Offline-Bedienung nach CSS-/JavaScript-Änderungen testen.
 
 Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine separate zweite Website. Funktionell implementiert, vollständige End-to-End-Abnahme ausstehend.
+
+
+## 27.10.2026 – Deutsche Klassenübersicht und Quellenstrategie
+
+- [x] Sechs FF-I-Startklassen mit Kurzbeschreibung, Kampfschwerpunkt, Magietyp und Beförderung im Kapitel-JSON erfasst.
+- [x] Klassenreferenz im Menü zeigt jetzt die neuen Beschreibungen statt nur sechs Klassennamen.
+- [x] Erste deutschsprachige Quellenhinweise im JSON dokumentiert: Square Enix (deutsche Pixel-Remaster-Einsteigertipps) und deutscher Final-Fantasy-Almanach; englische Vorxu-Referenz zur Ergänzung.
+- [x] Kettenhemd-Klassenliste konservativ korrigiert: vorläufig ausschließlich Krieger. Die Waffen-/Rüstungsregeln müssen später weiterhin im deutschen Spiel gegengeprüft werden.
+- [ ] Die **exakte deutsche Schreibweise aller sechs Beförderungen** anhand der Spielmenüs oder einer Pixel-Remaster-Quelle überprüfen (aktuelle Begriffe teils traditionelle Übersetzungen).
+- [ ] Vollständige Klassenprofile mit konkreten Werten, Level-Entwicklung, Zaubergrenzen und Ausrüstungslisten erstellen.
+- [ ] Ausrüstungs-Kompatibilität in sämtlichen Geschäften aus mindestens zwei versionsspezifischen Quellen prüfen; besonders Hammer und schwere Rüstung.
+- [ ] Gemeinsame, sprachen- und editionsbewusste Referenz-JSON-Datenbank aufbauen, statt nur Inhalte aus Kapitel 1 zu sammeln.
+- [ ] Direktlinks aus der Kapitel-Wegführung auf passende Klassen-, Waffen- und Magie-Einträge einbauen.
+- [ ] Die neue Klassenansicht sowie die Kaufberatung im Browser und auf dem Handy testen.
+
+**Quellenregel:** Deutsche Ingame-Screenshots/-Werte haben für die deutschen Bezeichnungen Vorrang. Versionenspezifische englische Fachreferenzen dürfen Mechaniken verifizieren. Offene Übersetzungen als solche markieren, nicht ungeprüft als offiziell ausgeben.
