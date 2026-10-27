@@ -408,7 +408,9 @@
           "attack": 12,
           "classes": [
             "monk"
-          ]
+          ],
+          "location": "Cornelia",
+          "availability": "shop"
         },
         {
           "id": "knife",
@@ -421,7 +423,9 @@
             "thief",
             "red-mage",
             "black-mage"
-          ]
+          ],
+          "location": "Cornelia",
+          "availability": "shop"
         },
         {
           "id": "staff",
@@ -434,7 +438,9 @@
             "red-mage",
             "white-mage",
             "black-mage"
-          ]
+          ],
+          "location": "Cornelia",
+          "availability": "shop"
         },
         {
           "id": "rapier",
@@ -446,7 +452,9 @@
             "warrior",
             "thief",
             "red-mage"
-          ]
+          ],
+          "location": "Cornelia",
+          "availability": "shop"
         },
         {
           "id": "hammer",
@@ -456,7 +464,10 @@
           "classes": [
             "warrior",
             "white-mage"
-          ]
+          ],
+          "verificationNote": "Trageklassen zwischen PR-Quellen widersprüchlich; im Spiel prüfen.",
+          "location": "Cornelia",
+          "availability": "shop"
         }
       ],
       "armor": [
@@ -473,7 +484,9 @@
             "red-mage",
             "white-mage",
             "black-mage"
-          ]
+          ],
+          "location": "Cornelia",
+          "availability": "shop"
         },
         {
           "id": "leather-armor",
@@ -486,7 +499,9 @@
             "thief",
             "monk",
             "red-mage"
-          ]
+          ],
+          "location": "Cornelia",
+          "availability": "shop"
         },
         {
           "id": "chain-mail",
@@ -496,7 +511,9 @@
           "weight": 15,
           "classes": [
             "warrior"
-          ]
+          ],
+          "location": "Cornelia",
+          "availability": "shop"
         }
       ],
       "magic": [
@@ -599,7 +616,21 @@
         }
       ],
       "compatibilityStatus": "Based on FF I class equipment compatibility; further in-game confirmation welcome",
-      "equipmentVerification": "Review against https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/equipment; class allowances remain subject to in-game confirmation."
+      "equipmentVerification": "Review against https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/equipment; class allowances remain subject to in-game confirmation.",
+      "sourceReferences": [
+        {
+          "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/cornelia-and-chaos-shrine",
+          "purpose": "Preise/Werte"
+        },
+        {
+          "url": "https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/equipment",
+          "purpose": "Trageklassen"
+        },
+        {
+          "url": "https://gcgx.games/ff1/re/weapon.html",
+          "purpose": "Zweite PR-spezifische Gegenprüfung"
+        }
+      ]
     },
     "localizedEnemyNames": {
       "source": "Vom Spieler direkt in der deutschen Pixel-Remaster-Version beobachtet; noch nicht alle Einträge eindeutig einer Bestiarium-Nummer zugeordnet",
@@ -658,42 +689,48 @@
         "name": "Krieger",
         "promoted": "Ritter",
         "role": "Widerstandsfähiger Nahkämpfer; viele Waffen und schwere Rüstung.",
-        "magic": "Nach Beförderung begrenzte Weißmagie Stufe 1–3."
+        "magic": "Nach Beförderung begrenzte Weißmagie Stufe 1–3.",
+        "referenceStatus": "Grundprofil; einzelne Details vor vollständiger Freigabe weiter prüfen"
       },
       {
         "id": "thief",
         "name": "Dieb",
         "promoted": "Ninja",
         "role": "Schnell, gute Ausweichfähigkeit, leichte Ausrüstung.",
-        "magic": "Als Ninja Schwarzmagie Stufe 1–4."
+        "magic": "Als Ninja Schwarzmagie Stufe 1–4.",
+        "referenceStatus": "Grundprofil; einzelne Details vor vollständiger Freigabe weiter prüfen"
       },
       {
         "id": "monk",
         "name": "Mönch",
         "promoted": "Meister",
         "role": "Starker Faustkämpfer; unbewaffnet häufig besonders effektiv.",
-        "magic": "Keine Magie."
+        "magic": "Keine Magie.",
+        "referenceStatus": "Grundprofil; einzelne Details vor vollständiger Freigabe weiter prüfen"
       },
       {
         "id": "red-mage",
         "name": "Rotmagier",
         "promoted": "Rotmagus",
         "role": "Vielseitig: Waffen sowie weiße und schwarze Magie.",
-        "magic": "Weiße und schwarze Magie, aber nicht die stärksten Sprüche."
+        "magic": "Weiße und schwarze Magie, aber nicht die stärksten Sprüche.",
+        "referenceStatus": "Grundprofil; einzelne Details vor vollständiger Freigabe weiter prüfen"
       },
       {
         "id": "white-mage",
         "name": "Weißmagier",
         "promoted": "Weißmagus",
         "role": "Heilung, Unterstützung und Schutz.",
-        "magic": "Weißmagie, als Weißmagus bis zu hohen Zauberstufen."
+        "magic": "Weißmagie, als Weißmagus bis zu hohen Zauberstufen.",
+        "referenceStatus": "Grundprofil; einzelne Details vor vollständiger Freigabe weiter prüfen"
       },
       {
         "id": "black-mage",
         "name": "Schwarzmagier",
         "promoted": "Schwarzmagus",
         "role": "Elementarangriffe und offensive Magie.",
-        "magic": "Schwarzmagie, als Schwarzmagus bis zu hohen Zauberstufen."
+        "magic": "Schwarzmagie, als Schwarzmagus bis zu hohen Zauberstufen.",
+        "referenceStatus": "Grundprofil; einzelne Details vor vollständiger Freigabe weiter prüfen"
       }
     ],
     "classReferenceSources": [
