@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "gameId": "ff1-pr",
   "description": "64 Zauber FF I Pixel Remaster. Deutsche Namen nur bei Spielerbestätigung; übrige englische Originalnamen sichtbar.",
-  "localizationPolicy": "nameDe=null bedeutet deutsche Bezeichnung nicht überprüft, niemals als offizielle Übersetzung darstellen.",
+  "localizationPolicy": "Alle deutschen Namen sind als Kandidaten aus den vom Nutzer übermittelten Tabellen hinterlegt; nur die acht zuvor im Spiel vom Nutzer bestätigten Namen sind player-confirmed. Video-Timestamps und behauptete MSG-IDs nicht selbst eingesehen.",
   "spellsPerLevelLimit": 3,
   "spells": [
     {
@@ -25,7 +25,9 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_01",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-dia",
@@ -46,7 +48,9 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_02",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-protect",
@@ -67,7 +71,9 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_03",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-blink",
@@ -88,13 +94,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_04",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-invis",
       "englishName": "Invis",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Invis",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 2,
       "priceGil": 250,
@@ -109,13 +117,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_05",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-silence",
       "englishName": "Silence",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Stumm",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 2,
       "priceGil": 250,
@@ -130,13 +140,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_06",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-blindna",
       "englishName": "Blindna",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Blendna",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 2,
       "priceGil": 250,
@@ -151,13 +163,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_07",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-nulshock",
       "englishName": "NulShock",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Antielek",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 2,
       "priceGil": 250,
@@ -172,13 +186,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_08",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-cura",
       "englishName": "Cura",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Vigra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 3,
       "priceGil": 1000,
@@ -193,13 +209,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_09",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-nulblaze",
       "englishName": "NulBlaze",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Antipyr",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 3,
       "priceGil": 1000,
@@ -214,13 +232,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_10",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-diara",
       "englishName": "Diara",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Dialuxra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 3,
       "priceGil": 1000,
@@ -235,13 +255,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_11",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-heal",
       "englishName": "Heal",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Heila",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 3,
       "priceGil": 1000,
@@ -256,13 +278,15 @@
         "knight",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_12",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-poisona",
       "englishName": "Poisona",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Giftna",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 4,
       "priceGil": 2500,
@@ -276,13 +300,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_13",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-nulfrost",
       "englishName": "NulFrost",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Antikryo",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 4,
       "priceGil": 2500,
@@ -296,13 +322,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_14",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-fear",
       "englishName": "Fear",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Furcht",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 4,
       "priceGil": 2500,
@@ -316,13 +344,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_15",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-vox",
       "englishName": "Vox",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Vokalis",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 4,
       "priceGil": 2500,
@@ -336,13 +366,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_16",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-curaga",
       "englishName": "Curaga",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Vitaga",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 5,
       "priceGil": 4000,
@@ -356,13 +388,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_17",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-diaga",
       "englishName": "Diaga",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Dialuxga",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 5,
       "priceGil": 4000,
@@ -376,13 +410,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_18",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-life",
       "englishName": "Life",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Engel",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 5,
       "priceGil": 4000,
@@ -396,13 +432,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_19",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-healara",
       "englishName": "Healara",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Heilara",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 5,
       "priceGil": 4000,
@@ -416,13 +454,15 @@
         "red-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_20",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-stona",
       "englishName": "Stona",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Steinna",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 6,
       "priceGil": 13000,
@@ -435,13 +475,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_21",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-protera",
       "englishName": "Protera",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Protesra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 6,
       "priceGil": 13000,
@@ -454,13 +496,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_22",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-exit",
       "englishName": "Exit",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Teleport",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 6,
       "priceGil": 13000,
@@ -473,13 +517,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_23",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-invisira",
       "englishName": "Invisira",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Invisra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 6,
       "priceGil": 13000,
@@ -492,13 +538,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_24",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-curaja",
       "englishName": "Curaja",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Vitaja",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 7,
       "priceGil": 30000,
@@ -512,13 +560,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_25",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-nuldeath",
       "englishName": "NulDeath",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Antitod",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 7,
       "priceGil": 30000,
@@ -532,13 +582,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_26",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-diaja",
       "englishName": "Diaja",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Dialuxja",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 7,
       "priceGil": 30000,
@@ -552,13 +604,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_27",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-healaga",
       "englishName": "Healaga",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Heilaga",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 7,
       "priceGil": 30000,
@@ -572,13 +626,15 @@
         "white-mage",
         "red-wizard",
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_28",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-full-life",
       "englishName": "Full-Life",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Erzengel",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 8,
       "priceGil": 40000,
@@ -590,13 +646,15 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_29",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-nulall",
       "englishName": "NulAll",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Antielem",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 8,
       "priceGil": 40000,
@@ -608,13 +666,15 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_30",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-holy",
       "englishName": "Holy",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Sanctus",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 8,
       "priceGil": 40000,
@@ -626,13 +686,15 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_31",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "white-dispel",
       "englishName": "Dispel",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Anti-Z",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "white",
       "level": 8,
       "priceGil": 40000,
@@ -644,7 +706,9 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "white-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_32",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-fire",
@@ -665,7 +729,9 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_33",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-focus",
@@ -686,7 +752,9 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_34",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-sleep",
@@ -707,7 +775,9 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_35",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-thunder",
@@ -728,13 +798,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_36",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-blizzard",
       "englishName": "Blizzard",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Eis",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 2,
       "priceGil": 250,
@@ -749,13 +821,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_37",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-temper",
       "englishName": "Temper",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Stärke",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 2,
       "priceGil": 250,
@@ -770,13 +844,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_38",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-dark",
       "englishName": "Dark",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Finsternis",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 2,
       "priceGil": 250,
@@ -791,13 +867,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_39",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-slow",
       "englishName": "Slow",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Gemach",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 2,
       "priceGil": 250,
@@ -812,13 +890,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_40",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-fira",
       "englishName": "Fira",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Feura",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 3,
       "priceGil": 1000,
@@ -833,13 +913,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_41",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-thundara",
       "englishName": "Thundara",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Blitzra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 3,
       "priceGil": 1000,
@@ -854,13 +936,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_42",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-hold",
       "englishName": "Hold",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Lähmung",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 3,
       "priceGil": 1000,
@@ -875,13 +959,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_43",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-focara",
       "englishName": "Focara",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Fokusra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 3,
       "priceGil": 1000,
@@ -896,13 +982,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_44",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-sleepra",
       "englishName": "Sleepra",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Schlafra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 4,
       "priceGil": 2500,
@@ -917,13 +1005,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_45",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-confuse",
       "englishName": "Confuse",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Konfus",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 4,
       "priceGil": 2500,
@@ -938,13 +1028,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_46",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-haste",
       "englishName": "Haste",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Hast",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 4,
       "priceGil": 2500,
@@ -959,13 +1051,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_47",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-blizzara",
       "englishName": "Blizzara",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Eisra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 4,
       "priceGil": 2500,
@@ -980,13 +1074,15 @@
         "ninja",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_48",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-firaga",
       "englishName": "Firaga",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Feuga",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 5,
       "priceGil": 4000,
@@ -1000,13 +1096,15 @@
         "red-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_49",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-teleport",
       "englishName": "Teleport",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Warp",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 5,
       "priceGil": 4000,
@@ -1020,13 +1118,15 @@
         "red-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_50",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-scourge",
       "englishName": "Scourge",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Giftgas",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 5,
       "priceGil": 4000,
@@ -1040,13 +1140,15 @@
         "red-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_51",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-slowra",
       "englishName": "Slowra",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Gemachra",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 5,
       "priceGil": 4000,
@@ -1060,13 +1162,15 @@
         "red-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_52",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-thundaga",
       "englishName": "Thundaga",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Blitzga",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 6,
       "priceGil": 13000,
@@ -1079,13 +1183,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_53",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-quake",
       "englishName": "Quake",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Beben",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 6,
       "priceGil": 13000,
@@ -1098,13 +1204,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_54",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-death",
       "englishName": "Death",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Tod",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 6,
       "priceGil": 13000,
@@ -1117,13 +1225,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_55",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-stun",
       "englishName": "Stun",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Schock",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 6,
       "priceGil": 13000,
@@ -1136,13 +1246,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_56",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-blizzaga",
       "englishName": "Blizzaga",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Eisga",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 7,
       "priceGil": 30000,
@@ -1156,13 +1268,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_57",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-saber",
       "englishName": "Saber",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Klinge",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 7,
       "priceGil": 30000,
@@ -1176,13 +1290,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_58",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-break",
       "englishName": "Break",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Stein",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 7,
       "priceGil": 30000,
@@ -1196,13 +1312,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_59",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-blind",
       "englishName": "Blind",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Blenden",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 7,
       "priceGil": 30000,
@@ -1216,13 +1334,15 @@
         "black-mage",
         "red-wizard",
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_60",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-flare",
       "englishName": "Flare",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Flare",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 8,
       "priceGil": 40000,
@@ -1234,13 +1354,15 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_61",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-warp",
       "englishName": "Warp",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Dimension",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 8,
       "priceGil": 40000,
@@ -1252,13 +1374,15 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_62",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-stop",
       "englishName": "Stop",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Stopp",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 8,
       "priceGil": 40000,
@@ -1270,13 +1394,15 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_63",
+      "claimedTextKeyStatus": "unverified"
     },
     {
       "id": "black-kill",
       "englishName": "Kill",
-      "nameDe": null,
-      "nameStatus": "translation-pending",
+      "nameDe": "Exitus",
+      "nameStatus": "user-supplied-video-reference-unverified",
       "school": "black",
       "level": 8,
       "priceGil": 40000,
@@ -1288,7 +1414,9 @@
       "effectStatus": "source-paraphrase",
       "classes": [
         "black-wizard"
-      ]
+      ],
+      "claimedTextKey": "MSG_MAGIC_NAME_64",
+      "claimedTextKeyStatus": "unverified"
     }
   ],
   "referenceUrls": [
