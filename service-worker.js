@@ -1,6 +1,6 @@
 /* FF Companion: relativ zum GitHub-Pages-Projektpfad und nur öffentliche App-Dateien. */
-const CACHE='ff-companion-v4-2026-10-27';
-const SHELL=['./','./index.html','./assets/styles.css','./assets/app.js','./assets/offline-seed.js','./assets/app-icon.svg','./app.webmanifest','./data/manifest.json','./data/ff1/magic.json'];
+const CACHE='ff-companion-v5-2026-10-27';
+const SHELL=['./','./index.html','./assets/styles.css','./assets/app.js','./assets/offline-seed.js','./assets/app-icon.svg','./app.webmanifest','./data/manifest.json','./data/ff1/magic.json','./data/ff1/equipment.json'];
 self.addEventListener('install',event=>{
   event.waitUntil((async()=>{
     const cache=await caches.open(CACHE);
