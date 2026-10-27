@@ -205,3 +205,18 @@ Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine se
 - [ ] Bei großen Kapitelzahlen nach Spiel/Abschnitt gruppieren; die bestehende Kapitelwahl soll übersichtlich bleiben.
 
 **Qualitätsstand:** Auf GitHub implementiert; Browser- und mobile End-to-End-Abnahme weiterhin offen.
+
+
+## 27.10.2026 – Direkt zum vorherigen/nächsten Kapitel
+
+- [x] Schaltflächen „← Zurück“ und „Weiter →“ in der dauerhaft sichtbaren Schnellnavigation ergänzt.
+- [x] Beide Schaltflächen mit den tatsächlich geladenen Kapiteln des gewählten Spiels verknüpft.
+- [x] Schaltflächen am Kapitelanfang bzw. -ende deaktiviert; keine Navigation zu unveröffentlichten Kapiteln.
+- [x] Mobile Anordnung der Kapitelpfeile ergänzt.
+- [ ] **P0** Auf tatsächlichen Geräten prüfen, ob Schnellnavigation, Fortschrittsleiste und Kopfzeile den Lesebereich nicht überdecken.
+- [ ] **P0** Funktionsprüfung im Browser für Kapitelwechsel, Häkchen und Speicherung über alle drei Spielstände.
+- [ ] **P0** Offline/PWA-Neustart und Cacheaktualisierung mit neuen HTML/CSS/JS-Dateien prüfen.
+- [ ] **P1** Kleine Bildschirmgrößen und Touch-Ziele im Couch-, Auto- und Desktop-Modus testen.
+- [ ] **P1** Bei Bedarf eine kompaktere oder einblendbare Schnellnavigation für schmale Handys nach echten Tests gestalten.
+
+**Stand:** Änderungen programmiert, kein echter Mobil- oder Browser-End-to-End-Test durchgeführt.
