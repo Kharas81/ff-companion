@@ -284,3 +284,5 @@ html[data-layout-mode="couch"] .chapter-section button,html[data-layout-mode="co
 .quick-nav .chapter-switch button{white-space:nowrap;min-height:40px}
 .quick-nav button:disabled{opacity:.42;cursor:not-allowed}
 @media(max-width:760px){.quick-nav .chapter-switch{flex:1 1 100%;display:grid;grid-template-columns:1fr 1fr}.quick-nav .chapter-switch button{min-width:0;font-size:14px}}
+
+.reference-filter{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0;padding:13px;background:var(--panel2);border-radius:11px}.reference-filter select{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:10px;min-height:44px;border-radius:9px;max-width:100%}
