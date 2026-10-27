@@ -249,6 +249,11 @@
     const quickGame=byId('quick-game'),quickChapter=byId('quick-chapter');
     if(quickGame){quickGame.innerHTML=manifest.games.map(g=>'<option value="'+esc(g.id)+'">'+esc(g.title)+'</option>').join('');quickGame.value=state.selectedGame;}
     if(quickChapter){const all=getChapters(state.selectedGame);quickChapter.innerHTML=all.length?all.map(x=>'<option value="'+esc(x.document.chapter.id)+'">'+esc(x.document.chapter.title)+'</option>').join(''):'<option value="">Noch keine Kapitel</option>';quickChapter.value=state.selectedChapter;quickChapter.disabled=!all.length;}
+    const chapterIds=getChapters(state.selectedGame).map(x=>x.document.chapter.id);
+    const chapterIndex=chapterIds.indexOf(state.selectedChapter);
+    const previousButton=byId('quick-prev'),nextButton=byId('quick-next');
+    if(previousButton)previousButton.disabled=chapterIndex<=0;
+    if(nextButton)nextButton.disabled=chapterIndex<0||chapterIndex>=chapterIds.length-1;
     byId('game-list').innerHTML=manifest.games.map(g => {
       const count=getChapters(g.id).length;
       const abbr=g.title.replace('Final Fantasy ','');
@@ -479,6 +484,14 @@
     const btn=event.target.closest('[data-action]');if(!btn)return;
     switch(btn.dataset.action){
       case 'reference':state.referenceType=btn.dataset.refType||'classes';state.view='reference';persist();renderMain();setMobileMenu(false);break;
+      case 'previous-chapter':
+      case 'next-chapter':{
+        const chapters=getChapters(state.selectedGame);
+        const index=chapters.findIndex(x=>x.document.chapter.id===state.selectedChapter);
+        const target=chapters[index+(btn.dataset.action==='next-chapter'?1:-1)];
+        if(target)selectChapter(target.document.chapter.id);
+        break;
+      }
       case 'dashboard':setView('dashboard');break;
       case 'collections':setView('collections');break;
       case 'step-mode':setView('steps');break;
