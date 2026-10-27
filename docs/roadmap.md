@@ -190,3 +190,18 @@ Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine se
 - [ ] Die neue Klassenansicht sowie die Kaufberatung im Browser und auf dem Handy testen.
 
 **Quellenregel:** Deutsche Ingame-Screenshots/-Werte haben für die deutschen Bezeichnungen Vorrang. Versionenspezifische englische Fachreferenzen dürfen Mechaniken verifizieren. Offene Übersetzungen als solche markieren, nicht ungeprüft als offiziell ausgeben.
+
+
+## 27.10.2026 – Schnellnavigation statt langer Seitenleiste
+
+- [x] Sticky Schnellnavigation am oberen Bildschirmrand: direkte Spiel- und Kapitelwahl.
+- [x] Direktzugriffe auf Guide, Schrittmodus, Bestiarium und Klassen-Nachschlagewerk.
+- [x] Umfangreiche Spieleliste in einklappbare Sektion verschoben; lange Seitenleiste bleibt optional.
+- [x] Auswahlfelder sind mit der bestehenden Navigation und dem aktiven Spielstand verbunden.
+- [x] Für Handy kleinere, zweireihige Darstellung der Schnellnavigation ergänzt.
+- [ ] Auf echten Handys bei kleinem Bildschirm sicherstellen, dass Schnellnavigation, mobile Fortschrittsleiste und Dialoge genug Platz lassen.
+- [ ] UX-Option: Schnellzugriff für Shops oder eigene Favoriten, je nachdem wie häufig gebraucht.
+- [ ] Zurück-/Vorwärtskapitel als Zusatzoption testen; ggf. mit Kapitelüberschrift kombinieren.
+- [ ] Bei großen Kapitelzahlen nach Spiel/Abschnitt gruppieren; die bestehende Kapitelwahl soll übersichtlich bleiben.
+
+**Qualitätsstand:** Auf GitHub implementiert; Browser- und mobile End-to-End-Abnahme weiterhin offen.
