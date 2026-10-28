@@ -1,0 +1,104 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-07",
+    "number": 7,
+    "title": "Titanenhöhle und Höhle des Weisen",
+    "subtitle": "Sternrubin · vier Truhen · Erdstab",
+    "summary": "Dem Titan das Sternrubin geben, seine vier Schätze bergen und beim Weisen Sadda den Erdstab abholen.",
+    "checkpoint": "Titanenhöhle 4/4 Truhen, Erdstab erhalten.",
+    "contentStatus": "needs-review",
+    "sources": [
+      {
+        "title": "PR Walkthrough",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/melmond-and-the-cavern-of-earth"
+      }
+    ],
+    "sections": [
+      {
+        "id": "titan",
+        "title": "1 · Titanenhöhle",
+        "steps": [
+          "Westlich von Melmond die Titanenhöhle aufsuchen und das Sternrubin an den Titan übergeben.",
+          "Den nun offenen Weg zur Schatzkammer durchqueren und alle vier Truhen öffnen.",
+          "Durch den nördlichen Ausgang weiterziehen."
+        ],
+        "checks": [
+          {
+            "id": "ruby",
+            "category": "story",
+            "title": "Titan mit Sternrubin passiert",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "chest-1",
+            "category": "chest",
+            "title": "Truhe 1/4: Mithrilhelm",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "chest-2",
+            "category": "chest",
+            "title": "Truhe 2/4: 450 Gil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "chest-3",
+            "category": "chest",
+            "title": "Truhe 3/4: 620 Gil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "chest-4",
+            "category": "chest",
+            "title": "Truhe 4/4: Große Axt",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "sadda",
+        "title": "2 · Höhle des Weisen",
+        "steps": [
+          "Südwärts zur Höhle des Weisen gehen.",
+          "Sadda ansprechen und den Erdstab erhalten.",
+          "Nach Melmond zurückkehren, rasten und ausreichend Magie für die zweite Erdhöhlenhälfte sichern."
+        ],
+        "checks": [
+          {
+            "id": "sage",
+            "category": "story",
+            "title": "Sadda besucht",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "earthrod",
+            "category": "key-item",
+            "title": "Erdstab erhalten",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "rest",
+            "category": "preparation",
+            "title": "Vor Rückkehr zur Erdhöhle erholt",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      }
+    ]
+  }
+}
