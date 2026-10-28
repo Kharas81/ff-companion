@@ -1,0 +1,306 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-06",
+    "number": 6,
+    "title": "Melmond und Erdhöhle – erster Besuch",
+    "subtitle": "Stufe-5-Magie · 16 Truhen · Vampir · Sternrubin",
+    "summary": "Nach der Kanalsprengung nach Melmond reisen, B1 bis B3 der Erdhöhle plündern und den Vampir besiegen.",
+    "checkpoint": "16 Truhen gesichert, Vampir #046 besiegt, Sternrubin erhalten.",
+    "contentStatus": "needs-review",
+    "sources": [
+      {
+        "title": "PR-Walkthrough Melmond",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/melmond-and-the-cavern-of-earth"
+      }
+    ],
+    "sections": [
+      {
+        "id": "melmond",
+        "title": "1 · Melmond und Vorbereitung",
+        "steps": [
+          "Per Schiff durch den neuen Kanal und westlich nach Melmond.",
+          "Im Gasthaus ausruhen und Stufe-5-Magie prüfen: Vitaga (Curaga), Feuga (Firaga), Engel (Life), Heilara (Healara), Giftgas (Scourge), Warp (Teleport).",
+          "Für die Erdhöhle Heiltränke, Gegengifte und Goldnadeln einpacken."
+        ],
+        "checks": [
+          {
+            "id": "town",
+            "category": "story",
+            "title": "Melmond erreicht",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "spells",
+            "category": "preparation",
+            "title": "Stufe-5-Zauber geprüft (4.000 Gil je Zauber)",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "items",
+            "category": "preparation",
+            "title": "Heilmittel und Goldnadeln eingepackt",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "b1",
+        "title": "2 · Erdhöhle B1 – fünf Truhen",
+        "steps": [
+          "Die Erdhöhle südwestlich von Melmond betreten.",
+          "Im Nordosten 1.975 Gil bergen; im Südwesten vier weitere Truhen mit 880 Gil, Heiltrank, 795 Gil und Gegengift.",
+          "Vorsicht vor teilweise bewachten Truhen. Dann über die östliche Treppe nach B2."
+        ],
+        "checks": [
+          {
+            "id": "b1-1",
+            "category": "chest",
+            "title": "1.975 Gil – Truhe 1/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-2",
+            "category": "chest",
+            "title": "880 Gil – Truhe 2/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-3",
+            "category": "chest",
+            "title": "Heiltrank – Truhe 3/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-4",
+            "category": "chest",
+            "title": "795 Gil – Truhe 4/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-5",
+            "category": "chest",
+            "title": "Gegengift – Truhe 5/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob039",
+            "category": "bestiary",
+            "title": "#039 Minotaur",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "b2",
+        "title": "3 · Erdhöhle B2 – sechs Truhen",
+        "steps": [
+          "Im südlichen Raum Lederschild, 575 Gil und 5.000 Gil sichern; ein Erdelementar kann den Weg bewachen.",
+          "Im nordöstlichen Raum Korallenschwert, Zelt und 330 Gil öffnen.",
+          "An der mittleren Ostseite zur Treppe nach B3 gehen."
+        ],
+        "checks": [
+          {
+            "id": "b2-1",
+            "category": "chest",
+            "title": "Lederschild – Truhe 1/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-2",
+            "category": "chest",
+            "title": "575 Gil – Truhe 2/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-3",
+            "category": "chest",
+            "title": "5.000 Gil – Truhe 3/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-4",
+            "category": "chest",
+            "title": "Korallenschwert – Truhe 4/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-5",
+            "category": "chest",
+            "title": "Zelt – Truhe 5/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-6",
+            "category": "chest",
+            "title": "330 Gil – Truhe 6/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob40",
+            "category": "bestiary",
+            "title": "#040 Hill Gigas",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob41",
+            "category": "bestiary",
+            "title": "#041 Earth Elemental",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob42",
+            "category": "bestiary",
+            "title": "#042 Troll",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "b3",
+        "title": "4 · Erdhöhle B3 – Vampir und Sternrubin",
+        "steps": [
+          "Schlafsack aus rechtem Raum, bewachte Goldnadel, 3.400 Gil und 1.020 Gil aus Seitenräumen holen.",
+          "Vor dem Vampir heilen und MP auffüllen. Er ist anfällig gegen Feuer und Untotenmagie, kann mit Blick lähmen.",
+          "Vampir #046 besiegen und Sternrubin in der Truhe dahinter sichern; dann Melmond zur Erholung aufsuchen."
+        ],
+        "checks": [
+          {
+            "id": "b3-1",
+            "category": "chest",
+            "title": "Schlafsack – Truhe 1/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-2",
+            "category": "chest",
+            "title": "Goldnadel – Truhe 2/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-3",
+            "category": "chest",
+            "title": "3.400 Gil – Truhe 3/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-4",
+            "category": "chest",
+            "title": "1.020 Gil – Truhe 4/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-5",
+            "category": "chest",
+            "title": "Sternrubin – Truhe 5/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob24",
+            "category": "bestiary",
+            "title": "#024 Ghast",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob43",
+            "category": "bestiary",
+            "title": "#043 Wight",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob44",
+            "category": "bestiary",
+            "title": "#044 Ochre Jelly",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob45",
+            "category": "bestiary",
+            "title": "#045 Cockatrice",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "vampire",
+            "category": "boss",
+            "title": "Vampir #046 besiegt",
+            "detail": "280 HP; schwach gegen Feuer und heilige Magie.",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ruby",
+            "category": "key-item",
+            "title": "Sternrubin erhalten",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      }
+    ]
+  }
+}
