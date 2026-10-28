@@ -267,3 +267,19 @@ Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine se
 - [ ] **P2:** Praktische Browser-/Handytests weiterhin verschoben.
 
 **Abnahme:** JSON erfolgreich angelegt und JavaScript-Syntax statisch geprüft; kein browserbasierter Funktionstest oder vollständige inhaltliche Verifikation.
+
+
+## 28.10.2026 – Quellenvergleich der eingereichten Kapitel 1–5 und neue Kapitel 6–10
+
+- [x] Beide Nutzeranhänge mit dem Stand unserer bestehenden Kapitel 1–5 verglichen. Die Anhänge enthalten Fehler (u. a. Garland fälschlich #020 statt #012, Astos #034 statt #033, Piraten #021 statt #017, Cornelia-Preise und Blitzra in Pravoka).
+- [x] Die bestehenden Kapitel 1–5 **nicht überschrieben**, damit korrigierte Inhalte und gespeicherte Häkchen erhalten bleiben.
+- [x] Kapitel 6–10 als **je eine eigenständige JSON-Datei** angelegt und im Manifest veröffentlicht: Melmond/Erdhöhle B1–B3; Titan/Sadda; Erdhöhle B4/B5/Lich; Halbmondsee/Kanu; Vulkan Gurgu/Marilith.
+- [x] In den neuen Kapiteln einzelne Aufgaben für die 16 ersten Erdtruhen, vier Titanentruhen, acht späteren Erdtruhen und 37 Vulkantruhen angelegt; keine Karten.
+- [x] Kapitel 1–10 auf doppelt widersprüchliche Bestiariumsnummern in den veröffentlichten Checklisten geprüft: keine gefunden.
+- [ ] **P0:** Jede Truhe der Erd- und Vulkanetagen in Inhalt und genauer Position gegen PR-Ingame-Zähler und Quellen einzeln abnehmen. Vor allem 18 Vulkan-B2- und 15 Vulkan-B4-Einträge sind derzeit nummerierte Platzhalter, keine einzeln belegten Inhalte.
+- [ ] **P0:** Neue Kapitel-Bestiariumsnamen, Begegnungsorte und Bossstatistiken einzeln gegen ein PR-Bestiarium prüfen; deutsche Übersetzungen nachtragen.
+- [ ] **P0:** Kapitel 1–5 vollständiges Inhaltsaudit; im Nutzeranhang teilweise falsche Zahlen, Gegenstände und unzutreffende Stufe-2-Zauber.
+- [ ] **P1:** Shop-Empfehlungen und Itempreise durch zentrale Datenbanken ersetzen, um alte Quellenmischung zu vermeiden.
+- [ ] **P1:** GitHub Actions und praktische Browser-/PWA-Tests verifizieren; Handytest wie vereinbart verschoben.
+
+Die Kapitel sind **spielbare Arbeitsfassungen**, bewusst `contentStatus: needs-review`, **nicht** abschließend als 100 % verifiziert zu bezeichnen.
