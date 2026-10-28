@@ -1,0 +1,158 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-08",
+    "number": 8,
+    "title": "Erdhöhle – Lich und der Erdkristall",
+    "subtitle": "Erdstab · B4 mit acht Truhen · B5 Lich",
+    "summary": "Mit dem Erdstab den Weg hinter dem Vampir öffnen und bis zum Erdkristall vorstoßen.",
+    "checkpoint": "Erdhöhle alle 24 Truhen; Lich #049 besiegt, Erdkristall wiederhergestellt.",
+    "contentStatus": "needs-review",
+    "sources": [
+      {
+        "title": "PR Walkthrough",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/melmond-and-the-cavern-of-earth"
+      }
+    ],
+    "sections": [
+      {
+        "id": "seal",
+        "title": "1 · Zur versiegelten Steinplatte",
+        "steps": [
+          "Über B1–B3 zur ehemaligen Vampirkammer zurückkehren.",
+          "Hinter der Kammer den Erdstab an der Steinplatte benutzen und zur vierten Ebene hinabsteigen."
+        ],
+        "checks": [
+          {
+            "id": "open",
+            "category": "key-item",
+            "title": "Erdstab eingesetzt",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "b4",
+        "title": "2 · B4 – acht Truhen",
+        "steps": [
+          "Im nördlichen Raum die ersten fünf Truhen einsammeln.",
+          "Südwestlichen Raum mit drei weiteren Truhen besuchen; dort ist ein starker Wächterkampf möglich.",
+          "Über die Treppe nach B5 weitergehen."
+        ],
+        "checks": [
+          {
+            "id": "b4-1",
+            "category": "chest",
+            "title": "Truhe 1/8: 5.450 Gil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-2",
+            "category": "chest",
+            "title": "Truhe 2/8: 1.520 Gil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-3",
+            "category": "chest",
+            "title": "Truhe 3/8: Stab",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-4",
+            "category": "chest",
+            "title": "Truhe 4/8: 3.400 Gil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-5",
+            "category": "chest",
+            "title": "Truhe 5/8: 1.455 Gil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-6",
+            "category": "chest",
+            "title": "Truhe 6/8: Zelt",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-7",
+            "category": "chest",
+            "title": "Truhe 7/8: 1.250 Gil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-8",
+            "category": "chest",
+            "title": "Truhe 8/8: Mithrilschild",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob047",
+            "category": "bestiary",
+            "title": "#047 Oger-Magier",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob048",
+            "category": "bestiary",
+            "title": "#048 Sphinx",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "lich",
+        "title": "3 · B5 – Lich",
+        "steps": [
+          "Den nördlich-westlichen Weg zum Erdkristall nehmen und vor dem Bosskampf heilen.",
+          "Lich gegen Feuer und Untotenmagie bekämpfen; Hast auf den Hauptkämpfer wirkt hilfreich. Eis vermeiden.",
+          "Nach Lich #049 den Erdkristall aktivieren und durch das Portal aus der Höhle zurückkehren."
+        ],
+        "checks": [
+          {
+            "id": "lich",
+            "category": "boss",
+            "title": "Lich #049 besiegt",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "crystal",
+            "category": "story",
+            "title": "Erdkristall wiederhergestellt",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "return",
+            "category": "story",
+            "title": "Ausgangsportal benutzt",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      }
+    ]
+  }
+}
