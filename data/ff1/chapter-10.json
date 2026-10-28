@@ -1,0 +1,459 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-10",
+    "number": 10,
+    "title": "Vulkan Gurgu – Marilith und Feuerkristall",
+    "subtitle": "Fünf Ebenen · 37 Truhen · Marilith",
+    "summary": "Den Vulkan systematisch durchsuchen und Marilith am Feuerkristall besiegen.",
+    "checkpoint": "Alle 37 Truhen im Vulkan geöffnet, Marilith #067 besiegt und Feuerkristall entzündet.",
+    "contentStatus": "needs-review",
+    "sources": [
+      {
+        "title": "PR Walkthrough",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/crescent-lake-and-mount-gulg"
+      }
+    ],
+    "sections": [
+      {
+        "id": "b1",
+        "title": "1 · Vulkan B1",
+        "steps": [
+          "Vom Eingang zur Treppe nach B2 gehen; B1 enthält keine Truhen.",
+          "Lava-Schaden pro Schritt einkalkulieren und HP regelmäßig heilen."
+        ],
+        "checks": [
+          {
+            "id": "down",
+            "category": "story",
+            "title": "B2 erreicht",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "b2",
+        "title": "2 · Vulkan B2 – 18 Truhen",
+        "steps": [
+          "Die große Schatzebene B2 systematisch nach Räumen ablaufen und 18 Truhen zählen.",
+          "Teilweise bewachte Schatzkammern nicht übersehen. Einzelne Inhalte/Positionen bleiben bis zum Etagen-Audit ungeprüft.",
+          "An der Westseite zur nächsten Treppe gehen."
+        ],
+        "checks": [
+          {
+            "id": "b2-01",
+            "category": "chest",
+            "title": "B2: Truhe 1/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-02",
+            "category": "chest",
+            "title": "B2: Truhe 2/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-03",
+            "category": "chest",
+            "title": "B2: Truhe 3/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-04",
+            "category": "chest",
+            "title": "B2: Truhe 4/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-05",
+            "category": "chest",
+            "title": "B2: Truhe 5/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-06",
+            "category": "chest",
+            "title": "B2: Truhe 6/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-07",
+            "category": "chest",
+            "title": "B2: Truhe 7/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-08",
+            "category": "chest",
+            "title": "B2: Truhe 8/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-09",
+            "category": "chest",
+            "title": "B2: Truhe 9/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-10",
+            "category": "chest",
+            "title": "B2: Truhe 10/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-11",
+            "category": "chest",
+            "title": "B2: Truhe 11/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-12",
+            "category": "chest",
+            "title": "B2: Truhe 12/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-13",
+            "category": "chest",
+            "title": "B2: Truhe 13/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-14",
+            "category": "chest",
+            "title": "B2: Truhe 14/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-15",
+            "category": "chest",
+            "title": "B2: Truhe 15/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-16",
+            "category": "chest",
+            "title": "B2: Truhe 16/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-17",
+            "category": "chest",
+            "title": "B2: Truhe 17/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-18",
+            "category": "chest",
+            "title": "B2: Truhe 18/18 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "path",
+        "title": "3 · Verbindung durch B3/B4",
+        "steps": [
+          "Auf den Treppenabschnitten von B3 nach B4, zurück zu B3 und erneut zur Hauptebene B4 gelangen.",
+          "In den Verbindungsabschnitten keine zusätzlichen Truhen zählen."
+        ],
+        "checks": [
+          {
+            "id": "navigate",
+            "category": "story",
+            "title": "Hauptbereich B4 erreicht",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "b4",
+        "title": "4 · Vulkan B4 – 15 Truhen",
+        "steps": [
+          "Die sechs Schatzkammern auf B4 nacheinander durchsuchen (2 + 1 + 5 + 2 + 3 + 2 Truhen).",
+          "Auf bewachte Truhen und Lavastrecken achten; anschließend nach B5 hinabsteigen."
+        ],
+        "checks": [
+          {
+            "id": "b4-01",
+            "category": "chest",
+            "title": "B4: Truhe 1/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-02",
+            "category": "chest",
+            "title": "B4: Truhe 2/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-03",
+            "category": "chest",
+            "title": "B4: Truhe 3/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-04",
+            "category": "chest",
+            "title": "B4: Truhe 4/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-05",
+            "category": "chest",
+            "title": "B4: Truhe 5/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-06",
+            "category": "chest",
+            "title": "B4: Truhe 6/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-07",
+            "category": "chest",
+            "title": "B4: Truhe 7/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-08",
+            "category": "chest",
+            "title": "B4: Truhe 8/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-09",
+            "category": "chest",
+            "title": "B4: Truhe 9/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-10",
+            "category": "chest",
+            "title": "B4: Truhe 10/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-11",
+            "category": "chest",
+            "title": "B4: Truhe 11/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-12",
+            "category": "chest",
+            "title": "B4: Truhe 12/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-13",
+            "category": "chest",
+            "title": "B4: Truhe 13/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-14",
+            "category": "chest",
+            "title": "B4: Truhe 14/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b4-15",
+            "category": "chest",
+            "title": "B4: Truhe 15/15 geöffnet (Ingame-Kartenzähler)",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "b5",
+        "title": "5 · B5 – vier Truhen und Marilith",
+        "steps": [
+          "Die Flammenrüstung im nordwestlichen Raum bergen und die drei Heiltränke im Nordosten sammeln.",
+          "Vor Marilith vollständig heilen. Hast auf Hauptkämpfer, Eis-Angriffe als Option; Feuer ist wenig wirksam.",
+          "Marilith #067 besiegen, den Feuerkristall reaktivieren und den Rückweg über das Portal nehmen."
+        ],
+        "checks": [
+          {
+            "id": "b5-1",
+            "category": "chest",
+            "title": "Truhe 1/4: Flammenrüstung",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b5-2",
+            "category": "chest",
+            "title": "Truhe 2/4: Heiltrank 1",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b5-3",
+            "category": "chest",
+            "title": "Truhe 3/4: Heiltrank 2",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b5-4",
+            "category": "chest",
+            "title": "Truhe 4/4: Heiltrank 3",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "marilith",
+            "category": "boss",
+            "title": "Marilith #067 besiegt",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "crystal",
+            "category": "story",
+            "title": "Feuerkristall wiederhergestellt",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "enemies",
+        "title": "6 · Gegner im Vulkan registrieren",
+        "steps": [
+          "Gegner in den Vulkanetagen systematisch im Bestiarium prüfen; verbleibende Zufallsgegner später nachholen."
+        ],
+        "checks": [
+          {
+            "id": "mob37",
+            "category": "bestiary",
+            "title": "#037 Hyenadon",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob50",
+            "category": "bestiary",
+            "title": "#050 Ankheg",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob58",
+            "category": "bestiary",
+            "title": "#058 Horned Devil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob59",
+            "category": "bestiary",
+            "title": "#059 Pyrolisk",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob60",
+            "category": "bestiary",
+            "title": "#060 Fire Elemental",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob61",
+            "category": "bestiary",
+            "title": "#061 Fire Hydra",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob62",
+            "category": "bestiary",
+            "title": "#062 Lava Worm",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob63",
+            "category": "bestiary",
+            "title": "#063 Hellhound",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob64",
+            "category": "bestiary",
+            "title": "#064 Fire Lizard",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob65",
+            "category": "bestiary",
+            "title": "#065 Fire Gigas",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob66",
+            "category": "bestiary",
+            "title": "#066 Red Dragon",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      }
+    ]
+  }
+}
