@@ -1,0 +1,132 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-09",
+    "number": 9,
+    "title": "Halbmondsee und Fluss zum Vulkan",
+    "subtitle": "Kanu · Magie Stufe 6 · sieben Flussgegner",
+    "summary": "Nach dem Sieg über Lich den Kreis der Weisen besuchen, Kanu erhalten und den Vulkanzugang vorbereiten.",
+    "checkpoint": "Kanu im Besitz; Vulkan Gurgu erreicht und Fluss-Bestiarium geprüft.",
+    "contentStatus": "needs-review",
+    "sources": [
+      {
+        "title": "PR Walkthrough",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/crescent-lake-and-mount-gulg"
+      }
+    ],
+    "sections": [
+      {
+        "id": "crescent",
+        "title": "1 · Halbmondsee und Kreis der Weisen",
+        "steps": [
+          "Zum östlichen Kontinent segeln und zur Stadt Halbmondsee laufen.",
+          "Den Weisenkreis hinter der Stadt aufsuchen und das Kanu entgegennehmen.",
+          "Magie der Stufe 6 und Vorräte prüfen, danach rasten."
+        ],
+        "checks": [
+          {
+            "id": "city",
+            "category": "story",
+            "title": "Halbmondsee erreicht",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "canoe",
+            "category": "key-item",
+            "title": "Kanu erhalten",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shop",
+            "category": "preparation",
+            "title": "Stufe-6-Magie geprüft",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "rest",
+            "category": "preparation",
+            "title": "Für den Vulkan gerüstet",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      },
+      {
+        "id": "river",
+        "title": "2 · Flussbegegnungen und Anreise",
+        "steps": [
+          "Zum Fluss westlich der Stadt gehen und mit dem Kanu den Flussarmen Richtung Vulkan folgen.",
+          "Bei den neuen Flussgegnern Bestiarium überprüfen; schwierige Begegnungen bei Bedarf fliehen.",
+          "Vor dem Vulkaneingang heilen und den Fortschritt speichern."
+        ],
+        "checks": [
+          {
+            "id": "mob51",
+            "category": "bestiary",
+            "title": "#051 Piranha",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob52",
+            "category": "bestiary",
+            "title": "#052 Roter Piranha",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob53",
+            "category": "bestiary",
+            "title": "#053 Krokodil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob54",
+            "category": "bestiary",
+            "title": "#054 Weißes Krokodil",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob55",
+            "category": "bestiary",
+            "title": "#055 Ochu",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob56",
+            "category": "bestiary",
+            "title": "#056 Neochu",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob57",
+            "category": "bestiary",
+            "title": "#057 Hydra",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "volcano",
+            "category": "story",
+            "title": "Vulkan Gurgu erreicht",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": []
+      }
+    ]
+  }
+}
