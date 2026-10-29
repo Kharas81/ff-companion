@@ -1,0 +1,28 @@
+{
+  "gameId": "ff1-pr",
+  "claims": [
+    {
+      "key": "startingGil",
+      "value": 500,
+      "status": "single-source",
+      "evidence": [
+        "vorxu_shrine"
+      ]
+    },
+    {
+      "key": "automaticFullRecoveryAtLevelUp",
+      "value": null,
+      "status": "unverified-in-this-package",
+      "evidence": []
+    },
+    {
+      "key": "garlandDrop",
+      "value": "Longsword",
+      "status": "single-source",
+      "evidence": [
+        "jinsoku_chests"
+      ]
+    }
+  ],
+  "note": "Do not infer a gameplay mechanic solely from AI memories. Direct version-matched evidence needed."
+}
