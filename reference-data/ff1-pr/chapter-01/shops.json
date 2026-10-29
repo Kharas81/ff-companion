@@ -1,0 +1,184 @@
+{
+  "gameId": "ff1-pr",
+  "town": "Cornelia",
+  "currency": "Gil",
+  "items": [
+    {
+      "nameEn": "Cure",
+      "type": "white-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Dia",
+      "type": "white-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Protect",
+      "type": "white-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Blink",
+      "type": "white-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Fire",
+      "type": "black-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Sleep",
+      "type": "black-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Focus",
+      "type": "black-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Thunder",
+      "type": "black-magic",
+      "price": 50,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Rapier",
+      "type": "weapon",
+      "price": 8,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Chain Mail",
+      "type": "armor",
+      "price": 65,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Leather Armor",
+      "type": "armor",
+      "price": 40,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Potion",
+      "type": "item",
+      "price": 40,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Tent",
+      "type": "item",
+      "price": 160,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Nunchaku",
+      "type": "weapon",
+      "price": 8,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Knife",
+      "type": "weapon",
+      "price": 4,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Staff",
+      "type": "weapon",
+      "price": 4,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "nameEn": "Hammer",
+      "type": "weapon",
+      "price": 8,
+      "evidence": [
+        "vorxu_shops",
+        "jinsoku_shops"
+      ],
+      "confidence": "corroborated-secondary"
+    }
+  ],
+  "inn": {
+    "price": 30,
+    "evidence": [
+      "jinsoku_shops"
+    ],
+    "confidence": "single-source"
+  }
+}
