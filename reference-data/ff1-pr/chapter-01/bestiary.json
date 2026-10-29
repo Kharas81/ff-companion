@@ -1,0 +1,162 @@
+{
+  "gameId": "ff1-pr",
+  "scope": "chapter-01",
+  "records": [
+    {
+      "id": 1,
+      "nameEn": "Goblin",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 8,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "nameEn": "Goblin Guard",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 16,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "nameEn": "Wolf",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 20,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "nameEn": "Crazy Horse",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 64,
+      "evidence": [
+        "vorxu_bestiary"
+      ],
+      "confidence": "single-source",
+      "notes": "German in-game localization requires separate screenshot"
+    },
+    {
+      "id": 5,
+      "nameEn": "Skeleton",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 10,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "nameEn": "Black Widow",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 28,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "nameEn": "Gigas Worm",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 56,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "nameEn": "Warg Wolf",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 72,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "nameEn": "Werewolf",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 68,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "nameEn": "Zombie",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 20,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "nameEn": "Ghoul",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 48,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "nameEn": "Garland",
+      "nameDe": null,
+      "germanNameStatus": "unverified",
+      "hp": 212,
+      "evidence": [
+        "vorxu_bestiary",
+        "jinsoku_chests"
+      ],
+      "confidence": "corroborated-secondary",
+      "notes": ""
+    }
+  ],
+  "sourceNote": "HP and English identities sourced; do not treat as primary in-game evidence. German localizations intentionally left unverified."
+}
