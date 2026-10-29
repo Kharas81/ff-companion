@@ -1,0 +1,76 @@
+{
+  "gameId": "ff1-pr",
+  "chapterId": "ff1-01",
+  "source": "github_chapter",
+  "sections": [
+    {
+      "id": "party",
+      "taskIds": [
+        "formed",
+        "cornelia-enter"
+      ]
+    },
+    {
+      "id": "cornelia",
+      "taskIds": [
+        "equipped",
+        "king"
+      ]
+    },
+    {
+      "id": "outside",
+      "taskIds": [
+        "mob001",
+        "mob002",
+        "mob003",
+        "mob004",
+        "rested"
+      ]
+    },
+    {
+      "id": "shrine",
+      "taskIds": [
+        "chest-leather",
+        "chest-potion",
+        "chest-tent",
+        "mob005",
+        "mob006",
+        "mob007",
+        "mob008",
+        "mob009",
+        "mob010",
+        "mob011"
+      ]
+    },
+    {
+      "id": "garland",
+      "taskIds": [
+        "garland",
+        "mob012",
+        "lute",
+        "bridge"
+      ]
+    }
+  ],
+  "allowedCategories": [
+    "story",
+    "preparation",
+    "chest",
+    "bestiary",
+    "boss",
+    "key-item",
+    "misc"
+  ],
+  "allowedPriorities": [
+    "normal",
+    "recommended",
+    "urgent",
+    "key",
+    "optional"
+  ],
+  "availableValues": [
+    "now",
+    "later"
+  ],
+  "warning": "Snapshot checked 2026-10-29; re-fetch original file before replacements; do not use this snapshot if repository has changed."
+}
