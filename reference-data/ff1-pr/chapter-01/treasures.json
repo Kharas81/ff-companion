@@ -1,0 +1,101 @@
+{
+  "gameId": "ff1-pr",
+  "scope": "Chaos Shrine first visit and Mystic Key revisit",
+  "records": [
+    {
+      "id": "chaos-sw-leather",
+      "location": "Chaos Shrine",
+      "floor": "1F",
+      "room": "SW",
+      "nameEn": "Leather Cap",
+      "requiresMysticKey": false,
+      "collected": null,
+      "evidence": [
+        "jinsoku_chests",
+        "vorxu_shrine"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "id": "chaos-nw-potion",
+      "location": "Chaos Shrine",
+      "floor": "1F",
+      "room": "NW",
+      "nameEn": "Potion",
+      "requiresMysticKey": false,
+      "collected": null,
+      "evidence": [
+        "jinsoku_chests",
+        "vorxu_shrine",
+        "progame_shrine"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "id": "chaos-nw-tent",
+      "location": "Chaos Shrine",
+      "floor": "1F",
+      "room": "NW",
+      "nameEn": "Tent",
+      "requiresMysticKey": false,
+      "collected": null,
+      "evidence": [
+        "jinsoku_chests",
+        "vorxu_shrine",
+        "progame_shrine"
+      ],
+      "confidence": "corroborated-secondary"
+    },
+    {
+      "id": "chaos-ne-werebuster",
+      "location": "Chaos Shrine",
+      "floor": "1F",
+      "room": "NE",
+      "nameEn": "Werebuster",
+      "requiresMysticKey": true,
+      "collected": null,
+      "evidence": [
+        "jinsoku_chests"
+      ],
+      "confidence": "single-source"
+    },
+    {
+      "id": "chaos-ne-goldneedle",
+      "location": "Chaos Shrine",
+      "floor": "1F",
+      "room": "NE",
+      "nameEn": "Gold Needle",
+      "requiresMysticKey": true,
+      "collected": null,
+      "evidence": [
+        "jinsoku_chests"
+      ],
+      "confidence": "single-source"
+    },
+    {
+      "id": "chaos-se-runeblade",
+      "location": "Chaos Shrine",
+      "floor": "1F",
+      "room": "SE",
+      "nameEn": "Rune Blade",
+      "requiresMysticKey": true,
+      "collected": null,
+      "evidence": [
+        "jinsoku_chests"
+      ],
+      "confidence": "single-source"
+    }
+  ],
+  "corneliaCastle": {
+    "totalLockedChests": 6,
+    "individualContents": "not-verified-in-this-package",
+    "collected": null
+  },
+  "counts": {
+    "shrineTotal": 6,
+    "shrineAccessibleBeforeKey": 3,
+    "shrineLocked": 3,
+    "castleLocked": 6
+  },
+  "notes": "Physical identifiers are reference-only and NOT Companion checklist IDs. Japanese source distinguishes room contents, but does not unambiguously distinguish the two northwest chest positions."
+}
