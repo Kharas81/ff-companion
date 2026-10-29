@@ -1,0 +1,65 @@
+{
+  "jinsoku_chests": {
+    "url": "https://jinsoku.net/ff1/map/chaos.html",
+    "title": "Jinsoku Chaos Shrine map/item and encounter tables",
+    "inspected": "2026-10-29",
+    "anchor": "Item table rows 1-6; monster table 001-012",
+    "edition": "Pixel Remaster"
+  },
+  "vorxu_shrine": {
+    "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/cornelia-and-chaos-shrine",
+    "title": "Vorxu Cornelia and Chaos Shrine walkthrough",
+    "inspected": "2026-10-29",
+    "anchor": "Chaos Shrine > Chests",
+    "edition": "Pixel Remaster"
+  },
+  "progame_shrine": {
+    "url": "https://progameguides.com/final-fantasy/final-fantasy-1-pixel-remaster-walkthrough/",
+    "title": "Pro Game Guides FF1 PR walkthrough",
+    "inspected": "2026-10-29",
+    "anchor": "Chaos Shrine northwest and southwest chests",
+    "edition": "Pixel Remaster"
+  },
+  "jinsoku_shops": {
+    "url": "https://gcgx.games/ff1/re/shop.html",
+    "title": "GCGX Pixel Remaster shops",
+    "inspected": "2026-10-29",
+    "anchor": "コーネリアの町 row table",
+    "edition": "Pixel Remaster"
+  },
+  "vorxu_shops": {
+    "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/shops",
+    "title": "Vorxu Pixel Remaster Shops",
+    "inspected": "2026-10-29",
+    "anchor": "Cornelia weapons armor items magic",
+    "edition": "Pixel Remaster"
+  },
+  "vorxu_bestiary": {
+    "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/bestiary",
+    "title": "Vorxu Pixel Remaster Bestiary",
+    "inspected": "2026-10-29",
+    "anchor": "Entries 1-32 individual cards",
+    "edition": "Pixel Remaster"
+  },
+  "progame_bestiary": {
+    "url": "https://progameguides.com/final-fantasy/final-fantasy-1-pixel-remaster-bestiary-locations/",
+    "title": "Pro Game Guides bestiary locations",
+    "inspected": "2026-10-29",
+    "anchor": "Numbered list entries 1-12",
+    "edition": "Pixel Remaster"
+  },
+  "github_chapter": {
+    "url": "https://github.com/Kharas81/ff-companion/blob/main/data/ff1/chapter-01.json",
+    "title": "Original Companion chapter-01.json",
+    "inspected": "2026-10-29",
+    "anchor": "chapter.id + sections[].checks[].id",
+    "edition": "Companion app"
+  },
+  "github_schema": {
+    "url": "https://github.com/Kharas81/ff-companion/blob/main/docs/kapitel-schema.md",
+    "title": "Companion schema",
+    "inspected": "2026-10-29",
+    "anchor": "Schema v1 optional fields and enum values",
+    "edition": "Companion app"
+  }
+}
