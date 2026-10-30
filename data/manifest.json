@@ -17,7 +17,11 @@
         "data/ff1/chapter-07.json",
         "data/ff1/chapter-08.json",
         "data/ff1/chapter-09.json",
-        "data/ff1/chapter-10.json"
+        "data/ff1/chapter-10.json",
+        "data/ff1/chapter-16.json",
+        "data/ff1/chapter-17.json",
+        "data/ff1/chapter-18.json",
+        "data/ff1/chapter-19.json"
       ],
       "status": "in-progress",
       "mechanics": {
