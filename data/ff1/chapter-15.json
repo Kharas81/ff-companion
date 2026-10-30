@@ -1,0 +1,590 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-15",
+    "number": 15,
+    "title": "Meeresschrein und Kraken",
+    "subtitle": "Rosetta-Stein · 32 Truhen · Wasserkristall",
+    "difficulty": "Mittel bis schwer",
+    "summary": "32 Truhen auf fünf Ebenen, Rosetta-Stein sichern und Kraken bekämpfen.",
+    "checkpoint": "Alle Truhen, Schlüsselschritte, relevanten Gegner und Bosse dieses Kapitels überprüft.",
+    "verificationStatus": "PR-Referenzabgleich erfolgt; deutsche Eigennamen teilweise Arbeitsübersetzung; Ingame-Bestätigung offen",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/sunken-shrine",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "entry",
+        "title": "1 · Zugang und Bestiarium",
+        "location": "Onlak → Meeresschrein 3F",
+        "intro": "",
+        "steps": [
+          "Mit Oxyale in Onlak das Fassboot benutzen; der Einstieg liegt auf 3F.",
+          "Gegnerliste fortlaufend überprüfen: Wassergegner sind oft anfällig gegen Blitzmagie.",
+          "Für die obere Route zuerst den rechten Weg zur Treppe nach 4F nehmen."
+        ],
+        "checks": [
+          {
+            "id": "enter",
+            "title": "Meeresschrein betreten",
+            "detail": "",
+            "category": "story",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-93",
+            "title": "#093 Sahagin Prince",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-94",
+            "title": "#094 White Shark",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-95",
+            "title": "#095 Deepeyes",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-96",
+            "title": "#096 Sea Snake",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-97",
+            "title": "#097 Sea Scorpion",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-98",
+            "title": "#098 Sea Troll",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-99",
+            "title": "#099 Ghost",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-100",
+            "title": "#100 Water Elemental",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-101",
+            "title": "#101 Water Naga",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "upper3",
+        "title": "2 · Obere Route – 3F (1 Truhe)",
+        "location": "Meeresschrein 3F",
+        "intro": "",
+        "steps": [
+          "Direkt rechts in den Raum mit 2.000 Gil gehen, dann nordwärts zur Treppe nach 4F."
+        ],
+        "checks": [
+          {
+            "id": "shrine-upper3-01",
+            "title": "Truhe 1/1 – 2.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "upper4",
+        "title": "3 · Obere Route – 4F (5 Truhen)",
+        "location": "Meeresschrein 4F",
+        "intro": "",
+        "steps": [
+          "Fünf getrennte Räume auf dem Weg nach 5F besuchen; nicht direkt die obere Treppe nehmen.",
+          "Die Räume an Westwand, Zickzackweg und an der Weggabelung abklappern."
+        ],
+        "checks": [
+          {
+            "id": "shrine-upper4-01",
+            "title": "Truhe 1/5 – 1.300 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper4-02",
+            "title": "Truhe 2/5 – Diamantrüstung",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper4-03",
+            "title": "Truhe 3/5 – Lichtaxt",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper4-04",
+            "title": "Truhe 4/5 – Magierstab",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper4-05",
+            "title": "Truhe 5/5 – 12.350 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "upper5",
+        "title": "4 · Obere Route – 5F (13 Truhen)",
+        "location": "Meeresschrein 5F",
+        "intro": "",
+        "steps": [
+          "Von der Treppe aus zunächst im Nordraum drei Truhen sichern.",
+          "Auf dem längeren Rundweg drei Truhen mit Diamanthelm, Diamanthandschuhen und Rosetta-Stein bergen.",
+          "Die übrigen sieben Truhen in den Seitenkammern öffnen; Meerjungfrauen besuchen.",
+          "Danach bei Bedarf mit Teleport (Exit) heilen und zum Eingang zurückkehren."
+        ],
+        "checks": [
+          {
+            "id": "shrine-upper5-01",
+            "title": "Truhe 1/13 – 9.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-02",
+            "title": "Truhe 2/13 – 1.760 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-03",
+            "title": "Truhe 3/13 – Diamantarmreif",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-04",
+            "title": "Truhe 4/13 – Diamanthelm",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-05",
+            "title": "Truhe 5/13 – Diamanthandschuhe",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-06",
+            "title": "Truhe 6/13 – Rosetta-Stein",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-07",
+            "title": "Truhe 7/13 – 2.750 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-08",
+            "title": "Truhe 8/13 – 4.150 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-09",
+            "title": "Truhe 9/13 – 5.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-10",
+            "title": "Truhe 10/13 – 10.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-11",
+            "title": "Truhe 11/13 – 1.150 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-12",
+            "title": "Truhe 12/13 – Gegengift",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-upper5-13",
+            "title": "Truhe 13/13 – Diamantschild",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "rosetta",
+            "title": "Rosetta-Stein im Inventar",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "lower3",
+        "title": "5 · Untere Route – 3F (3 Truhen)",
+        "location": "Meeresschrein 3F",
+        "intro": "",
+        "steps": [
+          "Vom Eingang zuerst links nach Norden zum Raum mit 9.900 Gil; anschließend links oben zur Treppe abwärts.",
+          "Über 2F→3F→4F und wieder 3F zu den beiden Truhen mit 1.110 und 1.450 Gil.",
+          "Südwärts zu 2F absteigen."
+        ],
+        "checks": [
+          {
+            "id": "shrine-lower3-01",
+            "title": "Truhe 1/3 – 9.900 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower3-02",
+            "title": "Truhe 2/3 – 1.110 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower3-03",
+            "title": "Truhe 3/3 – 1.450 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "lower2",
+        "title": "6 · Untere Route – 2F (10 Truhen)",
+        "location": "Meeresschrein 2F",
+        "intro": "",
+        "steps": [
+          "Im rechten Raum zwei Truhen, in der Südwestkammer drei, nordöstlich vier und ganz westlich die letzte Truhe öffnen.",
+          "Truhenwachen können auch dann auftreten, wenn das Monster später nicht mehr gefährlich erscheint."
+        ],
+        "checks": [
+          {
+            "id": "shrine-lower2-01",
+            "title": "Truhe 1/10 – 7.690 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-02",
+            "title": "Truhe 2/10 – 8.135 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-03",
+            "title": "Truhe 3/10 – 5.450 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-04",
+            "title": "Truhe 4/10 – 1.385 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-05",
+            "title": "Truhe 5/10 – Riesen-Handschuhe",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-06",
+            "title": "Truhe 6/10 – 7.340 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-07",
+            "title": "Truhe 7/10 – Schleife",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-08",
+            "title": "Truhe 8/10 – 9.900 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-09",
+            "title": "Truhe 9/10 – 2.750 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "shrine-lower2-10",
+            "title": "Truhe 10/10 – Lichtaxt",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "kraken",
+        "title": "7 · 1F: Kraken und Wasserkristall",
+        "location": "Meeresschrein 1F",
+        "intro": "",
+        "steps": [
+          "Nach den letzten Truhen die Treppe zu 1F nehmen; nördlich durch beide Türen, bei der Gabelung links nach Süden und durch den langen Gang.",
+          "Vor der Kristallkammer MP und HP auffüllen. Kraken (#102, 1.800 HP) ist blitzanfällig, aber gefährlich durch viele physische Treffer und Blendung.",
+          "Blitzga und Protesra nutzen, Kraken besiegen; Wasserkristall wird wiederhergestellt. Mit dem Portal hinaus."
+        ],
+        "checks": [
+          {
+            "id": "kraken",
+            "title": "Kraken (#102) besiegt",
+            "detail": "",
+            "category": "boss",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "watercrystal",
+            "title": "Wasserkristall erweckt",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-102",
+            "title": "#102 Kraken",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
