@@ -1,0 +1,640 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-18",
+    "number": 18,
+    "title": "Fliegende Festung und Tiamat",
+    "subtitle": "33 Truhen plus Adamantit; Warmech finden, Windkristall erwecken und Excalibur schmieden.",
+    "difficulty": "Endgame",
+    "summary": "33 Truhen plus Adamantit; Warmech finden, Windkristall erwecken und Excalibur schmieden.",
+    "checkpoint": "Schlüsselschritte, Bestiarium, Bosse und Truhen dieses Kapitels kontrolliert.",
+    "verificationStatus": "Quellenbasierter Entwurf: PR-Route und Schatzliste geprüft; deutsche Namen und Ingame-Test stehen aus.",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/mirage-tower-and-flying-fortress",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "sky1",
+        "title": "1 · Fliegende Festung 1F: 10 Truhen",
+        "location": "Fliegende Festung 1F: 10 Truhen",
+        "intro": "",
+        "steps": [
+          "Schatzkammern im Ost-, Süd- und Westbereich vollständig besuchen.",
+          "Alle zehn Truhen sichern, danach nördlichen Teleporter zu 2F benutzen."
+        ],
+        "checks": [
+          {
+            "id": "sky1-01",
+            "title": "Truhe 1/10: 9.900 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #210/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-02",
+            "title": "Truhe 2/10: Trank",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #211/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-03",
+            "title": "Truhe 3/10: 4.150 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #212/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-04",
+            "title": "Truhe 4/10: 7.900 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #213/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-05",
+            "title": "Truhe 5/10: Razer",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #214/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-06",
+            "title": "Truhe 6/10: 5.000 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #215/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-07",
+            "title": "Truhe 7/10: Protect-Ring",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #216/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-08",
+            "title": "Truhe 8/10: 6.720 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #217/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-09",
+            "title": "Truhe 9/10: Heilerhelm",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #218/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky1-10",
+            "title": "Truhe 10/10: 1.180 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #219/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-80",
+            "title": "#80 Manticore",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-109",
+            "title": "#109 Stone Golem",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-110",
+            "title": "#110 Air Elemental",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-111",
+            "title": "#111 Spirit Naga",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-112",
+            "title": "#112 Death Knight",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-113",
+            "title": "#113 Earth Medusa",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "sky2",
+        "title": "2 · Fliegende Festung 2F: 9 Truhen und Adamantit",
+        "location": "Fliegende Festung 2F: 9 Truhen und Adamantit",
+        "intro": "",
+        "steps": [
+          "Die vier Seitenräume einschließlich des Südwestraums vollständig besuchen.",
+          "Adamantit unbedingt mitnehmen: Es ist ein Schlüsselgegenstand und zählt laut Vorxu nicht als zusätzliche Truhe in der 249er-Reihe.",
+          "Neun sonstige Truhen leeren und über das südliche Teleporterfeld zu 3F."
+        ],
+        "checks": [
+          {
+            "id": "sky2-01",
+            "title": "Truhe 1/9: Mithrilhelm",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #220/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-02",
+            "title": "Truhe 2/9: Hütte",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #221/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-03",
+            "title": "Truhe 3/9: 1.380 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #222/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-04",
+            "title": "Truhe 4/9: 13.000 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #223/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-05",
+            "title": "Truhe 5/9: Diamanthandschuhe",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #224/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-06",
+            "title": "Truhe 6/9: Schleife",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #225/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-07",
+            "title": "Truhe 7/9: Diamantschild",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #226/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-08",
+            "title": "Truhe 8/9: Weiße Robe",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #227/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky2-09",
+            "title": "Truhe 9/9: Schwarze Robe",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #228/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "adamantite",
+            "title": "Adamantit erhalten",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-114",
+            "title": "#114 Black Flan",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "sky3",
+        "title": "3 · Fliegende Festung 3F: 14 Truhen",
+        "location": "Fliegende Festung 3F: 14 Truhen",
+        "intro": "",
+        "steps": [
+          "In alle Himmelsrichtungen außer Süden gehen und die vier Schatzbereiche öffnen.",
+          "Nach 14 Truhen am Eingangsteleporter nach links und südlich zum nächsten Portal."
+        ],
+        "checks": [
+          {
+            "id": "sky3-01",
+            "title": "Truhe 1/14: Protect-Umhang",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #229/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-02",
+            "title": "Truhe 2/14: Reisekluft",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #230/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-03",
+            "title": "Truhe 3/14: 6.400 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #231/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-04",
+            "title": "Truhe 4/14: Goldnadel",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #232/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-05",
+            "title": "Truhe 5/14: 9.500 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #233/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-06",
+            "title": "Truhe 6/14: 8.135 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #234/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-07",
+            "title": "Truhe 7/14: 9.000 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #235/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-08",
+            "title": "Truhe 8/14: Trank",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #236/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-09",
+            "title": "Truhe 9/14: Protect-Ring",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #237/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-10",
+            "title": "Truhe 10/14: 5.450 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #238/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-11",
+            "title": "Truhe 11/14: Goldnadel",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #239/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-12",
+            "title": "Truhe 12/14: 4.150 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #240/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-13",
+            "title": "Truhe 13/14: 3.400 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #241/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "sky3-14",
+            "title": "Truhe 14/14: Sasuke-Klinge",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #242/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-115",
+            "title": "#115 Soldier",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-116",
+            "title": "#116 Vampire Lord",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-117",
+            "title": "#117 Dark Fighter",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "sky4",
+        "title": "4 · Fliegende Festung 4F",
+        "location": "Fliegende Festung 4F",
+        "intro": "",
+        "steps": [
+          "Vom Teleporter zwei Reihen nach links und zwei Reihen nach Süden zum nächsten Feld laufen.",
+          "Auf MP und Statusschutz achten; hier keine Schatztruhen."
+        ],
+        "checks": [
+          {
+            "id": "floor4",
+            "title": "4F passiert",
+            "category": "story",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "warmech",
+        "title": "5 · Fliegende Festung 5F: Warmech",
+        "location": "Fliegende Festung 5F: Warmech",
+        "intro": "",
+        "steps": [
+          "Auf dem langen Steg vor Tiamat zufällige Kämpfe auslösen, bis Warmech (#118) erscheint. Begegnung extrem selten.",
+          "Warmech (2.000 HP) ist für das vollständige Bestiarium notwendig. Seine nicht-elementare Nuke-Attacke kann die ganze Gruppe treffen.",
+          "Defensivzauber und starke Heilmagie einsetzen, nach Sieg vollständig regenerieren."
+        ],
+        "checks": [
+          {
+            "id": "warmech",
+            "title": "Warmech (#118) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-118",
+            "title": "#118 Warmech",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "tiamat",
+        "title": "6 · Tiamat und Windkristall",
+        "location": "Tiamat und Windkristall",
+        "intro": "",
+        "steps": [
+          "Tiamat (#119, 2.400 HP) bewacht den Windkristall; alle vier Elementareffekte beachten.",
+          "Antielem, Protesra, Hast und starke nicht-elementare Angriffe nutzen; nach dem Sieg Kristall aktivieren.",
+          "Rückkehrportal verwenden."
+        ],
+        "checks": [
+          {
+            "id": "tiamat",
+            "title": "Tiamat (#119) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "wind",
+            "title": "Windkristall aktiviert",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "excalibur",
+        "title": "7 · Excalibur bei Smyth",
+        "location": "Excalibur bei Smyth",
+        "intro": "",
+        "steps": [
+          "Zum Zwergenberg zurückfliegen und im nördlichen Raum Schmied Smyth besuchen.",
+          "Adamantit überreichen und Excalibur schmieden lassen; Ritter kann es ausrüsten.",
+          "Vorräte für den finalen Chaos-Schrein erneuern."
+        ],
+        "checks": [
+          {
+            "id": "excalibur",
+            "title": "Excalibur geschmiedet",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "stock",
+            "title": "Finale vorbereitet",
+            "category": "preparation",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
