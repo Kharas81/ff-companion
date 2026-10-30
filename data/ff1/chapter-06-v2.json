@@ -3,10 +3,10 @@
   "schemaVersion": 1,
   "gameId": "ff1-pr",
   "chapter": {
-    "id": "ff1-06",
+    "id": "ff1-06-v2",
     "number": 6,
-    "title": "Melmond – Die verfluchte Erde und der erste Abstieg",
-    "subtitle": "Vergleichsversion 2 · erzählerischer Walkthrough · ohne Bilder",
+    "title": "Kapitel 6 – Version 2 · Erzählstil",
+    "subtitle": "Alternative Lesefassung · gleicher Spielfortschritt wie Kapitel 6",
     "summary": "Die Zwerge haben den Kanal geöffnet, doch in Melmond ist die Erde verdorrt. Wir folgen den Gerüchten zur Erdhöhle, erkunden ihre ersten drei Ebenen und sichern nach dem Vampirkampf den Sternrubin. Die Reise geht in Kapitel 7 weiter.",
     "checkpoint": "Erdhöhle B1 5/5 · B2 6/6 · B3 5/5 · Vampir besiegt · Sternrubin mitgenommen · nach Melmond zurückgekehrt.",
     "contentStatus": "needs-review",
@@ -32,7 +32,8 @@
             "title": "Melmond erreicht",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/melmond/town"
           },
           {
             "id": "spells",
@@ -40,7 +41,8 @@
             "title": "Stufe-5-Zauber geprüft (4.000 Gil je Zauber)",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/melmond/spells"
           },
           {
             "id": "items",
@@ -48,7 +50,8 @@
             "title": "Heilmittel und Goldnadeln eingepackt",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/melmond/items"
           }
         ],
         "tips": [
@@ -74,7 +77,8 @@
             "title": "1.975 Gil – Truhe 1/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b1/b1-1"
           },
           {
             "id": "b1-2",
@@ -82,7 +86,8 @@
             "title": "880 Gil – Truhe 2/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b1/b1-2"
           },
           {
             "id": "b1-3",
@@ -90,7 +95,8 @@
             "title": "Heiltrank – Truhe 3/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b1/b1-3"
           },
           {
             "id": "b1-4",
@@ -98,7 +104,8 @@
             "title": "795 Gil – Truhe 4/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b1/b1-4"
           },
           {
             "id": "b1-5",
@@ -106,7 +113,8 @@
             "title": "Gegengift – Truhe 5/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b1/b1-5"
           },
           {
             "id": "mob039",
@@ -114,7 +122,8 @@
             "title": "#039 Minotaur",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b1/mob039"
           }
         ],
         "tips": [
@@ -139,7 +148,8 @@
             "title": "Lederschild – Truhe 1/6",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/b2-1"
           },
           {
             "id": "b2-2",
@@ -147,7 +157,8 @@
             "title": "575 Gil – Truhe 2/6",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/b2-2"
           },
           {
             "id": "b2-3",
@@ -155,7 +166,8 @@
             "title": "5.000 Gil – Truhe 3/6",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/b2-3"
           },
           {
             "id": "b2-4",
@@ -163,7 +175,8 @@
             "title": "Korallenschwert – Truhe 4/6",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/b2-4"
           },
           {
             "id": "b2-5",
@@ -171,7 +184,8 @@
             "title": "Zelt – Truhe 5/6",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/b2-5"
           },
           {
             "id": "b2-6",
@@ -179,7 +193,8 @@
             "title": "330 Gil – Truhe 6/6",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/b2-6"
           },
           {
             "id": "mob40",
@@ -187,7 +202,8 @@
             "title": "#040 Hill Gigas",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/mob40"
           },
           {
             "id": "mob41",
@@ -195,7 +211,8 @@
             "title": "#041 Earth Elemental",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/mob41"
           },
           {
             "id": "mob42",
@@ -203,7 +220,8 @@
             "title": "#042 Troll",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b2/mob42"
           }
         ],
         "tips": [
@@ -231,7 +249,8 @@
             "title": "Schlafsack – Truhe 1/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/b3-1"
           },
           {
             "id": "b3-2",
@@ -239,7 +258,8 @@
             "title": "Goldnadel – Truhe 2/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/b3-2"
           },
           {
             "id": "b3-3",
@@ -247,7 +267,8 @@
             "title": "3.400 Gil – Truhe 3/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/b3-3"
           },
           {
             "id": "b3-4",
@@ -255,7 +276,8 @@
             "title": "1.020 Gil – Truhe 4/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/b3-4"
           },
           {
             "id": "b3-5",
@@ -263,7 +285,8 @@
             "title": "Sternrubin – Truhe 5/5",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/b3-5"
           },
           {
             "id": "mob24",
@@ -271,7 +294,8 @@
             "title": "#024 Ghast",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/mob24"
           },
           {
             "id": "mob43",
@@ -279,7 +303,8 @@
             "title": "#043 Wight",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/mob43"
           },
           {
             "id": "mob44",
@@ -287,7 +312,8 @@
             "title": "#044 Ochre Jelly",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/mob44"
           },
           {
             "id": "mob45",
@@ -295,7 +321,8 @@
             "title": "#045 Cockatrice",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/mob45"
           },
           {
             "id": "vampire",
@@ -303,7 +330,8 @@
             "title": "Vampir #046 besiegt",
             "detail": "280 HP; schwach gegen Feuer und heilige Magie.",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/vampire"
           },
           {
             "id": "ruby",
@@ -311,7 +339,8 @@
             "title": "Sternrubin erhalten",
             "detail": "",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "referenceTo": "ff1-pr/ff1-06/b3/ruby"
           }
         ],
         "tips": [
