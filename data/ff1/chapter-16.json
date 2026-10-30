@@ -1,0 +1,128 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-16",
+    "number": 16,
+    "title": "Rosetta-Stein und Lufenia",
+    "subtitle": "Sprache der Lufener lernen, Glocke erhalten und den Zugang zum Mirageturm vorbereiten.",
+    "difficulty": "Endgame",
+    "summary": "Sprache der Lufener lernen, Glocke erhalten und den Zugang zum Mirageturm vorbereiten.",
+    "checkpoint": "Schlüsselschritte, Bestiarium, Bosse und Truhen dieses Kapitels kontrolliert.",
+    "verificationStatus": "Quellenbasierter Entwurf: PR-Route und Schatzliste geprüft; deutsche Namen und Ingame-Test stehen aus.",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/lufenia",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "unne",
+        "title": "1 · Dr. Unne in Melmond",
+        "location": "Dr. Unne in Melmond",
+        "intro": "",
+        "steps": [
+          "Nach dem Meeresschrein mit dem Rosetta-Stein nach Melmond fliegen.",
+          "Dr. Unne im Nordosten nahe den Grabsteinen aufsuchen und die Tafel zeigen.",
+          "Die Gruppe erlernt die Sprache der Lufener."
+        ],
+        "checks": [
+          {
+            "id": "rosetta",
+            "title": "Rosetta-Stein bei Dr. Unne übersetzt",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "language",
+            "title": "Lufener-Sprache gelernt",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "lufenia",
+        "title": "2 · Lufenia und Glocke",
+        "location": "Lufenia und Glocke",
+        "intro": "",
+        "steps": [
+          "Zur nordöstlichen Kontinentalregion nahe Gaia fliegen, östlich der Wüste auf Gras landen und durch den Wald nach Süden nach Lufenia gehen.",
+          "Im Nordosten die Stufe-8-Zauber Erzengel/Full-Life und Flare kaufen, wenn Klassen und Gil es erlauben.",
+          "Im Südosten der Stadt den Einwohner ansprechen und die Glocke (Chime) für den Mirageturm bekommen."
+        ],
+        "checks": [
+          {
+            "id": "lufenia",
+            "title": "Lufenia besucht",
+            "category": "story",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "chime",
+            "title": "Glocke erhalten",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "magic",
+            "title": "Stufe-8-Zauber geprüft",
+            "category": "preparation",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "tower-approach",
+        "title": "3 · Mirageturm vorbereiten",
+        "location": "Mirageturm vorbereiten",
+        "intro": "",
+        "steps": [
+          "Mit dem Luftschiff auf der Grasfläche südwestlich Lufenias landen und zu Fuß in die Wüste zum Turm gehen.",
+          "Für den folgenden Doppeldungeon Ethers, Hi-Tränke, Phönixfedern und Statusschutz mitnehmen."
+        ],
+        "checks": [
+          {
+            "id": "prepared",
+            "title": "Mirageturm vorbereitet",
+            "category": "preparation",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
