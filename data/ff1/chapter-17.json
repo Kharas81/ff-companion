@@ -1,0 +1,307 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-17",
+    "number": 17,
+    "title": "Mirageturm und Blauer Drache",
+    "subtitle": "18 Truhen auf 1F/2F, danach Teleporter zur Fliegenden Festung.",
+    "difficulty": "Endgame",
+    "summary": "18 Truhen auf 1F/2F, danach Teleporter zur Fliegenden Festung.",
+    "checkpoint": "Schlüsselschritte, Bestiarium, Bosse und Truhen dieses Kapitels kontrolliert.",
+    "verificationStatus": "Quellenbasierter Entwurf: PR-Route und Schatzliste geprüft; deutsche Namen und Ingame-Test stehen aus.",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/mirage-tower-and-flying-fortress",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "mirage1",
+        "title": "1 · Mirageturm 1F: 8 Truhen",
+        "location": "Mirageturm 1F: 8 Truhen",
+        "intro": "",
+        "steps": [
+          "Glocke verwenden, Turm betreten und durch die erste Tür in den zentralen Raum gehen.",
+          "Acht Truhen im umlaufenden Raum sichern; danach durch die linke Tür zum Treppenaufgang auf 2F."
+        ],
+        "checks": [
+          {
+            "id": "mt1-01",
+            "title": "Truhe 1/8: Zelt",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #192/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt1-02",
+            "title": "Truhe 2/8: Ägisschild",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #193/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt1-03",
+            "title": "Truhe 3/8: 2.750 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #194/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt1-04",
+            "title": "Truhe 4/8: 18.010 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #195/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt1-05",
+            "title": "Truhe 5/8: Vorpalschwert",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #196/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt1-06",
+            "title": "Truhe 6/8: 3.400 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #197/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt1-07",
+            "title": "Truhe 7/8: Heilerhelm",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #198/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt1-08",
+            "title": "Truhe 8/8: 1.300 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #199/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-104",
+            "title": "#104 Black Knight",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-105",
+            "title": "#105 Chimera",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-106",
+            "title": "#106 Guardian",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "mirage2",
+        "title": "2 · Mirageturm 2F: 10 Truhen",
+        "location": "Mirageturm 2F: 10 Truhen",
+        "intro": "",
+        "steps": [
+          "Äußeren Ring bis zu Wandlücken folgen, durch zwei weitere Lücken zum großen Schatzraum.",
+          "Alle zehn Truhen plündern. Anschließend an der Wand entlang zum Roboter und der Treppe nach 3F."
+        ],
+        "checks": [
+          {
+            "id": "mt2-01",
+            "title": "Truhe 1/10: 13.000 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #200/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-02",
+            "title": "Truhe 2/10: 12.350 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #201/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-03",
+            "title": "Truhe 3/10: Thors Hammer",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #202/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-04",
+            "title": "Truhe 4/10: 7.900 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #203/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-05",
+            "title": "Truhe 5/10: 8.135 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #204/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-06",
+            "title": "Truhe 6/10: Hütte",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #205/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-07",
+            "title": "Truhe 7/10: 7.600 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #206/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-08",
+            "title": "Truhe 8/10: Lichtklinge",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #207/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-09",
+            "title": "Truhe 9/10: 10.000 Gil",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #208/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mt2-10",
+            "title": "Truhe 10/10: Drachenpanzer",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #209/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "mirage3",
+        "title": "3 · Mirageturm 3F: Blauer Drache",
+        "location": "Mirageturm 3F: Blauer Drache",
+        "intro": "",
+        "steps": [
+          "Rundgang bis zur Tür gehen und den Blauen Drachen vor dem Portal ansprechen.",
+          "Blauer Drache (#107, 454 HP): Protesra/Invisra sowie Hast gegen schwere physische Schläge; Blitzangriffe des Drachen beachten.",
+          "Nach dem Sieg rotes Teleporterfeld betreten, Zugang zur Fliegenden Festung."
+        ],
+        "checks": [
+          {
+            "id": "dragon",
+            "title": "Blauer Drache (#107) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "portal",
+            "title": "Fliegende Festung erreicht",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-107",
+            "title": "#107 Blue Dragon",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
