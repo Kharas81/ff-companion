@@ -331,3 +331,11 @@ Quellenbasis: https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough ; htt
 - [ ] Benutzer-Tests in echtem Browser, PWA, Offline und auf Handy wie vereinbart aufgeschoben.
 
 **Status:** Gesamte Spielroute als 19 **quellenbasierte Entwurfskapitel** vorhanden; **noch keine geprüfte 100%-Freigabe**.
+
+## 30.10.2026 – Erzählender Walkthrough-Stil
+
+- [x] Nutzerbeispiel als Stilvorlage analysiert: klare Richtungsangaben, Nutzen-Erklärungen, Etagen-Zähler, Boss-Taktiken, 100%-Kontrollpunkte.
+- [x] Kapitel 6 als Muster in lebendigerem Deutsch überarbeitet; bestehende Check-IDs und 16 Truhen bleiben erhalten.
+- [ ] Kapitel 1–5 und 7–19 im gleichen Stil redaktionell überarbeiten, ohne Check-IDs umzubenennen.
+- [ ] Exakte Himmelsrichtungen, Truheninhalte und Gegnerdaten nur nach PR-Quellenabgleich übernehmen; Widersprüche des Nutzerbeispiels nicht blind übernehmen.
+- [ ] UI prüfen, ob längere `steps` und `intro` sowie `tips` lesefreundlich dargestellt werden.
