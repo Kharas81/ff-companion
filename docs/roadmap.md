@@ -283,3 +283,21 @@ Hinweis: Zwei Darstellungsmodi nutzen dieselben Daten und Spielstände; keine se
 - [ ] **P1:** GitHub Actions und praktische Browser-/PWA-Tests verifizieren; Handytest wie vereinbart verschoben.
 
 Die Kapitel sind **spielbare Arbeitsfassungen**, bewusst `contentStatus: needs-review`, **nicht** abschließend als 100 % verifiziert zu bezeichnen.
+
+
+## 30.10.2026 – Abgleich Kapitel 1–10 gegen Pixel-Remaster-Referenzen
+
+- [x] Sechs Quellenlinks gesichtet; Vorxu und Solo Play Guide als Hauptreferenzen, aber teils voneinander abhängige Inhalte.
+- [x] Kapitel 6–10 existierten **bereits** im GitHub-Repository. Bestehende kleinere Unterteilung bleibt absichtlich erhalten: 6 Melmond/Erdhöhle B1–B3, 7 Titan/Sarda, 8 Erdhöhle/Lich, 9 Halbmondsee/Kanu, 10 Vulkan Gurgu.
+- [x] Kapitel 6–10 gezählt: 16 + 4 + 8 + 0 + 37 = **65** Truhen. Die Erdhöhle hat 24, Titanenhöhle vier, Vulkan Gurgu 37.
+- [x] Kapitel 10: bislang 33 nur durchnummerierte B2/B4-Truhen mit Gegenstandsnamen aus PR-Referenz versehen. Check-IDs und Speicherstände unverändert.
+- [ ] **P0:** Kapitel 1–5 Inhaltsschwankungen und widersprüchliche Truhenangaben einzeln klären; bestehende IDs *nicht* ändern.
+- [ ] **P0:** Bestiarium-Liste für Kapitel 1–10 gegen eine zweite unabhängige PR-Quelle prüfen, einschließlich Nummern und Fundorten. Frühere Gemini-Texte enthalten offensichtlich falsche Nummern.
+- [ ] **P0:** Truheninhalte Kapitel 1–9 mit zwei Quellen und deutschen Ingame-Texten einzeln überprüfen; Anzahl allein ist kein Vollbeweis.
+- [ ] **P1:** Präzise B2/B4-Truhenpositionen (nicht nur Fundreihenfolge) für Vulkan Gurgu verifizieren.
+- [ ] **P1:** Nach Kapitel 10 folgt logisch **Kapitel 11 Eishöhle / Luftschiff**, 12 Zitadelle/Bahamut, 13 Gaia/Onlak/Wasserfall. Die zunächst vorgeschlagene andere Nummerierung wird **nicht** auf bestehende Kapitel übertragen.
+- [ ] Praktische Tests auf Mobilgerät, Browser, Offline/PWA wie vereinbart zurückgestellt.
+
+**Quellen:** https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough ; https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/guide ; https://videochums.com/article/final-fantasy-1-all-treasure-chests-checklist
+
+**Abnahme:** Existierende Dateien/Truhenzahlen auf GitHub kontrolliert; keine vollständige manuelle Ingame-100%-Bestätigung behauptet.
