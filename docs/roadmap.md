@@ -346,3 +346,10 @@ Quellenbasis: https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough ; htt
 - [x] `docs/vergleich-kapitel-06-v2.md` als angenehm lesbare, bildfreie GitHub-Vorschau erstellt.
 - [x] Original `data/ff1/chapter-06.json` und Manifest unverändert, damit keine zweite Kapitelinstanz oder Spielstandkonflikte auftreten.
 - [ ] Versionen nebeneinander beurteilen; erst nach Nutzerentscheidung die Darstellung im Companion umstellen.
+
+## 30.10.2026 – Vergleich V1/V2 direkt auf GitHub Pages
+
+- [x] `kapitel-06-vergleich.html` als direkt benutzbare, separate responsive Website mit Umschaltung zwischen V1 und V2 angelegt.
+- [x] Deutlich sichtbaren Link in der Hauptseitenleiste ergänzt; Originalkapitel und Fortschritt bleiben unberührt.
+- [x] Neue Datei sowie V2-JSON im Service-Worker-Cache vermerkt und Version erhöht.
+- [ ] Test der GitHub-Pages-Bereitstellung auf echtem Gerät; die Vergleichshäkchen sind absichtlich nur temporär und nicht mit dem Spielstand verknüpft.
