@@ -48,128 +48,146 @@
           {
             "id": "b2-01",
             "category": "chest",
-            "title": "B2: Truhe 1/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 1/18: 1.520 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-02",
             "category": "chest",
-            "title": "B2: Truhe 2/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 2/18: Mithrilhelm",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-03",
             "category": "chest",
-            "title": "B2: Truhe 3/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 3/18: Großschwert",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-04",
             "category": "chest",
-            "title": "B2: Truhe 4/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 4/18: 4.150 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-05",
             "category": "chest",
-            "title": "B2: Truhe 5/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 5/18: 1.295 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-06",
             "category": "chest",
-            "title": "B2: Truhe 6/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 6/18: 1.250 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-07",
             "category": "chest",
-            "title": "B2: Truhe 7/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 7/18: Hi-Trank",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-08",
             "category": "chest",
-            "title": "B2: Truhe 8/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 8/18: Zelt",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-09",
             "category": "chest",
-            "title": "B2: Truhe 9/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 9/18: Mithrilhelm",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-10",
             "category": "chest",
-            "title": "B2: Truhe 10/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 10/18: 1.975 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-11",
             "category": "chest",
-            "title": "B2: Truhe 11/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 11/18: Gegengift",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-12",
             "category": "chest",
-            "title": "B2: Truhe 12/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 12/18: 1.455 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-13",
             "category": "chest",
-            "title": "B2: Truhe 13/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 13/18: 1.520 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-14",
             "category": "chest",
-            "title": "B2: Truhe 14/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 14/18: Mithrilhandschuhe",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-15",
             "category": "chest",
-            "title": "B2: Truhe 15/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 15/18: 1.760 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-16",
             "category": "chest",
-            "title": "B2: Truhe 16/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 16/18: Mithrilschild",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-17",
             "category": "chest",
-            "title": "B2: Truhe 17/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 17/18: Mithrilaxt",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b2-18",
             "category": "chest",
-            "title": "B2: Truhe 18/18 geöffnet (Ingame-Kartenzähler)",
+            "title": "B2 · Truhe 18/18: Phönixfeder",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           }
         ],
         "tips": [],
@@ -205,107 +223,122 @@
           {
             "id": "b4-01",
             "category": "chest",
-            "title": "B4: Truhe 1/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 1/15: Goldnadel",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-02",
             "category": "chest",
-            "title": "B4: Truhe 2/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 2/15: 2.750 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-03",
             "category": "chest",
-            "title": "B4: Truhe 3/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 3/15: 1.750 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-04",
             "category": "chest",
-            "title": "B4: Truhe 4/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 4/15: Gegengift",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-05",
             "category": "chest",
-            "title": "B4: Truhe 5/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 5/15: 1.380 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-06",
             "category": "chest",
-            "title": "B4: Truhe 6/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 6/15: Frostschwert",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-07",
             "category": "chest",
-            "title": "B4: Truhe 7/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 7/15: Flammenschild",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-08",
             "category": "chest",
-            "title": "B4: Truhe 8/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 8/15: 7.340 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-09",
             "category": "chest",
-            "title": "B4: Truhe 9/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 9/15: 1.155 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-10",
             "category": "chest",
-            "title": "B4: Truhe 10/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 10/15: 1.150 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-11",
             "category": "chest",
-            "title": "B4: Truhe 11/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 11/15: 2.000 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-12",
             "category": "chest",
-            "title": "B4: Truhe 12/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 12/15: Hütte",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-13",
             "category": "chest",
-            "title": "B4: Truhe 13/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 13/15: Trank",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-14",
             "category": "chest",
-            "title": "B4: Truhe 14/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 14/15: Stab",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           },
           {
             "id": "b4-15",
             "category": "chest",
-            "title": "B4: Truhe 15/15 geöffnet (Ingame-Kartenzähler)",
+            "title": "B4 · Truhe 15/15: 1.250 Gil",
             "missable": false,
-            "requiredFor100": true
+            "requiredFor100": true,
+            "detail": "Schatzinhalt nach Vorxu Pixel Remaster; Reihenfolge nach seiner Truhen-Liste. Mit dem Ingame-Kartenzähler abgleichen."
           }
         ],
         "tips": [],
@@ -454,6 +487,11 @@
         "tips": [],
         "later": []
       }
-    ]
+    ],
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/crescent-lake-and-mount-gulg",
+      "https://videochums.com/article/final-fantasy-1-all-treasure-chests-checklist"
+    ],
+    "verificationStatus": "Truhenzahl und B2/B4 Inhalte mit zwei PR-Listen abgeglichen; Browser-Ingame-Test ausstehend"
   }
 }
