@@ -1,0 +1,368 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-12",
+    "number": 12,
+    "title": "Zitadelle der Prüfungen",
+    "subtitle": "Teleporter-Rätsel · Rattenschwanz",
+    "difficulty": "Mittel bis schwer",
+    "summary": "Alle zehn Truhen sichern, Rattenschwanz holen und den Drachenzombie-Kampf bestehen.",
+    "checkpoint": "Alle Truhen, Schlüsselschritte, relevanten Gegner und Bosse dieses Kapitels überprüft.",
+    "verificationStatus": "PR-Referenzabgleich erfolgt; deutsche Eigennamen teilweise Arbeitsübersetzung; Ingame-Bestätigung offen",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/citadel-of-trials-and-dragon-caves",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "overworld",
+        "title": "1 · Anflug und seltene Landgegner",
+        "location": "Umgebung der Zitadelle",
+        "intro": "",
+        "steps": [
+          "Mit dem Luftschiff auf einer geeigneten Grasfläche nahe der Zitadelle landen.",
+          "Wüste östlich und Grasland nördlich für die regionalen Bestiarium-Einträge überprüfen; der Tyrannosaurus ist selten.",
+          "Den Alten im Erdgeschoss ansprechen und auf den Thron im Nordwesten setzen."
+        ],
+        "checks": [
+          {
+            "id": "entrance",
+            "title": "Prüfung begonnen",
+            "detail": "",
+            "category": "story",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-76",
+            "title": "#076 Desert Baretta",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-77",
+            "title": "#077 Sabertooth",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-78",
+            "title": "#078 Wyvern",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-79",
+            "title": "#079 Wyrm",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-81",
+            "title": "#081 Baretta",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-82",
+            "title": "#082 Basilisk",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-83",
+            "title": "#083 Allosaurus",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-84",
+            "title": "#084 Weretiger",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-85",
+            "title": "#085 Sand Worm",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-103",
+            "title": "#103 Tyrannosaur",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "floor2",
+        "title": "2 · 2F: Portale und 1 Truhe",
+        "location": "Zitadelle 2F",
+        "intro": "",
+        "steps": [
+          "Portale Räume 1 und 2 automatisch, in Raum 3 das untere, Raum 4 automatisch, Raum 5 das untere, Raum 6 automatisch und in Raum 7 das rechte nahe Portal wählen.",
+          "In Raum 8 rechts die Truhe mit einem Trank holen; danach südlichstes Portal zu 3F."
+        ],
+        "checks": [
+          {
+            "id": "trial-2f-01",
+            "title": "Truhe 1/1 – Trank",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-86",
+            "title": "#086 Minotaur Zombie",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-87",
+            "title": "#087 King Mummy",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-88",
+            "title": "#088 Medusa",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-89",
+            "title": "#089 Rakshasa",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "floor3",
+        "title": "3 · 3F: 9 Truhen und Rattenschwanz",
+        "location": "Zitadelle 3F",
+        "intro": "",
+        "steps": [
+          "Nach dem Minotaur-Zombie Heilerstab aufnehmen, links drei weitere Truhen, im Süden vier weitere und rechts den Rattenschwanz sichern.",
+          "Vor dem Ausgang zwei Drachenzombies (#092) bekämpfen; Feuer und Untotenmagie helfen.",
+          "Thron zurück zum Eingang verwenden."
+        ],
+        "checks": [
+          {
+            "id": "trial-3f-01",
+            "title": "Truhe 1/9 – Heilerstab",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-02",
+            "title": "Truhe 2/9 – Rubinarmreif",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-03",
+            "title": "Truhe 3/9 – Frostschwert",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-04",
+            "title": "Truhe 4/9 – Stahlhandschuhe",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-05",
+            "title": "Truhe 5/9 – Kampfhandschuhe",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-06",
+            "title": "Truhe 6/9 – Hütte",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-07",
+            "title": "Truhe 7/9 – 1.455 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-08",
+            "title": "Truhe 8/9 – 7.340 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "trial-3f-09",
+            "title": "Truhe 9/9 – Rattenschwanz",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "rattail",
+            "title": "Rattenschwanz erhalten",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragonzombie",
+            "title": "Zwei Drachenzombies (#092) besiegt",
+            "detail": "",
+            "category": "boss",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-90",
+            "title": "#090 Clay Golem",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-91",
+            "title": "#091 Nightmare",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-92",
+            "title": "#092 Dragon Zombie",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
