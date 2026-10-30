@@ -6,8 +6,8 @@
     "id": "ff1-06",
     "number": 6,
     "title": "Melmond und Erdhöhle – erster Besuch",
-    "subtitle": "Stufe-5-Magie · 16 Truhen · Vampir · Sternrubin",
-    "summary": "Nach der Kanalsprengung nach Melmond reisen, B1 bis B3 der Erdhöhle plündern und den Vampir besiegen.",
+    "subtitle": "Melmond erkunden · Weg für Weg durch B1–B3 · Vampir · Sternrubin",
+    "summary": "Deine Reise führt dich in die verwüstete Stadt Melmond und dann tief in die Erdhöhle. Wir sammeln zuerst alle 16 beim ersten Besuch erreichbaren Schatztruhen, besiegen den Vampir und holen den Sternrubin. Die Rückkehr mit dem Erdstab folgt in Kapitel 7 und 8.",
     "checkpoint": "16 Truhen gesichert, Vampir #046 besiegt, Sternrubin erhalten.",
     "contentStatus": "needs-review",
     "sources": [
@@ -21,9 +21,9 @@
         "id": "melmond",
         "title": "1 · Melmond und Vorbereitung",
         "steps": [
-          "Per Schiff durch den neuen Kanal und westlich nach Melmond.",
-          "Im Gasthaus ausruhen und Stufe-5-Magie prüfen: Vitaga (Curaga), Feuga (Firaga), Engel (Life), Heilara (Healara), Giftgas (Scourge), Warp (Teleport).",
-          "Für die Erdhöhle Heiltränke, Gegengifte und Goldnadeln einpacken."
+          "Steuere dein Schiff durch den von den Zwergen geöffneten Kanal und halte dich auf der westlichen Seite der Weltkarte in Richtung Melmond. Die Stadt erkennst du am verdorrten Land ringsum. Geh hinein und erhole dich zunächst im Gasthaus – die Erdhöhle wird deutlich anstrengender als die bisherigen Gebiete.",
+          "Schau zuerst in die Magieläden. Die Zauber der Stufe 5 kosten jeweils 4.000 Gil. Feuga ist gegen viele Untote und besonders gegen den Vampir hilfreich; Engel ist eine gute Absicherung, falls ein Gruppenmitglied fällt. Kaufe aber nur Zauber, die deine gewählten Klassen auch wirklich lernen können, und lass ausreichend Gil für Heilmittel übrig.",
+          "Bevor du aufbrichst: Nimm einen soliden Vorrat an Heiltränken und Gegengiften sowie einige Goldnadeln mit. Versteinern und Vergiften können längere Höhlenwege schnell gefährlich machen. Speichere am besten draußen vor dem Aufbruch."
         ],
         "checks": [
           {
@@ -51,23 +51,26 @@
             "requiredFor100": true
           }
         ],
-        "tips": [],
-        "later": []
+        "tips": [
+          "⭐ Einkaufstipp: Feuga ist eine starke Option, aber kein Pflichtkauf für Gruppen ohne passende Schwarzmagie-Klasse."
+        ],
+        "later": [],
+        "intro": "Die karge Gegend um Melmond verrät dir schon: Hier stimmt etwas nicht. Bereite dich gründlich vor, bevor du in die Erdhöhle aufbrichst."
       },
       {
         "id": "b1",
         "title": "2 · Erdhöhle B1 – fünf Truhen",
         "steps": [
-          "Die Erdhöhle südwestlich von Melmond betreten.",
-          "Im Nordosten 1.975 Gil bergen; im Südwesten vier weitere Truhen mit 880 Gil, Heiltrank, 795 Gil und Gegengift.",
-          "Vorsicht vor teilweise bewachten Truhen. Dann über die östliche Treppe nach B2."
+          "Verlasse Melmond und marschiere durch das kahle Gebiet südwestlich der Stadt zur Erdhöhle. Auf B1 zweigen mehrere Wege vom zentralen Bereich ab. Arbeite die Räume bewusst nacheinander ab, statt direkt die Treppe zu suchen.",
+          "Beginne im Nordosten: Öffne dort die Truhe mit **1.975 Gil**. Laufe anschließend zurück zum zentralen Bereich und durchsuche die südwestlichen Räume. Dort warten vier weitere Truhen: **880 Gil, ein Heiltrank, 795 Gil und ein Gegengift**. Nutze den Karten-Truhenzähler: B1 soll bei **5/5** stehen, bevor du weitergehst.",
+          "Einige Schatzkisten können von Gegnern bewacht sein. Heile deshalb nach schweren Kämpfen und nimm erst dann die Treppe im östlichen Teil nach B2."
         ],
         "checks": [
           {
             "id": "b1-1",
             "category": "chest",
             "title": "1.975 Gil – Truhe 1/5",
-            "detail": "",
+            "detail": "Schatz 1/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -75,7 +78,7 @@
             "id": "b1-2",
             "category": "chest",
             "title": "880 Gil – Truhe 2/5",
-            "detail": "",
+            "detail": "Schatz 2/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -83,7 +86,7 @@
             "id": "b1-3",
             "category": "chest",
             "title": "Heiltrank – Truhe 3/5",
-            "detail": "",
+            "detail": "Schatz 3/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -91,7 +94,7 @@
             "id": "b1-4",
             "category": "chest",
             "title": "795 Gil – Truhe 4/5",
-            "detail": "",
+            "detail": "Schatz 4/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -99,7 +102,7 @@
             "id": "b1-5",
             "category": "chest",
             "title": "Gegengift – Truhe 5/5",
-            "detail": "",
+            "detail": "Schatz 5/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -112,23 +115,27 @@
             "requiredFor100": true
           }
         ],
-        "tips": [],
-        "later": []
+        "tips": [
+          "📦 Zwischenkontrolle: B1 5/5; Gesamt nach dieser Ebene 5/16 neue Erdhöhlen-Truhen.",
+          "⚠️ Die genaue Position einzelner Truhen weiter mit dem Ingame-Kartenzähler prüfen."
+        ],
+        "later": [],
+        "intro": "Auf der ersten Ebene lernst du die verzweigten Wege kennen. Wir nehmen alle fünf Schätze mit, bevor wir absteigen."
       },
       {
         "id": "b2",
         "title": "3 · Erdhöhle B2 – sechs Truhen",
         "steps": [
-          "Im südlichen Raum Lederschild, 575 Gil und 5.000 Gil sichern; ein Erdelementar kann den Weg bewachen.",
-          "Im nordöstlichen Raum Korallenschwert, Zelt und 330 Gil öffnen.",
-          "An der mittleren Ostseite zur Treppe nach B3 gehen."
+          "Auf B2 führt dich dein erster Abstecher in den südlichen Schatzraum. Sammle **Lederschild, 575 Gil und 5.000 Gil** ein. Rechne in der Nähe der Truhen mit einem Erdelementar; vor solchen Begegnungen solltest du angeschlagene Figuren heilen.",
+          "Danach kehrst du in die Hauptgänge zurück und suchst den nordöstlichen Raum. Dort liegen **Korallenschwert, Zelt und 330 Gil**. Das Korallenschwert kann für einen passenden Schwertkämpfer interessant sein; prüfe die ausrüstbaren Klassen im Menü.",
+          "Kontrolliere den Zähler **6/6 auf B2**. Erst danach geht es über die Treppe an der östlichen Seite tiefer nach B3."
         ],
         "checks": [
           {
             "id": "b2-1",
             "category": "chest",
             "title": "Lederschild – Truhe 1/6",
-            "detail": "",
+            "detail": "Schatz 1/6 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -136,7 +143,7 @@
             "id": "b2-2",
             "category": "chest",
             "title": "575 Gil – Truhe 2/6",
-            "detail": "",
+            "detail": "Schatz 2/6 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -144,7 +151,7 @@
             "id": "b2-3",
             "category": "chest",
             "title": "5.000 Gil – Truhe 3/6",
-            "detail": "",
+            "detail": "Schatz 3/6 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -152,7 +159,7 @@
             "id": "b2-4",
             "category": "chest",
             "title": "Korallenschwert – Truhe 4/6",
-            "detail": "",
+            "detail": "Schatz 4/6 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -160,7 +167,7 @@
             "id": "b2-5",
             "category": "chest",
             "title": "Zelt – Truhe 5/6",
-            "detail": "",
+            "detail": "Schatz 5/6 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -168,7 +175,7 @@
             "id": "b2-6",
             "category": "chest",
             "title": "330 Gil – Truhe 6/6",
-            "detail": "",
+            "detail": "Schatz 6/6 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -197,23 +204,27 @@
             "requiredFor100": true
           }
         ],
-        "tips": [],
-        "later": []
+        "tips": [
+          "📦 Zwischenkontrolle: B2 6/6; Gesamt 11/16 neue Erdhöhlen-Truhen.",
+          "⚔️ Korallenschwert: Ausrüstbarkeit deiner Klasse prüfen, bevor du andere Waffen verkaufst."
+        ],
+        "later": [],
+        "intro": "Hier warten größere Schatzkammern und erste unangenehme Wächter. Nutze die Räume als feste Kontrollpunkte."
       },
       {
         "id": "b3",
         "title": "4 · Erdhöhle B3 – Vampir und Sternrubin",
         "steps": [
-          "Schlafsack aus rechtem Raum, bewachte Goldnadel, 3.400 Gil und 1.020 Gil aus Seitenräumen holen.",
-          "Vor dem Vampir heilen und MP auffüllen. Er ist anfällig gegen Feuer und Untotenmagie, kann mit Blick lähmen.",
-          "Vampir #046 besiegen und Sternrubin in der Truhe dahinter sichern; dann Melmond zur Erholung aufsuchen."
+          "Auf B3 solltest du zunächst die Nebenräume ablaufen. Sammle **Schlafsack, Goldnadel, 3.400 Gil und 1.020 Gil** ein. Vor manchen Kisten lauern feste Kämpfe; lass die Gruppe nicht unvorbereitet auf das nächste Feld laufen.",
+          "Jetzt wartet der **Vampir**. Heile vorher die gesamte Gruppe und spare möglichst noch MP für Feuer- oder Untotenmagie auf. Der Gegner hat **280 HP** und ist gegen diese Angriffe empfindlich. Ein kräftiger Feuerzauber und gezielte Nahkampfangriffe sind hier zuverlässiger als blindes Sparen an Magie.",
+          "Hinter dem besiegten Vampir steht die fünfte Truhe dieser Ebene: der **Sternrubin**. Nimm ihn unbedingt mit – damit kannst du im nächsten Kapitel den Titanen passieren. Wenn dein Menü auf B3 **5/5 Truhen** anzeigt, ist dieser erste Besuch abgeschlossen. Kehre anschließend aus der Höhle zurück, raste und fülle Vorräte auf."
         ],
         "checks": [
           {
             "id": "b3-1",
             "category": "chest",
             "title": "Schlafsack – Truhe 1/5",
-            "detail": "",
+            "detail": "Schatz 1/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -221,7 +232,7 @@
             "id": "b3-2",
             "category": "chest",
             "title": "Goldnadel – Truhe 2/5",
-            "detail": "",
+            "detail": "Schatz 2/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -229,7 +240,7 @@
             "id": "b3-3",
             "category": "chest",
             "title": "3.400 Gil – Truhe 3/5",
-            "detail": "",
+            "detail": "Schatz 3/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -237,7 +248,7 @@
             "id": "b3-4",
             "category": "chest",
             "title": "1.020 Gil – Truhe 4/5",
-            "detail": "",
+            "detail": "Schatz 4/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -245,7 +256,7 @@
             "id": "b3-5",
             "category": "chest",
             "title": "Sternrubin – Truhe 5/5",
-            "detail": "",
+            "detail": "Schatz 5/5 auf dieser Ebene. Hake die Truhe direkt nach dem Öffnen ab; Gesamtfortschritt dieses ersten Erdhöhlen-Besuchs: 16 Truhen.",
             "missable": false,
             "requiredFor100": true
           },
@@ -298,9 +309,14 @@
             "requiredFor100": true
           }
         ],
-        "tips": [],
-        "later": []
+        "tips": [
+          "📦 Zwischenkontrolle: B3 5/5; zusammen 16/16 Truhen beim ersten Besuch.",
+          "🗝️ Sternrubin ist ein Pflichtgegenstand. Die Erdhöhle ist damit noch nicht komplett: Du kehrst später mit dem Erdstab zurück."
+        ],
+        "later": [],
+        "intro": "Jetzt wird es ernst: Vor dem Sternrubin steht ein Vampir. Mit den richtigen Zaubern ist er gut zu schaffen."
       }
-    ]
+    ],
+    "styleVersion": "guided-walkthrough-v1"
   }
 }
