@@ -1,0 +1,329 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-06",
+    "number": 6,
+    "title": "Melmond – Die verfluchte Erde und der erste Abstieg",
+    "subtitle": "Vergleichsversion 2 · erzählerischer Walkthrough · ohne Bilder",
+    "summary": "Die Zwerge haben den Kanal geöffnet, doch in Melmond ist die Erde verdorrt. Wir folgen den Gerüchten zur Erdhöhle, erkunden ihre ersten drei Ebenen und sichern nach dem Vampirkampf den Sternrubin. Die Reise geht in Kapitel 7 weiter.",
+    "checkpoint": "Erdhöhle B1 5/5 · B2 6/6 · B3 5/5 · Vampir besiegt · Sternrubin mitgenommen · nach Melmond zurückgekehrt.",
+    "contentStatus": "needs-review",
+    "sources": [
+      {
+        "title": "PR-Walkthrough Melmond",
+        "url": "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/melmond-and-the-cavern-of-earth"
+      }
+    ],
+    "sections": [
+      {
+        "id": "melmond",
+        "title": "1 · Melmond und Vorbereitung",
+        "steps": [
+          "Fahre mit deinem Schiff durch den neuen Kanal nach Westen und steuere die Küste bei Melmond an. Sobald du die verdorrte Landschaft erreichst, gehst du an Land und betrittst die Stadt. Sprich zunächst mit den Bewohnern. Ihre Berichte machen klar, dass wir dem Ursprung des Erdverfalls nachgehen müssen.",
+          "**Einkaufspause:** Ruh dich im Gasthaus aus und sieh dir die Magie der fünften Stufe an (je 4.000 Gil). **Feuga** ist vor allem gegen die Untoten und den Vampir eine starke Wahl. **Engel** kann gefallene Gefährten wiederbeleben. Kaufe nur Zauber, die deine Figuren lernen dürfen – und gib nicht dein gesamtes Geld aus.",
+          "**Vorbereitung:** Pack Heiltränke, Gegengifte und Goldnadeln ein. In der Höhle erwarten uns Gegner mit Gift-, Lähmungs- und Versteinerungseffekten. Fehlende Verbrauchsgegenstände solltest du bereits vor oder während der Anreise besorgen; Melmond hat keinen gewöhnlichen Item-Laden. Speichere vor dem Dungeon."
+        ],
+        "checks": [
+          {
+            "id": "town",
+            "category": "story",
+            "title": "Melmond erreicht",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "spells",
+            "category": "preparation",
+            "title": "Stufe-5-Zauber geprüft (4.000 Gil je Zauber)",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "items",
+            "category": "preparation",
+            "title": "Heilmittel und Goldnadeln eingepackt",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [
+          "⭐ Empfehlung: Heilung und Feuermagie haben Vorrang vor teuren Luxus-Upgrades.",
+          "🧭 Nächstes Ziel: die Erdhöhle südwestlich von Melmond."
+        ],
+        "later": [],
+        "intro": "Die Zwerge haben den Kanal freigesprengt. Endlich können wir neue Gewässer bereisen – doch die nächste Stadt ist alles andere als ein Ort der Hoffnung. Melmond liegt im Sterben: Die Erde ist verdorrt, Gebäude zerfallen, und die Menschen erzählen von einer finsteren Macht in der nahe gelegenen Erdhöhle."
+      },
+      {
+        "id": "b1",
+        "title": "2 · Erdhöhle B1 – fünf Truhen",
+        "steps": [
+          "Verlasse Melmond in Richtung Westen und folge dem Landweg zwischen den Bergen nach Süden zum Höhleneingang. Auf **B1** orientierst du dich zunächst am zentralen Bereich.",
+          "**Erster Abstecher – Nordosten:** Suche den nordöstlichen Schatzraum. Dort liegen **1.975 Gil**. Kehre anschließend zum zentralen Gang zurück.",
+          "**Südwestliche Schatzräume:** Öffne die vier übrigen Truhen mit **880 Gil**, **Heiltrank**, **795 Gil** und **Gegengift**. Vor einzelnen Kisten kann ein Kampf ausgelöst werden – prüfe daher die HP vor dem Öffnen.",
+          "**Etagenkontrolle: B1 = 5/5 Truhen.** Jetzt kannst du die Treppe im östlichen Bereich nach **B2** nehmen."
+        ],
+        "checks": [
+          {
+            "id": "b1-1",
+            "category": "chest",
+            "title": "1.975 Gil – Truhe 1/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-2",
+            "category": "chest",
+            "title": "880 Gil – Truhe 2/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-3",
+            "category": "chest",
+            "title": "Heiltrank – Truhe 3/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-4",
+            "category": "chest",
+            "title": "795 Gil – Truhe 4/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b1-5",
+            "category": "chest",
+            "title": "Gegengift – Truhe 5/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob039",
+            "category": "bestiary",
+            "title": "#039 Minotaur",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [
+          "⚠️ Westlich des Eingangs gibt es einen Gang mit besonders vielen Kämpfen. Für Erfahrungspunkte interessant, für die Schätze aber kein Pflichtumweg.",
+          "📦 Die Häkchen zu den fünf Truhen stehen nur in der Schatz-Checkliste – nicht zusätzlich in jedem Satz."
+        ],
+        "later": [],
+        "intro": "Die Erdhöhle empfängt uns mit verzweigten Felstunneln. Wir gehen nicht einfach zur nächsten Treppe, sondern nehmen uns jeden Schatzraum vor."
+      },
+      {
+        "id": "b2",
+        "title": "3 · Erdhöhle B2 – sechs Truhen",
+        "steps": [
+          "Gehe zuerst zur **südlichen Kammer**. Dort warten ein **Lederschild**, **575 Gil** und **5.000 Gil**. Achte auf feste Gegnerbegegnungen in der Nähe der Truhen; besonders ein **Erdelementar** kann gefährlich werden.",
+          "Kehre in die Hauptgänge zurück und arbeite dich zum **nordöstlichen Schatzraum**. Dort findest du **Korallenschwert**, **Zelt** und **330 Gil**. Prüfe gleich, ob das Korallenschwert für einen deiner Kämpfer eine Verbesserung ist.",
+          "**Etagenkontrolle: B2 = 6/6 Truhen.** Damit haben wir **11 von 16** Truhen unseres ersten Besuchs eingesammelt. Gehe nun an die östliche Treppe und steige nach **B3** ab."
+        ],
+        "checks": [
+          {
+            "id": "b2-1",
+            "category": "chest",
+            "title": "Lederschild – Truhe 1/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-2",
+            "category": "chest",
+            "title": "575 Gil – Truhe 2/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-3",
+            "category": "chest",
+            "title": "5.000 Gil – Truhe 3/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-4",
+            "category": "chest",
+            "title": "Korallenschwert – Truhe 4/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-5",
+            "category": "chest",
+            "title": "Zelt – Truhe 5/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b2-6",
+            "category": "chest",
+            "title": "330 Gil – Truhe 6/6",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob40",
+            "category": "bestiary",
+            "title": "#040 Hill Gigas",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob41",
+            "category": "bestiary",
+            "title": "#041 Earth Elemental",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob42",
+            "category": "bestiary",
+            "title": "#042 Troll",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [
+          "⚔️ Der Erdelementar-Eintrag gehört in die Monsterfibel. Besiege ihn, wenn du ihm hier begegnest.",
+          "📦 Das Korallenschwert vor einem möglichen Verkauf auf Klassentauglichkeit prüfen."
+        ],
+        "later": [],
+        "intro": "Die zweite Ebene führt zu zwei größeren Schatzkammern. Wer sich hier zu früh auf die nächste Treppe konzentriert, lässt schnell wichtige Ausrüstung liegen."
+      },
+      {
+        "id": "b3",
+        "title": "4 · Erdhöhle B3 – Vampir und Sternrubin",
+        "steps": [
+          "**Erst die Nebenräume:** Sammle auf **B3** den **Schlafsack** aus dem seitlichen Raum, die bewachte **Goldnadel**, **3.400 Gil** und **1.020 Gil** ein. Nimm dir vor Fallenfeldern Zeit zum Heilen.",
+          "**Zwischenkontrolle:** Vor der Bosskammer müssen **vier von fünf Truhen** auf B3 geöffnet sein. Die letzte steht hinter dem Vampir.",
+          "**Boss – Vampir (#046, 280 HP):** Heile die Gruppe vor dem Gespräch vollständig und halte Feuermagie bereit. Der Vampir kann lähmen, hält aber nicht viel aus. Lass Angreifer mit ihren stärksten Waffen zuschlagen und setze **Feuga** oder andere verfügbare Feuer-/Untoten-Zauber ein. Längere Buff-Runden sind hier meistens unnötig.",
+          "Nach dem Kampf ist die fünfte Truhe erreichbar: der **Sternrubin**. Nimm ihn unbedingt mit! Er ist der Schlüssel zum Weg durch die Titanenhöhle im nächsten Kapitel.",
+          "Versuche anschließend, den versiegelten Durchgang hinter dem Bossraum zu erreichen: Noch können wir ihn nicht öffnen. Dafür brauchen wir später den **Erdstab**. Kehre über den bekannten Weg an die Oberfläche und zum Gasthaus in Melmond zurück.",
+          "**Kapitelkontrolle:** B1 **5/5**, B2 **6/6**, B3 **5/5** – zusammen **16/16 Truhen**, Vampir besiegt und Sternrubin erhalten. Hier endet Kapitel 6; als Nächstes wartet der Titan."
+        ],
+        "checks": [
+          {
+            "id": "b3-1",
+            "category": "chest",
+            "title": "Schlafsack – Truhe 1/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-2",
+            "category": "chest",
+            "title": "Goldnadel – Truhe 2/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-3",
+            "category": "chest",
+            "title": "3.400 Gil – Truhe 3/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-4",
+            "category": "chest",
+            "title": "1.020 Gil – Truhe 4/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "b3-5",
+            "category": "chest",
+            "title": "Sternrubin – Truhe 5/5",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob24",
+            "category": "bestiary",
+            "title": "#024 Ghast",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob43",
+            "category": "bestiary",
+            "title": "#043 Wight",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob44",
+            "category": "bestiary",
+            "title": "#044 Ochre Jelly",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob45",
+            "category": "bestiary",
+            "title": "#045 Cockatrice",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "vampire",
+            "category": "boss",
+            "title": "Vampir #046 besiegt",
+            "detail": "280 HP; schwach gegen Feuer und heilige Magie.",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ruby",
+            "category": "key-item",
+            "title": "Sternrubin erhalten",
+            "detail": "",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [
+          "🗝️ Sternrubin nicht übersehen: Er liegt hinter dem Vampir in einer Schatztruhe.",
+          "⛔ Nicht versuchen, die versiegelte Ebene schon jetzt zu erzwingen. Kapitel 7 führt dich zum Titanen und zu Sarda.",
+          "⚠️ Die exakten Wege in der Höhle und einige deutschsprachige Gegenstandsnamen bleiben bis zum Ingame-Abgleich als zu prüfen markiert."
+        ],
+        "later": [],
+        "intro": "Mit jeder Etage werden die Gegner unangenehmer. Besonders Untote können unsere Gruppe durch Statuseffekte handlungsunfähig machen. Am Ende dieser Ebene wartet der Vampir."
+      }
+    ],
+    "styleVersion": "guided-walkthrough-v1",
+    "comparisonVariant": "v2-narrative"
+  }
+}
