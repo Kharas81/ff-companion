@@ -301,3 +301,19 @@ Die Kapitel sind **spielbare Arbeitsfassungen**, bewusst `contentStatus: needs-r
 **Quellen:** https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough ; https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/guide ; https://videochums.com/article/final-fantasy-1-all-treasure-chests-checklist
 
 **Abnahme:** Existierende Dateien/Truhenzahlen auf GitHub kontrolliert; keine vollständige manuelle Ingame-100%-Bestätigung behauptet.
+
+## 30.10.2026 – FF I Kapitel 11–15 angelegt
+
+- [x] Fünf neue kapitelweise JSON-Dateien angelegt und bestehende Kapitel 1–10 und ihre Check-IDs unverändert belassen.
+- [x] Kapitel 11 Eishöhle/Luftschiff **15** Truhen; Kapitel 12 Zitadelle der Prüfungen **10**; Kapitel 13 Drachenhöhlen/Bahamut **13**; Kapitel 14 Gaia/Onlak/Wasserfall **6**; Kapitel 15 Meeresschrein/Kraken **32**. **76 neue Truhen-Checkboxen**.
+- [x] Einzelne Truhen, Bosse, Schlüsselitems und relevante Gegner als Checklisteneinträge erfasst, Etagen insbesondere für Eishöhle und Meeresschrein getrennt.
+- [x] JSON-Struktur und Truhenzahlen der Kapitel 11–15 programmgesteuert geprüft; GitHub-Manifest listet die fünf neuen Kapitel bereits auf.
+- [ ] **P0:** Jede einzelne Truhenposition und jeder Schatzinhalt aus Kapitel 11–15 noch mit einer zweiten unabhängigen PR-Quelle und wenn möglich Ingame-Bildern verifizieren.
+- [ ] **P0:** Bestiariumsnummern und deutsche Gegnernamen sowie Klassenausrüstung/Magie in Kapitel 11–15 gegentesten; unter Umständen sind einige gegenwärtige Einträge vorläufig.
+- [ ] **P1:** Validator auf alle 15 Kapitel und gebietsübergreifende Duplikate erweitern; frühere festcodierte Prüfwerte nur ergänzen, nicht umgehen.
+- [ ] **P1:** Kapitel 16 ff. auf Grundlage der verbleibenden PR-Storyroute und 100%-Truhenliste ausbauen.
+- [ ] Browser-, Offline- und Mobiltests weiterhin zurückgestellt.
+
+Quellenbasis: https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough ; https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/guide ; https://ff1pixelwalkthrough.com/chests/
+
+**Abnahme:** Technische Struktur-/Zählprüfung, keine vollständige Ingame-100%-Freigabe.
