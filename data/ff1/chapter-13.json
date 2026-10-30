@@ -1,0 +1,240 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-13",
+    "number": 13,
+    "title": "Drachenhöhlen und Bahamut",
+    "subtitle": "13 Schatztruhen · Klassenbeförderung",
+    "difficulty": "Mittel bis schwer",
+    "summary": "Cardia-Inseln vollständig leeren und den Rattenschwanz bei Bahamut abgeben.",
+    "checkpoint": "Alle Truhen, Schlüsselschritte, relevanten Gegner und Bosse dieses Kapitels überprüft.",
+    "verificationStatus": "PR-Referenzabgleich erfolgt; deutsche Eigennamen teilweise Arbeitsübersetzung; Ingame-Bestätigung offen",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/citadel-of-trials-and-dragon-caves",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "east",
+        "title": "1 · Östliche Insel: 7 Truhen",
+        "location": "Cardia-Drachenhöhlen: östliche Insel",
+        "intro": "",
+        "steps": [
+          "Nordwestlich zu den fünf Cardia-Inseln fliegen.",
+          "Auf der östlichsten Insel zwei Schatzräume mit drei und vier Truhen ausräumen; einige benachbarte Inseln besitzen keine Truhen."
+        ],
+        "checks": [
+          {
+            "id": "dragon-east-01",
+            "title": "Truhe 1/7 – 1.455 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-east-02",
+            "title": "Truhe 2/7 – 2.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-east-03",
+            "title": "Truhe 3/7 – 2.750 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-east-04",
+            "title": "Truhe 4/7 – X-Trank",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-east-05",
+            "title": "Truhe 5/7 – 2.750 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-east-06",
+            "title": "Truhe 6/7 – 1.520 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-east-07",
+            "title": "Truhe 7/7 – 9.500 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "marsh",
+        "title": "2 · Sumpfinsel: 3 Truhen",
+        "location": "Cardia-Drachenhöhlen: Sumpfinsel",
+        "intro": "",
+        "steps": [
+          "Im Höhlenraum der Sumpfinsel die drei Truhen nahe den Töpfen öffnen."
+        ],
+        "checks": [
+          {
+            "id": "dragon-marsh-01",
+            "title": "Truhe 1/3 – Elixier",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-marsh-02",
+            "title": "Truhe 2/3 – Hütte",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-marsh-03",
+            "title": "Truhe 3/3 – 1.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "west",
+        "title": "3 · Westinsel: 3 Truhen",
+        "location": "Cardia-Drachenhöhlen: westliche Insel",
+        "intro": "",
+        "steps": [
+          "Oben das Zelt, unten Trockenäther und Goldnadel sichern."
+        ],
+        "checks": [
+          {
+            "id": "dragon-west-01",
+            "title": "Truhe 1/3 – Zelt",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-west-02",
+            "title": "Truhe 2/3 – Trockenäther",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "dragon-west-03",
+            "title": "Truhe 3/3 – Goldnadel",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "bahamut",
+        "title": "4 · Bahamut: Klassenbeförderung",
+        "location": "Nördliche Cardia-Insel",
+        "intro": "",
+        "steps": [
+          "Auf der Nordinsel den östlichen Höhleneingang nehmen und zum Drachenkönig gehen.",
+          "Bahamut den Rattenschwanz zeigen: Krieger→Ritter, Dieb→Ninja, Mönch→Meister, Rotmagier→Rotmagus, Weißmagier→Weißmagus, Schwarzmagier→Schwarzmagus.",
+          "Danach erlernbare Zauber und neue Ausrüstung für die tatsächlich gewählten vier Figuren prüfen."
+        ],
+        "checks": [
+          {
+            "id": "bahamut",
+            "title": "Bahamut aufgesucht",
+            "detail": "",
+            "category": "story",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "promotion",
+            "title": "Klassenbeförderung erhalten",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "loadout",
+            "title": "Neue Magie/Ausrüstung kontrolliert",
+            "detail": "",
+            "category": "preparation",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
