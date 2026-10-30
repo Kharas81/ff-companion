@@ -1,0 +1,367 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-19",
+    "number": 19,
+    "title": "Chaos-Schrein der Vergangenheit und Finale",
+    "subtitle": "Sieben letzte Truhen, vier frühere Elementarfürsten und Chaos (#128).",
+    "difficulty": "Endgame",
+    "summary": "Sieben letzte Truhen, vier frühere Elementarfürsten und Chaos (#128).",
+    "checkpoint": "Schlüsselschritte, Bestiarium, Bosse und Truhen dieses Kapitels kontrolliert.",
+    "verificationStatus": "Quellenbasierter Entwurf: PR-Route und Schatzliste geprüft; deutsche Namen und Ingame-Test stehen aus.",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/chaos-shrine",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "time",
+        "title": "1 · Zeitreise 2.000 Jahre zurück",
+        "location": "Zeitreise 2.000 Jahre zurück",
+        "intro": "",
+        "steps": [
+          "Nach allen vier Kristallen zum Chaos-Schrein zurückkehren.",
+          "In Garlands früherer Kammer mit dem schwarzen Orb interagieren und 2.000 Jahre in die Vergangenheit reisen.",
+          "Vom Eingang über 2F nach 3F zur steinernen Tafel gehen; davor Death Eye (#121) besiegen.",
+          "Beide Truhen auf 3F einsammeln, dann die Tafel mit Prinzessin Sarahs Laute aktivieren."
+        ],
+        "checks": [
+          {
+            "id": "past3-01",
+            "title": "Truhe 1/2: Trockenäther",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #243/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "past3-02",
+            "title": "Truhe 2/2: Elixier",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #244/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "eye",
+            "title": "Death Eye (#121) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "lute",
+            "title": "Laute aktiviert und Vergangenheitstreppe geöffnet",
+            "category": "key-item",
+            "detail": "",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-120",
+            "title": "#120 Rhyos",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-121",
+            "title": "#121 Death Eye",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-122",
+            "title": "#122 Purple Worm",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "pastb1",
+        "title": "2 · Untergeschoss 1: Lich",
+        "location": "Untergeschoss 1: Lich",
+        "intro": "",
+        "steps": [
+          "Abseits des direkten Durchgangs zum gelben Orb folgen, davor Gruppe heilen.",
+          "Lich (#124, 2.800 HP) ist jetzt anders als im ersten Kampf: Heiligschaden sinnvoll, Feuerstrategie nicht blind wiederholen."
+        ],
+        "checks": [
+          {
+            "id": "lich",
+            "title": "Lich der Vergangenheit (#124) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-124",
+            "title": "#124 Lich (Past)",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "pastb2",
+        "title": "3 · Untergeschoss 2: vier Truhen und Marilith",
+        "location": "Untergeschoss 2: vier Truhen und Marilith",
+        "intro": "",
+        "steps": [
+          "Vor dem roten Orb links und südlich die vier seitlichen Schatzkammern abarbeiten.",
+          "Protect-Ring, Sasuke-Klinge, Protect-Umhang und Elixier öffnen.",
+          "Marilith (#125, 3.200 HP) mit Feuerabwehr und Hast besiegen."
+        ],
+        "checks": [
+          {
+            "id": "pastb2-01",
+            "title": "Truhe 1/4: Protect-Ring",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #245/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "pastb2-02",
+            "title": "Truhe 2/4: Sasuke-Klinge",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #246/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "pastb2-03",
+            "title": "Truhe 3/4: Protect-Umhang",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #247/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "pastb2-04",
+            "title": "Truhe 4/4: Elixier",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #248/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "marilith",
+            "title": "Marilith der Vergangenheit (#125) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-125",
+            "title": "#125 Marilith (Past)",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "pastb3",
+        "title": "4 · Untergeschoss 3: Kraken",
+        "location": "Untergeschoss 3: Kraken",
+        "intro": "",
+        "steps": [
+          "Durch die südlichen Räume und Säulenpassagen zum blauen Orb navigieren.",
+          "Kraken (#126, 3.600 HP) setzt unter anderem Tintenattacke und Blitzmagie ein. Antielek und physische Verteidigung verwenden."
+        ],
+        "checks": [
+          {
+            "id": "kraken",
+            "title": "Kraken der Vergangenheit (#126) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-126",
+            "title": "#126 Kraken (Past)",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "pastb4",
+        "title": "5 · Untergeschoss 4: Masamune und Tiamat",
+        "location": "Untergeschoss 4: Masamune und Tiamat",
+        "intro": "",
+        "steps": [
+          "Den verschachtelten Weg zum Raum im Südosten folgen und **vor** Tiamat die letzte Truhe öffnen.",
+          "Masamune (249. Schatz nach PR-Referenz) ist von jeder Klasse benutzbar.",
+          "Anschließend zum Gegnerorb gehen; Tiamat (#127, 5.500 HP) mit Schutzmagie, Excalibur und Masamune besiegen."
+        ],
+        "checks": [
+          {
+            "id": "pastb4-01",
+            "title": "Truhe 1/1: Masamune",
+            "category": "chest",
+            "detail": "Vorxu Gesamtschatz #249/249; Truhenposition im Referenzguide abgleichen.",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "tiamat",
+            "title": "Tiamat der Vergangenheit (#127) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-108",
+            "title": "#108 Green Dragon",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-123",
+            "title": "#123 Iron Golem",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-127",
+            "title": "#127 Tiamat (Past)",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "chaos",
+        "title": "6 · Untergeschoss 5: Chaos – Endkampf",
+        "location": "Untergeschoss 5: Chaos – Endkampf",
+        "intro": "",
+        "steps": [
+          "Vor dem Endkampf alle HP/MP regenerieren und die besten Waffen und Schleifen ausrüsten.",
+          "Chaos (#128, 20.000 HP) hat starke Flächenangriffe, Statuszauber und Selbstheilung. Zuerst Protesra, Invisra und Antielem aktivieren.",
+          "Hast und Stärke für Hauptangreifer, Flare/Sanctus für Magier; bei Schaden sofort heilen.",
+          "Nach Sieg Abspann ansehen. Vorher überprüfen, ob alle 249 Truhen und 128 Bestiarium-Einträge erledigt sind."
+        ],
+        "checks": [
+          {
+            "id": "chaos",
+            "title": "Chaos (#128) besiegt",
+            "category": "boss",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ending",
+            "title": "Abspann gesehen und Story beendet",
+            "category": "story",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "monster-128",
+            "title": "#128 Chaos",
+            "category": "bestiary",
+            "detail": "",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
