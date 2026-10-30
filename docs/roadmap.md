@@ -317,3 +317,17 @@ Die Kapitel sind **spielbare Arbeitsfassungen**, bewusst `contentStatus: needs-r
 Quellenbasis: https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough ; https://www.soloplayguide.com/games/final-fantasy-pixel-remaster/guide ; https://ff1pixelwalkthrough.com/chests/
 
 **Abnahme:** Technische Struktur-/Zählprüfung, keine vollständige Ingame-100%-Freigabe.
+
+## 30.10.2026 – FF I Kapitel 16–19 bis zum Finale
+
+- [x] Kapitel 16 Lufenia/Dr. Unne, 17 Mirageturm (18 Truhen), 18 Fliegende Festung (33 Truhen), 19 Chaos-Schrein Vergangenheit (7 Truhen) als eigenständige JSON-Dateien angelegt.
+- [x] Manifest auf **alle 19** Kapitel in richtiger Reihenfolge erweitert; zuvor fehlten auch die Manifest-Einträge der bereits existierenden Kapitel 11–15.
+- [x] Statische Zählung: **249 Truhen-Checkboxen** in Kapitel 1–19, ohne doppelte Aufgaben-IDs innerhalb der Sektionen.
+- [ ] **P0: Bestiarium:** Erst **123 unterschiedliche Nummern** aus Kapitel-Checklisten erfasst; für nominell 128 Gegner fehlen noch fünf Nummern bzw. Referenzeinträge. Gegner-IDs/Versionen und Fundorte unabhängig prüfen.
+- [ ] **P0: Truhen-Audit:** 249 Checkboxen belegen die Sollsumme, **nicht** die Richtigkeit jedes Inhalts und jeder Position. Die Quellen divergieren bei der Fliegenden Festung (33/34). Gegen Ingame-Zähler und unabhängige PR-Liste prüfen.
+- [ ] **P0: Endgame:** Bossdaten, Warmech-Spawn, Kampfstrategien, Effekte und deutsche Gegenstandsnamen gegen eine weitere spezifische PR-Quelle einzeln prüfen.
+- [ ] **P1:** Zentrale Zauber-/Ausrüstungsdatenbank gegen Kapitel-16–19-Kauf-/Fundhinweise verlinken.
+- [ ] **P1:** Validator um Gesamtsoll von 249 sowie Bestiarium-Abdeckung/Nummerierungsfehler ergänzen; fehlerhafte Daten nie durch reine Zählwerte verdecken.
+- [ ] Benutzer-Tests in echtem Browser, PWA, Offline und auf Handy wie vereinbart aufgeschoben.
+
+**Status:** Gesamte Spielroute als 19 **quellenbasierte Entwurfskapitel** vorhanden; **noch keine geprüfte 100%-Freigabe**.
