@@ -1,0 +1,238 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-14",
+    "number": 14,
+    "title": "Gaia, Onlak und Wasserfallhöhle",
+    "subtitle": "Flaschenfee · Oxyale · Warp-Würfel · 6 Truhen",
+    "difficulty": "Mittel bis schwer",
+    "summary": "Oxyale und Warp-Würfel organisieren, alle Wasserfallschätze sichern und Onlaks Meeresschrein-Zugang vorbereiten.",
+    "checkpoint": "Alle Truhen, Schlüsselschritte, relevanten Gegner und Bosse dieses Kapitels überprüft.",
+    "verificationStatus": "PR-Referenzabgleich erfolgt; deutsche Eigennamen teilweise Arbeitsübersetzung; Ingame-Bestätigung offen",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/gaia-onrac-and-the-waterfall-cavern",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "gaia",
+        "title": "1 · Gaia und neue Magie",
+        "location": "Gaia im Nordosten",
+        "intro": "",
+        "steps": [
+          "Mit dem Luftschiff nach Gaia fliegen, auf Gras vor den Bergen landen.",
+          "Stufe-7/8-Zauber, Ruby-Armreif und Protect-Ring begutachten; keine Magie ohne Klassenfreigabe kaufen.",
+          "Genügend Gil für die Flaschenfee zurückhalten."
+        ],
+        "checks": [
+          {
+            "id": "gaia",
+            "title": "Gaia besucht",
+            "detail": "",
+            "category": "story",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "magic",
+            "title": "Neue Magieauswahl geprüft",
+            "detail": "",
+            "category": "preparation",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "fairy",
+        "title": "2 · Karawane und Fee",
+        "location": "Wüstenkarawane → Gaia",
+        "intro": "",
+        "steps": [
+          "Die versteckte Karawane in der nordwestlichen Wüste aufsuchen und die Flaschenfee erwerben.",
+          "Zurück in Gaia befreit sich die Fee; am Gewässer im Nordosten gibt sie Oxyale."
+        ],
+        "checks": [
+          {
+            "id": "bottled-fairy",
+            "title": "Flaschenfee gekauft",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "oxyale",
+            "title": "Oxyale erhalten",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "onlak",
+        "title": "3 · Onlak und Wasserfall-Anfahrt",
+        "location": "Onlak, Fluss westlich der Stadt",
+        "intro": "",
+        "steps": [
+          "Onlak aufsuchen und die neue Magie prüfen.",
+          "Westlich im Fluss mit Kanu nordwärts bis zum Wasserfall fahren."
+        ],
+        "checks": [
+          {
+            "id": "onlak",
+            "title": "Onlak erreicht",
+            "detail": "",
+            "category": "story",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "waterfall",
+        "title": "4 · Wasserfallhöhle: 6 Truhen",
+        "location": "Wasserfallhöhle, westlicher Schatzraum",
+        "intro": "",
+        "steps": [
+          "Nach Westen, dann Süden in den Schatzraum gehen.",
+          "Alle sechs Truhen öffnen, danach den Roboter ansprechen und den Warp-Würfel erhalten.",
+          "Grünen Drachen (#080) möglichst hier registrieren; andernfalls spätere Fundorte prüfen."
+        ],
+        "checks": [
+          {
+            "id": "waterfall-01",
+            "title": "Truhe 1/6 – Magierstab (Wizard's Staff)",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "waterfall-02",
+            "title": "Truhe 2/6 – Schleife",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "waterfall-03",
+            "title": "Truhe 3/6 – 13.450 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "waterfall-04",
+            "title": "Truhe 4/6 – 6.400 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "waterfall-05",
+            "title": "Truhe 5/6 – 5.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "waterfall-06",
+            "title": "Truhe 6/6 – Defendor (Defender)",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "cube",
+            "title": "Warp-Würfel erhalten",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-80",
+            "title": "#080 Green Dragon",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "shrine-access",
+        "title": "5 · Onlak: Eingang zum Meeresschrein",
+        "location": "Onlak Südost",
+        "intro": "",
+        "steps": [
+          "Mit Oxyale zur Frau am Ufer/Steg in Onlak gehen, die das Fassboot zum Meeresschrein bereitstellt.",
+          "Vor dem Tauchgang sämtliche Heilgegenstände und Spielstand kontrollieren."
+        ],
+        "checks": [
+          {
+            "id": "access",
+            "title": "Zugang zum Meeresschrein geöffnet",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
