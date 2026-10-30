@@ -339,3 +339,10 @@ Quellenbasis: https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough ; htt
 - [ ] Kapitel 1–5 und 7–19 im gleichen Stil redaktionell überarbeiten, ohne Check-IDs umzubenennen.
 - [ ] Exakte Himmelsrichtungen, Truheninhalte und Gegnerdaten nur nach PR-Quellenabgleich übernehmen; Widersprüche des Nutzerbeispiels nicht blind übernehmen.
 - [ ] UI prüfen, ob längere `steps` und `intro` sowie `tips` lesefreundlich dargestellt werden.
+
+## 30.10.2026 – Kapitel-6-Vergleich V2 (Original bleibt)
+
+- [x] `data/ff1/chapter-06-v2.json` als separate alternative JSON-Fassung erstellt, gleiche Abschnitts- und Checkbox-IDs wie das Original.
+- [x] `docs/vergleich-kapitel-06-v2.md` als angenehm lesbare, bildfreie GitHub-Vorschau erstellt.
+- [x] Original `data/ff1/chapter-06.json` und Manifest unverändert, damit keine zweite Kapitelinstanz oder Spielstandkonflikte auftreten.
+- [ ] Versionen nebeneinander beurteilen; erst nach Nutzerentscheidung die Darstellung im Companion umstellen.
