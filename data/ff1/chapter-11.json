@@ -1,0 +1,375 @@
+{
+  "format": "ff-companion-chapter",
+  "schemaVersion": 1,
+  "gameId": "ff1-pr",
+  "chapter": {
+    "id": "ff1-11",
+    "number": 11,
+    "title": "Eishöhle und Luftschiff",
+    "subtitle": "Levitationsstein · Böses Auge · Ryukahn-Wüste",
+    "difficulty": "Mittel bis schwer",
+    "summary": "15 Schatztruhen in drei verschachtelten Höhlenebenen und anschließend das Luftschiff.",
+    "checkpoint": "Alle Truhen, Schlüsselschritte, relevanten Gegner und Bosse dieses Kapitels überprüft.",
+    "verificationStatus": "PR-Referenzabgleich erfolgt; deutsche Eigennamen teilweise Arbeitsübersetzung; Ingame-Bestätigung offen",
+    "sourceUrls": [
+      "https://vorxu.com/final-fantasy-1-pixel-remaster/walkthrough/cavern-of-ice-and-the-airship",
+      "https://ff1pixelwalkthrough.com/chests/"
+    ],
+    "sections": [
+      {
+        "id": "arrival",
+        "title": "1 · Anfahrt und Vorbereitung",
+        "location": "Halbmondsee → Eishöhle",
+        "intro": "",
+        "steps": [
+          "Vom Hafen bei Halbmondsee nördlich segeln und an der kleinen Bucht anlegen.",
+          "Südwestwärts zum Fluss laufen und mit dem Kanu nordwärts, dann westwärts zur Eishöhle fahren.",
+          "Goldnadeln, Phönixfedern, Heilung und möglichst volle MP bereithalten."
+        ],
+        "checks": [
+          {
+            "id": "prepare",
+            "title": "Ausrüstung und Statusmittel vorbereitet",
+            "detail": "",
+            "category": "preparation",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": true
+      },
+      {
+        "id": "b2",
+        "title": "2 · U2: erster Schatzraum (2 Truhen)",
+        "location": "Eishöhle U2",
+        "intro": "",
+        "steps": [
+          "Über U1, U2 und U3 zum anderen Abschnitt von U2 gelangen.",
+          "Zuerst die beiden Truhen sichern: Im Osten vier Dunkelmagier als Schatzwache möglich.",
+          "Erst danach absichtlich in eine Eisspalte fallen."
+        ],
+        "checks": [
+          {
+            "id": "ice-b2-01",
+            "title": "Truhe 1/2 – Reisekluft (Clothes)",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b2-02",
+            "title": "Truhe 2/2 – Flammenschwert (Flame Sword)",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "b3",
+        "title": "3 · U3: Eisfeld und Südkammer (8 Truhen)",
+        "location": "Eishöhle U3",
+        "intro": "",
+        "steps": [
+          "Nach dem Absturz nach links über die schädlichen Eisfelder zu zwei Schatztruhen.",
+          "Südlichen großen Raum mit weiteren sechs Schatztruhen vollständig leeren.",
+          "Den ersten rechten Abzweig zu den Treppen nach U1 nehmen."
+        ],
+        "checks": [
+          {
+            "id": "ice-b3-01",
+            "title": "Truhe 1/8 – Eisrüstung (Ice Armor)",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b3-02",
+            "title": "Truhe 2/8 – Mithrilhandschuhe",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b3-03",
+            "title": "Truhe 3/8 – 7.900 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b3-04",
+            "title": "Truhe 4/8 – 9.900 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b3-05",
+            "title": "Truhe 5/8 – 5.454 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b3-06",
+            "title": "Truhe 6/8 – 5.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b3-07",
+            "title": "Truhe 7/8 – 12.350 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b3-08",
+            "title": "Truhe 8/8 – 1.180 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "b1",
+        "title": "4 · U1: letzte 5 Truhen",
+        "location": "Eishöhle U1",
+        "intro": "",
+        "steps": [
+          "Südlich der Treppe Äther, im nahen Einzelraum 10.000 Gil holen.",
+          "Im langen nördlichen Raum drei Truhen öffnen, dann durch die Bodenspalte zum Bossbereich springen."
+        ],
+        "checks": [
+          {
+            "id": "ice-b1-01",
+            "title": "Truhe 1/5 – Äther",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b1-02",
+            "title": "Truhe 2/5 – 10.000 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b1-03",
+            "title": "Truhe 3/5 – 9.500 Gil",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b1-04",
+            "title": "Truhe 4/5 – Schlafsack",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "ice-b1-05",
+            "title": "Truhe 5/5 – Eisschild",
+            "detail": "",
+            "category": "chest",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "eye",
+        "title": "5 · Böses Auge und Levitationsstein",
+        "location": "Eishöhle U2, Bosszone",
+        "intro": "",
+        "steps": [
+          "Böses Auge (#075, 162 HP) schnell mit Feuermagie/Untotenmagie besiegen; Soforttod und Versteinerung vermeiden.",
+          "Levitationsstein einsammeln, über Eisgruben und Treppen den Ausgang erreichen."
+        ],
+        "checks": [
+          {
+            "id": "evil-eye",
+            "title": "Böses Auge (#075) besiegt",
+            "detail": "",
+            "category": "boss",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "levistone",
+            "title": "Levitationsstein erhalten",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-68",
+            "title": "#068 White Dragon",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-69",
+            "title": "#069 Winter Wolf",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-70",
+            "title": "#070 Mindflayer",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-71",
+            "title": "#071 Ice Gigas",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-72",
+            "title": "#072 Specter",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-73",
+            "title": "#073 Remorazz",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          },
+          {
+            "id": "mob-74",
+            "title": "#074 Dark Wizard",
+            "detail": "",
+            "category": "bestiary",
+            "priority": "normal",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      },
+      {
+        "id": "airship",
+        "title": "6 · Ryukahn-Wüste: Luftschiff",
+        "location": "Wüste südlich von Halbmondsee",
+        "intro": "",
+        "steps": [
+          "Mit dem Kanu zur südlichen Wüste des Kontinents reisen.",
+          "Mit Levitationsstein die Wüstenfläche betreten: das Luftschiff erscheint.",
+          "Luftschiff startet überall, landet aber nur auf geeigneten Grasflächen."
+        ],
+        "checks": [
+          {
+            "id": "airship",
+            "title": "Luftschiff erhalten",
+            "detail": "",
+            "category": "key-item",
+            "priority": "key",
+            "available": "now",
+            "missable": false,
+            "requiredFor100": true
+          }
+        ],
+        "tips": [],
+        "later": [],
+        "defaultOpen": false
+      }
+    ]
+  }
+}
